@@ -1,0 +1,181 @@
+---
+import Base from '../layouts/Base.astro';
+import Ticker from '../components/Ticker.astro';
+import { SITE, CATEGORIES } from '../data/categories.js';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((c) => ({ params: { slug: c.slug }, props: { cat: c } }));
+}
+
+const { cat } = Astro.props;
+const sec = CATEGORIES.find((c) => c.slug === cat.secondary);
+const others = CATEGORIES.filter((c) => c.slug !== cat.slug);
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: `${cat.kw} ขอนแก่น`, item: new URL(`/${cat.slug}/`, Astro.site).href },
+  ],
+};
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: cat.faq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Base title={cat.title} description={cat.desc} jsonLd={[breadcrumb, faqLd]}>
+  <main class="article">
+    <!-- H1 ×1 สูตร Keyword + คำขยาย วางช่วงบนของหน้า -->
+    <section class="cat-hero">
+      <div class="container">
+        <nav class="crumb" aria-label="breadcrumb">
+          <a href="/">หน้าแรก</a> <span>/</span> {cat.kw} ขอนแก่น
+        </nav>
+        <p class="cat-hero__icon" aria-hidden="true">{cat.icon}</p>
+        <h1>{cat.h1}</h1>
+        {cat.intro.map((p) => <p class="lede">{p}</p>)}
+        <div class="cta-row">
+          <a href={SITE.lineHref} class="btn btn--line">ส่งรูปประเมินฟรี LINE {SITE.lineId}</a>
+          <a href={SITE.phoneHref} class="btn btn--ghost">โทร {SITE.phone}</a>
+        </div>
+      </div>
+    </section>
+
+    <Ticker />
+
+    <div class="container article__body">
+      <!-- H2 #1 (มี keyword) -->
+      <h2>ทำไมคนขอนแก่นเลือกขายกับ WINNER IT ร้าน{cat.kw}ที่จ่ายจริง</h2>
+      {cat.why.map((p) => <p>{p}</p>)}
+      <p>
+        นอกจากหมวดนี้ เรายัง<a href="/">รับซื้อสินค้าไอที ขอนแก่น</a>ครบทุกประเภทในที่เดียว
+        มีของหลายหมวดปนกันก็ส่งประเมินพร้อมกันได้ในแชทเดียว ไม่ต้องวิ่งขายหลายร้าน
+      </p>
+
+      <!-- H2 #2 (มี keyword) + H3 ≥4 -->
+      <h2>{cat.kw}อะไรบ้าง ทุกรุ่น ทุกยี่ห้อ ทุกสภาพ</h2>
+      {cat.sub.map((s) => (
+        <>
+          <h3>{s.h}</h3>
+          <p>{s.p}</p>
+        </>
+      ))}
+
+      <!-- H2 #3 (มี keyword) + external link -->
+      <h2>ราคา{cat.kw}มือสอง ประเมินจากอะไรบ้าง</h2>
+      <p>{cat.price}</p>
+      <p>
+        แหล่งอ้างอิงเพิ่มเติม: <a href={cat.ext.url} target="_blank" rel="noopener">{cat.ext.text}</a>
+      </p>
+
+      <!-- H2 #4 + ลิงก์บทความ -->
+      <h2>ขั้นตอนขาย{cat.name}กับ WINNER IT จบครบใน 1 วัน</h2>
+      <p>
+        ขั้นแรก ถ่ายรูป{cat.name}ของคุณให้เห็นสภาพรอบตัวเครื่องและจุดตำหนิถ้ามี
+        ส่งเข้าไลน์ {SITE.lineId} พร้อมแจ้งรุ่นและอุปกรณ์ที่มีครบ
+        ขั้นที่สอง ทีมงานตอบราคากลับภายในห้านาทีในเวลาทำการ ({SITE.hours})
+        ตัวเลขนี้ไม่ผูกมัด ไม่พอใจก็ปฏิเสธได้ทันทีโดยไม่ต้องเกรงใจ
+        ขั้นสุดท้าย เลือกวิธีส่งมอบที่สะดวก จะเข้ามาที่จุดรับซื้อ นัดเจอจุดกลาง
+        หรือให้ทีมงานไปรับถึงบ้าน ตรวจสภาพต่อหน้าแล้วรับเงินสดหรือโอนทันที
+      </p>
+      <p>
+        อยากได้ราคาดีขึ้นอีก อ่านเทคนิคเตรียมเครื่องได้ที่บทความ
+        <a href={cat.article.href}>{cat.article.text}</a> ซึ่งรวบรวมสิ่งที่ควรทำก่อนวันนัดขายไว้ครบ
+      </p>
+
+      <!-- H2 #5 (มี keyword) + ลิงก์หน้าแรกครั้งที่ 2 + key รอง -->
+      <h2>พื้นที่ให้บริการ{cat.kw}ทั่วจังหวัดขอนแก่น</h2>
+      <p>
+        ทีมงานออกรับสินค้าถึงที่ครอบคลุม{SITE.areas.map((a) => `อ.${a}`).join(' ')} และทุกอำเภอในจังหวัด
+        เขตตัวเมืองส่วนใหญ่นัดรับได้ภายในวันเดียว ต่างอำเภอนัดหมายล่วงหน้าหนึ่งวันเพื่อจัดรอบรถ
+        โดยไม่มีการหักค่าเดินทางออกจากราคาที่ตกลงกันไว้แม้แต่บาทเดียว
+      </p>
+      <p>
+        มีของหมวดอื่นอยากขายพร้อมกัน ดูรายละเอียด<a href={`/${sec.slug}/`}>{sec.kw} ขอนแก่น</a>
+        หรือดูภาพรวมบริการ<a href="/">รับซื้อสินค้าไอทีทุกประเภทในขอนแก่น</a>ได้จากหน้าหลักของเรา
+      </p>
+
+      <!-- FAQ ลดเป็น H4 ตาม audit (สไตล์ปรับให้อ่านง่าย) -->
+      <h4 class="h4-block">คำถามที่พบบ่อยเกี่ยวกับการขาย{cat.name}</h4>
+      <div class="faq">
+        {cat.faq.map((f) => (
+          <details class="faq__item">
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+
+      <h4 class="h4-block">หมวดอื่นที่เรารับซื้อ</h4>
+      <div class="others">
+        {others.map((c) => (
+          <a href={`/${c.slug}/`} class="card other">
+            <span>{c.icon}</span> {c.kw} ขอนแก่น
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <section class="section cta">
+      <div class="container cta__in">
+        <h4 class="cta__head">พร้อมขายแล้ว? รู้ราคา{cat.name}ของคุณใน 5 นาที</h4>
+        <p>ถ่ายรูป ส่งไลน์ รอราคา — {SITE.hours} ดำเนินการโดย {SITE.company}</p>
+        <div class="cta__btns">
+          <a href={SITE.lineHref} class="btn btn--line">ทัก LINE {SITE.lineId}</a>
+          <a href={SITE.phoneHref} class="btn btn--volt">โทร {SITE.phone}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .cat-hero { padding-block: 48px; }
+  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 22px; }
+  .crumb span { margin-inline: 6px; }
+  .cat-hero__icon { font-size: 2.4rem; margin-bottom: 10px; }
+  .cat-hero h1 { max-width: 24ch; }
+  .lede { margin-top: 16px; color: var(--ink-soft); max-width: 68ch; font-size: 1.05rem; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+  .article__body { max-width: 780px; padding-block: 24px 56px; }
+  .article__body h2 { margin: 40px 0 14px; }
+  .article__body h3 { margin: 26px 0 8px; font-size: 1.25rem; }
+  .article__body p { margin-bottom: 14px; color: #2b3547; }
+  .article__body a { font-weight: 500; }
+
+  /* H4 ตาม audit: ลดศักดิ์หัวข้อรอง แต่ปรับขนาดให้ยังอ่านสบายตา (เล็กกว่า H3) */
+  .h4-block {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 40px 0 14px;
+  }
+
+  .faq { display: grid; gap: 10px; }
+  .faq__item { border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
+  .faq__item[open] { border-color: var(--volt); }
+  .faq__item summary { cursor: pointer; font-weight: 600; list-style: none; }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after { content: '+'; float: right; color: var(--volt); }
+  .faq__item[open] summary::after { content: '−'; }
+  .faq__item p { margin: 10px 0 0; }
+
+  .others { display: flex; flex-wrap: wrap; gap: 10px; }
+  .other { padding: 11px 18px; color: var(--ink); font-weight: 500; font-size: 0.95rem; }
+  .other:hover { text-decoration: none; border-color: var(--volt); }
+
+  .cta { background: var(--volt); color: #fff; }
+  .cta__in { text-align: center; }
+  .cta__head { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
+  .cta p { margin-top: 10px; opacity: 0.92; }
+  .cta__btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .cta .btn--volt { background: var(--ink); box-shadow: none; }
+</style>

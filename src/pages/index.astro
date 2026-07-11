@@ -1,0 +1,305 @@
+---
+import Base from '../layouts/Base.astro';
+import Ticker from '../components/Ticker.astro';
+import { SITE, CATEGORIES } from '../data/categories.js';
+
+const title = 'รับซื้อสินค้าไอที ขอนแก่น ให้ราคาสูง จ่ายสดทันที รับถึงที่ | WINNER IT';
+const description =
+  'WINNER IT รับซื้อสินค้าไอทีทุกประเภทในขอนแก่น โน้ตบุ๊ค MacBook iPhone มือถือ คอมพิวเตอร์ การ์ดจอ PS5 กล้อง ประเมินราคาฟรีผ่าน LINE @buyhub รู้ราคาใน 5 นาที จ่ายเงินสดทันที รับถึงที่ทุกอำเภอ';
+
+const faqs = [
+  {
+    q: 'ประเมินราคายังไง ต้องเอาของมาให้ดูก่อนไหม?',
+    a: 'ไม่ต้องครับ ถ่ายรูปสินค้า แจ้งรุ่นและสภาพ ส่งเข้าไลน์ @buyhub ทีมงานแจ้งราคากลับภายใน 5 นาทีในเวลาทำการ ถูกใจราคาค่อยนัดวันรับของ',
+  },
+  {
+    q: 'จ่ายเงินยังไง ได้เงินเมื่อไหร่?',
+    a: 'จ่ายเงินสดหรือโอนเข้าบัญชีต่อหน้าผู้ขายทันทีหลังตรวจสภาพเสร็จ ไม่มีมัดจำ ไม่มีรับของไปก่อนแล้วโอนตามหลัง',
+  },
+  {
+    q: 'รับถึงที่ไหม มีค่าบริการหรือเปล่า?',
+    a: 'รับถึงที่ฟรีทั่วขอนแก่น เขตตัวเมืองนัดได้ภายในวันเดียว ต่างอำเภอนัดล่วงหน้าหนึ่งวัน ไม่หักค่าเดินทางจากราคาที่ตกลง',
+  },
+  {
+    q: 'ของมีตำหนิ จอแตก เปิดไม่ติด รับไหม?',
+    a: 'รับครับ ประเมินราคาตามสภาพจริง เครื่องเสียยังมีมูลค่าอะไหล่เสมอ แจ้งตำหนิมาตรง ๆ ตั้งแต่แรกจะได้ตัวเลขที่ไม่เปลี่ยนหน้างาน',
+  },
+  {
+    q: 'ต้องเตรียมเอกสารอะไรบ้าง?',
+    a: 'บัตรประชาชนของผู้ขายใบเดียว ถ้ามีกล่องหรือใบเสร็จช่วยเพิ่มราคาได้ ฝั่งเราออกหลักฐานการซื้อขายให้เก็บไว้ทุกดีล',
+  },
+];
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const steps = [
+  { n: '1', t: 'ส่งรูปทางไลน์', d: 'ถ่ายรูปสินค้าให้เห็นสภาพรอบเครื่อง แจ้งรุ่นและตำหนิถ้ามี ส่งเข้าไลน์ @buyhub ได้ตลอดเวลาทำการ' },
+  { n: '2', t: 'รู้ราคาใน 5 นาที', d: 'ทีมงานตีราคาตามสภาพจริงและราคาตลาดล่าสุด ตัวเลขที่แจ้งไม่ผูกมัด ไม่พอใจปฏิเสธได้ทันที' },
+  { n: '3', t: 'นัดรับ จ่ายสดทันที', d: 'เลือกจุดนัดที่สะดวกหรือให้ทีมงานไปรับถึงบ้าน ตรวจของต่อหน้า จบแล้วรับเงินสดหรือโอนทันที' },
+];
+---
+
+<Base title={title} description={description} jsonLd={[faqJsonLd]}>
+  <main>
+    <!-- ===== HERO : H1 สูตร Keyword + คำขยาย ===== -->
+    <section class="hero">
+      <div class="container hero__in">
+        <div class="hero__copy">
+          <p class="eyebrow">WINNER IT · โดยบริษัท อำพล เทรดดิ้ง จำกัด</p>
+          <h1>
+            รับซื้อสินค้าไอที ขอนแก่น<br />
+            <span class="hero__hl">จ่ายสดถึงที่ รู้ราคาใน 5 นาที</span>
+          </h1>
+          <p class="hero__sub">
+            เปลี่ยนของไอทีที่ไม่ได้ใช้ให้กลายเป็นเงินก้อนภายในวันเดียว
+            โน้ตบุ๊ค มือถือ คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง เรารับหมดทุกสภาพ
+            แค่ถ่ายรูปส่งไลน์ ทีมงานแจ้งราคากลับไวโดยไม่มีข้อผูกมัด
+          </p>
+          <div class="hero__cta">
+            <a href={SITE.lineHref} class="btn btn--line">ประเมินราคาผ่าน LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost">โทร {SITE.phone}</a>
+          </div>
+          <ul class="hero__points">
+            <li>ให้ราคาสูงตามตลาดจริง</li>
+            <li>จ่ายสด / โอนทันทีหน้างาน</li>
+            <li>มีตำหนิก็รับ</li>
+          </ul>
+        </div>
+        <div class="hero__panel" aria-hidden="true">
+          <p class="hero__panel-label">ตัวอย่างที่รับซื้อวันนี้</p>
+          {CATEGORIES.slice(0, 4).map((c) => (
+            <div class="hero__row">
+              <span class="hero__row-icon">{c.icon}</span>
+              <span class="hero__row-name">{c.name}</span>
+              <span class="hero__row-tag">รับซื้อ ▲</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <Ticker />
+
+    <!-- ===== H2 #1 (keyword) : หมวดสินค้า ===== -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">สินค้าที่รับซื้อ</p>
+          <h2>รับซื้อสินค้าไอทีทุกประเภท ครอบคลุม 6 หมวดหลัก</h2>
+          <p>
+            แต่ละหมวดมีหน้ารายละเอียดของตัวเอง บอกครบว่ารับรุ่นไหน สภาพแบบใด
+            และราคาประเมินจากอะไร กดเข้าไปดูหมวดของคุณได้เลย ของนอกลิสต์ก็ทักมาถามก่อนได้
+          </p>
+        </div>
+        <div class="cat-grid">
+          {CATEGORIES.map((c) => (
+            <a href={`/${c.slug}/`} class="card cat">
+              <span class="cat__icon">{c.icon}</span>
+              <h3>{c.kw} ขอนแก่น</h3>
+              <p>{c.short}</p>
+              <span class="cat__more">ดูรายละเอียด →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== H2 #2 (keyword) : จุดแข็ง + H3 ===== -->
+    <section class="section section--mist">
+      <div class="container prose">
+        <h2>ทำไม WINNER IT คือจุดรับซื้อสินค้าไอทีที่คนขอนแก่นไว้ใจ</h2>
+        <p>
+          ตลาดรับซื้อของมือสองเต็มไปด้วยความไม่แน่นอน ราคาที่คุยไว้มักเปลี่ยนตอนเจอหน้า
+          บางเจ้ารับของไปก่อนแล้วให้รอโอน เราออกแบบบริการเพื่อลบปัญหาเหล่านั้นทิ้งทั้งหมด
+          ด้วยหลักการทำงานสามข้อที่ยึดมาตั้งแต่วันแรก
+        </p>
+        <h3>ราคาที่แจ้งคือราคาที่จ่ายจริง</h3>
+        <p>
+          ตัวเลขที่ทีมงานส่งให้ในไลน์คือข้อเสนอจริง ตราบใดที่สภาพสินค้าตรงตามข้อมูลที่ผู้ขายแจ้ง
+          จะไม่มีการกดราคาหน้างานด้วยเหตุผลคลุมเครือ เพราะเราเชื่อว่าดีลที่แฟร์คือเหตุผลที่ลูกค้ากลับมาขายซ้ำ
+        </p>
+        <h3>บริษัทจดทะเบียน ตรวจสอบได้ทุกขั้นตอน</h3>
+        <p>
+          การซื้อขายทุกรายการดำเนินการในนามบริษัท อำพล เทรดดิ้ง จำกัด มีหลักฐานการรับซื้อออกให้ผู้ขายเก็บไว้
+          ฝั่งองค์กรที่ต้องจำหน่ายทรัพย์สินตามระเบียบก็ใช้เอกสารจากเราประกอบบัญชีได้ทันที
+        </p>
+        <h3>บริการรับถึงที่ ไม่บวกไม่หักค่าเดินทาง</h3>
+        <p>
+          ของชิ้นใหญ่อย่างคอมตั้งโต๊ะหรือของยกล็อตจากออฟฟิศ ทีมงานขับไปรับพร้อมอุปกรณ์ขนย้ายเอง
+          ผู้ขายไม่ต้องแบกของออกจากบ้านแม้แต่ก้าวเดียว และราคาที่ตกลงไว้ยังคงเดิมทุกบาท
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== H2 #3 : ขั้นตอน ===== -->
+    <section class="section" id="steps">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">ขั้นตอนการขาย</p>
+          <h2>ขายของไอทีกับเรา ง่าย 3 ขั้นตอน จบใน 1 วัน</h2>
+          <p>
+            ขั้นตอนถูกออกแบบให้สั้นที่สุดเท่าที่การซื้อขายที่ปลอดภัยจะทำได้
+            ลูกค้าส่วนใหญ่ใช้เวลาตั้งแต่ทักครั้งแรกจนได้เงินไม่ถึงครึ่งวัน
+          </p>
+        </div>
+        <ol class="steps">
+          {steps.map((s) => (
+            <li class="card step">
+              <span class="step__n">{s.n}</span>
+              <h3>{s.t}</h3>
+              <p>{s.d}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== H2 #4 (keyword) : หลักการตีราคา + external + บทความ ===== -->
+    <section class="section section--mist">
+      <div class="container prose">
+        <h2>ราคารับซื้อสินค้าไอทีมือสอง เราประเมินจากอะไร</h2>
+        <p>
+          ทุกหมวดใช้หลักเดียวกันคืออิงราคาตลาดจริง ณ วันขาย ประกอบกับรุ่น อายุการใช้งาน
+          สภาพภายนอก ความสมบูรณ์ของฟังก์ชัน และความครบของอุปกรณ์แถม ไม่มีสูตรกดราคาเหมารวม
+          ของที่มีตำหนิจะถูกหักตามค่าซ่อมจริงเป็นรายการ ไม่ใช่ตัดทิ้งครึ่งราคาแบบไร้ที่มา
+          ตัวอย่างการอัปเดตราคารายเดือนดูได้จากบทความ
+          <a href="/blog/macbook-resale-price/">ราคารับซื้อ MacBook มือสองทุกรุ่น</a>
+          และเทคนิคเตรียมเครื่องอ่านได้ที่
+          <a href="/blog/erase-iphone-before-selling/">วิธีลบข้อมูล iPhone ก่อนขาย</a>
+        </p>
+        <p>
+          ก่อนตัดสินใจขายกับใครก็ตาม แนะนำให้เช็กตัวตนของผู้รับซื้อเสมอ สถานะนิติบุคคลของเราตรวจสอบได้ที่
+          <a href="https://www.dbd.go.th" target="_blank" rel="noopener">กรมพัฒนาธุรกิจการค้า</a>
+          — ความโปร่งใสคือสิ่งที่ผู้ขายทุกคนควรได้รับก่อนส่งมอบของมีค่า
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== H2 #5 (keyword) : พื้นที่บริการ ===== -->
+    <section class="section">
+      <div class="container prose">
+        <h2>พื้นที่ให้บริการรับซื้อสินค้าไอทีทั่วจังหวัดขอนแก่น</h2>
+        <p>
+          ทีมงานออกรับสินค้าครอบคลุม{SITE.areas.map((a) => `อ.${a}`).join(' ')} และทุกอำเภอในจังหวัดขอนแก่น
+          เขตตัวเมืองและรอบมหาวิทยาลัยขอนแก่นนัดรับได้เร็วสุดภายในไม่กี่ชั่วโมง
+          ส่วนอำเภอรอบนอกนัดหมายล่วงหน้าหนึ่งวันเพื่อจัดรอบรถ เปิดให้บริการ{SITE.hours}
+          ติดต่อได้ทั้งไลน์ {SITE.lineId} โทร {SITE.phone} หรืออีเมล {SITE.email}
+        </p>
+
+        <!-- FAQ ใช้ H4 ตาม audit -->
+        <h4 class="h4-block">คำถามที่พบบ่อย</h4>
+        <div class="faq">
+          {faqs.map((f) => (
+            <details class="faq__item">
+              <summary>{f.q}</summary>
+              <p>{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ปิดท้าย ===== -->
+    <section class="section cta">
+      <div class="container cta__in">
+        <h4 class="cta__head">มีของไอทีอยากขาย? รู้ราคาใน 5 นาที</h4>
+        <p>ถ่ายรูป ส่งไลน์ รอราคา — ง่ายแค่นั้น บริการทุกอำเภอในขอนแก่น</p>
+        <div class="cta__btns">
+          <a href={SITE.lineHref} class="btn btn--line">ทัก LINE {SITE.lineId}</a>
+          <a href={SITE.phoneHref} class="btn btn--volt">โทร {SITE.phone}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .hero { padding-block: 64px 52px; }
+  .hero__in { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: center; }
+  .hero__hl {
+    color: var(--volt);
+    background: linear-gradient(transparent 62%, rgba(255, 176, 32, 0.55) 62%);
+  }
+  .hero__sub { margin-top: 18px; color: var(--ink-soft); font-size: 1.06rem; max-width: 50ch; }
+  .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .hero__points {
+    display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 24px;
+    list-style: none; color: var(--ink-soft); font-size: 0.92rem;
+  }
+  .hero__points li::before { content: '✓ '; color: var(--volt); font-weight: 700; }
+
+  .hero__panel {
+    background: var(--ink); border-radius: var(--radius); padding: 22px; color: #fff;
+    box-shadow: 0 24px 48px rgba(13, 21, 38, 0.25);
+  }
+  .hero__panel-label {
+    font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.1em;
+    color: var(--cash); margin-bottom: 14px;
+  }
+  .hero__row {
+    display: flex; align-items: center; gap: 12px; padding-block: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .hero__row-icon { font-size: 1.3rem; }
+  .hero__row-name { font-weight: 500; }
+  .hero__row-tag {
+    margin-left: auto; font-family: var(--font-display); font-size: 0.78rem;
+    color: var(--cash); border: 1px solid rgba(255, 176, 32, 0.5);
+    border-radius: 999px; padding: 3px 10px;
+  }
+
+  .prose { max-width: 780px; }
+  .prose h2 { margin-bottom: 14px; }
+  .prose h3 { margin: 24px 0 8px; font-size: 1.25rem; }
+  .prose p { margin-bottom: 14px; color: #2b3547; }
+
+  .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .cat { color: var(--ink); display: block; transition: border-color 0.15s, transform 0.15s; }
+  .cat:hover { text-decoration: none; border-color: var(--volt); transform: translateY(-3px); }
+  .cat__icon { font-size: 1.7rem; }
+  .cat h3 { margin-block: 10px 6px; font-size: 1.15rem; }
+  .cat p { color: var(--ink-soft); font-size: 0.92rem; }
+  .cat__more { display: inline-block; margin-top: 12px; color: var(--volt); font-weight: 600; font-size: 0.9rem; }
+
+  .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .step__n {
+    display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 999px;
+    background: var(--volt); color: #fff; font-family: var(--font-display); font-weight: 700; margin-bottom: 14px;
+  }
+  .step h3 { margin-bottom: 6px; font-size: 1.15rem; }
+  .step p { color: var(--ink-soft); font-size: 0.94rem; }
+
+  .h4-block { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 36px 0 14px; }
+
+  .faq { display: grid; gap: 12px; }
+  .faq__item { border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 22px; background: #fff; }
+  .faq__item[open] { border-color: var(--volt); }
+  .faq__item summary { cursor: pointer; font-weight: 600; list-style: none; }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after { content: '+'; float: right; color: var(--volt); font-size: 1.2rem; }
+  .faq__item[open] summary::after { content: '−'; }
+  .faq__item p { margin: 10px 0 0; color: var(--ink-soft); }
+
+  .cta { background: var(--volt); color: #fff; }
+  .cta__in { text-align: center; }
+  .cta__head { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; }
+  .cta p { margin-top: 10px; opacity: 0.9; }
+  .cta__btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .cta .btn--volt { background: var(--ink); box-shadow: none; }
+
+  @media (max-width: 860px) {
+    .hero__in { grid-template-columns: 1fr; gap: 32px; }
+    .cat-grid, .steps { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .cat-grid, .steps { grid-template-columns: 1fr; }
+  }
+</style>

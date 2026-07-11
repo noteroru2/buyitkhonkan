@@ -1,0 +1,186 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const title = 'บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น';
+const description = 'รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT';
+
+const posts = [
+  {
+    href: '/blog/macbook-resale-price/',
+    title: 'ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569',
+    desc: 'ตารางช่วงราคารับซื้อ MacBook Air และ Pro ทุกชิป พร้อมปัจจัยที่ทำให้ราคาต่างกันเป็นหมื่น',
+    tag: 'เช็คราคา',
+  },
+  {
+    href: '/blog/iphone-resale-price/',
+    title: 'ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดต 2569',
+    desc: 'ตารางราคารับซื้อ iPhone ทุกรุ่นจาก 12 ถึง 16 Pro Max พร้อมปัจจัยที่ทำให้ราคาต่างกัน',
+    tag: 'เช็คราคา',
+  },
+  {
+    href: '/blog/gpu-resale-price/',
+    title: 'การ์ดจอมือสองรุ่นไหนยังขายได้ราคาดี ตาราง RTX 3060–4090 อัปเดต 2569',
+    desc: 'ตารางราคารับซื้อการ์ดจอ RTX 40 ซีรีส์ RTX 30 ซีรีส์ และ AMD RX 7000 พร้อมวิธีดูมูลค่า',
+    tag: 'เช็คราคา',
+  },
+  {
+    href: '/blog/ps5-switch-resale-price/',
+    title: 'ราคารับซื้อ PS5 Nintendo Switch มือสอง เทียบ Disc vs Digital อัปเดต 2569',
+    desc: 'ตารางราคารับซื้อเครื่องเกม PS5 Switch Steam Deck ROG Ally พร้อมวิธีขายให้ได้ราคาสูงสุด',
+    tag: 'เช็คราคา',
+  },
+  {
+    href: '/blog/gaming-notebook-resale-price/',
+    title: 'โน้ตบุ๊คเกมมิ่งมือสอง ขายได้เท่าไหร่ ดูจากอะไร ตาราง ROG MSI Lenovo 2569',
+    desc: 'ตารางราคารับซื้อโน้ตบุ๊คเกมมิ่งทุกแบรนด์และการ์ดจอ พร้อมปัจจัยที่ทำให้ราคาต่างกัน',
+    tag: 'เช็คราคา',
+  },
+  {
+    href: '/blog/erase-iphone-before-selling/',
+    title: 'วิธีลบข้อมูล iPhone ก่อนขาย ปลอดภัยครบทุกขั้นตอน',
+    desc: 'สำรองข้อมูล ออกจาก iCloud ปิด Find My และรีเซ็ตเครื่องอย่างถูกวิธี ก่อนส่งมอบเครื่องให้ผู้ซื้อ',
+    tag: 'ก่อนขาย',
+  },
+  {
+    href: '/blog/notebook-checklist-before-sell/',
+    title: 'เช็คลิสต์ 7 ข้อ เตรียมโน้ตบุ๊คก่อนขาย ให้ได้ราคาสูงสุด',
+    desc: '7 ขั้นตอนที่ทีมงานรับซื้อแนะนำ จากสำรองข้อมูลถึงเตรียมบัตรประชาชน ทำครบแล้วได้ราคาเต็ม',
+    tag: 'ก่อนขาย',
+  },
+  {
+    href: '/blog/sell-whole-computer-vs-parts/',
+    title: 'ขายคอมทั้งเครื่อง vs แยกขายอะไหล่ แบบไหนคุ้มกว่า',
+    desc: 'เปรียบเทียบข้อดีข้อเสียสองวิธี พร้อมสูตรตัดสินใจว่าสถานการณ์ไหนควรเลือกแบบใด',
+    tag: 'ก่อนขาย',
+  },
+  {
+    href: '/blog/documents-for-selling-it/',
+    title: 'เอกสารที่ต้องใช้ตอนขายของไอทีให้ร้านรับซื้อ ครบทุกกรณี',
+    desc: 'บัตรประชาชน ใบมอบอำนาจ เอกสารบริษัท ครบทุกกรณีตั้งแต่ขายส่วนตัวถึงขายยกล็อตองค์กร',
+    tag: 'ก่อนขาย',
+  },
+  {
+    href: '/blog/damaged-device-can-sell/',
+    title: 'จอแตก เปิดไม่ติด แบตบวม ของพังขายได้ไหม ราคาหายไปแค่ไหน',
+    desc: 'ตอบทุกกรณีความเสียหายจากหน้างานจริง พร้อมช่วงราคาที่หักลดตามสภาพ',
+    tag: 'ก่อนขาย',
+  },
+  {
+    href: '/blog/shop-vs-facebook-group/',
+    title: 'ขายร้านรับซื้อ vs โพสต์ขายเองในกลุ่ม Facebook ข้อดีข้อเสียที่ต้องรู้',
+    desc: 'เปรียบเทียบสองช่องทางอย่างตรงไปตรงมา ราคา ความปลอดภัย เวลา และความเสี่ยง',
+    tag: 'เปรียบเทียบ',
+  },
+  {
+    href: '/blog/trade-in-vs-buyout-shop/',
+    title: 'เทิร์นเครื่องที่ศูนย์ vs ขายร้านรับซื้อ อันไหนได้เงินมากกว่า',
+    desc: 'เทียบ Trade-in Apple กับการขายให้ร้านรับซื้ออิสระ ว่าแบบไหนได้เงินมากกว่าในสถานการณ์ใด',
+    tag: 'เปรียบเทียบ',
+  },
+  {
+    href: '/blog/it-selling-scams/',
+    title: '5 กลโกงที่เจอบ่อยเวลาขายของไอทีออนไลน์ วิธีป้องกันที่ได้ผล',
+    desc: 'รวมกลโกงที่มิจฉาชีพใช้หลอกผู้ขายของไอที พร้อมวิธีป้องกันตัวเองที่ใช้งานได้จริง',
+    tag: 'เปรียบเทียบ',
+  },
+  {
+    href: '/blog/where-to-sell-it-khonkaen/',
+    title: 'ขายของไอทีในขอนแก่น ที่ไหนดีที่สุด เทียบทุกช่องทาง',
+    desc: 'วิเคราะห์ทุกช่องทางขายของไอทีในขอนแก่น ร้านรับซื้อ Facebook Kaidee และตลาดนัด',
+    tag: 'เปรียบเทียบ',
+  },
+  {
+    href: '/blog/upgrade-computer-sell-old/',
+    title: 'อัปเกรดคอมใหม่ ขายของเก่าที่ไหนดีในขอนแก่น ได้เงินคืนสูงสุด',
+    desc: 'วิธีขายอุปกรณ์คอมเก่าก่อนอัปเกรด และชิ้นส่วนไหนควรขายก่อนเพื่อได้ราคาสูงสุด',
+    tag: 'Local',
+  },
+  {
+    href: '/blog/close-office-it-asset/',
+    title: 'ปิดออฟฟิศ ย้ายสำนักงาน จัดการอุปกรณ์ไอทีเก่าให้ได้เงินคืนสูงสุด',
+    desc: 'คู่มือจัดการทรัพย์สินไอทีออฟฟิศ พร้อมกระบวนการรับซื้อยกล็อตที่ออกเอกสารครบสำหรับบริษัท',
+    tag: 'Local',
+  },
+  {
+    href: '/blog/kku-student-sell-notebook-ipad/',
+    title: 'นักศึกษา มข. เรียนจบ ขายโน้ตบุ๊ค iPad ที่ไหนได้ราคาดีในขอนแก่น',
+    desc: 'แนะนำนักศึกษาที่กำลังจะย้ายกลับบ้านว่าขายอุปกรณ์ไอทีที่ไหนในขอนแก่นได้ราคาดีและสะดวกสุด',
+    tag: 'Local',
+  },
+  {
+    href: '/blog/sell-iphone-before-new-model/',
+    title: 'ก่อน iPhone รุ่นใหม่ออก ควรขายเครื่องเก่าตอนไหน ได้ราคาสูงสุด',
+    desc: 'วิเคราะห์วงจรราคา iPhone มือสองตลอดปี และช่วงเวลาที่ดีที่สุดในการขายก่อนราคาตก',
+    tag: 'Local',
+  },
+];
+
+const tags = ['ทั้งหมด', 'เช็คราคา', 'ก่อนขาย', 'เปรียบเทียบ', 'Local'];
+---
+
+<Base title={title} description={description}>
+  <main>
+    <section class="section">
+      <div class="container blog-wrap">
+        <p class="eyebrow">บทความ</p>
+        <h1>ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม</h1>
+        <p class="blog-sub">
+          ทุกบทความเขียนจากประสบการณ์รับซื้อหน้างานจริงของทีม WINNER IT ขอนแก่น
+          อัปเดตราคาและเทคนิคใหม่อยู่เสมอ
+        </p>
+        <div class="tag-list" role="list" aria-label="กรองตามหมวดหมู่">
+          {tags.map((t) => (
+            <span class="tag-chip">{t}</span>
+          ))}
+        </div>
+        <div class="post-list">
+          {posts.map((p) => (
+            <a href={p.href} class="card post-card">
+              <span class="post-card__tag">{p.tag}</span>
+              <h2>{p.title}</h2>
+              <p>{p.desc}</p>
+              <span class="post-card__more">อ่านต่อ →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .blog-wrap { max-width: 900px; }
+  .blog-sub { color: var(--ink-soft); margin-top: 10px; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .tag-chip {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 99px;
+    background: var(--mist);
+    border: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    cursor: default;
+  }
+  .post-list { display: grid; gap: 16px; margin-top: 28px; }
+  @media (min-width: 640px) {
+    .post-list { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 960px) {
+    .post-list { grid-template-columns: repeat(3, 1fr); }
+  }
+  .post-card { display: block; color: var(--ink); }
+  .post-card:hover { text-decoration: none; border-color: var(--volt); }
+  .post-card__tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--volt);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+  .post-card h2 { font-size: 1.05rem; line-height: 1.4; }
+  .post-card p { color: var(--ink-soft); margin-top: 8px; font-size: 0.88rem; line-height: 1.5; }
+  .post-card__more { display: inline-block; margin-top: 10px; color: var(--volt); font-weight: 600; font-size: 0.9rem; }
+</style>

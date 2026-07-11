@@ -1,0 +1,66 @@
+---
+import { SITE, CATEGORIES } from '../data/categories.js';
+const year = new Date().getFullYear();
+---
+
+<footer class="ftr">
+  <div class="container ftr__grid">
+    <div>
+      <p class="ftr__logo">WINNER <strong>IT</strong> ขอนแก่น</p>
+      <p class="ftr__desc">
+        รับซื้อสินค้าไอทีทุกประเภทในจังหวัดขอนแก่น ประเมินราคาฟรี
+        จ่ายเงินสดทันที บริการรับถึงที่
+      </p>
+      <address class="ftr__nap">
+        {SITE.address}<br />
+        โทร <a href={SITE.phoneHref}>{SITE.phone}</a> · LINE <a href={SITE.lineHref}>{SITE.lineId}</a><br />
+        อีเมล <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
+        {SITE.hours}
+      </address>
+    </div>
+    <nav aria-label="สินค้าที่รับซื้อ">
+      <p class="ftr__head">สินค้าที่รับซื้อ</p>
+      <ul>
+        {CATEGORIES.map((c) => (
+          <li><a href={`/${c.slug}/`}>รับซื้อ{c.name}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div>
+      <p class="ftr__head">พื้นที่ให้บริการ</p>
+      <p class="ftr__areas">
+        {SITE.areas.map((a) => `อ.${a}`).join(' · ')} และทุกอำเภอใน จ.ขอนแก่น
+      </p>
+    </div>
+  </div>
+  <div class="container ftr__bar">
+    <p>© {year} {SITE.name} — ดำเนินการโดย {SITE.company}</p>
+  </div>
+</footer>
+
+<style>
+  .ftr { background: var(--ink); color: #b9c3d6; margin-top: 0; }
+  .ftr a { color: var(--cash); }
+  .ftr__grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+    padding-block: 52px 36px;
+  }
+  .ftr__logo { font-family: var(--font-display); font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+  .ftr__desc { font-size: 0.92rem; margin-bottom: 14px; }
+  .ftr__nap { font-style: normal; font-size: 0.92rem; line-height: 1.9; }
+  .ftr__head { font-family: var(--font-display); font-weight: 600; color: #fff; margin-bottom: 10px; }
+  .ftr ul { list-style: none; display: grid; gap: 7px; }
+  .ftr ul a { color: #b9c3d6; font-size: 0.92rem; }
+  .ftr ul a:hover { color: var(--cash); }
+  .ftr__areas { font-size: 0.9rem; line-height: 1.9; }
+  .ftr__bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-block: 18px;
+    font-size: 0.85rem;
+  }
+  @media (max-width: 760px) {
+    .ftr__grid { grid-template-columns: 1fr; gap: 28px; }
+  }
+</style>

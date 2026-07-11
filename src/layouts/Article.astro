@@ -1,0 +1,68 @@
+---
+import Base from './Base.astro';
+import { SITE } from '../data/site.js';
+
+const { title, description, h1, published, modified } = Astro.props;
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1,
+  description,
+  datePublished: published,
+  dateModified: modified || published,
+  author: { '@type': 'Organization', name: SITE.name },
+  publisher: { '@type': 'Organization', name: SITE.company },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+};
+---
+
+<Base title={title} description={description} jsonLd={[articleLd]}>
+  <main>
+    <article class="post">
+      <div class="container post__body">
+        <nav class="crumb" aria-label="breadcrumb">
+          <a href="/">หน้าแรก</a> <span>/</span> <a href="/blog/">บทความ</a> <span>/</span> เรื่องนี้
+        </nav>
+        <h1>{h1}</h1>
+        <p class="post__meta">อัปเดตล่าสุด {modified || published} · โดยทีมงาน {SITE.name}</p>
+        <slot />
+
+        <div class="post__cta">
+          <p class="post__cta-head">อยากรู้ราคาของชิ้นที่ถืออยู่? ส่งรูปมาได้เลย ประเมินฟรีใน 5 นาที</p>
+          <div class="post__cta-btns">
+            <a href={SITE.lineHref} class="btn btn--line">ทัก LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost">โทร {SITE.phone}</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</Base>
+
+<style is:global>
+  .post__body { max-width: 760px; padding-block: 44px 64px; }
+  .post .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 20px; }
+  .post .crumb span { margin-inline: 6px; }
+  .post h1 { max-width: 26ch; }
+  .post__meta { color: var(--ink-soft); font-size: 0.9rem; margin-top: 12px; }
+  .post h2 { margin: 38px 0 12px; }
+  .post h3 { margin: 24px 0 8px; font-size: 1.25rem; }
+  .post .h4-block { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 36px 0 12px; }
+  .post p { margin-bottom: 14px; color: #2b3547; }
+  .post ul, .post ol { margin: 0 0 14px 22px; color: #2b3547; }
+  .post li { margin-bottom: 6px; }
+  .post table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.95rem; }
+  .post th, .post td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; }
+  .post th { background: var(--mist); font-family: var(--font-display); font-weight: 600; }
+  .post__cta {
+    margin-top: 44px;
+    background: var(--mist);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px;
+    text-align: center;
+  }
+  .post__cta-head { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; }
+  .post__cta-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+</style>

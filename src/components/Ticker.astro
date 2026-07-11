@@ -1,0 +1,47 @@
+---
+// แถบวิ่งสไตล์กระดานราคา — ลายเซ็นของเว็บ ใช้ CSS ล้วน ไม่มี JS
+const items = [
+  'รับซื้อ MacBook ทุกรุ่น',
+  'iPhone จ่ายสดหน้างาน',
+  'การ์ดจอ RTX ให้ราคาสูง',
+  'PS5 / Switch รับหมด',
+  'รับถึงที่ทั่วขอนแก่น',
+  'ประเมินราคาฟรีใน 5 นาที',
+  'เหมาปิดออฟฟิศก็รับ',
+];
+const row = items.map((t) => `▲ ${t}`).join('   ');
+---
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>{row}</span>
+    <span>{row}</span>
+  </div>
+</div>
+
+<style>
+  .ticker {
+    background: var(--cash);
+    color: var(--ink);
+    overflow: hidden;
+    border-block: 2px solid var(--ink);
+  }
+  .ticker__track {
+    display: flex;
+    width: max-content;
+    animation: slide 30s linear infinite;
+  }
+  .ticker__track span {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: pre;
+    padding: 9px 1.5ch 9px 0;
+  }
+  @keyframes slide {
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker__track { animation: none; }
+  }
+</style>

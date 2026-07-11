@@ -1,0 +1,56 @@
+---
+import { SITE } from '../data/categories.js';
+---
+
+<header class="hdr">
+  <div class="container hdr__in">
+    <a href="/" class="hdr__logo" aria-label="กลับหน้าแรก">
+      <span class="hdr__mark">IT</span>
+      <span class="hdr__name">WINNER <strong>IT</strong> ขอนแก่น</span>
+    </a>
+    <nav class="hdr__nav" aria-label="เมนูหลัก">
+      <a href="/#categories">สินค้าที่รับซื้อ</a>
+      <a href="/#steps">ขั้นตอน</a>
+      <a href="/blog/">บทความ</a>
+    </nav>
+    <a href={SITE.phoneHref} class="btn btn--volt hdr__call">โทร {SITE.phone}</a>
+  </div>
+</header>
+
+<style>
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .hdr__in {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 64px;
+  }
+  .hdr__logo { display: flex; align-items: center; gap: 10px; color: var(--ink); }
+  .hdr__logo:hover { text-decoration: none; }
+  .hdr__mark {
+    font-family: var(--font-display);
+    font-weight: 700;
+    background: var(--ink);
+    color: var(--cash);
+    padding: 4px 9px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .hdr__name { font-family: var(--font-display); font-size: 1.05rem; }
+  .hdr__nav { display: flex; gap: 22px; margin-left: auto; }
+  .hdr__nav a { color: var(--ink-soft); font-weight: 500; font-size: 0.95rem; }
+  .hdr__nav a:hover { color: var(--volt); text-decoration: none; }
+  .hdr__call { padding: 9px 18px; font-size: 0.9rem; }
+
+  @media (max-width: 720px) {
+    .hdr__nav { display: none; }
+    .hdr__call { margin-left: auto; }
+  }
+</style>
