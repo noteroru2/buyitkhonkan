@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+
+const title = `เกี่ยวกับเรา | ${SITE.name} ขอนแก่น`;
+const description = `${SITE.brandLine} ให้บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น ไม่มีหน้าร้านให้เดินเข้าใช้บริการ`;
+---
+
+<Base title={title} description={description} includeOrganization={true}>
+  <main id="main-content" class="legal">
+    <div class="container legal__in">
+      <nav class="crumb" aria-label="breadcrumb">
+        <a href="/">หน้าแรก</a> <span>/</span> เกี่ยวกับเรา
+      </nav>
+      <h1>เกี่ยวกับ WINNER IT ขอนแก่น</h1>
+      <p class="lede">{SITE.serviceModel}</p>
+
+      <h2>เราเป็นใคร</h2>
+      <p>
+        WINNER IT เป็นแบรนด์บริการรับซื้อสินค้าไอทีมือสองในพื้นที่จังหวัดขอนแก่น
+        ดำเนินการโดย {SITE.company} ช่องทางติดต่อหลักคือโทรศัพท์ {SITE.phone}
+        และ LINE {SITE.lineId} ชุดเดียวทั้งเว็บไซต์
+      </p>
+
+      <h2>รูปแบบบริการ</h2>
+      <p>
+        ขณะนี้<strong>ยังไม่มีหน้าร้านในขอนแก่น</strong>ให้ลูกค้าเดินเข้าใช้บริการ
+        เราให้บริการแบบนัดรับถึงที่หรือนัดจุดกลางตามตารางงานของทีมงาน
+        หลังประเมินราคาเบื้องต้นผ่าน LINE หรือโทรศัพท์
+      </p>
+
+      <h2>สิ่งที่เรารับซื้อ</h2>
+      <p>
+        โน้ตบุ๊ค คอมพิวเตอร์ มือถือ แท็บเล็ต การ์ดจอ จอคอม เครื่องเกม กล้อง
+        สมาร์ทวอทช์ และอุปกรณ์ไอทีอื่น ๆ รวมถึงงานรับซื้อยกล็อตจากออฟฟิศหรือสถาบันการศึกษา
+        รายละเอียดแต่ละหมวดดูได้จาก<a href="/#categories">หน้าสินค้าที่รับซื้อ</a>
+      </p>
+
+      <h2>หลักการทำงาน</h2>
+      <ul>
+        <li>ประเมินราคาตามรุ่น สเปก สภาพ อุปกรณ์ ตำหนิ และราคาตลาด ณ วันที่ตรวจสอบ</li>
+        <li>ราคาในไลน์เป็นราคาอ้างอิงเบื้องต้น จนกว่าจะตรวจสภาพจริงหน้างาน</li>
+        <li>จ่ายเงินสดหรือโอนต่อหน้าผู้ขายหลังตกลงขาย</li>
+        <li>ออกหลักฐานการซื้อขายให้ผู้ขายเก็บไว้</li>
+      </ul>
+
+      <p>
+        อ่าน<a href="/buyout-terms/">เงื่อนไขการรับซื้อ</a>
+        หรือ<a href="/contact/">ติดต่อทีมงาน</a>ได้โดยตรง
+      </p>
+    </div>
+  </main>
+</Base>
+
+<style>
+  .legal__in { max-width: 720px; padding-block: 48px 72px; }
+  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 18px; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin: 14px 0 28px; }
+  .legal h2 { margin: 28px 0 10px; }
+  .legal p, .legal li { color: #2b3547; margin-bottom: 12px; }
+  .legal ul { margin: 0 0 14px 22px; }
+</style>

@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// TODO: เปลี่ยนเป็นโดเมนจริงของคุณก่อน deploy
+// โดเมนจริง: รับซื้อไอทีขอนแก่น.com (IDN → punycode)
 export default defineConfig({
-  site: 'https://www.itbuy-khonkaen.com',
+  site: 'https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com',
   integrations: [sitemap()],
   compressHTML: true,
 });

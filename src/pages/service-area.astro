@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+import { LOCAL_PAGES } from '../data/localPages.js';
+
+const title = `พื้นที่ให้บริการ | ${SITE.name} ขอนแก่น`;
+const description = `พื้นที่นัดรับซื้อสินค้าไอทีของ ${SITE.name} ในจังหวัดขอนแก่น — บริการนัดรับถึงที่ ไม่มีหน้าร้านให้เดินเข้าใช้บริการ`;
+---
+
+<Base title={title} description={description}>
+  <main id="main-content" class="legal">
+    <div class="container legal__in">
+      <nav class="crumb" aria-label="breadcrumb">
+        <a href="/">หน้าแรก</a> <span>/</span> พื้นที่ให้บริการ
+      </nav>
+      <h1>พื้นที่ให้บริการในจังหวัดขอนแก่น</h1>
+      <p class="lede">{SITE.serviceModel}</p>
+
+      <h2>รูปแบบการให้บริการ</h2>
+      <p>
+        ไม่มีหน้าร้านให้เดินเข้าใช้บริการในขอนแก่น
+        ลูกค้านัดรับถึงที่หรือนัดจุดกลางตามตารางงานของทีมงาน
+        เวลาและพื้นที่นัดรับขึ้นอยู่กับคิวงานในแต่ละวัน
+      </p>
+
+      <h2>พื้นที่ที่เริ่มทำ Local Page ก่อน</h2>
+      <p>
+        เราเริ่มจากพื้นที่ที่มี demand และมีเนื้อหาเฉพาะพอจะทำหน้าแยกได้จริง
+        ไม่ได้สร้างครบทุกอำเภอด้วยการเปลี่ยนชื่อพื้นที่ใน template เดียว
+      </p>
+      <ul>
+        {LOCAL_PAGES.map((page) => <li>{page.area}</li>)}
+      </ul>
+      <p>
+        อำเภออื่นในจังหวัดขอนแก่นสอบถามคิวนัดรับได้ทาง LINE {SITE.lineId}
+        หรือโทร {SITE.phone}
+      </p>
+
+      <h2>ค่าบริการรับถึงที่</h2>
+      <p>
+        โดยปกติไม่มีค่าบริการรับถึงที่แยกต่างหากในพื้นที่ให้บริการปกติ
+        กรณีพื้นที่ห่างไกลหรือต้องจัดรอบพิเศษ ทีมงานจะแจ้งก่อนนัดหมาย
+      </p>
+
+      <h2>Local Area Pages ที่สร้างแล้ว</h2>
+      <div class="local-grid">
+        {LOCAL_PAGES.map((page) => (
+          <a href={`/${page.path}/`} class="local-card">
+            <strong>{page.area}</strong>
+            <span>{page.note}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+</Base>
+
+<style>
+  .legal__in { max-width: 720px; padding-block: 48px 72px; }
+  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 18px; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin: 14px 0 28px; }
+  .legal h2 { margin: 28px 0 10px; }
+  .legal p, .legal li { color: #2b3547; margin-bottom: 10px; }
+  .legal ul { margin: 0 0 14px 22px; columns: 2; }
+  .local-grid { display: grid; gap: 10px; margin-top: 12px; }
+  .local-card { display: block; border: 1px solid var(--line); border-radius: 8px; padding: 14px; color: var(--ink); }
+  .local-card:hover { text-decoration: none; border-color: var(--volt); }
+  .local-card span { display: block; color: var(--ink-soft); font-size: 0.9rem; margin-top: 4px; }
+  @media (max-width: 560px) { .legal ul { columns: 1; } }
+</style>

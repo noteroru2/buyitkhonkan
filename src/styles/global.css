@@ -35,6 +35,11 @@ img, svg { display: block; max-width: 100%; }
 
 a { color: var(--volt); text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus-visible {
+  outline: 3px solid var(--cash);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
 
 .container { max-width: 1080px; margin-inline: auto; padding-inline: 20px; }
 

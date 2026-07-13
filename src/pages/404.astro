@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, CATEGORIES } from '../data/categories.js';
+import { LOCAL_PAGES } from '../data/localPages.js';
+
+const title = `ไม่พบหน้าที่ต้องการ | ${SITE.name}`;
+const description = 'ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ';
+const quickCategories = CATEGORIES.filter((c) => ['notebook', 'computer', 'iphone', 'macbook', 'ipad-tablet', 'gpu'].includes(c.slug));
+---
+
+<Base title={title} description={description} robots="noindex, follow">
+  <main id="main-content" class="not-found">
+    <section class="not-found__hero">
+      <div class="container">
+        <p class="eyebrow">404</p>
+        <h1>ไม่พบหน้าที่ต้องการ</h1>
+        <p class="lede">
+          URL นี้อาจถูกพิมพ์ผิดหรือไม่มีอยู่ในระบบแล้ว
+          เลือกหมวดหลักด้านล่าง หรือส่งรูปสินค้าให้ทีมงานประเมินผ่าน LINE ได้โดยตรง
+        </p>
+        <div class="cta-row">
+          <a href="/" class="btn btn--volt">กลับหน้าแรก</a>
+          <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
+          <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>หมวดรับซื้อที่ค้นหาบ่อย</h2>
+        <div class="link-grid">
+          {quickCategories.map((cat) => (
+            <a href={`/${cat.slug}/`} class="link-card">
+              <span>{cat.icon}</span>
+              <strong>{cat.kw} ขอนแก่น</strong>
+              <small>ดูรายละเอียดการประเมินและข้อมูลที่ควรส่งก่อนนัดรับ</small>
+            </a>
+          ))}
+        </div>
+
+        <h2>พื้นที่นัดรับที่มีหน้ารายละเอียด</h2>
+        <div class="area-links">
+          {LOCAL_PAGES.slice(0, 8).map((page) => (
+            <a href={`/${page.path}/`}>{page.area}</a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .not-found__hero { padding-block: 64px 46px; background: var(--mist); }
+  .lede { max-width: 62ch; color: var(--ink-soft); margin-top: 12px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 18px 0 34px; }
+  .link-card { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; color: var(--ink); }
+  .link-card:hover { text-decoration: none; border-color: var(--volt); }
+  .link-card span { grid-row: span 2; font-size: 1.4rem; }
+  .link-card small { color: var(--ink-soft); font-size: 0.86rem; }
+  .area-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .area-links a { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color: var(--ink); background: #fff; }
+  .area-links a:hover { text-decoration: none; border-color: var(--volt); }
+</style>

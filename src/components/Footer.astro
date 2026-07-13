@@ -1,6 +1,7 @@
 ---
 import { SITE, CATEGORIES } from '../data/categories.js';
 const year = new Date().getFullYear();
+const footerCategories = CATEGORIES.filter((c) => c.slug !== 'appliance');
 ---
 
 <footer class="ftr">
@@ -8,8 +9,8 @@ const year = new Date().getFullYear();
     <div>
       <p class="ftr__logo">WINNER <strong>IT</strong> ขอนแก่น</p>
       <p class="ftr__desc">
-        รับซื้อสินค้าไอทีทุกประเภทในจังหวัดขอนแก่น ประเมินราคาฟรี
-        จ่ายเงินสดทันที บริการรับถึงที่
+        {SITE.serviceModel}
+        ประเมินราคาผ่าน LINE จ่ายเงินสดหรือโอนหน้างาน
       </p>
       <address class="ftr__nap">
         {SITE.address}<br />
@@ -21,20 +22,30 @@ const year = new Date().getFullYear();
     <nav aria-label="สินค้าที่รับซื้อ">
       <p class="ftr__head">สินค้าที่รับซื้อ</p>
       <ul>
-        {CATEGORIES.map((c) => (
+        {footerCategories.map((c) => (
           <li><a href={`/${c.slug}/`}>รับซื้อ{c.name}</a></li>
         ))}
       </ul>
     </nav>
     <div>
-      <p class="ftr__head">พื้นที่ให้บริการ</p>
+      <p class="ftr__head">ข้อมูลและนโยบาย</p>
+      <ul>
+        <li><a href="/about/">เกี่ยวกับเรา</a></li>
+        <li><a href="/contact/">ติดต่อเรา</a></li>
+        <li><a href="/service-area/">พื้นที่ให้บริการ</a></li>
+        <li><a href="/สภาพสินค้าที่ขายได้/">สภาพสินค้าที่ขายได้</a></li>
+        <li><a href="/buyout-terms/">เงื่อนไขการรับซื้อ</a></li>
+        <li><a href="/privacy/">นโยบายความเป็นส่วนตัว</a></li>
+        <li><a href="/terms/">ข้อกำหนดการใช้บริการ</a></li>
+      </ul>
+      <p class="ftr__head" style="margin-top:18px">พื้นที่ให้บริการ</p>
       <p class="ftr__areas">
-        {SITE.areas.map((a) => `อ.${a}`).join(' · ')} และทุกอำเภอใน จ.ขอนแก่น
+        {SITE.areas.map((a) => `อ.${a}`).join(' · ')} และอำเภออื่นใน จ.ขอนแก่น ตามตารางงาน
       </p>
     </div>
   </div>
   <div class="container ftr__bar">
-    <p>© {year} {SITE.name} — ดำเนินการโดย {SITE.company}</p>
+    <p>© {year} {SITE.name} — ดำเนินการโดย {SITE.company} · {SITE.domain}</p>
   </div>
 </footer>
 

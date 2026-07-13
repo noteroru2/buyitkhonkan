@@ -11,9 +11,11 @@ import { SITE } from '../data/categories.js';
     <nav class="hdr__nav" aria-label="เมนูหลัก">
       <a href="/#categories">สินค้าที่รับซื้อ</a>
       <a href="/#steps">ขั้นตอน</a>
+      <a href="/about/">เกี่ยวกับเรา</a>
       <a href="/blog/">บทความ</a>
+      <a href="/contact/">ติดต่อ</a>
     </nav>
-    <a href={SITE.phoneHref} class="btn btn--volt hdr__call">โทร {SITE.phone}</a>
+    <a href={SITE.phoneHref} class="btn btn--volt hdr__call" data-track-event="click_phone">โทร {SITE.phone}</a>
   </div>
 </header>
 

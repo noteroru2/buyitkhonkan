@@ -18,7 +18,7 @@ const articleLd = {
 ---
 
 <Base title={title} description={description} jsonLd={[articleLd]}>
-  <main>
+  <main id="main-content">
     <article class="post">
       <div class="container post__body">
         <nav class="crumb" aria-label="breadcrumb">
@@ -29,10 +29,10 @@ const articleLd = {
         <slot />
 
         <div class="post__cta">
-          <p class="post__cta-head">อยากรู้ราคาของชิ้นที่ถืออยู่? ส่งรูปมาได้เลย ประเมินฟรีใน 5 นาที</p>
+          <p class="post__cta-head">อยากรู้ราคาของชิ้นที่ถืออยู่? ส่งรูปมาประเมินได้เลย ไม่ผูกมัด</p>
           <div class="post__cta-btns">
-            <a href={SITE.lineHref} class="btn btn--line">ทัก LINE {SITE.lineId}</a>
-            <a href={SITE.phoneHref} class="btn btn--ghost">โทร {SITE.phone}</a>
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
           </div>
         </div>
       </div>

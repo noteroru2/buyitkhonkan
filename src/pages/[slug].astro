@@ -2,24 +2,88 @@
 import Base from '../layouts/Base.astro';
 import Ticker from '../components/Ticker.astro';
 import { SITE, CATEGORIES } from '../data/categories.js';
+import { BRAND_PAGES } from '../data/brandPages.js';
+import { MODEL_PAGES } from '../data/modelPages.js';
+import { CONDITION_PAGES } from '../data/conditionPages.js';
+import { LOCAL_PAGES, LOCAL_NAP } from '../data/localPages.js';
 
 export function getStaticPaths() {
-  return CATEGORIES.map((c) => ({ params: { slug: c.slug }, props: { cat: c } }));
+  return [
+    ...CATEGORIES.map((c) => ({ params: { slug: c.slug }, props: { cat: c, kind: 'category' } })),
+    ...BRAND_PAGES.map((brand) => ({ params: { slug: brand.path }, props: { brand, kind: 'brand' } })),
+    ...MODEL_PAGES.map((model) => ({ params: { slug: model.path }, props: { model, kind: 'model' } })),
+    ...CONDITION_PAGES.map((condition) => ({ params: { slug: condition.path }, props: { condition, kind: 'condition' } })),
+    ...LOCAL_PAGES.map((localPage) => ({ params: { slug: localPage.path }, props: { localPage, kind: 'local' } })),
+  ];
 }
 
-const { cat } = Astro.props;
-const sec = CATEGORIES.find((c) => c.slug === cat.secondary);
-const others = CATEGORIES.filter((c) => c.slug !== cat.slug);
+const { cat, brand, model, condition, localPage, kind = 'category' } = Astro.props;
+const sec = cat ? CATEGORIES.find((c) => c.slug === cat.secondary) : null;
+const others = cat ? CATEGORIES.filter((c) => c.slug !== cat.slug) : [];
+const clusterLinks = (cat?.cluster || [])
+  .map((slug) => CATEGORIES.find((c) => c.slug === slug))
+  .filter(Boolean);
+const siteUrl = Astro.site?.href?.replace(/\/$/, '') || '';
+const detail = brand || model || condition || localPage;
+const pageTitle = cat?.title || detail.title;
+const pageDesc = cat?.desc || detail.desc;
+const detailPrimary = model ? CATEGORIES.find((c) => c.slug === model.primaryCategory) : null;
+const detailCategories = (brand?.categories || condition?.applies || localPage?.primary || [])
+  .map((slug) => CATEGORIES.find((c) => c.slug === slug))
+  .filter(Boolean);
+const relatedBrands = (model?.related || [])
+  .map((slug) => BRAND_PAGES.find((b) => b.slug === slug))
+  .filter(Boolean);
+const relatedModels = [
+  ...(brand?.relatedModels || []),
+  ...(model?.related || []),
+]
+  .map((slug) => MODEL_PAGES.find((m) => m.slug === slug))
+  .filter(Boolean);
 
-const breadcrumb = {
+const breadcrumb = cat ? {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: Astro.site?.href },
-    { '@type': 'ListItem', position: 2, name: `${cat.kw} ขอนแก่น`, item: new URL(`/${cat.slug}/`, Astro.site).href },
+    { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: `${siteUrl}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: `${cat.kw} ขอนแก่น`,
+      item: `${siteUrl}/${cat.slug}/`,
+    },
   ],
+} : null;
+
+const detailBreadcrumb = detail ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: `${siteUrl}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: detail.h1,
+      item: `${siteUrl}${Astro.url.pathname}`,
+    },
+  ],
+} : null;
+
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: cat ? `${cat.kw} ขอนแก่น` : detail.h1,
+  description: pageDesc,
+  url: `${siteUrl}${Astro.url.pathname}`,
+  provider: { '@id': `${siteUrl}/#organization` },
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: `จังหวัด${SITE.region}`,
+  },
+  serviceType: 'รับซื้อสินค้าไอทีมือสอง',
 };
-const faqLd = {
+
+const faqLd = cat ? {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: cat.faq.map((f) => ({
@@ -27,12 +91,14 @@ const faqLd = {
     name: f.q,
     acceptedAnswer: { '@type': 'Answer', text: f.a },
   })),
-};
+} : null;
+
+const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, serviceLd];
 ---
 
-<Base title={cat.title} description={cat.desc} jsonLd={[breadcrumb, faqLd]}>
-  <main class="article">
-    <!-- H1 ×1 สูตร Keyword + คำขยาย วางช่วงบนของหน้า -->
+<Base title={pageTitle} description={pageDesc} jsonLd={jsonLd}>
+  {cat ? (
+    <main id="main-content" class="article">
     <section class="cat-hero">
       <div class="container">
         <nav class="crumb" aria-label="breadcrumb">
@@ -41,9 +107,10 @@ const faqLd = {
         <p class="cat-hero__icon" aria-hidden="true">{cat.icon}</p>
         <h1>{cat.h1}</h1>
         {cat.intro.map((p) => <p class="lede">{p}</p>)}
+        <p class="lede lede--soft">{SITE.serviceModel}</p>
         <div class="cta-row">
-          <a href={SITE.lineHref} class="btn btn--line">ส่งรูปประเมินฟรี LINE {SITE.lineId}</a>
-          <a href={SITE.phoneHref} class="btn btn--ghost">โทร {SITE.phone}</a>
+          <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ส่งรูปประเมินฟรี LINE {SITE.lineId}</a>
+          <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
         </div>
       </div>
     </section>
@@ -51,16 +118,14 @@ const faqLd = {
     <Ticker />
 
     <div class="container article__body">
-      <!-- H2 #1 (มี keyword) -->
-      <h2>ทำไมคนขอนแก่นเลือกขายกับ WINNER IT ร้าน{cat.kw}ที่จ่ายจริง</h2>
+      <h2>ทำไมคนขอนแก่นเลือกขาย{cat.name}กับ WINNER IT</h2>
       {cat.why.map((p) => <p>{p}</p>)}
       <p>
-        นอกจากหมวดนี้ เรายัง<a href="/">รับซื้อสินค้าไอที ขอนแก่น</a>ครบทุกประเภทในที่เดียว
-        มีของหลายหมวดปนกันก็ส่งประเมินพร้อมกันได้ในแชทเดียว ไม่ต้องวิ่งขายหลายร้าน
+        นอกจากหมวดนี้ เรายัง<a href="/">รับซื้อสินค้าไอที ขอนแก่น</a>ครบหลายประเภทในที่เดียว
+        มีของหลายหมวดปนกันก็ส่งประเมินพร้อมกันได้ในแชทเดียว
       </p>
 
-      <!-- H2 #2 (มี keyword) + H3 ≥4 -->
-      <h2>{cat.kw}อะไรบ้าง ทุกรุ่น ทุกยี่ห้อ ทุกสภาพ</h2>
+      <h2>{cat.kw}อะไรบ้าง — รุ่น ยี่ห้อ และสภาพที่ประเมินได้</h2>
       {cat.sub.map((s) => (
         <>
           <h3>{s.h}</h3>
@@ -68,41 +133,96 @@ const faqLd = {
         </>
       ))}
 
-      <!-- H2 #3 (มี keyword) + external link -->
       <h2>ราคา{cat.kw}มือสอง ประเมินจากอะไรบ้าง</h2>
       <p>{cat.price}</p>
+      {cat.priceRows && (
+        <div class="price-box" aria-label={`ตารางราคา${cat.kw}มือสอง`}>
+          <div class="price-box__head">
+            <h3>ตารางราคา{cat.name}มือสองโดยประมาณ</h3>
+            <p>อัปเดตล่าสุด {cat.updatedAt}</p>
+          </div>
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>กลุ่มรุ่น / สินค้า</th>
+                  <th>ช่วงราคาประเมิน</th>
+                  <th>หมายเหตุ</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cat.priceRows.map((row) => (
+                  <tr>
+                    <td>{row.item}</td>
+                    <td>{row.range}</td>
+                    <td>{row.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+      <p>
+        ราคาที่แจ้งเป็นราคาอ้างอิงเบื้องต้น ไม่ใช่ราคาสุดท้ายจนกว่าจะตรวจสภาพจริง
+        และอาจเปลี่ยนตามรุ่นย่อย สภาพ อุปกรณ์ ตำหนิ และราคาตลาด ณ วันที่ตรวจสอบ
+      </p>
       <p>
         แหล่งอ้างอิงเพิ่มเติม: <a href={cat.ext.url} target="_blank" rel="noopener">{cat.ext.text}</a>
       </p>
 
-      <!-- H2 #4 + ลิงก์บทความ -->
-      <h2>ขั้นตอนขาย{cat.name}กับ WINNER IT จบครบใน 1 วัน</h2>
+      <h2>ขั้นตอนขาย{cat.name}กับ WINNER IT</h2>
       <p>
         ขั้นแรก ถ่ายรูป{cat.name}ของคุณให้เห็นสภาพรอบตัวเครื่องและจุดตำหนิถ้ามี
         ส่งเข้าไลน์ {SITE.lineId} พร้อมแจ้งรุ่นและอุปกรณ์ที่มีครบ
-        ขั้นที่สอง ทีมงานตอบราคากลับภายในห้านาทีในเวลาทำการ ({SITE.hours})
-        ตัวเลขนี้ไม่ผูกมัด ไม่พอใจก็ปฏิเสธได้ทันทีโดยไม่ต้องเกรงใจ
-        ขั้นสุดท้าย เลือกวิธีส่งมอบที่สะดวก จะเข้ามาที่จุดรับซื้อ นัดเจอจุดกลาง
-        หรือให้ทีมงานไปรับถึงบ้าน ตรวจสภาพต่อหน้าแล้วรับเงินสดหรือโอนทันที
+        ขั้นที่สอง หลังได้รับข้อมูลครบ ทีมงานจะแจ้งราคาเบื้องต้นตามลำดับคิวในเวลาทำการ ({SITE.hours})
+        ตัวเลขนี้ไม่ผูกมัด ไม่พอใจก็ปฏิเสธได้ทันที
+        ขั้นสุดท้าย นัดจุดรับที่สะดวกหรือให้ทีมงานไปรับถึงที่
+        ตรวจสภาพต่อหน้าแล้วรับเงินสดหรือโอนทันที
+        พื้นที่และเวลานัดรับขึ้นอยู่กับตารางงานของทีมงานในแต่ละวัน
       </p>
       <p>
-        อยากได้ราคาดีขึ้นอีก อ่านเทคนิคเตรียมเครื่องได้ที่บทความ
-        <a href={cat.article.href}>{cat.article.text}</a> ซึ่งรวบรวมสิ่งที่ควรทำก่อนวันนัดขายไว้ครบ
+        อยากเตรียมเครื่องให้พร้อม อ่านเทคนิคได้ที่
+        <a href={cat.article.href}>{cat.article.text}</a>
       </p>
 
-      <!-- H2 #5 (มี keyword) + ลิงก์หน้าแรกครั้งที่ 2 + key รอง -->
-      <h2>พื้นที่ให้บริการ{cat.kw}ทั่วจังหวัดขอนแก่น</h2>
+      {cat.caseStudy && (
+        <>
+          <h2>เคสรับซื้อจริงของ{cat.name}ในขอนแก่น</h2>
+          <div class="case-study">
+            <p class="case-study__meta">{cat.caseStudy.date} · {cat.caseStudy.area}</p>
+            <h3>{cat.caseStudy.title}</h3>
+            <p>{cat.caseStudy.detail}</p>
+            <p><strong>ผลลัพธ์:</strong> {cat.caseStudy.result}</p>
+          </div>
+        </>
+      )}
+
+      <h2>พื้นที่ให้บริการ{cat.kw}ในจังหวัดขอนแก่น</h2>
       <p>
-        ทีมงานออกรับสินค้าถึงที่ครอบคลุม{SITE.areas.map((a) => `อ.${a}`).join(' ')} และทุกอำเภอในจังหวัด
-        เขตตัวเมืองส่วนใหญ่นัดรับได้ภายในวันเดียว ต่างอำเภอนัดหมายล่วงหน้าหนึ่งวันเพื่อจัดรอบรถ
-        โดยไม่มีการหักค่าเดินทางออกจากราคาที่ตกลงกันไว้แม้แต่บาทเดียว
+        เรานัดรับสินค้าในพื้นที่{SITE.areas.map((a) => `อ.${a}`).join(' ')} และอำเภออื่นในจังหวัด
+        ตามตารางงานจริงของทีมงาน โดยปกติไม่มีค่าบริการรับถึงที่แยกต่างหากในพื้นที่ให้บริการปกติ
       </p>
       <p>
         มีของหมวดอื่นอยากขายพร้อมกัน ดูรายละเอียด<a href={`/${sec.slug}/`}>{sec.kw} ขอนแก่น</a>
-        หรือดูภาพรวมบริการ<a href="/">รับซื้อสินค้าไอทีทุกประเภทในขอนแก่น</a>ได้จากหน้าหลักของเรา
+        หรือดูภาพรวมบริการ<a href="/">รับซื้อสินค้าไอทีในขอนแก่น</a>ได้จากหน้าหลัก
       </p>
 
-      <!-- FAQ ลดเป็น H4 ตาม audit (สไตล์ปรับให้อ่านง่าย) -->
+      {clusterLinks.length > 0 && (
+        <>
+          <h4 class="h4-block">ลิงก์ในคลัสเตอร์เดียวกัน</h4>
+          <div class="cluster-links">
+            {clusterLinks.map((c) => (
+              <a href={`/${c.slug}/`} class="cluster-link">
+                <span>{c.icon}</span>
+                <strong>{c.kw} ขอนแก่น</strong>
+                <small>{c.short}</small>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
+
       <h4 class="h4-block">คำถามที่พบบ่อยเกี่ยวกับการขาย{cat.name}</h4>
       <div class="faq">
         {cat.faq.map((f) => (
@@ -113,9 +233,9 @@ const faqLd = {
         ))}
       </div>
 
-      <h4 class="h4-block">หมวดอื่นที่เรารับซื้อ</h4>
+      <h4 class="h4-block">หมวดที่เกี่ยวข้อง</h4>
       <div class="others">
-        {others.map((c) => (
+        {others.slice(0, 6).map((c) => (
           <a href={`/${c.slug}/`} class="card other">
             <span>{c.icon}</span> {c.kw} ขอนแก่น
           </a>
@@ -125,57 +245,230 @@ const faqLd = {
 
     <section class="section cta">
       <div class="container cta__in">
-        <h4 class="cta__head">พร้อมขายแล้ว? รู้ราคา{cat.name}ของคุณใน 5 นาที</h4>
-        <p>ถ่ายรูป ส่งไลน์ รอราคา — {SITE.hours} ดำเนินการโดย {SITE.company}</p>
+        <h4 class="cta__head">พร้อมขายแล้ว? ส่งรูปประเมิน{cat.name}ได้เลย</h4>
+        <p>ถ่ายรูป ส่งไลน์ รอราคาเบื้องต้น — {SITE.hours} · {SITE.brandLine}</p>
         <div class="cta__btns">
-          <a href={SITE.lineHref} class="btn btn--line">ทัก LINE {SITE.lineId}</a>
-          <a href={SITE.phoneHref} class="btn btn--volt">โทร {SITE.phone}</a>
+          <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
+          <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone">โทร {SITE.phone}</a>
         </div>
       </div>
     </section>
-  </main>
+    </main>
+  ) : (
+    <main id="main-content" class="article detail-page">
+      <section class="cat-hero">
+        <div class="container">
+          <nav class="crumb" aria-label="breadcrumb">
+            <a href="/">หน้าแรก</a> <span>/</span> {detail.h1}
+          </nav>
+          <p class="eyebrow">{kind === 'brand' ? 'Brand / Demand Page' : kind === 'model' ? model.group : kind === 'condition' ? 'Condition Page' : 'Local Page'}</p>
+          <h1>{detail.h1}</h1>
+          <p class="lede">{brand?.intro || model?.intent || condition?.priceImpact || localPage?.note}</p>
+          <p class="lede lede--soft">{SITE.serviceModel}</p>
+          <div class="cta-row">
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ส่งรูปประเมินฟรี LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container article__body">
+        {brand && (
+          <>
+            <h2>ดีมานด์ของ {brand.brand} ในตลาดมือสองขอนแก่น</h2>
+            <p>{brand.demand}</p>
+            <h2>ซีรีส์ของ {brand.brand} ที่รับประเมินบ่อย</h2>
+            <div class="chip-grid">{brand.acceptedModels.map((item) => <span>{item}</span>)}</div>
+            <h2>สัญญาณที่ทำให้ราคา {brand.brand} สูงหรือต่ำ</h2>
+            <ul>{brand.priceSignals.map((item) => <li>{item}</li>)}</ul>
+            <h2>ข้อมูลเฉพาะที่ควรส่งมาก่อนประเมิน</h2>
+            <ul>{brand.inspection.map((item) => <li>{item}</li>)}</ul>
+            <div class="case-study"><strong>หมายเหตุเฉพาะแบรนด์:</strong> {brand.caution}</div>
+          </>
+        )}
+
+        {model && (
+          <>
+            <h2>ข้อมูลเฉพาะของหน้านี้</h2>
+            <ul>{model.specificData.map((item) => <li>{item}</li>)}</ul>
+            <h2>ปัจจัยที่มีผลกับราคา</h2>
+            <div class="chip-grid">{model.priceSignals.map((item) => <span>{item}</span>)}</div>
+            <h2>ควรเตรียมอะไรส่งมาก่อนประเมิน</h2>
+            <ul>{model.prepare.map((item) => <li>{item}</li>)}</ul>
+          </>
+        )}
+
+        {condition && (
+          <>
+            <h2>หมวดสินค้าที่มักเจอสภาพนี้</h2>
+            <p>{condition.priceImpact}</p>
+            <h2>ควรถ่ายรูปอะไรส่งให้ทีมประเมิน</h2>
+            <ul>
+              <li>ภาพรวมรอบตัวเครื่องและอุปกรณ์ที่มี</li>
+              <li>ภาพตำหนิระยะใกล้ให้เห็นชัด ไม่ใช้ฟิลเตอร์</li>
+              <li>หน้าข้อมูลรุ่น ความจุ serial หรือสเปกเครื่อง</li>
+              <li>วิดีโอสั้นถ้าอาการต้องเห็นตอนเปิดเครื่องหรือใช้งาน</li>
+            </ul>
+          </>
+        )}
+
+        {localPage && (
+          <>
+            <h2>รับซื้อสินค้าไอทีในโซน{localPage.area}อะไรบ้าง</h2>
+            <p>
+              {localPage.note}
+              สินค้าที่มี demand ในพื้นที่นี้ ได้แก่ {localPage.demand.join(' · ')}
+              หากอยู่ใกล้เคียงสามารถส่งพิกัดคร่าว ๆ ทาง LINE เพื่อจัดรอบได้
+            </p>
+            <div class="local-specific">
+              <section>
+                <h3>รูปแบบการนัดรับเฉพาะพื้นที่</h3>
+                <p>{localPage.meetingStyle}</p>
+              </section>
+              <section>
+                <h3>ช่วงให้บริการโดยไม่รับประกันเกินจริง</h3>
+                <p>{localPage.serviceWindow}</p>
+              </section>
+            </div>
+            <h2>จุดนัดที่ใช้จริงในโซน{localPage.area}</h2>
+            <ul>{localPage.landmarks.map((item) => <li>{item}</li>)}</ul>
+            {/* 
+            <div class="local-photo">
+              <div class="local-photo__mark" aria-hidden="true">แนวทางรูปจริง</div>
+              <div>
+                <h3>{localPage.photo.alt}</h3>
+                <p>{localPage.photo.brief}</p>
+              </div>
+            </div>
+            */}
+            <h2>เคสรับซื้อจริงในพื้นที่{localPage.area}</h2>
+            <div class="case-study">
+              <p class="case-study__meta">{localPage.caseStudy.date} · {localPage.area}</p>
+              <h3>{localPage.caseStudy.title}</h3>
+              <p>{localPage.caseStudy.detail}</p>
+            </div>
+            <h2>คำถามที่พบจากลูกค้าในพื้นที่{localPage.area}</h2>
+            <div class="faq">
+              {localPage.faq.map((f) => (
+                <details class="faq__item">
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
+            <h2>ข้อมูลติดต่อ NAP ที่ต้องตรงกัน</h2>
+            <table>
+              <tbody>
+                <tr><th>ชื่อธุรกิจ</th><td>{LOCAL_NAP.name}</td></tr>
+                <tr><th>พื้นที่บริการ</th><td>{LOCAL_NAP.serviceArea}</td></tr>
+                <tr><th>โทร</th><td>{LOCAL_NAP.phone}</td></tr>
+                <tr><th>LINE</th><td>{LOCAL_NAP.line}</td></tr>
+                <tr><th>เวลา</th><td>{LOCAL_NAP.hours}</td></tr>
+              </tbody>
+            </table>
+          </>
+        )}
+
+        {(detailPrimary || detailCategories.length > 0 || relatedBrands.length > 0 || relatedModels.length > 0) && (
+          <>
+            <h2>ลิงก์ต่อในคลัสเตอร์เดียวกัน</h2>
+            <div class="cluster-links">
+              {detailPrimary && (
+                <a href={`/${detailPrimary.slug}/`} class="cluster-link">
+                  <span>{detailPrimary.icon}</span>
+                  <strong>{detailPrimary.kw} ขอนแก่น</strong>
+                  <small>{detailPrimary.short}</small>
+                </a>
+              )}
+              {detailCategories.map((c) => (
+                <a href={`/${c.slug}/`} class="cluster-link">
+                  <span>{c.icon}</span>
+                  <strong>{c.kw} ขอนแก่น</strong>
+                  <small>{c.short}</small>
+                </a>
+              ))}
+              {relatedBrands.map((item) => (
+                <a href={`/${item.path}/`} class="cluster-link">
+                  <span>🏷</span>
+                  <strong>{item.h1}</strong>
+                  <small>{item.demand}</small>
+                </a>
+              ))}
+              {relatedModels.map((item) => (
+                <a href={`/${item.path}/`} class="cluster-link">
+                  <span>▣</span>
+                  <strong>{item.h1}</strong>
+                  <small>{item.intent}</small>
+                </a>
+              ))}
+            </div>
+          </>
+        )}
+
+        <h2>ขั้นตอนส่งประเมินราคา</h2>
+        <p>
+          ถ่ายรูปตามรายการด้านบนแล้วส่งเข้า LINE {SITE.lineId}
+          ทีมงานจะประเมินจากข้อมูลเฉพาะของรุ่น พื้นที่ และสภาพจริง ไม่ใช้ราคากลางแบบเปลี่ยนชื่อหน้าใน template เดียว
+        </p>
+      </div>
+    </main>
+  )}
 </Base>
 
 <style>
   .cat-hero { padding-block: 48px; }
-  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 22px; }
-  .crumb span { margin-inline: 6px; }
-  .cat-hero__icon { font-size: 2.4rem; margin-bottom: 10px; }
-  .cat-hero h1 { max-width: 24ch; }
-  .lede { margin-top: 16px; color: var(--ink-soft); max-width: 68ch; font-size: 1.05rem; }
-  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
-
-  .article__body { max-width: 780px; padding-block: 24px 56px; }
-  .article__body h2 { margin: 40px 0 14px; }
-  .article__body h3 { margin: 26px 0 8px; font-size: 1.25rem; }
-  .article__body p { margin-bottom: 14px; color: #2b3547; }
-  .article__body a { font-weight: 500; }
-
-  /* H4 ตาม audit: ลดศักดิ์หัวข้อรอง แต่ปรับขนาดให้ยังอ่านสบายตา (เล็กกว่า H3) */
-  .h4-block {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin: 40px 0 14px;
-  }
-
+  .cat-hero__icon { font-size: 2.4rem; margin-bottom: 8px; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin-bottom: 14px; max-width: 68ch; }
+  .lede--soft { font-size: 0.98rem; color: var(--muted, #5b6577); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 18px; }
+  .crumb a { color: var(--ink-soft); }
+  .article__body { padding-block: 28px 56px; max-width: 760px; }
+  .article__body h2 { margin-top: 36px; margin-bottom: 12px; }
+  .article__body h3 { margin-top: 22px; margin-bottom: 8px; }
+  .price-box { margin: 18px 0 22px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+  .price-box__head { padding: 16px 18px; background: var(--mist); }
+  .price-box__head h3 { margin: 0 0 4px; font-size: 1.08rem; }
+  .price-box__head p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+  .price-table-wrap { overflow-x: auto; }
+  .price-table { width: 100%; border-collapse: collapse; min-width: 620px; font-size: 0.95rem; }
+  .price-table th, .price-table td { padding: 12px 14px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .price-table th { color: var(--ink); background: #fff; font-family: var(--font-display); }
+  .price-table td:nth-child(2) { white-space: nowrap; font-weight: 600; color: var(--volt); }
+  .case-study { border-left: 4px solid var(--volt); background: #f8faff; padding: 18px 20px; margin: 14px 0 22px; border-radius: 0 8px 8px 0; }
+  .case-study__meta { margin: 0 0 4px; color: var(--ink-soft); font-size: 0.9rem; }
+  .case-study h3 { margin-top: 0; }
+  .h4-block { margin-top: 40px; margin-bottom: 14px; font-size: 1.15rem; }
+  .cluster-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin-bottom: 24px; }
+  .cluster-link { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; border: 1px solid var(--line); border-radius: 8px; padding: 12px; color: var(--ink); }
+  .cluster-link:hover { text-decoration: none; border-color: var(--volt); }
+  .cluster-link span { grid-row: span 2; font-size: 1.3rem; }
+  .cluster-link small { color: var(--ink-soft); font-size: 0.82rem; line-height: 1.35; }
+  .chip-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .chip-grid span { border: 1px solid var(--line); background: var(--mist); border-radius: 999px; padding: 6px 12px; color: var(--ink-soft); font-size: 0.9rem; }
+  .local-specific { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 18px 0; }
+  .local-specific section { border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: #fff; }
+  .local-specific h3 { margin-top: 0; }
+  .local-specific p { margin-bottom: 0; color: var(--ink-soft); }
+  .local-photo { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: 14px; margin: 16px 0 22px; background: var(--mist); }
+  .local-photo__mark { display: grid; place-items: center; min-height: 100px; border: 1px dashed #aab4c5; border-radius: 8px; color: var(--ink-soft); font-size: 0.9rem; background: #fff; font-family: var(--font-display); font-weight: 600; }
+  .local-photo h3 { margin: 0 0 6px; font-size: 1rem; }
+  .local-photo p { margin: 0; color: var(--ink-soft); }
+  .detail-page table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; }
+  .detail-page th, .detail-page td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  .detail-page th { width: 160px; background: var(--mist); font-family: var(--font-display); }
   .faq { display: grid; gap: 10px; }
-  .faq__item { border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
-  .faq__item[open] { border-color: var(--volt); }
-  .faq__item summary { cursor: pointer; font-weight: 600; list-style: none; }
-  .faq__item summary::-webkit-details-marker { display: none; }
-  .faq__item summary::after { content: '+'; float: right; color: var(--volt); }
-  .faq__item[open] summary::after { content: '−'; }
-  .faq__item p { margin: 10px 0 0; }
-
-  .others { display: flex; flex-wrap: wrap; gap: 10px; }
-  .other { padding: 11px 18px; color: var(--ink); font-weight: 500; font-size: 0.95rem; }
+  .faq__item { border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+  .faq__item summary { cursor: pointer; font-weight: 600; }
+  .faq__item p { margin-top: 8px; color: var(--ink-soft); }
+  .others { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+  .other { display: flex; align-items: center; gap: 10px; padding: 14px; color: var(--ink); }
   .other:hover { text-decoration: none; border-color: var(--volt); }
-
-  .cta { background: var(--volt); color: #fff; }
   .cta__in { text-align: center; }
-  .cta__head { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
-  .cta p { margin-top: 10px; opacity: 0.92; }
-  .cta__btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-  .cta .btn--volt { background: var(--ink); box-shadow: none; }
+  .cta__head { margin-bottom: 8px; }
+  .cta__btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 18px; }
+  @media (max-width: 680px) {
+    .local-specific,
+    .local-photo { grid-template-columns: 1fr; }
+  }
 </style>

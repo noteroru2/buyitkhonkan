@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+
+const title = `นโยบายความเป็นส่วนตัว | ${SITE.name}`;
+const description = `นโยบายความเป็นส่วนตัวของ ${SITE.name} (${SITE.company}) เกี่ยวกับข้อมูลที่เก็บเมื่อประเมินและรับซื้อสินค้าไอที`;
+---
+
+<Base title={title} description={description}>
+  <main id="main-content" class="legal">
+    <div class="container legal__in">
+      <nav class="crumb" aria-label="breadcrumb">
+        <a href="/">หน้าแรก</a> <span>/</span> นโยบายความเป็นส่วนตัว
+      </nav>
+      <h1>นโยบายความเป็นส่วนตัว</h1>
+      <p class="lede">อัปเดตล่าสุด: 11 กรกฎาคม 2026 · ผู้ควบคุมข้อมูล: {SITE.company}</p>
+
+      <h2>ข้อมูลที่เราเก็บ</h2>
+      <ul>
+        <li>ชื่อ เบอร์โทร LINE ID และรายละเอียดการติดต่อที่คุณให้ไว้</li>
+        <li>ข้อมูลสินค้า รุ่น สภาพ และรูปภาพที่ส่งมาเพื่อประเมินราคา</li>
+        <li>ข้อมูลในเอกสารยืนยันตัวตนเมื่อมีการรับซื้อจริง ตามความจำเป็นทางธุรกิจและกฎหมาย</li>
+      </ul>
+
+      <h2>วัตถุประสงค์</h2>
+      <ul>
+        <li>ประเมินราคา นัดหมาย และทำรายการรับซื้อ</li>
+        <li>ออกหลักฐานการซื้อขายและป้องกันการกระทำผิดกฎหมาย</li>
+        <li>ติดต่อกลับเกี่ยวกับบริการที่คุณร้องขอ</li>
+      </ul>
+
+      <h2>การเก็บรักษาและการเปิดเผย</h2>
+      <p>
+        เราเก็บข้อมูลเท่าที่จำเป็นต่อวัตถุประสงค์ข้างต้น และไม่ขายข้อมูลส่วนบุคคลให้บุคคลภายนอก
+        อาจเปิดเผยเมื่อมีหน้าที่ตามกฎหมายหรือเพื่อป้องกันอาชญากรรมที่เกี่ยวข้องกับทรัพย์สิน
+      </p>
+
+      <h2>ข้อมูลในอุปกรณ์ที่ขาย</h2>
+      <p>
+        ผู้ขายควรลบและออกจากบัญชีส่วนตัวก่อนส่งมอบเครื่อง
+        เราไม่รับผิดชอบข้อมูลที่ผู้ขายไม่ได้ลบออกจากอุปกรณ์ก่อนการขาย
+      </p>
+
+      <h2>ติดต่อเรื่องข้อมูลส่วนบุคคล</h2>
+      <p>
+        อีเมล <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        · โทร <a href={SITE.phoneHref}>{SITE.phone}</a>
+        · LINE <a href={SITE.lineHref}>{SITE.lineId}</a>
+      </p>
+    </div>
+  </main>
+</Base>
+
+<style>
+  .legal__in { max-width: 720px; padding-block: 48px 72px; }
+  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 18px; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin: 14px 0 28px; }
+  .legal h2 { margin: 28px 0 10px; }
+  .legal p, .legal li { color: #2b3547; margin-bottom: 10px; }
+  .legal ul { margin: 0 0 14px 22px; }
+</style>

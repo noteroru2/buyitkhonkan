@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+
+const title = `ติดต่อเรา | ${SITE.name} ขอนแก่น`;
+const description = `ติดต่อ ${SITE.name} ผ่าน LINE ${SITE.lineId} หรือโทร ${SITE.phone} สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น`;
+---
+
+<Base title={title} description={description} includeOrganization={true}>
+  <main id="main-content" class="legal">
+    <div class="container legal__in">
+      <nav class="crumb" aria-label="breadcrumb">
+        <a href="/">หน้าแรก</a> <span>/</span> ติดต่อเรา
+      </nav>
+      <h1>ติดต่อ WINNER IT ขอนแก่น</h1>
+      <p class="lede">
+        ช่องทางหลักชุดเดียวทั้งเว็บไซต์ — ใช้เบอร์และ LINE ด้านล่างเท่านั้น
+      </p>
+
+      <div class="contact-box">
+        <p><strong>แบรนด์:</strong> {SITE.name}</p>
+        <p><strong>บริษัท:</strong> {SITE.company}</p>
+        <p><strong>โทร:</strong> <a href={SITE.phoneHref}>{SITE.phone}</a></p>
+        <p><strong>LINE:</strong> <a href={SITE.lineHref}>{SITE.lineId}</a></p>
+        <p><strong>อีเมล:</strong> <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+        <p><strong>เวลาทำการ:</strong> {SITE.hours}</p>
+        <p><strong>รูปแบบบริการ:</strong> {SITE.address}</p>
+      </div>
+
+      <h2>วิธีเริ่มประเมินราคา</h2>
+      <ol>
+        <li>ถ่ายรูปสินค้าให้เห็นสภาพรอบเครื่องและตำหนิ (ถ้ามี)</li>
+        <li>แจ้งรุ่น สเปก/ความจุ สภาพ อุปกรณ์ และพื้นที่นัดรับโดยประมาณ</li>
+        <li>ส่งเข้า LINE {SITE.lineId} หรือโทร {SITE.phone}</li>
+        <li>รอราคาเบื้องต้นตามลำดับคิว แล้วค่อยนัดรับหากตกลง</li>
+      </ol>
+
+      <div class="cta-row">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone">โทร {SITE.phone}</a>
+      </div>
+    </div>
+  </main>
+</Base>
+
+<style>
+  .legal__in { max-width: 720px; padding-block: 48px 72px; }
+  .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 18px; }
+  .lede { font-size: 1.05rem; color: var(--ink-soft); margin: 14px 0 28px; }
+  .contact-box {
+    background: var(--mist);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-bottom: 28px;
+  }
+  .contact-box p { margin-bottom: 8px; }
+  .legal h2 { margin: 28px 0 10px; }
+  .legal li { margin-bottom: 8px; color: #2b3547; }
+  .legal ol { margin: 0 0 22px 22px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+</style>

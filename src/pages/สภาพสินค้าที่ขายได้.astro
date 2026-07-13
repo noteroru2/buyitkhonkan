@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import { CONDITION_PAGES } from '../data/conditionPages.js';
+
+const title = 'สภาพสินค้าแบบไหนขายได้บ้าง จอแตก เปิดไม่ติด แบตบวม | WINNER IT';
+const description = 'รวมหน้าสภาพสินค้าไอทีที่ยังส่งประเมินได้ เช่น จอแตก เปิดไม่ติด แบตบวม ติดบัญชี และไม่มีกล่อง พร้อมแนวทางประเมินราคา';
+---
+
+<Base title={title} description={description}>
+  <main id="main-content">
+    <section class="section">
+      <div class="container page-wrap">
+        <p class="eyebrow">Condition Hub</p>
+        <h1>สภาพสินค้าแบบไหนยังขายได้บ้าง</h1>
+        <p class="lede">
+          ของไอทีมีตำหนิไม่ได้แปลว่าไม่มีราคา แต่ต้องแจ้งสภาพจริงตั้งแต่ก่อนนัดรับ
+          เพื่อให้ทีมประเมินตีราคาใกล้เคียงหน้างานที่สุด
+        </p>
+        <div class="condition-grid">
+          {CONDITION_PAGES.map((item) => (
+            <a href={`/${item.path}/`} class="card condition-card">
+              <h2>{item.condition}</h2>
+              <p>{item.priceImpact}</p>
+              <span>อ่านรายละเอียด →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .page-wrap { max-width: 900px; }
+  .lede { color: var(--ink-soft); margin: 12px 0 28px; }
+  .condition-grid { display: grid; gap: 14px; }
+  @media (min-width: 720px) { .condition-grid { grid-template-columns: repeat(2, 1fr); } }
+  .condition-card { display: block; color: var(--ink); }
+  .condition-card:hover { text-decoration: none; border-color: var(--volt); }
+  .condition-card h2 { font-size: 1.12rem; margin-bottom: 8px; }
+  .condition-card p { color: var(--ink-soft); font-size: 0.92rem; }
+  .condition-card span { color: var(--volt); font-weight: 600; font-size: 0.9rem; }
+</style>

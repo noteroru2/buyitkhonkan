@@ -3,39 +3,76 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyBar from '../components/StickyBar.astro';
-import { SITE } from '../data/categories.js';
+import { SITE } from '../data/site.js';
 
 const {
   title,
   description,
-  jsonLd = [],           // JSON-LD เพิ่มเติมของแต่ละหน้า (array)
+  jsonLd = [],
+  ogImage = '/images/og/default-og.png',
+  ogImageAlt = 'WINNER IT รับซื้อสินค้าไอทีในจังหวัดขอนแก่น',
+  robots,
+  /** ใส่ Organization entity เฉพาะหน้าแรก / About / Contact */
+  includeOrganization = false,
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const siteUrl = Astro.site?.href?.replace(/\/$/, '') || '';
+const ogImageUrl = new URL(ogImage, Astro.site).href;
+const gtmId = import.meta.env.PUBLIC_GTM_ID;
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
-// LocalBusiness schema — ใส่ทุกหน้า ช่วย Google เข้าใจว่าเป็นธุรกิจท้องถิ่นในขอนแก่น
-const localBusiness = {
+const organization = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'Organization',
+  '@id': `${siteUrl}/#organization`,
   name: SITE.legalName,
-  alternateName: SITE.name,
-  description: 'รับซื้อสินค้าไอทีทุกประเภทในจังหวัดขอนแก่น โน้ตบุ๊ค มือถือ คอมพิวเตอร์ กล้อง เครื่องเกม ประเมินราคาฟรี จ่ายเงินสดทันที บริการรับถึงที่',
-  url: Astro.site?.href,
+  alternateName: [SITE.name, SITE.company],
+  description: SITE.serviceModel,
+  url: `${siteUrl}/`,
+  logo: `${siteUrl}/favicon.svg`,
+  image: ogImageUrl,
   telephone: SITE.phone,
+  email: SITE.email,
   priceRange: '฿฿',
+  openingHours: 'Mo-Su 09:00-19:30',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'ขอนแก่น',
-    addressRegion: 'ขอนแก่น',
-    postalCode: '40000',
-    addressCountry: 'TH',
+    addressRegion: SITE.region,
+    addressCountry: SITE.country,
   },
-  areaServed: SITE.areas.map((a) => ({ '@type': 'City', name: `อำเภอ${a}` })),
-  openingHours: 'Mo-Su 09:00-19:30',
-  email: SITE.email,
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: `จังหวัด${SITE.region}`,
+  },
+  parentOrganization: {
+    '@type': 'Organization',
+    name: SITE.company,
+  },
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      telephone: SITE.phone,
+      contactType: 'customer service',
+      availableLanguage: ['Thai'],
+      areaServed: `จังหวัด${SITE.region}`,
+    },
+  ],
 };
 
-const allJsonLd = [localBusiness, ...jsonLd];
+const website = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${siteUrl}/#website`,
+  name: SITE.name,
+  url: `${siteUrl}/`,
+  publisher: { '@id': `${siteUrl}/#organization` },
+  inLanguage: 'th-TH',
+};
+
+const allJsonLd = includeOrganization
+  ? [organization, website, ...jsonLd]
+  : jsonLd;
 ---
 
 <!doctype html>
@@ -45,20 +82,33 @@ const allJsonLd = [localBusiness, ...jsonLd];
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {robots && <meta name="robots" content={robots} />}
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="th_TH" />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
 
-    <!-- ฟอนต์: โหลดเฉพาะ weight ที่ใช้จริง เพื่อความเบา -->
+    {gtmId && (
+      <script set:html={`window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});`} />
+    )}
+    {gtmId && (
+      <script async src={`https://www.googletagmanager.com/gtm.js?id=${gtmId}`}></script>
+    )}
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -71,15 +121,57 @@ const allJsonLd = [localBusiness, ...jsonLd];
     ))}
   </head>
   <body>
+    {gtmId && (
+      <noscript>
+        <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`} height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+    )}
+    <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
     <Header />
     <slot />
     <Footer />
     <StickyBar />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      document.addEventListener('click', (event) => {
+        const target = event.target instanceof Element ? event.target.closest('a') : null;
+        if (!target) return;
+
+        const href = target.getAttribute('href') || '';
+        const explicitEvent = target.getAttribute('data-track-event');
+        const eventName = explicitEvent || (href.includes('line.me') ? 'click_line' : href.startsWith('tel:') ? 'click_phone' : '');
+        if (!eventName) return;
+
+        window.dataLayer.push({
+          event: eventName,
+          link_url: href,
+          link_text: target.textContent?.trim().slice(0, 120) || '',
+          page_path: window.location.pathname,
+        });
+      });
+    </script>
   </body>
 </html>
 
 <style is:global>
-  /* เพิ่มพื้นที่ล่างบน mobile เพื่อไม่ให้ sticky bar ทับ footer */
+  .skip-link {
+    position: fixed;
+    left: 16px;
+    top: 12px;
+    z-index: 2000;
+    transform: translateY(-140%);
+    background: var(--ink);
+    color: #fff;
+    border: 2px solid var(--cash);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  .skip-link:focus {
+    transform: translateY(0);
+    text-decoration: none;
+  }
   @media (max-width: 767px) {
     body {
       padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));

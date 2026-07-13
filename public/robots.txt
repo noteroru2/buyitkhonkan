@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.itbuy-khonkaen.com/sitemap-index.xml
+Sitemap: https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/sitemap-index.xml
