@@ -62,4 +62,10 @@ const quickCategories = CATEGORIES.filter((c) => ['notebook', 'computer', 'iphon
   .area-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
   .area-links a { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color: var(--ink); background: #fff; }
   .area-links a:hover { text-decoration: none; border-color: var(--volt); }
+
+  @media (max-width: 640px) {
+    .not-found__hero { padding-block: 32px 24px; }
+    .section { padding-block: 32px; }
+    .link-grid { grid-template-columns: 1fr; }
+  }
 </style>

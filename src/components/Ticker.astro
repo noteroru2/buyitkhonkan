@@ -1,38 +1,40 @@
 ---
-// แถบวิ่งสไตล์กระดานราคา — ลายเซ็นของเว็บ ใช้ CSS ล้วน ไม่มี JS
+// แถบวิ่งสไตล์กระดานราคา — ลายเซ็นของเว็บ
 const items = [
-  'รับซื้อ MacBook',
-  'iPhone จ่ายสดหน้างาน',
-  'การ์ดจอ RTX ประเมินตามตลาด',
-  'PS5 / Switch นัดรับได้',
-  'นัดรับทั่วขอนแก่น',
-  'ประเมินราคาฟรีผ่าน LINE',
-  'เหมาปิดออฟฟิศก็รับ',
+  'ประเมินตามรุ่นและสภาพ',
+  'ส่งรูปผ่าน LINE',
+  'นัดรับตามคิวงาน',
+  'ชำระหลังตรวจสอบและตกลงราคา',
+  'บริการในจังหวัดขอนแก่น',
 ];
 const row = items.map((t) => `▲ ${t}`).join('   ');
 ---
 
-<div class="ticker" aria-hidden="true">
-  <div class="ticker__track">
+<div class="ticker-wrapper">
+  <div class="ticker-track">
     <span>{row}</span>
-    <span>{row}</span>
+    <span aria-hidden="true">{row}</span>
   </div>
 </div>
 
 <style>
-  .ticker {
-    background: var(--cash);
-    color: var(--ink);
+  .ticker-wrapper {
+    background: #ffb020; /* var(--cash) */
+    color: #0d1526; /* var(--ink) */
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
-    border-block: 2px solid var(--ink);
+    contain: layout paint;
+    border-top: 2px solid #0d1526;
+    border-bottom: 2px solid #0d1526;
   }
-  .ticker__track {
+  .ticker-track {
     display: flex;
     width: max-content;
     animation: slide 30s linear infinite;
   }
-  .ticker__track span {
-    font-family: var(--font-display);
+  .ticker-track span {
+    font-family: 'Chakra Petch', 'Anuphan', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
     white-space: pre;
@@ -42,6 +44,8 @@ const row = items.map((t) => `▲ ${t}`).join('   ');
     to { transform: translateX(-50%); }
   }
   @media (prefers-reduced-motion: reduce) {
-    .ticker__track { animation: none; }
+    .ticker-track {
+      animation: none;
+    }
   }
 </style>

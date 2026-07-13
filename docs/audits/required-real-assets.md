@@ -2,6 +2,11 @@
 
 This project currently has no verified real business photos in `public` beyond the favicon and the generic branded OG graphic.
 
+> [!IMPORTANT]
+> **Status Check (July 13, 2026)**: Real business photos (such as team members, storefronts, actual diagnostic setups, or customer transactions) have **NOT** yet been received from the website owner.
+>
+> All current placeholder photos are strictly marked as illustrations ("ภาพประกอบ") and have a visible layout disclaimer on the homepage. They must not be registered in schema metadata or represented as actual proof of operations.
+
 Do not use fake storefront, fake team, fake customer, fake review, or fake case study images.
 
 ## Priority Assets To Prepare

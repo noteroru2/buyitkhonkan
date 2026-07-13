@@ -98,9 +98,9 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">สินค้าที่รับซื้อ</p>
-          <h2>รับซื้อสินค้าไอทีทุกประเภท ครอบคลุม 12 Money Pages หลัก</h2>
+          <h2>รับซื้อสินค้าไอทีทุกประเภท ครอบคลุม 12 หมวดสินค้าหลัก</h2>
           <p>
-            หน้าเงินหลัก 12 หมวดถูกแยกตาม intent ชัดเจน โดยเฉพาะเครื่องเกมที่แยกออกจากแกดเจ็ต
+            หมวดสินค้าหลักทั้ง 12 หมวดถูกแยกตามการใช้งานอย่างชัดเจน โดยเฉพาะเครื่องเกมที่แยกออกจากแกดเจ็ต
             และอุปกรณ์สำนักงานที่ย้ายไปเป็นหน้ารองของงานเหมา กดเข้าไปดูรุ่น ตารางราคา และเคสตัวอย่างได้เลย
           </p>
         </div>
@@ -163,6 +163,49 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
             </li>
           ))}
         </ol>
+    </section>
+
+    <!-- ===== H2 #5 : ขั้นตอนการให้บริการโดยสรุป ===== -->
+    <section class="section section--trust" id="trust-gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">ขั้นตอนการดำเนินงาน</p>
+          <h2>ขั้นตอนการให้บริการโดยสรุป</h2>
+          <p>
+            ข้อมูลแสดงรายละเอียดขั้นตอนการดำเนินงานในการรับซื้อสินค้าไอทีในจังหวัดขอนแก่น ตั้งแต่การนัดรับ การตรวจเช็กสภาพเครื่อง ตลอดจนการชำระเงิน
+          </p>
+          <p class="trust-disclaimer">
+            * ภาพประกอบเพื่ออธิบายขั้นตอนการให้บริการ ไม่ใช่ภาพลูกค้า สถานที่ หรือธุรกรรมจริง
+          </p>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-img-wrapper">
+              <img src="/images/trust-inspection.png" alt="ภาพประกอบการตรวจสอบสภาพโน้ตบุ๊คและอุปกรณ์โดยละเอียดเพื่อประเมินราคา" width="400" height="300" loading="lazy" />
+            </div>
+            <h3>การตรวจเช็กและวิเคราะห์สภาพเครื่อง</h3>
+            <p>ตรวจสินค้าต่อหน้าผู้ขาย อธิบายจุดประเมินและสภาพอะไหล่ตามจริง ไม่มีการแอบอ้างตำหนิ</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-img-wrapper">
+              <img src="/images/trust-inventory.png" alt="ภาพประกอบตัวอย่างประเภทโน้ตบุ๊คและสินค้าไอทีเพื่อชี้แจงกลุ่มอุปกรณ์ที่รับซื้อ" width="400" height="300" loading="lazy" />
+            </div>
+            <h3>คลังสินค้าทีรับซื้อในพื้นที่</h3>
+            <p>โน้ตบุ๊ค มือถือ และอุปกรณ์แกดเจ็ตที่เรารับซื้อจากลูกค้านักศึกษาและวัยทำงานในขอนแก่น</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-img-wrapper trust-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="trust-svg-icon" aria-label="ภาพประกอบสัญลักษณ์ขั้นตอนการรับชำระเงิน">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <line x1="2" y1="10" x2="22" y2="10" />
+                <line x1="6" y1="15" x2="6.01" y2="15" />
+                <line x1="10" y1="15" x2="10.01" y2="15" />
+              </svg>
+            </div>
+            <h3>บริการนัดรับและยืนยันโอนเงินหน้างาน</h3>
+            <p>ให้บริการนัดรับตามพิกัดที่สะดวก เช่น หอพักมหาวิทยาลัยขอนแก่น หรือร้านกาแฟในเมือง โอนเงินทันทีหลังตกลงราคา</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -246,17 +289,24 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
     color: var(--volt);
     background: linear-gradient(transparent 62%, rgba(255, 176, 32, 0.55) 62%);
   }
-  .hero__sub { margin-top: 18px; color: var(--ink-soft); font-size: 1.06rem; max-width: 50ch; }
+  .hero__sub { margin-top: 18px; color: var(--ink-soft); font-size: 1.06rem; max-width: 50ch; overflow-wrap: anywhere; }
   .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
   .hero__points {
     display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 24px;
     list-style: none; color: var(--ink-soft); font-size: 0.92rem;
+    overflow-wrap: anywhere;
   }
   .hero__points li::before { content: '✓ '; color: var(--volt); font-weight: 700; }
 
   .hero__panel {
     background: var(--ink); border-radius: var(--radius); padding: 22px; color: #fff;
     box-shadow: 0 24px 48px rgba(13, 21, 38, 0.25);
+    overflow-wrap: anywhere;
+  }
+  @media (max-width: 390px) {
+    .hero__panel {
+      padding: 16px;
+    }
   }
   .hero__panel-label {
     font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.1em;
@@ -319,5 +369,80 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
   }
   @media (max-width: 560px) {
     .cat-grid, .steps { grid-template-columns: 1fr; }
+  }
+
+  /* Visual Trust Gallery Styling */
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 28px;
+  }
+  .trust-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .trust-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+  .trust-img-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: calc(var(--radius) - 4px);
+    overflow: hidden;
+    margin-bottom: 16px;
+    background: #f0f2f5;
+  }
+  .trust-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .trust-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6a3 100%);
+    color: #0d1526;
+  }
+  .trust-svg-icon {
+    width: 64px;
+    height: 64px;
+    stroke: var(--ink);
+  }
+  .trust-disclaimer {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .trust-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .trust-card p {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 860px) {
+    .trust-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .hero h1 {
+      font-size: 1.52rem;
+      text-wrap: balance;
+    }
   }
 </style>

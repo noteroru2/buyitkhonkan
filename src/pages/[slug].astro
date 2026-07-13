@@ -261,7 +261,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
           <nav class="crumb" aria-label="breadcrumb">
             <a href="/">หน้าแรก</a> <span>/</span> {detail.h1}
           </nav>
-          <p class="eyebrow">{kind === 'brand' ? 'Brand / Demand Page' : kind === 'model' ? model.group : kind === 'condition' ? 'Condition Page' : 'Local Page'}</p>
+          <p class="eyebrow">{kind === 'brand' ? 'Brand / Demand Page' : kind === 'model' ? model.group : kind === 'condition' ? 'Condition Page' : 'พื้นที่ให้บริการ'}</p>
           <h1>{detail.h1}</h1>
           <p class="lede">{brand?.intro || model?.intent || condition?.priceImpact || localPage?.note}</p>
           <p class="lede lede--soft">{SITE.serviceModel}</p>
@@ -417,6 +417,21 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
 
 <style>
   .cat-hero { padding-block: 48px; }
+  .cat-hero h1 {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .lede, .article__body p, .article__body li {
+    overflow-wrap: anywhere;
+  }
+  @media (max-width: 480px) {
+    .cat-hero h1 {
+      font-size: 1.6rem;
+    }
+    .lede {
+      font-size: 0.95rem;
+    }
+  }
   .cat-hero__icon { font-size: 2.4rem; margin-bottom: 8px; }
   .lede { font-size: 1.05rem; color: var(--ink-soft); margin-bottom: 14px; max-width: 68ch; }
   .lede--soft { font-size: 0.98rem; color: var(--muted, #5b6577); }
@@ -431,7 +446,10 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
   .price-box__head h3 { margin: 0 0 4px; font-size: 1.08rem; }
   .price-box__head p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
   .price-table-wrap { overflow-x: auto; }
-  .price-table { width: 100%; border-collapse: collapse; min-width: 620px; font-size: 0.95rem; }
+  .price-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  @media (min-width: 768px) {
+    .price-table { min-width: 620px; }
+  }
   .price-table th, .price-table td { padding: 12px 14px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
   .price-table th { color: var(--ink); background: #fff; font-family: var(--font-display); }
   .price-table td:nth-child(2) { white-space: nowrap; font-weight: 600; color: var(--volt); }

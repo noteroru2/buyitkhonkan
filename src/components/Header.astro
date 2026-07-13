@@ -15,7 +15,10 @@ import { SITE } from '../data/categories.js';
       <a href="/blog/">บทความ</a>
       <a href="/contact/">ติดต่อ</a>
     </nav>
-    <a href={SITE.phoneHref} class="btn btn--volt hdr__call" data-track-event="click_phone">โทร {SITE.phone}</a>
+    <a href={SITE.phoneHref} class="btn btn--volt hdr__call" data-track-event="click_phone" aria-label={`โทร ${SITE.phone}`}>
+      <span class="hdr__call-short">โทรเลย</span>
+      <span class="hdr__call-full">โทร {SITE.phone}</span>
+    </a>
   </div>
 </header>
 
@@ -50,9 +53,21 @@ import { SITE } from '../data/categories.js';
   .hdr__nav a { color: var(--ink-soft); font-weight: 500; font-size: 0.95rem; }
   .hdr__nav a:hover { color: var(--volt); text-decoration: none; }
   .hdr__call { padding: 9px 18px; font-size: 0.9rem; }
+  .hdr__call-short { display: none; }
 
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     .hdr__nav { display: none; }
     .hdr__call { margin-left: auto; }
+  }
+
+  @media (max-width: 480px) {
+    .hdr__call-short { display: inline; }
+    .hdr__call-full { display: none; }
+    .hdr__call { padding: 8px 14px; font-size: 0.85rem; }
+  }
+
+  @media (max-width: 400px) {
+    .hdr__name { font-size: 0.95rem; }
+    .hdr__in { gap: 10px; }
   }
 </style>
