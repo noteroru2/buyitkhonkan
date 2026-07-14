@@ -140,6 +140,15 @@ const posts = [
 ];
 
 const tags = ['ทั้งหมด', 'GSC Query', 'เช็คราคา', 'ก่อนขาย', 'เปรียบเทียบ', 'Local'];
+
+const displayLabels = {
+  'GSC Query': 'คำถามยอดนิยม',
+  'Local': 'ข้อมูลพื้นที่',
+  'ทั้งหมด': 'ทั้งหมด',
+  'เช็คราคา': 'เช็คราคา',
+  'ก่อนขาย': 'ก่อนขาย',
+  'เปรียบเทียบ': 'เปรียบเทียบ'
+};
 ---
 
 <Base title={title} description={description}>
@@ -154,13 +163,13 @@ const tags = ['ทั้งหมด', 'GSC Query', 'เช็คราคา', 
         </p>
         <div class="tag-list" role="list" aria-label="กรองตามหมวดหมู่">
           {tags.map((t) => (
-            <span class="tag-chip">{t}</span>
+            <span class="tag-chip">{displayLabels[t] || t}</span>
           ))}
         </div>
         <div class="post-list">
           {posts.map((p) => (
             <a href={p.href} class="card post-card">
-              <span class="post-card__tag">{p.tag}</span>
+              <span class="post-card__tag">{displayLabels[p.tag] || p.tag}</span>
               <h2>{p.title}</h2>
               <p>{p.desc}</p>
               <span class="post-card__more">อ่านต่อ →</span>

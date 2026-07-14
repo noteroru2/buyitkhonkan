@@ -17,15 +17,18 @@ const articleLd = {
 };
 ---
 
-<Base title={title} description={description} jsonLd={[articleLd]}>
+<Base title={title} description={description} jsonLd={[articleLd]} stickyVariant="article">
   <main id="main-content">
     <article class="post">
-      <div class="container post__body">
-        <nav class="crumb" aria-label="breadcrumb">
-          <a href="/">หน้าแรก</a> <span>/</span> <a href="/blog/">บทความ</a> <span>/</span> เรื่องนี้
-        </nav>
-        <h1>{h1}</h1>
-        <p class="post__meta">อัปเดตล่าสุด {modified || published} · โดยทีมงาน {SITE.name}</p>
+      <div class="container post__shell">
+        <header class="post__header">
+          <nav class="crumb" aria-label="breadcrumb">
+            <a href="/">หน้าแรก</a> <span>/</span> <a href="/blog/">บทความ</a> <span>/</span> เรื่องนี้
+          </nav>
+          <h1>{h1}</h1>
+          <p class="post__meta">อัปเดตล่าสุด {modified || published} · โดยทีมงาน {SITE.name}</p>
+        </header>
+        <div class="post__content">
         <slot />
 
         <div class="post__cta">
@@ -35,24 +38,53 @@ const articleLd = {
             <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
           </div>
         </div>
+        </div>
       </div>
     </article>
   </main>
 </Base>
 
 <style is:global>
-  .post__body { max-width: 760px; padding-block: 44px 64px; }
-  .post .crumb { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 20px; }
+  .post__shell {
+    width: min(100% - 40px, 980px);
+    padding: 48px 0 72px;
+  }
+  .post__header {
+    max-width: 940px;
+    margin-inline: auto;
+  }
+  .post__content {
+    max-width: 820px;
+    margin-inline: auto;
+  }
+  .post .crumb {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+  }
   .post .crumb span { margin-inline: 6px; }
-  .post h1 { max-width: 26ch; }
+  .post h1 {
+    max-width: 940px;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    line-height: 1.12;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
   .post__meta { color: var(--ink-soft); font-size: 0.9rem; margin-top: 12px; }
   .post h2 { margin: 38px 0 12px; }
   .post h3 { margin: 24px 0 8px; font-size: 1.25rem; }
   .post .h4-block { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 36px 0 12px; }
-  .post p { margin-bottom: 14px; color: #2b3547; }
+  .post p { margin-bottom: 14px; color: #2b3547; line-height: 1.75; }
   .post ul, .post ol { margin: 0 0 14px 22px; color: #2b3547; }
   .post li { margin-bottom: 6px; }
-  .post table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.95rem; }
+  .post table {
+    width: min(100%, 940px);
+    max-width: 940px;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+  }
   .post th, .post td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; }
   .post th { background: var(--mist); font-family: var(--font-display); font-weight: 600; }
   .post__cta {
@@ -65,4 +97,27 @@ const articleLd = {
   }
   .post__cta-head { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; }
   .post__cta-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  @media (max-width: 480px) {
+    .post__shell {
+      width: min(100% - 36px, 980px);
+      padding-block: 36px 58px;
+    }
+    .post h1 {
+      font-size: clamp(2rem, 9vw, 2.45rem);
+      line-height: 1.14;
+    }
+    .post p,
+    .post li {
+      font-size: 1rem;
+      line-height: 1.72;
+    }
+    .post__cta {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 375px) {
+    .post h1 {
+      font-size: clamp(1.9rem, 8.8vw, 2.25rem);
+    }
+  }
 </style>

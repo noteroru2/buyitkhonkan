@@ -1,9 +1,11 @@
 ---
 import { SITE } from '../data/site.js';
+const { variant = 'default' } = Astro.props;
+const isArticle = variant === 'article';
 ---
 
 <!-- Sticky contact bar — mobile only (hidden on desktop via CSS) -->
-<div class="sticky-bar" role="complementary" aria-label="ปุ่มติดต่อด่วน">
+<div class:list={['sticky-bar', { 'sticky-bar--article': isArticle }]} role="complementary" aria-label="ปุ่มติดต่อด่วน">
   <a href={SITE.lineHref} class="sticky-bar__btn sticky-bar__btn--line" aria-label={`ทัก LINE ${SITE.lineId}`} data-track-event="click_line">
     <!-- LINE icon -->
     <svg class="sticky-bar__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -45,7 +47,8 @@ import { SITE } from '../data/site.js';
       z-index: 1000;
       /* รองรับ safe area ของ iPhone มีรอยบาก */
       padding-bottom: env(safe-area-inset-bottom, 0px);
-      box-shadow: 0 -3px 18px rgba(13, 21, 38, 0.18);
+      background: #fff;
+      box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.16);
     }
 
     .sticky-bar__btn {
@@ -54,23 +57,40 @@ import { SITE } from '../data/site.js';
       justify-content: center;
       gap: 10px;
       padding: 10px 12px;
-      min-height: 60px;
+      min-height: 62px;
       text-decoration: none;
       transition: filter 0.15s ease;
       -webkit-tap-highlight-color: transparent;
+    }
+    .sticky-bar--article .sticky-bar__btn {
+      min-height: 56px;
+      padding-block: 8px;
+    }
+    .sticky-bar--article .sticky-bar__text strong {
+      font-size: 0.88rem;
+    }
+    .sticky-bar--article .sticky-bar__text small {
+      font-size: 0.68rem;
+    }
+    .sticky-bar--article .sticky-bar__btn--line .sticky-bar__text strong::before {
+      content: "ส่งข้อมูลผ่าน LINE";
+      font-size: 0.88rem;
+    }
+    .sticky-bar--article .sticky-bar__btn--line .sticky-bar__text strong {
+      font-size: 0;
     }
     .sticky-bar__btn:hover { text-decoration: none; filter: brightness(1.08); }
     .sticky-bar__btn:active { filter: brightness(0.92); }
 
     /* LINE — สีเขียว LINE */
     .sticky-bar__btn--line {
-      background: #06c755;
+      background: var(--color-line);
       color: #fff;
     }
 
     /* โทร — สีน้ำเงินแบรนด์ */
     .sticky-bar__btn--phone {
-      background: var(--volt);
+      background: var(--color-primary);
       color: #fff;
       /* กั้น divider บาง ๆ ระหว่างสองปุ่ม */
       border-left: 1px solid rgba(255 255 255 / 0.25);

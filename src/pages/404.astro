@@ -11,17 +11,41 @@ const quickCategories = CATEGORIES.filter((c) => ['notebook', 'computer', 'iphon
 <Base title={title} description={description} robots="noindex, follow">
   <main id="main-content" class="not-found">
     <section class="not-found__hero">
-      <div class="container">
-        <p class="eyebrow">404</p>
-        <h1>ไม่พบหน้าที่ต้องการ</h1>
-        <p class="lede">
-          URL นี้อาจถูกพิมพ์ผิดหรือไม่มีอยู่ในระบบแล้ว
-          เลือกหมวดหลักด้านล่าง หรือส่งรูปสินค้าให้ทีมงานประเมินผ่าน LINE ได้โดยตรง
-        </p>
-        <div class="cta-row">
-          <a href="/" class="btn btn--volt">กลับหน้าแรก</a>
-          <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
-          <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
+      <div class="container error-hero">
+        <div class="error-hero__content">
+          <p class="eyebrow">404</p>
+          <h1>ไม่พบหน้าที่ต้องการ</h1>
+          <p class="lede">
+            URL นี้อาจถูกพิมพ์ผิดหรือไม่มีอยู่ในระบบแล้ว
+            เลือกหมวดหลักด้านล่าง หรือส่งรูปสินค้าให้ทีมงานประเมินผ่าน LINE ได้โดยตรง
+          </p>
+          <div class="cta-row">
+            <a href="/" class="btn btn--volt">กลับหน้าแรก</a>
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
+          </div>
+        </div>
+        <div class="error-hero__visual" aria-hidden="true">
+          <span>404</span>
+          <svg viewBox="0 0 220 180" fill="none">
+            <!-- Grid background -->
+            <path d="M20 20h180v140H20z" stroke="rgba(40, 76, 255, 0.05)" stroke-width="1.5" />
+            <path d="M50 20v140M80 20v140M110 20v140M140 20v140M170 20v140M20 50h180M20 80h180M20 110h180M20 140h180" stroke="rgba(40, 76, 255, 0.03)" stroke-width="1" />
+            <!-- Browser Window -->
+            <rect x="35" y="35" width="150" height="110" rx="8" fill="#ffffff" stroke="var(--color-primary)" stroke-width="4" />
+            <rect x="35" y="35" width="150" height="24" rx="8" fill="var(--color-bg)" />
+            <!-- Dots -->
+            <circle cx="50" cy="47" r="3.5" fill="rgba(40, 76, 255, 0.3)" />
+            <circle cx="62" cy="47" r="3.5" fill="rgba(40, 76, 255, 0.3)" />
+            <circle cx="74" cy="47" r="3.5" fill="rgba(40, 76, 255, 0.3)" />
+            <!-- Address bar -->
+            <rect x="90" y="42" width="80" height="10" rx="3" fill="#ffffff" stroke="var(--color-border)" stroke-width="1" />
+            <!-- Circuit/Service tech details -->
+            <path d="M50 90h40m30 0h50M80 70v40m60-40v40" stroke="var(--color-border)" stroke-width="2" stroke-linecap="round" />
+            <!-- Magnifying glass inside window -->
+            <circle cx="110" cy="90" r="18" stroke="var(--color-accent)" stroke-width="4" fill="#ffffff" />
+            <path d="m123 103 14 14" stroke="var(--color-accent)" stroke-width="4" stroke-linecap="round" />
+          </svg>
         </div>
       </div>
     </section>
@@ -52,16 +76,74 @@ const quickCategories = CATEGORIES.filter((c) => ['notebook', 'computer', 'iphon
 
 <style>
   .not-found__hero { padding-block: 64px 46px; background: var(--mist); }
+  .error-hero { display: grid; gap: 28px; }
   .lede { max-width: 62ch; color: var(--ink-soft); margin-top: 12px; }
   .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
   .link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 18px 0 34px; }
-  .link-card { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; color: var(--ink); }
-  .link-card:hover { text-decoration: none; border-color: var(--volt); }
+  .link-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    color: var(--ink);
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  }
+  .link-card:hover { text-decoration: none; border-color: var(--volt); transform: translateY(-2px); box-shadow: var(--shadow-md); }
   .link-card span { grid-row: span 2; font-size: 1.4rem; }
   .link-card small { color: var(--ink-soft); font-size: 0.86rem; }
   .area-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
   .area-links a { border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; color: var(--ink); background: #fff; }
   .area-links a:hover { text-decoration: none; border-color: var(--volt); }
+
+  .error-hero__visual {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .error-hero {
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+      gap: 64px;
+      align-items: center;
+    }
+    .error-hero__visual {
+      display: grid;
+      place-items: center;
+      min-height: 320px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(90deg, rgba(40, 76, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(40, 76, 255, 0.06) 1px, transparent 1px),
+        #fff;
+      background-size: 28px 28px;
+      box-shadow: var(--shadow-sm);
+      color: var(--color-primary);
+      position: relative;
+      overflow: hidden;
+    }
+    .error-hero__visual span {
+      position: absolute;
+      top: 26px;
+      right: 30px;
+      font-size: clamp(4.5rem, 8vw, 7.25rem);
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(40, 76, 255, 0.12);
+    }
+    .error-hero__visual svg {
+      width: min(72%, 320px);
+      color: var(--color-primary);
+      stroke: currentColor;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
 
   @media (max-width: 640px) {
     .not-found__hero { padding-block: 32px 24px; }
