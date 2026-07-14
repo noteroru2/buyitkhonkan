@@ -243,7 +243,7 @@ export const MODEL_PAGES = [
     intent: 'CPU มีราคาตาม generation และ socket รุ่นไม่มีขาอย่าง Intel ต้องดูหน้าสัมผัส ส่วน AMD ต้องดูขางอ/ขาหักละเอียด',
     specificData: ['Ryzen 5/7 และ Intel i5/i7 เจนใหม่มี volume ดี', 'CPU ไม่มีซิงก์ขายได้แต่ราคาตามตัวชิป', 'AMD ขางอหักราคาหนัก', 'CPU server เฉพาะทางต้องส่งรุ่นก่อน'],
     priceSignals: ['รุ่นเต็ม', 'เจนและ socket', 'ประกัน', 'สภาพขา/หน้าสัมผัส', 'มีกล่อง/ซิงก์ไหม'],
-    prepare: ['ถ่ายหน้ากระดอง', 'ถ่ายด้านขา/contacts ชัด ๆ', 'แจ้งเมนบอร์ดที่ใช้คู่', 'ใส่กล่องกันกระแทกก่อนส่งมอบ'],
+    prepare: ['ถ่ายหน้ากระดอง', 'ถ่ายด้านขา/ติดต่อเรา/s ชัด ๆ', 'แจ้งเมนบอร์ดที่ใช้คู่', 'ใส่กล่องกันกระแทกก่อนส่งมอบ'],
     related: ['gaming-pc', 'workstation', 'ram-ssd'],
   },
   {
@@ -275,10 +275,10 @@ export const MODEL_PAGES = [
 ];
 
 const MODEL_PATHS = {
-  'gaming-notebook': 'รับซื้อโน๊ตบุ๊คเกมมิ่ง-ขอนแก่น',
-  'notebook-broken': 'รับซื้อโน๊ตบุ๊คเสีย-ขอนแก่น',
-  'notebook-no-power': 'รับซื้อโน๊ตบุ๊คเปิดไม่ติด-ขอนแก่น',
-  'notebook-screen-crack': 'รับซื้อโน๊ตบุ๊คจอแตก-ขอนแก่น',
+  'gaming-notebook': 'รับซื้อโน้ตบุ๊กเกมมิ่ง-ขอนแก่น',
+  'notebook-broken': 'รับซื้อโน้ตบุ๊กเสีย-ขอนแก่น',
+  'notebook-no-power': 'รับซื้อโน้ตบุ๊กเปิดไม่ติด-ขอนแก่น',
+  'notebook-screen-crack': 'รับซื้อโน้ตบุ๊กจอแตก-ขอนแก่น',
   'macbook-air': 'รับซื้อ-macbook-air-ขอนแก่น',
   'macbook-pro': 'รับซื้อ-macbook-pro-ขอนแก่น',
   'macbook-intel': 'รับซื้อ-macbook-intel-ขอนแก่น',

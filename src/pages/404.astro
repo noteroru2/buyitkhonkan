@@ -55,7 +55,7 @@ const quickCategories = CATEGORIES.filter((c) => ['notebook', 'computer', 'iphon
         <h2>หมวดรับซื้อที่ค้นหาบ่อย</h2>
         <div class="link-grid">
           {quickCategories.map((cat) => (
-            <a href={`/${cat.slug}/`} class="link-card">
+            <a href={`/${cat.path || cat.slug}/`} class="link-card">
               <span>{cat.icon}</span>
               <strong>{cat.kw} ขอนแก่น</strong>
               <small>ดูรายละเอียดการประเมินและข้อมูลที่ควรส่งก่อนนัดรับ</small>

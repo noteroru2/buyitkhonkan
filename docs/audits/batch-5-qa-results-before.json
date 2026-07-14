@@ -1,0 +1,1782 @@
+{
+  "timestamp": "2026-07-14T11:04:33.725Z",
+  "baseUrl": "http://127.0.0.1:4321",
+  "pages": [
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "home-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "notebook-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "computer",
+      "path": "/computer/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "computer-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "iphone",
+      "path": "/iphone/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "iphone-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "macbook",
+      "path": "/macbook/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "macbook-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "gpu",
+      "path": "/gpu/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "gpu-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "local-khonkaen",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "local-khonkaen-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-index-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "blog-article-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "360x800",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "390x844",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "430x932",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "768x1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "1024x768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "1440x900",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "1920x1080",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "contact-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "360x800",
+      "status": 404,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-360x800-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "390x844",
+      "status": 404,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-390x844-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "430x932",
+      "status": 404,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-430x932-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "768x1024",
+      "status": 404,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-768x1024-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "1024x768",
+      "status": 404,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-1024x768-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "1440x900",
+      "status": 404,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-1440x900-after.png",
+      "pass": true,
+      "failures": []
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-check/",
+      "viewport": "1920x1080",
+      "status": 404,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "checks": {
+        "h1Count": 1,
+        "headerHeight": 64,
+        "h1Visible": true,
+        "stickyOverFooter": false
+      },
+      "screenshot": "404-1920x1080-after.png",
+      "pass": true,
+      "failures": []
+    }
+  ],
+  "summary": {
+    "checked": 77,
+    "failures": 0,
+    "screenshots": 77
+  }
+}

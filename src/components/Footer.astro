@@ -1,77 +1,173 @@
 ---
 import { SITE, CATEGORIES } from '../data/categories.js';
 const year = new Date().getFullYear();
-const footerCategories = CATEGORIES.filter((c) => c.slug !== 'appliance');
+const footerCategories = CATEGORIES.filter((c) => c.slug !== 'appliance').slice(0, 8);
 ---
 
 <footer class="ftr">
   <div class="container ftr__grid">
-    <div>
-      <p class="ftr__logo">WINNER <strong>IT</strong> ขอนแก่น</p>
+    <div class="ftr__brand">
+      <p class="ftr__logo">WINNER <strong>IT</strong></p>
       <p class="ftr__desc">
         {SITE.serviceModel}
-        ประเมินราคาผ่าน LINE จ่ายเงินสดหรือโอนหน้างาน
       </p>
-      <address class="ftr__nap">
-        {SITE.address}<br />
-        โทร <a href={SITE.phoneHref}>{SITE.phone}</a> · LINE <a href={SITE.lineHref}>{SITE.lineId}</a><br />
-        อีเมล <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
-        {SITE.hours}
-      </address>
+      <div class="ftr__cta">
+        <a href={SITE.lineHref} class="ftr__button ftr__button--line" data-track-event="click_line">LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="ftr__button" data-track-event="click_phone">โทร {SITE.phone}</a>
+      </div>
     </div>
+
     <nav aria-label="สินค้าที่รับซื้อ">
-      <p class="ftr__head">สินค้าที่รับซื้อ</p>
+      <p class="ftr__head">บริการรับซื้อ</p>
       <ul>
         {footerCategories.map((c) => (
-          <li><a href={`/${c.slug}/`}>รับซื้อ{c.name}</a></li>
+          <li><a href={`/${c.path || c.slug}/`}>{c.kw}</a></li>
         ))}
       </ul>
     </nav>
-    <div>
-      <p class="ftr__head">ข้อมูลและนโยบาย</p>
+
+    <nav aria-label="ลิงก์ที่มีประโยชน์">
+      <p class="ftr__head">ข้อมูลช่วยตัดสินใจ</p>
       <ul>
-        <li><a href="/about/">เกี่ยวกับเรา</a></li>
-        <li><a href="/contact/">ติดต่อเรา</a></li>
-        <li><a href="/service-area/">พื้นที่ให้บริการ</a></li>
+        <li><a href="/เกี่ยวกับเรา/">เกี่ยวกับเรา</a></li>
+        <li><a href="/ติดต่อเรา/">ติดต่อเรา</a></li>
+        <li><a href="/พื้นที่ให้บริการ/">พื้นที่ให้บริการ</a></li>
         <li><a href="/สภาพสินค้าที่ขายได้/">สภาพสินค้าที่ขายได้</a></li>
-        <li><a href="/buyout-terms/">เงื่อนไขการรับซื้อ</a></li>
-        <li><a href="/privacy/">นโยบายความเป็นส่วนตัว</a></li>
-        <li><a href="/terms/">ข้อกำหนดการใช้บริการ</a></li>
+        <li><a href="/เงื่อนไขการรับซื้อ/">เงื่อนไขการรับซื้อ</a></li>
+        <li><a href="/บทความ/">บทความ</a></li>
       </ul>
-      <p class="ftr__head" style="margin-top:18px">พื้นที่ให้บริการ</p>
+    </nav>
+
+    <div>
+      <p class="ftr__head">ติดต่อและพื้นที่บริการ</p>
+      <address class="ftr__nap">
+        {SITE.address}<br />
+        โทร <a href={SITE.phoneHref}>{SITE.phone}</a><br />
+        LINE <a href={SITE.lineHref}>{SITE.lineId}</a><br />
+        อีเมล <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
+        {SITE.hours}
+      </address>
       <p class="ftr__areas">
-        {SITE.areas.map((a) => `อ.${a}`).join(' · ')} และอำเภออื่นใน จ.ขอนแก่น ตามตารางงาน
+        พื้นที่หลัก: {SITE.areas.slice(0, 6).map((a) => `อ.${a}`).join(' · ')}
       </p>
     </div>
   </div>
-  <div class="container ftr__bar">
-    <p>© {year} {SITE.name} — ดำเนินการโดย {SITE.company} · {SITE.domain}</p>
+  <div class="ftr__bar">
+    <div class="container ftr__bar-in">
+      <p>© {year} {SITE.name} · ดำเนินการโดย {SITE.company}</p>
+      <p><a href="/นโยบายความเป็นส่วนตัว/">นโยบายความเป็นส่วนตัว</a> · <a href="/ข้อกำหนดการใช้บริการ/">ข้อกำหนดการใช้บริการ</a></p>
+    </div>
   </div>
 </footer>
 
 <style>
-  .ftr { background: var(--ink); color: #b9c3d6; margin-top: 0; }
-  .ftr a { color: var(--cash); }
+  .ftr {
+    background: var(--color-navy);
+    color: #c8d2e4;
+  }
+  .ftr a {
+    color: #dbe5f5;
+  }
+  .ftr a:hover {
+    color: var(--color-accent);
+  }
   .ftr__grid {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 40px;
-    padding-block: 52px 36px;
+    grid-template-columns: 1.35fr 1fr 1fr 1.12fr;
+    gap: 36px;
+    padding-block: 58px 42px;
   }
-  .ftr__logo { font-family: var(--font-display); font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
-  .ftr__desc { font-size: 0.92rem; margin-bottom: 14px; }
-  .ftr__nap { font-style: normal; font-size: 0.92rem; line-height: 1.9; }
-  .ftr__head { font-family: var(--font-display); font-weight: 600; color: #fff; margin-bottom: 10px; }
-  .ftr ul { list-style: none; display: grid; gap: 7px; }
-  .ftr ul a { color: #b9c3d6; font-size: 0.92rem; }
-  .ftr ul a:hover { color: var(--cash); }
-  .ftr__areas { font-size: 0.9rem; line-height: 1.9; }
+  .ftr__logo {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 800;
+  }
+  .ftr__desc,
+  .ftr__nap,
+  .ftr__areas {
+    font-size: 0.94rem;
+    line-height: 1.85;
+    color: #b7c2d6;
+  }
+  .ftr__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .ftr__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: var(--radius-sm);
+    color: #fff;
+    font-weight: 750;
+  }
+  .ftr__button:hover {
+    text-decoration: none;
+    border-color: var(--color-accent);
+  }
+  .ftr__button--line {
+    background: var(--color-line);
+    border-color: var(--color-line);
+  }
+  .ftr__head {
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .ftr ul {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  .ftr li,
+  .ftr ul a {
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+  .ftr__nap {
+    font-style: normal;
+  }
+  .ftr__areas {
+    margin-top: 12px;
+  }
   .ftr__bar {
     border-top: 1px solid rgba(255, 255, 255, 0.12);
-    padding-block: 18px;
-    font-size: 0.85rem;
   }
-  @media (max-width: 760px) {
-    .ftr__grid { grid-template-columns: 1fr; gap: 28px; }
+  .ftr__bar-in {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding-block: 18px;
+    font-size: 0.88rem;
+    color: #aeb9cc;
+  }
+  .ftr__bar a {
+    color: #aeb9cc;
+  }
+  @media (max-width: 980px) {
+    .ftr__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 640px) {
+    .ftr__grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding-bottom: 34px;
+    }
+    .ftr__button {
+      width: 100%;
+    }
+    .ftr__bar-in {
+      display: grid;
+    }
   }
 </style>

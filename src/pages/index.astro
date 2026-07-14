@@ -45,9 +45,30 @@ const faqJsonLd = {
 };
 
 const steps = [
-  { n: '1', t: 'ส่งรูปทางไลน์', d: 'ถ่ายรูปสินค้าให้เห็นสภาพรอบเครื่อง แจ้งรุ่นและตำหนิถ้ามี ส่งเข้าไลน์ @buyhub ในเวลาทำการ' },
-  { n: '2', t: 'รับราคาเบื้องต้น', d: 'ประเมินตามรุ่น สเปก สภาพ อุปกรณ์ และราคาตลาด ณ วันที่ตรวจสอบ ตัวเลขไม่ผูกมัด จนกว่าจะตรวจจริง' },
-  { n: '3', t: 'นัดรับ จ่ายหน้างาน', d: 'นัดจุดรับหรือให้ทีมงานไปรับถึงที่ตามตารางงาน ตรวจของต่อหน้า แล้วชำระเงินสดหรือโอนหน้างาน' },
+  { n: '1', t: 'ส่งข้อมูลสินค้า', d: 'ถ่ายรูปสินค้าให้เห็นสภาพรอบเครื่อง แจ้งรุ่น สเปก อุปกรณ์ และตำหนิถ้ามี ส่งเข้าไลน์ @buyhub' },
+  { n: '2', t: 'รับการประเมินเบื้องต้น', d: 'ทีมงานประเมินจากข้อมูลที่ได้รับ รุ่น สภาพ อุปกรณ์ และราคาตลาด ณ วันที่ตรวจสอบ' },
+  { n: '3', t: 'นัดตรวจและตกลงราคา', d: 'ตรวจของต่อหน้า อธิบายส่วนต่างหากมี แล้วชำระเงินสดหรือโอนเมื่อผู้ขายยืนยันราคา' },
+];
+
+const benefits = [
+  { icon: 'ข้อมูล', t: 'ประเมินจากข้อมูลสินค้า', d: 'ดูรุ่น สเปก สภาพจริง อุปกรณ์ และความต้องการของตลาด ไม่ใช้ราคาเหมารวมทุกเครื่อง' },
+  { icon: 'ราคา', t: 'อธิบายปัจจัยที่มีผลต่อราคา', d: 'หากราคาต่างจากที่คาด ทีมงานแจ้งเหตุผลจากสภาพ เครื่อง อะไหล่ หรืออุปกรณ์ที่ขาดให้ทราบก่อน' },
+  { icon: 'คิว', t: 'นัดรับตามพื้นที่และคิวงาน', d: 'บริการเป็นรอบนัดรับในจังหวัดขอนแก่นตามตารางงานจริง ไม่มีการอ้างว่ามีหน้าร้านให้ walk-in' },
+  { icon: 'จ่าย', t: 'เลือกรับเงินสดหรือเงินโอน', d: 'ชำระหลังตรวจสอบและตกลงราคาแล้วต่อหน้าผู้ขาย พร้อมหลักฐานการซื้อขายสำหรับเก็บไว้' },
+];
+
+const priceFactors = [
+  'รุ่น ปีที่วางจำหน่าย และ demand ของตลาดมือสอง',
+  'สเปกสำคัญ เช่น CPU, RAM, ความจุ, การ์ดจอ หรือสุขภาพแบตเตอรี่',
+  'สภาพภายนอก จอ พอร์ต ปุ่ม กล้อง และการทำงานของฟังก์ชันหลัก',
+  'อุปกรณ์ กล่อง ใบเสร็จ ประกัน หรือบัญชีที่ต้องปลดล็อกก่อนขาย',
+];
+
+const resources = [
+  { label: 'คู่มือราคา', title: 'ราคารับซื้อ MacBook มือสอง', desc: 'ดูปัจจัยที่ทำให้ราคา MacBook ขึ้นลงก่อนส่งประเมิน', href: '/บทความ/ราคารับซื้อ-macbook-มือสอง/' },
+  { label: 'เตรียมเครื่อง', title: 'วิธีลบข้อมูล iPhone ก่อนขาย', desc: 'เช็กขั้นตอนสำคัญเพื่อปกป้องข้อมูลส่วนตัวก่อนส่งมอบ', href: '/บทความ/วิธีลบข้อมูล-iphone-ก่อนขาย/' },
+  { label: 'สภาพสินค้า', title: 'สภาพสินค้าที่ขายได้', desc: 'ดูตัวอย่างตำหนิและอาการเสียที่ยังสามารถส่งประเมินได้', href: '/สภาพสินค้าที่ขายได้/' },
+  { label: 'พื้นที่บริการ', title: 'พื้นที่ให้บริการในขอนแก่น', desc: 'ตรวจโซนนัดรับและข้อมูลบริการแบบ service-area', href: '/พื้นที่ให้บริการ/' },
 ];
 
 const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appliance'].includes(c.slug));
@@ -60,7 +81,7 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
         <div class="hero__copy">
           <p class="eyebrow">{SITE.brandLine}</p>
           <h1>
-            รับซื้อสินค้าไอที ขอนแก่น<br />
+            รับซื้อสินค้าไอที ขอนแก่น
             <span class="hero__hl">นัดรับถึงที่ จ่ายสดหน้างาน</span>
           </h1>
           <p class="hero__sub">
@@ -78,15 +99,19 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
             <li>มีตำหนิก็ประเมินได้</li>
           </ul>
         </div>
-        <div class="hero__panel" aria-hidden="true">
-          <p class="hero__panel-label">ตัวอย่างที่รับซื้อวันนี้</p>
-          {moneyCategories.slice(0, 4).map((c) => (
-            <div class="hero__row">
-              <span class="hero__row-icon">{c.icon}</span>
-              <span class="hero__row-name">{c.name}</span>
-              <span class="hero__row-tag">รับซื้อ ▲</span>
-            </div>
-          ))}
+        <div class="hero__panel">
+          <p class="hero__panel-label">บริการประเมินสินค้าไอที</p>
+          <h2 class="hero__panel-title">ส่งข้อมูลครั้งเดียว ประเมินได้หลายหมวด</h2>
+          <p class="hero__panel-copy">เหมาะกับเครื่องส่วนตัว เครื่องทำงาน หรือของหลายชิ้นที่ต้องการเคลียร์ออกอย่างเป็นระบบ</p>
+          <div class="hero__rows">
+            {moneyCategories.slice(0, 5).map((c) => (
+              <a class="hero__row" href={`/${c.path || c.slug}/`}>
+                <span class="hero__row-icon" aria-hidden="true">{c.icon}</span>
+                <span class="hero__row-name">{c.name}</span>
+                <span class="hero__row-tag">ดูหน้า</span>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -106,7 +131,7 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
         </div>
         <div class="cat-grid">
           {moneyCategories.map((c) => (
-            <a href={`/${c.slug}/`} class="card cat">
+            <a href={`/${c.path || c.slug}/`} class="card cat">
               <span class="cat__icon">{c.icon}</span>
               <h3>{c.kw} ขอนแก่น</h3>
               <p>{c.short}</p>
@@ -117,29 +142,25 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
       </div>
     </section>
 
-    <!-- ===== H2 #2 (keyword) : จุดแข็ง + H3 ===== -->
     <section class="section section--mist">
-      <div class="container prose">
-        <h2>ทำไมคนขอนแก่นเลือกขายสินค้าไอทีกับ WINNER IT</h2>
-        <p>
-          ตลาดรับซื้อมือสองมักมีปัญหา ราคาคุยไว้แล้วเปลี่ยนตอนเจอหน้า หรือรับของไปก่อนแล้วให้รอโอน
-          เราออกแบบบริการให้ตรวจสอบได้ และสื่อสารเงื่อนไขก่อนนัดรับทุกครั้ง
-        </p>
-        <h3>ราคาเบื้องต้นอิงข้อมูลที่แจ้ง — จ่ายตามสภาพจริงหน้างาน</h3>
-        <p>
-          ตัวเลขในไลน์เป็นราคาอ้างอิงเบื้องต้นตามข้อมูลที่ผู้ขายส่งมา
-          หากสภาพตรงตามที่แจ้ง จะจ่ายตามที่ตกลง หากต่างจากข้อมูล ทีมงานจะอธิบายส่วนต่างก่อนตัดสินใจขาย
-        </p>
-        <h3>บริษัทจดทะเบียน ตรวจสอบได้</h3>
-        <p>
-          การซื้อขายดำเนินการในนามบริษัท อำพล เทรดดิ้ง จำกัด มีหลักฐานการรับซื้อออกให้ผู้ขายเก็บไว้
-          ฝั่งองค์กรที่ต้องจำหน่ายทรัพย์สินตามระเบียบใช้เอกสารประกอบบัญชีได้
-        </p>
-        <h3>บริการนัดรับถึงที่ — ไม่มีหน้าร้านให้เดินเข้า</h3>
-        <p>
-          ขณะนี้ยังไม่มีหน้าร้านในขอนแก่นให้เดินเข้าใช้บริการ เป็นบริการนัดรับถึงที่หรือนัดจุดกลาง
-          ของชิ้นใหญ่หรือยกล็อต ทีมงานจัดรอบรับตามตารางงาน โดยปกติไม่มีค่าบริการรับถึงที่แยกในพื้นที่ให้บริการปกติ
-        </p>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">ทำไมเลือกเรา</p>
+          <h2>ทำไมคนขอนแก่นเลือกขายสินค้าไอทีกับ WINNER IT</h2>
+          <p>
+            ตลาดรับซื้อมือสองมักมีปัญหาราคาคุยไว้แล้วเปลี่ยนตอนเจอหน้า หรือรับของไปก่อนแล้วให้รอโอน
+            เราจึงวางขั้นตอนให้ตรวจสอบได้และสื่อสารเงื่อนไขก่อนนัดรับทุกครั้ง
+          </p>
+        </div>
+        <div class="benefit-grid">
+          {benefits.map((item) => (
+            <article class="card benefit-card">
+              <span class="icon-badge">{item.icon}</span>
+              <h3>{item.t}</h3>
+              <p>{item.d}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
 
@@ -163,6 +184,7 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
             </li>
           ))}
         </ol>
+      </div>
     </section>
 
     <!-- ===== H2 #5 : ขั้นตอนการให้บริการโดยสรุป ===== -->
@@ -211,67 +233,104 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
 
     <!-- ===== H2 #4 (keyword) : หลักการตีราคา + external + บทความ ===== -->
     <section class="section section--mist">
-      <div class="container prose">
-        <h2>ราคารับซื้อสินค้าไอทีมือสอง เราประเมินจากอะไร</h2>
-        <p>
-          ทุกหมวดใช้หลักเดียวกันคืออิงราคาตลาดจริง ณ วันขาย ประกอบกับรุ่น อายุการใช้งาน
-          สภาพภายนอก ความสมบูรณ์ของฟังก์ชัน และความครบของอุปกรณ์แถม ไม่มีสูตรกดราคาเหมารวม
-          ของที่มีตำหนิจะถูกหักตามค่าซ่อมจริงเป็นรายการ ไม่ใช่ตัดทิ้งครึ่งราคาแบบไร้ที่มา
-          ตัวอย่างการอัปเดตราคารายเดือนดูได้จากบทความ
-          <a href="/blog/macbook-resale-price/">ราคารับซื้อ MacBook มือสองทุกรุ่น</a>
-          และเทคนิคเตรียมเครื่องอ่านได้ที่
-          <a href="/blog/erase-iphone-before-selling/">วิธีลบข้อมูล iPhone ก่อนขาย</a>
-        </p>
-        <p>
-          ก่อนตัดสินใจขายกับใครก็ตาม แนะนำให้เช็กตัวตนของผู้รับซื้อเสมอ สถานะนิติบุคคลของเราตรวจสอบได้ที่
+      <div class="container price-section">
+        <div class="section-head">
+          <p class="eyebrow">หลักการประเมินราคา</p>
+          <h2>ราคารับซื้อสินค้าไอทีมือสอง เราประเมินจากอะไร</h2>
+          <p>
+            ราคาที่แจ้งผ่านไลน์เป็นราคาอ้างอิงเบื้องต้น ไม่ใช่ราคายืนยันจนกว่าจะตรวจสภาพจริง
+            ทุกหมวดประเมินจากข้อมูลสินค้าและสภาพหน้างานเป็นหลัก
+          </p>
+        </div>
+        <div class="price-panel">
+          <div class="price-panel__summary">
+            <span class="icon-badge">ราคา</span>
+            <h3>ปัจจัยที่ทำให้ราคาขึ้นหรือลง</h3>
+            <p>
+              ของที่มีตำหนิจะประเมินตามค่าซ่อมหรือมูลค่าอะไหล่เป็นรายการ
+              ไม่ใช้สูตรกดราคาเหมารวมแบบไม่มีที่มา
+            </p>
+          </div>
+          <ul class="price-list">
+            {priceFactors.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+        <p class="price-links">
+          อ่านตัวอย่างราคาเพิ่มเติมได้ที่
+          <a href="/บทความ/ราคารับซื้อ-macbook-มือสอง/">ราคารับซื้อ MacBook มือสองทุกรุ่น</a>
+          และการเตรียมเครื่องที่
+          <a href="/บทความ/วิธีลบข้อมูล-iphone-ก่อนขาย/">วิธีลบข้อมูล iPhone ก่อนขาย</a>
+          สถานะนิติบุคคลตรวจสอบได้ที่
           <a href="https://www.dbd.go.th" target="_blank" rel="noopener">กรมพัฒนาธุรกิจการค้า</a>
-          — ความโปร่งใสคือสิ่งที่ผู้ขายทุกคนควรได้รับก่อนส่งมอบของมีค่า
         </p>
       </div>
     </section>
 
     <!-- ===== H2 #5 (keyword) : พื้นที่บริการ ===== -->
     <section class="section">
-      <div class="container prose">
-        <h2>พื้นที่ให้บริการรับซื้อสินค้าไอทีในจังหวัดขอนแก่น</h2>
-        <p>
-          {SITE.serviceModel}
-          พื้นที่นัดรับครอบคลุม{SITE.areas.map((a) => `อ.${a}`).join(' ')} และอำเภออื่นในจังหวัดตามตารางงานจริง
-          เปิดให้บริการ{SITE.hours}
-          ช่องทางหลักคือไลน์ {SITE.lineId} และโทร {SITE.phone} (อีเมล {SITE.email})
-        </p>
+      <div class="container service-faq">
+        <div class="service-card">
+          <p class="eyebrow">พื้นที่ให้บริการ</p>
+          <h2>รับซื้อสินค้าไอทีในจังหวัดขอนแก่น</h2>
+          <p>
+            {SITE.serviceModel}
+            พื้นที่นัดรับครอบคลุม{SITE.areas.map((a) => `อ.${a}`).join(' ')}
+            และอำเภออื่นในจังหวัดตามตารางงานจริง
+          </p>
+          <dl class="service-meta">
+            <div>
+              <dt>เวลาให้บริการ</dt>
+              <dd>{SITE.hours}</dd>
+            </div>
+            <div>
+              <dt>ช่องทางหลัก</dt>
+              <dd>LINE {SITE.lineId} · โทร {SITE.phone}</dd>
+            </div>
+            <div>
+              <dt>รูปแบบบริการ</dt>
+              <dd>นัดรับถึงที่หรือนัดจุดกลางตามคิวงาน ไม่มีหน้าร้าน walk-in ในขอนแก่น</dd>
+            </div>
+          </dl>
+        </div>
 
-        <!-- FAQ ใช้ H4 ตาม audit -->
-        <h4 class="h4-block">คำถามที่พบบ่อย</h4>
-        <div class="faq">
-          {faqs.map((f) => (
-            <details class="faq__item">
-              <summary>{f.q}</summary>
-              <p>{f.a}</p>
-            </details>
-          ))}
+        <div class="faq-wrap">
+          <h2>คำถามที่พบบ่อย</h2>
+          <div class="faq">
+            {faqs.map((f) => (
+              <details class="faq__item">
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container prose">
-        <h2>หน้าช่วยตัดสินใจก่อนขาย</h2>
-        <p>
-          ถ้าสินค้ามีตำหนิ ดูหน้าสรุป<a href="/สภาพสินค้าที่ขายได้/">สภาพสินค้าที่ขายได้</a>
-          หรือเลือกดูหน้าเฉพาะที่มีข้อมูลจริง เช่น
-          <a href="/รับซื้อ-dell-ขอนแก่น/">Dell</a>, <a href="/รับซื้อ-hp-ขอนแก่น/">HP</a>,
-          <a href="/รับซื้อ-asus-ขอนแก่น/">ASUS</a>, <a href="/รับซื้อ-lenovo-ขอนแก่น/">Lenovo</a>,
-          <a href="/รับซื้อ-macbook-air-ขอนแก่น/">MacBook Air</a> และ <a href="/รับซื้อคอมเกมมิ่ง-ขอนแก่น/">คอมเกมมิ่ง</a>
-          เพื่อเตรียมข้อมูลก่อนส่งประเมิน
-        </p>
+    <section class="section section--mist">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Related resources</p>
+          <h2>ข้อมูลช่วยตัดสินใจก่อนขาย</h2>
+          <p>รวมหน้าที่ช่วยเตรียมข้อมูลสินค้า ตรวจสภาพ และเข้าใจปัจจัยราคาก่อนส่งประเมิน</p>
+        </div>
+        <div class="resource-grid">
+          {resources.map((item) => (
+            <a class="card resource-card" href={item.href}>
+              <span>{item.label}</span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+              <strong>อ่านต่อ →</strong>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
 
     <!-- ===== CTA ปิดท้าย ===== -->
     <section class="section cta">
       <div class="container cta__in">
-        <h4 class="cta__head">มีของไอทีอยากขาย? ส่งรูปประเมินได้เลย</h4>
+        <h2 class="cta__head">มีของไอทีอยากขาย? ส่งรูปประเมินได้เลย</h2>
         <p>ถ่ายรูป ส่งไลน์ รับราคาเบื้องต้นตามคิว — นัดรับในจังหวัดขอนแก่น</p>
         <div class="cta__btns">
           <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ทัก LINE {SITE.lineId}</a>
@@ -443,6 +502,358 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
     .hero h1 {
       font-size: 1.52rem;
       text-wrap: balance;
+    }
+  }
+
+  .hero {
+    position: relative;
+    padding-block: clamp(58px, 8vw, 96px) clamp(44px, 6vw, 72px);
+    background:
+      radial-gradient(circle at 78% 18%, rgba(40, 76, 255, 0.1), transparent 32%),
+      linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  }
+  .hero__in {
+    grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+    gap: clamp(34px, 5vw, 64px);
+  }
+  .hero h1 {
+    max-width: 760px;
+    text-wrap: balance;
+  }
+  .hero__hl {
+    display: inline;
+    color: var(--color-primary);
+    background: linear-gradient(transparent 72%, rgba(255, 176, 32, 0.28) 72%);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .hero__sub {
+    font-size: 1.125rem;
+    line-height: 1.78;
+    max-width: 62ch;
+  }
+  .hero__points {
+    gap: 10px;
+  }
+  .hero__points li {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 6px 11px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--color-text);
+  }
+  .hero__panel {
+    background: linear-gradient(145deg, #111c33 0%, #172554 100%);
+    border-radius: var(--radius-lg);
+    padding: clamp(22px, 3vw, 32px);
+    box-shadow: var(--shadow-md);
+  }
+  .hero__panel-title {
+    color: #fff;
+    font-size: clamp(1.32rem, 2vw, 1.7rem);
+    margin-bottom: 8px;
+  }
+  .hero__panel-copy {
+    color: #c6d2eb;
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+  .hero__panel-label {
+    color: var(--color-accent);
+    letter-spacing: 0;
+  }
+  .hero__rows {
+    display: grid;
+    gap: 10px;
+  }
+  .hero__row {
+    min-height: 54px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+  }
+  .hero__row:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  .hero__row-tag {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .cat-grid {
+    gap: 20px;
+  }
+  .cat {
+    min-height: 100%;
+    border-radius: 18px;
+    transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+  }
+  .cat:hover {
+    box-shadow: var(--shadow-md);
+  }
+  .cat__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--color-soft-blue);
+    font-size: 1.45rem;
+  }
+  .cat p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .benefit-card {
+    display: grid;
+    gap: 12px;
+  }
+  .benefit-card .icon-badge {
+    width: auto;
+    min-width: 52px;
+    padding-inline: 10px;
+    font-size: 0.86rem;
+    font-weight: 800;
+  }
+  .benefit-card p,
+  .resource-card p,
+  .price-panel p {
+    color: var(--color-muted);
+  }
+  .steps {
+    position: relative;
+    gap: 22px;
+  }
+  .step {
+    position: relative;
+    border-radius: 18px;
+  }
+  .step__n {
+    width: 46px;
+    height: 46px;
+    background: var(--color-primary);
+    box-shadow: 0 10px 22px rgba(40, 76, 255, 0.2);
+  }
+  .section--trust {
+    background: #fff;
+  }
+  .trust-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .trust-card {
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+  }
+  .trust-img-wrapper {
+    border-radius: 14px;
+  }
+  .price-section {
+    max-width: 960px;
+  }
+  .price-panel {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 22px;
+    align-items: stretch;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: clamp(22px, 3vw, 30px);
+    box-shadow: var(--shadow-sm);
+  }
+  .price-panel__summary {
+    display: grid;
+    align-content: start;
+    gap: 12px;
+  }
+  .price-list {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+  }
+  .price-list li {
+    position: relative;
+    padding: 14px 14px 14px 38px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+  .price-list li::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 21px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--color-accent);
+  }
+  .price-links {
+    margin-top: 18px;
+    color: var(--color-muted);
+    line-height: 1.8;
+  }
+  .service-faq {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.18fr);
+    gap: 28px;
+    align-items: start;
+  }
+  .service-card {
+    position: sticky;
+    top: 96px;
+    background: var(--color-navy);
+    color: #d5deef;
+    border-radius: var(--radius-lg);
+    padding: clamp(24px, 3vw, 34px);
+    box-shadow: var(--shadow-md);
+  }
+  .service-card h2 {
+    color: #fff;
+    margin-block: 8px 12px;
+  }
+  .service-card .eyebrow {
+    color: var(--color-accent);
+  }
+  .service-meta {
+    display: grid;
+    gap: 14px;
+    margin-top: 20px;
+  }
+  .service-meta div {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+  }
+  .service-meta dt {
+    color: #fff;
+    font-weight: 800;
+  }
+  .service-meta dd {
+    color: #c9d4e8;
+  }
+  .faq-wrap h2 {
+    margin-bottom: 16px;
+  }
+  .faq__item {
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  .faq__item summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .faq__item summary::after {
+    float: none;
+    flex: 0 0 auto;
+  }
+  .faq__item summary:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
+  }
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .resource-card {
+    color: var(--color-text);
+    display: grid;
+    gap: 10px;
+  }
+  .resource-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+  }
+  .resource-card span {
+    color: var(--color-primary);
+    font-size: 0.82rem;
+    font-weight: 800;
+  }
+  .resource-card strong {
+    color: var(--color-primary);
+  }
+  .cta {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-navy) 100%);
+  }
+  .cta__in {
+    max-width: 780px;
+  }
+  .cta__head {
+    color: #fff;
+    font-size: clamp(1.72rem, 3vw, 2.35rem);
+  }
+  .cta p {
+    color: rgba(255, 255, 255, 0.86);
+  }
+  .cta .btn--volt {
+    background: #fff;
+    color: var(--color-navy);
+  }
+  @media (max-width: 1020px) {
+    .benefit-grid,
+    .resource-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 860px) {
+    .hero__in {
+      grid-template-columns: 1fr;
+    }
+    .hero__panel {
+      max-width: 640px;
+    }
+    .price-panel,
+    .service-faq {
+      grid-template-columns: 1fr;
+    }
+    .service-card {
+      position: static;
+    }
+  }
+  @media (max-width: 640px) {
+    .hero {
+      padding-top: 42px;
+    }
+    .hero__cta .btn {
+      width: 100%;
+    }
+    .hero__points {
+      display: grid;
+    }
+    .cat-grid,
+    .benefit-grid,
+    .steps,
+    .trust-grid,
+    .resource-grid {
+      grid-template-columns: 1fr;
+    }
+    .cta__btns {
+      display: grid;
+    }
+  }
+  @media (max-width: 375px) {
+    .hero h1 {
+      font-size: 2rem;
     }
   }
 </style>

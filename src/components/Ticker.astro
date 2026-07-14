@@ -1,51 +1,142 @@
 ---
-// แถบวิ่งสไตล์กระดานราคา — ลายเซ็นของเว็บ
 const items = [
-  'ประเมินตามรุ่นและสภาพ',
-  'ส่งรูปผ่าน LINE',
-  'นัดรับตามคิวงาน',
-  'ชำระหลังตรวจสอบและตกลงราคา',
-  'บริการในจังหวัดขอนแก่น',
+  {
+    title: 'ประเมินตามรุ่นและสภาพ',
+    desc: 'อ้างอิงข้อมูลสินค้าและราคาตลาด ณ วันที่ตรวจสอบ',
+    icon: 'search',
+  },
+  {
+    title: 'ส่งรูปผ่าน LINE',
+    desc: 'ถ่ายรูปสินค้า รุ่น สเปก และตำหนิ เพื่อรับราคาเบื้องต้น',
+    icon: 'image',
+  },
+  {
+    title: 'นัดรับตามคิวงาน',
+    desc: 'จัดรอบรับตามพื้นที่และตารางงานจริงของทีม',
+    icon: 'calendar',
+  },
+  {
+    title: 'ชำระหลังตกลงราคา',
+    desc: 'จ่ายสดหรือโอนหลังตรวจสอบและผู้ขายยืนยัน',
+    icon: 'wallet',
+  },
 ];
-const row = items.map((t) => `▲ ${t}`).join('   ');
 ---
 
-<div class="ticker-wrapper">
-  <div class="ticker-track">
-    <span>{row}</span>
-    <span aria-hidden="true">{row}</span>
+<div class="trustbar" aria-label="สรุปขั้นตอนและความน่าเชื่อถือ">
+  <div class="container trustbar__grid">
+    {items.map((item) => (
+      <div class="trustbar__item">
+        <span class="trustbar__icon" aria-hidden="true">
+          {item.icon === 'search' && (
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="6" />
+              <path d="m16 16 4 4" />
+            </svg>
+          )}
+          {item.icon === 'image' && (
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m8 13 2.2-2.2a1.2 1.2 0 0 1 1.7 0L17 16" />
+              <circle cx="8" cy="9" r="1" />
+            </svg>
+          )}
+          {item.icon === 'calendar' && (
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="5" width="16" height="15" rx="2" />
+              <path d="M8 3v4M16 3v4M4 10h16" />
+            </svg>
+          )}
+          {item.icon === 'wallet' && (
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h15a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a3 3 0 0 1 3-3h11" />
+              <path d="M17 13h.01" />
+            </svg>
+          )}
+        </span>
+        <span>
+          <strong>{item.title}</strong>
+          <small>{item.desc}</small>
+        </span>
+      </div>
+    ))}
   </div>
 </div>
 
 <style>
-  .ticker-wrapper {
-    background: #ffb020; /* var(--cash) */
-    color: #0d1526; /* var(--ink) */
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    contain: layout paint;
-    border-top: 2px solid #0d1526;
-    border-bottom: 2px solid #0d1526;
+  .trustbar {
+    background: #fff;
+    border-block: 1px solid var(--color-border);
   }
-  .ticker-track {
+  .trustbar__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+  }
+  .trustbar__item {
     display: flex;
-    width: max-content;
-    animation: slide 30s linear infinite;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 18px 16px;
+    border-left: 1px solid var(--color-border);
   }
-  .ticker-track span {
-    font-family: 'Chakra Petch', 'Anuphan', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    white-space: pre;
-    padding: 9px 1.5ch 9px 0;
+  .trustbar__item:first-child {
+    border-left: 0;
   }
-  @keyframes slide {
-    to { transform: translateX(-50%); }
+  .trustbar__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: var(--color-soft-blue);
+    color: var(--color-primary);
+    flex: 0 0 auto;
   }
-  @media (prefers-reduced-motion: reduce) {
-    .ticker-track {
-      animation: none;
+  .trustbar__icon svg {
+    width: 21px;
+    height: 21px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .trustbar strong {
+    display: block;
+    color: var(--color-navy);
+    line-height: 1.3;
+  }
+  .trustbar small {
+    display: block;
+    color: var(--color-muted);
+    line-height: 1.45;
+    margin-top: 3px;
+  }
+  @media (max-width: 860px) {
+    .trustbar__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .trustbar__item:nth-child(odd) {
+      border-left: 0;
+    }
+    .trustbar__item:nth-child(n + 3) {
+      border-top: 1px solid var(--color-border);
+    }
+  }
+  @media (max-width: 430px) {
+    .trustbar__item {
+      padding: 14px 10px;
+      gap: 9px;
+    }
+    .trustbar__icon {
+      width: 34px;
+      height: 34px;
+    }
+    .trustbar strong {
+      font-size: 0.92rem;
+    }
+    .trustbar small {
+      font-size: 0.78rem;
     }
   }
 </style>
