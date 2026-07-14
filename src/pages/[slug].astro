@@ -178,7 +178,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
         ขั้นที่สอง หลังได้รับข้อมูลครบ ทีมงานจะแจ้งราคาเบื้องต้นตามลำดับคิวในเวลาทำการ ({SITE.hours})
         ตัวเลขนี้ไม่ผูกมัด ไม่พอใจก็ปฏิเสธได้ทันที
         ขั้นสุดท้าย นัดจุดรับที่สะดวกหรือให้ทีมงานไปรับถึงที่
-        ตรวจสภาพต่อหน้าแล้วรับเงินสดหรือโอนทันที
+        ตรวจสภาพต่อหน้าแล้วชำระเงินสดหรือโอนหน้างาน
         พื้นที่และเวลานัดรับขึ้นอยู่กับตารางงานของทีมงานในแต่ละวัน
       </p>
       <p>
@@ -188,7 +188,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
 
       {cat.caseStudy && (
         <>
-          <h2>เคสรับซื้อจริงของ{cat.name}ในขอนแก่น</h2>
+          <h2>ตัวอย่างเคสการให้บริการรับซื้อ{cat.name}ในขอนแก่น</h2>
           <div class="case-study">
             <p class="case-study__meta">{cat.caseStudy.date} · {cat.caseStudy.area}</p>
             <h3>{cat.caseStudy.title}</h3>
@@ -341,7 +341,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
               </div>
             </div>
             */}
-            <h2>เคสรับซื้อจริงในพื้นที่{localPage.area}</h2>
+            <h2>ตัวอย่างเคสการให้บริการรับซื้อในพื้นที่{localPage.area}</h2>
             <div class="case-study">
               <p class="case-study__meta">{localPage.caseStudy.date} · {localPage.area}</p>
               <h3>{localPage.caseStudy.title}</h3>
