@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-07-15T02:55:25.782Z",
+  "mapping_count": 86,
+  "expected_redirects": 49,
+  "implemented_redirects": 49,
+  "keep_urls": 37,
+  "missing_redirects": [],
+  "unexpected_redirects": [],
+  "duplicate_sources": [],
+  "duplicate_destinations": [],
+  "chains": [],
+  "loops": [],
+  "status": "PASS"
+}
