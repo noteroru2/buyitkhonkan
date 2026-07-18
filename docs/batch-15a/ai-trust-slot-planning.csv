@@ -1,0 +1,15 @@
+Asset ID,File,Group,Prior approval status,Eligible page,Eligible section,Disclosure required,Alt text,Caption,Trust risk,Recommended action,Final decision
+AI-01,people/owner-notebook-inspection-ai.webp,Owner identity-reference,APPROVED_AI_ILLUSTRATION,None,None,"ภาพประกอบสร้างด้วย AI โดยอ้างอิงใบหน้าของเจ้าของ",เจ้าของกำลังตรวจโน้ตบุ๊กบนโต๊ะอุปกรณ์,,High,SAFE_FOR_INTERNAL_LIBRARY_ONLY,NOT_RENDERED
+AI-02,people/owner-profile-workspace-ai.webp,Owner identity-reference,APPROVED_AI_ILLUSTRATION,None,None,"ภาพประกอบสร้างด้วย AI โดยอ้างอิงใบหน้าของเจ้าของ",ภาพบุคคลของเจ้าของในพื้นที่ทำงานจำลอง,,High,SAFE_FOR_INTERNAL_LIBRARY_ONLY,NOT_RENDERED
+AI-03,people/owner-team-device-check-ai.webp,Owner identity-reference,APPROVED_AI_ILLUSTRATION,None,None,"ภาพประกอบสร้างด้วย AI โดยอ้างอิงใบหน้าของเจ้าของ",บุคลากรสองคนกำลังดูด้านใต้ของโน้ตบุ๊ก,,High,SAFE_FOR_INTERNAL_LIBRARY_ONLY,NOT_RENDERED
+AI-04,,Process / tools,REJECTED_VISUAL_ARTIFACT,None,None,N/A,,,High,NOT_RECOMMENDED_FOR_RENDER,REJECTED
+AI-05,,Process / tools,REJECTED_VISUAL_ARTIFACT,None,None,N/A,,,High,NOT_RECOMMENDED_FOR_RENDER,REJECTED
+AI-06,,Process / tools,REJECTED_VISUAL_ARTIFACT,None,None,N/A,,,High,NOT_RECOMMENDED_FOR_RENDER,REJECTED
+AI-07,process/notebook-exterior-check-ai.webp,Process / tools,APPROVED_AI_ILLUSTRATION,Homepage,Process HOM-PROC-01,ภาพประกอบขั้นตอนการตรวจและจัดเตรียมอุปกรณ์,บุคคลใช้ไฟฉายตรวจสภาพภายนอกของโน้ตบุ๊กบนโต๊ะอุปกรณ์,ภาพประกอบขั้นตอนการตรวจและจัดเตรียมอุปกรณ์,Low,SAFE_FOR_PROCESS_SECTION,RENDERED
+AI-08,,Process / tools,REJECTED_VISUAL_ARTIFACT,None,None,N/A,,,High,NOT_RECOMMENDED_FOR_RENDER,REJECTED
+AI-09,,Process / tools,REJECTED_MISLEADING,None,None,N/A,,,High,NOT_RECOMMENDED_FOR_RENDER,REJECTED
+AI-10,,Process / tools,MISSING,None,None,N/A,,,Unknown,NOT_RECOMMENDED_FOR_RENDER,MISSING
+AI-11,packing/notebook-safe-packing-ai.webp,Process / tools,APPROVED_AI_ILLUSTRATION,About,Service workflow ABOUT-PROC-01,ภาพประกอบขั้นตอนการจัดเตรียมอุปกรณ์ ไม่ใช่ภาพทีมงานหรือสถานที่จริง,บุคคลกำลังจัดโน้ตบุ๊กลงซองกันกระแทกข้างกล่องและวัสดุแพ็ก,ภาพประกอบขั้นตอนการจัดเตรียมอุปกรณ์ ไม่ใช่ภาพทีมงานหรือสถานที่จริง,Low,SAFE_FOR_ABOUT_ILLUSTRATION,RENDERED
+AI-12,,Process / tools,REJECTED_MISLEADING,None,None,N/A,,,High,NOT_RECOMMENDED_FOR_RENDER,REJECTED
+AI-13,workspace/inspection-workspace-concept-ai.webp,Workspace concept,APPROVED_AI_ILLUSTRATION,Contact,Supporting visual,"ภาพประกอบแนวทางพื้นที่ตรวจและจัดเตรียมอุปกรณ์ ไม่ใช่ภาพสถานที่จริง",ภาพประกอบแนวทางพื้นที่สำหรับตรวจอุปกรณ์ไอที,,High,SAFE_FOR_INTERNAL_LIBRARY_ONLY,NOT_RENDERED
+AI-14,workspace/packing-storage-workspace-concept-ai.webp,Workspace concept,APPROVED_AI_ILLUSTRATION,Contact,Supporting visual,"ภาพประกอบแนวทางพื้นที่ตรวจและจัดเตรียมอุปกรณ์ ไม่ใช่ภาพสถานที่จริง",ภาพประกอบแนวทางพื้นที่แพ็กและจัดเก็บอุปกรณ์,,High,SAFE_FOR_INTERNAL_LIBRARY_ONLY,NOT_RENDERED
