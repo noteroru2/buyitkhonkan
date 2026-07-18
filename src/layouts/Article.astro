@@ -1,6 +1,7 @@
 ---
 import Base from './Base.astro';
 import { SITE } from '../data/site.js';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 const { title, description, h1, published, modified } = Astro.props;
 
@@ -15,16 +16,26 @@ const articleLd = {
   publisher: { '@type': 'Organization', name: SITE.company },
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
 };
+const articleBreadcrumbItems = [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'บทความ', href: '/บทความ/' },
+  { name: h1, href: Astro.url.pathname },
+];
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: articleBreadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, Astro.site).href,
+  })),
+};
 ---
 
-<Base title={title} description={description} jsonLd={[articleLd]} stickyVariant="article">
+<Base title={title} description={description} jsonLd={[articleLd, breadcrumbLd]} stickyVariant="article">
   <main id="main-content">
     <article class="post">
       <div class="container post__shell">
         <header class="post__header">
-          <nav class="crumb" aria-label="breadcrumb">
-            <a href="/">หน้าแรก</a> <span>/</span> <a href="/บทความ/">บทความ</a> <span>/</span> เรื่องนี้
-          </nav>
+          <Breadcrumbs items={articleBreadcrumbItems} />
           <h1>{h1}</h1>
           <p class="post__meta">อัปเดตล่าสุด {modified || published} · โดยทีมงาน {SITE.name}</p>
         </header>

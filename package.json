@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "audit:metadata": "node docs/audits/metadata-audit.js",
+    "audit:batch12": "node scripts/audits/batch-12-audit.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",

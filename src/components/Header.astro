@@ -11,17 +11,79 @@ import { SITE } from '../data/site.js';
     </a>
     <nav class="hdr__nav" aria-label="เมนูหลัก">
       <a href="/#categories">สินค้าที่รับซื้อ</a>
+      <a href="/พื้นที่ให้บริการ/">พื้นที่ให้บริการ</a>
       <a href="/#steps">ขั้นตอน</a>
       <a href="/เกี่ยวกับเรา/">เกี่ยวกับเรา</a>
       <a href="/บทความ/">บทความ</a>
       <a href="/ติดต่อเรา/">ติดต่อ</a>
     </nav>
-    <a href={SITE.phoneHref} class="btn btn--volt hdr__call" data-track-event="click_phone" aria-label={`โทร ${SITE.phone}`}>
+    <a href={SITE.phoneHref} class="btn btn--volt hdr__call" data-track-event="phone_click" data-cta-location="header" aria-label={`โทร ${SITE.phone}`}>
       <span class="hdr__call-short">โทรเลย</span>
       <span class="hdr__call-full">โทร {SITE.phone}</span>
     </a>
+    <button class="hdr__menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="เปิดเมนูหลัก">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <div class="mobile-menu__overlay" data-mobile-menu-close hidden></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-label="เมนูมือถือ" aria-hidden="true" tabindex="-1">
+    <div class="mobile-menu__head">
+      <strong>เมนู</strong>
+      <button type="button" class="mobile-menu__close" data-mobile-menu-close aria-label="ปิดเมนู">×</button>
+    </div>
+    <nav>
+      <a href="/#categories" data-track-event="mobile_menu_item_click">สินค้าที่รับซื้อ</a>
+      <a href="/พื้นที่ให้บริการ/" data-track-event="mobile_menu_item_click">พื้นที่ให้บริการ</a>
+      <a href="/#steps" data-track-event="mobile_menu_item_click">ขั้นตอนการขาย</a>
+      <a href="/บทความ/" data-track-event="mobile_menu_item_click">บทความ</a>
+      <a href="/เกี่ยวกับเรา/" data-track-event="mobile_menu_item_click">เกี่ยวกับเรา</a>
+      <a href="/ติดต่อเรา/" data-track-event="mobile_menu_item_click">ติดต่อ</a>
+    </nav>
+  </aside>
 </header>
+
+<script>
+  const button = document.querySelector('.hdr__menu-button');
+  const drawer = document.querySelector('#mobile-menu');
+  const overlay = document.querySelector('.mobile-menu__overlay');
+  if (button instanceof HTMLButtonElement && drawer instanceof HTMLElement && overlay instanceof HTMLElement) {
+    const focusables = () => [...drawer.querySelectorAll('a, button')].filter((item) => item instanceof HTMLElement);
+    const close = () => {
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-label', 'เปิดเมนูหลัก');
+      drawer.setAttribute('aria-hidden', 'true');
+      overlay.hidden = true;
+      document.body.classList.remove('menu-open');
+      button.focus();
+    };
+    const open = () => {
+      button.setAttribute('aria-expanded', 'true');
+      button.setAttribute('aria-label', 'ปิดเมนูหลัก');
+      drawer.setAttribute('aria-hidden', 'false');
+      overlay.hidden = false;
+      document.body.classList.add('menu-open');
+      window.trackConversion?.('mobile_menu_open', { cta_location: 'header' });
+      focusables()[0]?.focus();
+    };
+    button.addEventListener('click', () => button.getAttribute('aria-expanded') === 'true' ? close() : open());
+    document.querySelectorAll('[data-mobile-menu-close]').forEach((item) => item.addEventListener('click', close));
+    drawer.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      drawer.setAttribute('aria-hidden', 'true');
+      overlay.hidden = true;
+      document.body.classList.remove('menu-open');
+      button.setAttribute('aria-expanded', 'false');
+    }));
+    document.addEventListener('keydown', (event) => {
+      if (drawer.getAttribute('aria-hidden') === 'true') return;
+      if (event.key === 'Escape') return close();
+      if (event.key !== 'Tab') return;
+      const items = focusables();
+      const first = items[0]; const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    });
+  }
+</script>
 
 <style>
   .hdr {
@@ -74,6 +136,8 @@ import { SITE } from '../data/site.js';
   .hdr__nav a:hover { color: var(--color-primary); background: var(--color-soft-blue); text-decoration: none; }
   .hdr__call { padding: 9px 16px; font-size: 0.9rem; flex: 0 0 auto; }
   .hdr__call-short { display: none; }
+  .hdr__menu-button { display: none; }
+  .mobile-menu, .mobile-menu__overlay { display: none; }
 
   @media (max-width: 1023px) {
     .hdr__area { display: none; }
@@ -81,14 +145,34 @@ import { SITE } from '../data/site.js';
 
   @media (max-width: 900px) {
     .hdr__nav { display: none; }
-    .hdr__call { margin-left: auto; }
+    .hdr__call { display: none; }
+    .hdr__menu-button {
+      display: grid; place-content: center; gap: 5px; width: 44px; height: 44px;
+      margin-left: auto; border: 1px solid var(--color-border); border-radius: 12px; background: #fff;
+    }
+    .hdr__menu-button span { display: block; width: 21px; height: 2px; background: var(--color-navy); }
+    .mobile-menu__overlay {
+      display: block; position: absolute; top: 72px; left: 0; width: 100vw; height: calc(100dvh - 72px);
+      background: rgba(7, 15, 31, .5); z-index: 55;
+    }
+    .mobile-menu__overlay[hidden] { display: none; }
+    .mobile-menu {
+      display: block; position: fixed; top: 0; right: 0; z-index: 60; width: min(86vw, 360px); height: 100dvh;
+      padding: 20px 20px 88px; background: #fff; box-shadow: -18px 0 50px rgba(15, 23, 42, .2);
+      transform: translateX(0); transition: transform .2s ease; overflow-y: auto;
+    }
+    .mobile-menu[aria-hidden="true"] { display: none; }
+    .mobile-menu__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+    .mobile-menu__close { width: 44px; height: 44px; border: 0; background: var(--color-bg); border-radius: 12px; font-size: 1.8rem; }
+    .mobile-menu nav { display: grid; }
+    .mobile-menu nav a { display: flex; align-items: center; min-height: 52px; padding: 10px 8px; border-bottom: 1px solid var(--color-border); color: var(--color-navy); font-weight: 750; }
+    :global(body.menu-open) { overflow: hidden; }
   }
 
   @media (max-width: 480px) {
-    .hdr__call-short { display: inline; }
-    .hdr__call-full { display: none; }
-    .hdr__call { padding: 8px 13px; font-size: 0.86rem; width: auto; }
+    .hdr__call { display: none; }
   }
+  @media (prefers-reduced-motion: reduce) { .mobile-menu { transition: none; } }
 
   @media (max-width: 400px) {
     .hdr__name { font-size: 0.98rem; }
