@@ -36,7 +36,6 @@ const organization = {
   telephone: SITE.phone,
   email: SITE.email,
   priceRange: '฿฿',
-  openingHours: 'Mo-Su 09:00-19:30',
   address: {
     '@type': 'PostalAddress',
     addressRegion: SITE.region,
@@ -127,20 +126,37 @@ const allJsonLd = includeOrganization
     <StickyBar variant={stickyVariant} />
     <script>
       window.dataLayer = window.dataLayer || [];
+      const pageType = document.querySelector('main')?.classList.contains('detail-page')
+        ? 'detail'
+        : document.querySelector('article.post') ? 'article' : location.pathname === '/' ? 'home' : 'static';
+      window.trackConversion = (eventName, parameters = {}) => {
+        if (!eventName || typeof eventName !== 'string') return;
+        window.dataLayer.push({
+          event: eventName,
+          page_path: location.pathname,
+          page_type: pageType,
+          device_context: matchMedia('(max-width: 900px)').matches ? 'mobile' : 'desktop',
+          ...parameters,
+        });
+      };
       document.addEventListener('click', (event) => {
         const target = event.target instanceof Element ? event.target.closest('a') : null;
         if (!target) return;
 
         const href = target.getAttribute('href') || '';
         const explicitEvent = target.getAttribute('data-track-event');
-        const eventName = explicitEvent || (href.includes('line.me') ? 'click_line' : href.startsWith('tel:') ? 'click_phone' : '');
+        const isHero = Boolean(target.closest('.hero, .cat-hero'));
+        const legacyEventMap = {
+          click_line: isHero ? 'hero_line_click' : 'line_click',
+          click_phone: isHero ? 'hero_phone_click' : 'phone_click',
+        };
+        const eventName = legacyEventMap[explicitEvent] || explicitEvent || (href.includes('line.me') ? 'line_click' : href.startsWith('tel:') ? 'phone_click' : '');
         if (!eventName) return;
-
-        window.dataLayer.push({
-          event: eventName,
-          link_url: href,
-          link_text: target.textContent?.trim().slice(0, 120) || '',
-          page_path: window.location.pathname,
+        window.trackConversion(eventName, {
+          link_url: href.startsWith('tel:') ? 'tel:' : href.includes('line.me') ? 'line' : href,
+          cta_location: target.getAttribute('data-cta-location') || 'content',
+          item_category: target.getAttribute('data-item-category') || undefined,
+          area_name: target.getAttribute('data-area-name') || undefined,
         });
       });
     </script>

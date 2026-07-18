@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Ticker from '../components/Ticker.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { SITE, CATEGORIES } from '../data/categories.js';
 import { BRAND_PAGES } from '../data/brandPages.js';
 import { MODEL_PAGES } from '../data/modelPages.js';
@@ -41,6 +42,14 @@ const relatedModels = [
   .map((slug) => MODEL_PAGES.find((m) => m.slug === slug))
   .filter(Boolean);
 
+const categoryPath = cat ? `/${cat.path || cat.slug}/` : '';
+const primaryCategory = detailPrimary || detailCategories[0] || null;
+const visibleBreadcrumbItems = cat
+  ? [{ name: 'หน้าแรก', href: '/' }, { name: 'สินค้าที่รับซื้อ', href: '/#categories' }, { name: `${cat.kw} ขอนแก่น`, href: categoryPath }]
+  : localPage
+    ? [{ name: 'หน้าแรก', href: '/' }, { name: 'พื้นที่ให้บริการ', href: '/พื้นที่ให้บริการ/' }, { name: localPage.area, href: Astro.url.pathname }]
+    : [{ name: 'หน้าแรก', href: '/' }, { name: 'สินค้าที่รับซื้อ', href: '/#categories' }, ...(primaryCategory ? [{ name: primaryCategory.name, href: `/${primaryCategory.path || primaryCategory.slug}/` }] : []), { name: brand?.brand || model?.name || condition?.name || detail.h1, href: Astro.url.pathname }];
+
 const breadcrumb = cat ? {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -49,6 +58,12 @@ const breadcrumb = cat ? {
     {
       '@type': 'ListItem',
       position: 2,
+      name: 'สินค้าที่รับซื้อ',
+      item: `${siteUrl}/#categories`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
       name: `${cat.kw} ขอนแก่น`,
       item: `${siteUrl}/${cat.path || cat.slug}/`,
     },
@@ -58,15 +73,10 @@ const breadcrumb = cat ? {
 const detailBreadcrumb = detail ? {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: `${siteUrl}/` },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: detail.h1,
-      item: `${siteUrl}${Astro.url.pathname}`,
-    },
-  ],
+  itemListElement: visibleBreadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: item.name,
+    item: new URL(item.href, Astro.site).href,
+  })),
 } : null;
 
 const serviceLd = {
@@ -101,9 +111,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
     <main id="main-content" class="article">
     <section class="cat-hero">
       <div class="container">
-        <nav class="crumb" aria-label="breadcrumb">
-          <a href="/">หน้าแรก</a> <span>/</span> {cat.kw} ขอนแก่น
-        </nav>
+        <Breadcrumbs items={visibleBreadcrumbItems} />
         <p class="cat-hero__icon" aria-hidden="true">{cat.icon}</p>
         <h1>{cat.h1}</h1>
         {cat.intro.map((p) => <p class="lede">{p}</p>)}
@@ -186,14 +194,13 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
         <a href={cat.article.href}>{cat.article.text}</a>
       </p>
 
-      {cat.caseStudy && (
+      {cat.exampleScenario && (
         <>
-          <h2>ตัวอย่างเคสการให้บริการรับซื้อ{cat.name}ในขอนแก่น</h2>
+          <h2>ตัวอย่างสถานการณ์ที่สามารถส่งประเมินได้</h2>
           <div class="case-study">
-            <p class="case-study__meta">{cat.caseStudy.date} · {cat.caseStudy.area}</p>
-            <h3>{cat.caseStudy.title}</h3>
-            <p>{cat.caseStudy.detail}</p>
-            <p><strong>ผลลัพธ์:</strong> {cat.caseStudy.result}</p>
+            <h3>{cat.exampleScenario.title}</h3>
+            <p>{cat.exampleScenario.detail}</p>
+            <p><strong>หมายเหตุ:</strong> นี่เป็นตัวอย่างขั้นตอน ไม่ใช่บันทึกธุรกรรมของลูกค้ารายใด</p>
           </div>
         </>
       )}
@@ -258,9 +265,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
     <main id="main-content" class="article detail-page">
       <section class="cat-hero">
         <div class="container">
-          <nav class="crumb" aria-label="breadcrumb">
-            <a href="/">หน้าแรก</a> <span>/</span> {detail.h1}
-          </nav>
+          <Breadcrumbs items={visibleBreadcrumbItems} />
           <p class="eyebrow">{kind === 'brand' ? 'Brand / Demand Page' : kind === 'model' ? model.group : kind === 'condition' ? 'Condition Page' : 'พื้นที่ให้บริการ'}</p>
           <h1>{detail.h1}</h1>
           <p class="lede">{brand?.intro || model?.intent || condition?.priceImpact || localPage?.note}</p>
@@ -341,11 +346,11 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
               </div>
             </div>
             */}
-            <h2>ตัวอย่างเคสการให้บริการรับซื้อในพื้นที่{localPage.area}</h2>
+            <h2>ตัวอย่างสถานการณ์ที่สามารถส่งประเมินในพื้นที่{localPage.area}</h2>
             <div class="case-study">
-              <p class="case-study__meta">{localPage.caseStudy.date} · {localPage.area}</p>
-              <h3>{localPage.caseStudy.title}</h3>
-              <p>{localPage.caseStudy.detail}</p>
+              <h3>กรณีมีสินค้าไอทีอยู่ในโซน{localPage.area}</h3>
+              <p>ส่งรูป รุ่น สเปก สภาพ และพื้นที่โดยประมาณผ่าน LINE ได้ ทีมงานจะแจ้งราคาเบื้องต้นและความเป็นไปได้ในการจัดรอบนัดรับ โดยขึ้นอยู่กับคิวและระยะทาง</p>
+              <p><strong>หมายเหตุ:</strong> ข้อความนี้เป็นตัวอย่างสถานการณ์ ไม่ใช่เคสลูกค้าจริง</p>
             </div>
             <h2>คำถามที่พบจากลูกค้าในพื้นที่{localPage.area}</h2>
             <div class="faq">

@@ -1,0 +1,23 @@
+---
+const { items = [] } = Astro.props;
+---
+
+<nav class="breadcrumbs" aria-label="breadcrumb">
+  <ol>
+    {items.map((item, index) => (
+      <li>
+        {item.href && index < items.length - 1
+          ? <a href={item.href}>{item.name}</a>
+          : <span aria-current={index === items.length - 1 ? 'page' : undefined}>{item.name}</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs { margin-bottom: 18px; color: var(--ink-soft); font-size: .88rem; }
+  ol { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  li { display: inline-flex; align-items: center; overflow-wrap: anywhere; }
+  li + li::before { content: "/"; margin-right: 6px; color: var(--color-muted); }
+  a { color: var(--ink-soft); }
+</style>
