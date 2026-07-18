@@ -1,0 +1,1055 @@
+{
+  "generatedAt": "2026-07-18T06:47:50.893Z",
+  "failures": {
+    "missingTitle": 0,
+    "duplicateTitles": 0,
+    "duplicateDescriptions": 0,
+    "missingCanonical": 0,
+    "badH1": 0,
+    "schemaErrors": 0,
+    "sitemapCount": 86,
+    "htmlCount": 87,
+    "breadcrumbPages": 77
+  },
+  "pages": [
+    {
+      "rel": "404.html",
+      "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+      "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "index.html",
+      "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+      "description": "รับซื้อสินค้าไอทีในขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกมและกล้อง ส่งรูปทาง LINE เพื่อประเมินเบื้องต้นและนัดรับตามคิว",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+      "h1": 1,
+      "types": [
+        "Organization",
+        "WebSite",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "ข้อกำหนดการใช้บริการ/index.html",
+      "title": "ข้อกำหนดการใช้บริการ | WINNER IT",
+      "description": "ข้อกำหนดการใช้เว็บไซต์และบริการรับซื้อสินค้าไอทีของ WINNER IT โดย บริษัท อำพล เทรดดิ้ง จำกัด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "จอแตกขายได้ไหม/index.html",
+      "title": "จอแตก จอมีเส้น ขายได้ไหม ประเมินราคาสินค้าไอทีขอนแก่น | WINNER IT",
+      "description": "เครื่องจอแตก จอมีเส้น จอเบิร์น ยังขายได้หรือไม่ ดูวิธีประเมินราคา iPhone โน้ตบุ๊ค iPad และจอคอมตามสภาพจริง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%88%E0%B8%AD%E0%B9%81%E0%B8%95%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "ติดต่อเรา/index.html",
+      "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+      "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A3%E0%B8%B2/",
+      "h1": 1,
+      "types": [
+        "Organization",
+        "WebSite"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "ติดบัญชีขายได้ไหม/index.html",
+      "title": "เครื่องติด iCloud Google Samsung Account ขายได้ไหม | WINNER IT",
+      "description": "เครื่องติดบัญชีผู้ใช้เดิมขายได้หรือไม่ เงื่อนไขการรับซื้อ iPhone iPad Android และอุปกรณ์ smart device ก่อนส่งมอบ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "นโยบายความเป็นส่วนตัว/index.html",
+      "title": "นโยบายความเป็นส่วนตัว | WINNER IT",
+      "description": "นโยบายความเป็นส่วนตัวของ WINNER IT (บริษัท อำพล เทรดดิ้ง จำกัด) เกี่ยวกับข้อมูลที่เก็บเมื่อประเมินและรับซื้อสินค้าไอที",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%99%E0%B9%82%E0%B8%A2%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B8%A7/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/index.html",
+      "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+      "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/กลโกงขายของไอทีออนไลน์/index.html",
+      "title": "5 กลโกงที่เจอบ่อยเวลาขายของไอทีออนไลน์ วิธีป้องกันที่ได้ผล | WINNER IT",
+      "description": "รวม 5 กลโกงยอดนิยมที่มิจฉาชีพใช้หลอกผู้ขายของไอทีออนไลน์ พร้อมวิธีป้องกันตัวเองและช่องทางรับซื้อที่ปลอดภัยกว่า",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%81%E0%B8%A5%E0%B9%82%E0%B8%81%E0%B8%87%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ของพังขายได้ไหม/index.html",
+      "title": "จอแตก เปิดไม่ติด แบตบวม ของพังขายได้ไหม ราคาหายไปแค่ไหน | WINNER IT",
+      "description": "ของไอทีพังแล้วยังขายได้ไหม จอแตก บูตไม่ขึ้น แบตบวม น้ำเข้า ตอบทุกกรณีจากประสบการณ์รับซื้อหน้างานจริงของ WINNER IT พร้อมช่วงราคาที่หักลดตามความเสียหาย",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9E%E0%B8%B1%E0%B8%87%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ขาย-iphone-ตอนไหนดี/index.html",
+      "title": "ควรขาย iPhone ตอนไหนก่อนรุ่นใหม่ออก | WINNER IT",
+      "description": "วิเคราะห์ช่วงเวลาที่ควรพิจารณาขาย iPhone เก่าก่อนที่ Apple จะเปิดตัวรุ่นใหม่ กราฟราคาที่ตกตามช่วงเวลา และวิธีเตรียมข้อมูลก่อนขายในขอนแก่น",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%82%E0%B8%B2%E0%B8%A2-iphone-%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%B5/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ขายของไอทีที่ไหนดี-ขอนแก่น/index.html",
+      "title": "ขายของไอทีที่ไหนดีในขอนแก่น เทียบช่องทาง | WINNER IT",
+      "description": "รวมทุกช่องทางขายของไอทีในขอนแก่น ร้านรับซื้อ กลุ่ม Facebook ตลาดนัด Kaidee OLX เปรียบเทียบราคา ความปลอดภัย และความสะดวก เลือกให้ถูกแบบ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%B5-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ขายคอมทั้งเครื่อง-vs-แยกชิ้นส่วน/index.html",
+      "title": "ขายคอมทั้งเครื่อง vs แยกขายอะไหล่ แบบไหนคุ้ม | WINNER IT",
+      "description": "เปรียบเทียบการขายคอมพิวเตอร์ทั้งชุดกับการแยกขายชิ้นส่วนทีละชิ้น ข้อดีข้อเสีย เวลาที่ใช้ และเมื่อไหร่ที่ควรเลือกแต่ละวิธีให้ได้เงินสูงสุด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87-vs-%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ขายร้าน-vs-ขายเอง-facebook/index.html",
+      "title": "ขายร้านรับซื้อ vs ขายเองใน Facebook | WINNER IT",
+      "description": "เปรียบเทียบการขายของไอทีกับร้านรับซื้อโดยตรงกับการโพสต์ขายเองในกลุ่ม Facebook ข้อดีข้อเสียราคาที่ได้จริง ความเสี่ยง และเมื่อไหร่ที่ควรเลือกแต่ละวิธี",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99-vs-%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B8%87-facebook/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/จอแตกขายได้ไหม-ขอนแก่น/index.html",
+      "title": "จอแตกขายได้ไหม ขอนแก่น iPhone iPad Notebook ยังมีราคาไหม | WINNER IT",
+      "description": "ตอบคำค้นจอแตกขายได้ไหมในขอนแก่น สำหรับ iPhone iPad Notebook และจอคอม พร้อมวิธีถ่ายรูปส่งประเมิน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%88%E0%B8%AD%E0%B9%81%E0%B8%95%E0%B8%81%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/นักศึกษา-มข-ขายโน้ตบุ๊ก-ipad/index.html",
+      "title": "นักศึกษา มข. ขายโน้ตบุ๊ค iPad ที่ไหน | WINNER IT",
+      "description": "แนะนำนักศึกษามหาวิทยาลัยขอนแก่นที่เรียนจบหรือย้ายกลับบ้านว่าขายโน้ตบุ๊ค iPad เครื่องใช้ไฟฟ้า และอุปกรณ์ไอทีที่ไหนในขอนแก่นได้ราคาอิงตลาด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-%E0%B8%A1%E0%B8%82-%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81-ipad/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/รับซื้อ-iphone-ขอนแก่น-ราคา/index.html",
+      "title": "รับซื้อ iPhone ขอนแก่น ราคาเท่าไหร่ ต้องส่งข้อมูลอะไร | WINNER IT",
+      "description": "ตอบคำค้นรับซื้อ iPhone ขอนแก่น ราคาเท่าไหร่ พร้อมปัจจัยที่มีผลต่อราคาและข้อมูลที่ควรส่งก่อนประเมิน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-iphone-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99-%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/รับซื้อสินค้าไอทีใกล้ฉัน-ขอนแก่น/index.html",
+      "title": "รับซื้อสินค้าไอทีใกล้ฉัน ขอนแก่น ต้องดูอะไรบ้างก่อนนัดขาย | WINNER IT",
+      "description": "ตอบ query รับซื้อสินค้าไอทีใกล้ฉันในขอนแก่น วิธีเลือกร้านรับซื้อที่ปลอดภัย เช็ก NAP นัดรับถึงที่ และเตรียมรูปก่อนส่งประเมิน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/รับซื้อไอทีถึงที่-ขอนแก่น/index.html",
+      "title": "รับซื้อไอทีถึงที่ ขอนแก่น นัดรับยังไงให้จบไวและได้ราคา | WINNER IT",
+      "description": "คู่มือรับซื้อไอทีถึงที่ในขอนแก่น ต้องส่งข้อมูลอะไร นัดจุดรับแบบไหน และกรณีต่างอำเภอควรเตรียมอย่างไร",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ราคารับซื้อ-iphone-มือสอง/index.html",
+      "title": "ราคารับซื้อ iPhone มือสอง ดูจากอะไร | WINNER IT",
+      "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-iphone-%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%87/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ราคารับซื้อ-macbook-มือสอง/index.html",
+      "title": "ราคารับซื้อ MacBook มือสอง ดูจากอะไร | WINNER IT",
+      "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-macbook-%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%87/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ราคารับซื้อ-ps5-nintendo-switch/index.html",
+      "title": "ราคารับซื้อ PS5 Nintendo Switch มือสอง | WINNER IT",
+      "description": "ตารางราคารับซื้อ PS5 PS4 Nintendo Switch Steam Deck ROG Ally มือสอง พร้อมเทียบ Disc vs Digital และรุ่นไหนยังได้ราคาดีในตลาดมือสองขอนแก่น",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ps5-nintendo-switch/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ราคารับซื้อ-การ์ดจอ/index.html",
+      "title": "ราคารับซื้อการ์ดจอมือสอง RTX และ Radeon | WINNER IT",
+      "description": "ตารางราคารับซื้อการ์ดจอมือสอง RTX 40 ซีรีส์ RTX 30 ซีรีส์ RX 7000 และรุ่นเก่า พร้อมวิธีดูว่าการ์ดจอตัวไหนยังขายได้ราคาดีในตลาดปัจจุบัน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%88%E0%B8%AD/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/ราคารับซื้อ-โน้ตบุ๊กเกมมิ่ง/index.html",
+      "title": "ราคาโน้ตบุ๊คเกมมิ่งมือสอง ดูจากอะไร | WINNER IT",
+      "description": "ตารางราคารับซื้อโน้ตบุ๊คเกมมิ่งมือสอง ROG Zephyrus Predator Legion MSI Titan พร้อมปัจจัยที่ทำให้ราคาต่างกัน และวิธีขายให้ได้เงินสูงสุด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%A1%E0%B8%B4%E0%B9%88%E0%B8%87/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/วิธีลบข้อมูล-iphone-ก่อนขาย/index.html",
+      "title": "วิธีลบข้อมูล iPhone ก่อนขายและปิด Find My | WINNER IT",
+      "description": "สอนวิธีลบข้อมูล iPhone ก่อนขายทีละขั้นตอน สำรองข้อมูล ออกจาก iCloud ปิด Find My และรีเซ็ตเครื่องอย่างถูกวิธี ป้องกันข้อมูลรั่วไหลและขายได้ราคาเต็มไม่มีสะดุด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%A5%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5-iphone-%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%82%E0%B8%B2%E0%B8%A2/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/อัปเกรดคอมใหม่-ขายของเก่า/index.html",
+      "title": "อัปเกรดคอมใหม่ ขายของเก่าที่ไหนในขอนแก่น | WINNER IT",
+      "description": "แนะนำวิธีขายอุปกรณ์คอมพิวเตอร์เก่าในขอนแก่นก่อนอัปเกรด ทั้งการ์ดจอ ซีพียู แรม SSD และชุดคอมทั้งหมด พร้อมเทคนิคได้เงินคืนสูงสุดเพื่อไปซื้อของใหม่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B8%AD%E0%B8%B1%E0%B8%9B%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%94%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/เคลียร์อุปกรณ์ไอที-ย้ายออฟฟิศ/index.html",
+      "title": "ปิดออฟฟิศ จัดการอุปกรณ์ไอทีเก่าอย่างไร | WINNER IT",
+      "description": "คู่มือจัดการทรัพย์สินไอทีเมื่อปิดออฟฟิศหรือย้ายสำนักงาน คอมพิวเตอร์เครื่องเก่า โน้ตบุ๊ค จอมอนิเตอร์ เครื่องพิมพ์ จำหน่ายได้เงินคืน พร้อมเอกสารถูกต้องครบครัน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%A2%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%AD%E0%B8%AD%E0%B8%9F%E0%B8%9F%E0%B8%B4%E0%B8%A8/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/เช็คลิสต์ก่อนขายโน้ตบุ๊ก/index.html",
+      "title": "เช็คลิสต์เตรียมโน้ตบุ๊คก่อนขาย 7 ข้อ | WINNER IT",
+      "description": "เตรียมโน้ตบุ๊คก่อนขายให้ถูกต้อง 7 ขั้นตอนที่ทีมงานรับซื้อแนะนำ สำรองข้อมูล ล้างเครื่อง ทำความสะอาด และเตรียมเอกสารให้พร้อม ขายได้ราคาเต็มไม่สะดุด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B9%80%E0%B8%8A%E0%B9%87%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%AA%E0%B8%95%E0%B9%8C%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/เทิร์นเครื่องศูนย์-vs-ขายร้านรับซื้อ/index.html",
+      "title": "เทิร์นเครื่องที่ศูนย์ vs ขายร้านรับซื้อ | WINNER IT",
+      "description": "เปรียบเทียบการเทิร์น Trade-in เครื่องเก่าที่ศูนย์ Apple หรือร้านโทรศัพท์กับการขายให้ร้านรับซื้อโดยตรง ว่าแบบไหนได้เงินมากกว่า และเหมาะกับสถานการณ์ไหน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B9%80%E0%B8%97%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C-vs-%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "บทความ/เอกสารขายของไอที/index.html",
+      "title": "เอกสารที่ต้องใช้ขายของไอที | WINNER IT ขอนแก่น",
+      "description": "รวมเอกสารและหลักฐานที่ต้องเตรียมก่อนขายของไอทีให้ร้านรับซื้อ บัตรประชาชน ใบเสร็จ กรณีขายแทน กรณีขายล็อตองค์กร ครบทุกสถานการณ์",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5/",
+      "h1": 1,
+      "types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "พื้นที่ให้บริการ/index.html",
+      "title": "พื้นที่ให้บริการ | WINNER IT ขอนแก่น",
+      "description": "พื้นที่นัดรับซื้อสินค้าไอทีของ WINNER IT ในจังหวัดขอนแก่น — บริการนัดรับถึงที่ ไม่มีหน้าร้านให้เดินเข้าใช้บริการ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-acer-ขอนแก่น/index.html",
+      "title": "รับซื้อ Acer ขอนแก่น Aspire Swift Nitro Predator | WINNER IT",
+      "description": "รับซื้อ Acer มือสองขอนแก่น Aspire Swift Nitro Predator ConceptD ประเมินตามซีรีส์ สภาพจอ แบต การ์ดจอ และตลาดนักศึกษา",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-acer-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-asus-ขอนแก่น/index.html",
+      "title": "รับซื้อ ASUS ขอนแก่น Zenbook Vivobook TUF ROG | WINNER IT",
+      "description": "รับซื้อ ASUS มือสองขอนแก่น Zenbook Vivobook TUF ROG และ ROG Ally ประเมินตามซีรีส์ จอ การ์ดจอ ความร้อน และอุปกรณ์แท้",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-asus-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-cpu-ขอนแก่น/index.html",
+      "title": "รับซื้อ CPU ขอนแก่น Intel AMD Ryzen Core | WINNER IT",
+      "description": "รับซื้อ CPU มือสองขอนแก่น Intel Core AMD Ryzen ทั้งแบบถอดชิ้นและพ่วงชุดคอม ประเมินตามรุ่น เจน ขา/หน้าสัมผัส และประกัน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-cpu-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-dell-ขอนแก่น/index.html",
+      "title": "รับซื้อ Dell ขอนแก่น Latitude XPS Alienware | WINNER IT",
+      "description": "รับซื้อโน้ตบุ๊ค Dell มือสองในขอนแก่น Latitude XPS Inspiron Alienware และจอ Dell ประเมินจาก Service Tag สภาพ ประกัน และตลาดองค์กร",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-dell-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-hp-ขอนแก่น/index.html",
+      "title": "รับซื้อ HP ขอนแก่น Pavilion Envy EliteBook Omen | WINNER IT",
+      "description": "รับซื้อโน้ตบุ๊ค HP มือสองขอนแก่น Pavilion Envy EliteBook ProBook Omen Victus ประเมินตามซีรีส์ สภาพบานพับ แบต และสเปก",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-hp-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-ipad-air-ขอนแก่น/index.html",
+      "title": "รับซื้อ iPad Air ขอนแก่น Air 4 Air 5 Air M2 | WINNER IT",
+      "description": "รับซื้อ iPad Air มือสองขอนแก่น Air 4 Air 5 Air M2 ประเมินตามชิป ความจุ Cellular แบต จอ และ Apple Pencil",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ipad-air-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-ipad-gen-ขอนแก่น/index.html",
+      "title": "รับซื้อ iPad Gen ขอนแก่น รุ่นนักเรียน นักศึกษา | WINNER IT",
+      "description": "รับซื้อ iPad Gen มือสองขอนแก่น Gen 7 8 9 10 และรุ่นใหม่ ประเมินตามความจุ สภาพจอ แบต และอุปกรณ์",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ipad-gen-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-ipad-mini-ขอนแก่น/index.html",
+      "title": "รับซื้อ iPad mini ขอนแก่น mini 5 mini 6 mini A17 Pro | WINNER IT",
+      "description": "รับซื้อ iPad mini มือสองขอนแก่น mini 5 mini 6 และรุ่นใหม่ ประเมินตามความจุ Cellular จอ แบต และ Apple Pencil",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ipad-mini-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-ipad-pro-ขอนแก่น/index.html",
+      "title": "รับซื้อ iPad Pro ขอนแก่น M1 M2 M4 11 นิ้ว 12.9 นิ้ว | WINNER IT",
+      "description": "รับซื้อ iPad Pro มือสองขอนแก่น รุ่น M1 M2 M4 11 นิ้ว 12.9/13 นิ้ว ประเมินตามชิป ความจุ Cellular จอ และอุปกรณ์เสริม",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ipad-pro-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-ipad-แท็บเล็ต-ขอนแก่น/index.html",
+      "title": "รับซื้อ iPad ขอนแก่น Air Pro Mini และแท็บเล็ต | WINNER IT",
+      "description": "รับซื้อ iPad มือสองขอนแก่น iPad Gen 10 Air M2 Pro M4 Mini รวมถึงแท็บเล็ต Samsung Xiaomi ประเมินฟรี LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE จ่ายสดถึงที่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ipad-%E0%B9%81%E0%B8%97%E0%B9%87%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%95-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-iphone-ขอนแก่น/index.html",
+      "title": "รับซื้อ iPhone ขอนแก่น ทุกรุ่น iPhone 15 16 จ่ายสดหน้างาน | WINNER IT",
+      "description": "รับซื้อ iPhone มือสองขอนแก่น iPhone 16 15 14 13 12 ทุกรุ่น เครื่องติดสแกน ผ่อนหมดแล้ว ประเมินฟรี LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE จ่ายสดหรือโอนเงินหน้างานหลังตรวจรับ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-iphone-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-lenovo-ขอนแก่น/index.html",
+      "title": "รับซื้อ Lenovo ขอนแก่น ThinkPad IdeaPad Legion | WINNER IT",
+      "description": "รับซื้อ Lenovo ThinkPad IdeaPad Yoga Legion มือสองในขอนแก่น ประเมินตามซีรีส์ สเปก บานพับ แบต และกลุ่มผู้ซื้อปลายทาง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-lenovo-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-macbook-air-ขอนแก่น/index.html",
+      "title": "รับซื้อ MacBook Air ขอนแก่น M1 M2 M3 Intel | WINNER IT",
+      "description": "รับซื้อ MacBook Air มือสองขอนแก่น Intel M1 M2 M3 ประเมินตามชิป RAM SSD รอบชาร์จ แบต และสถานะ iCloud",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-macbook-air-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-macbook-intel-ขอนแก่น/index.html",
+      "title": "รับซื้อ MacBook Intel ขอนแก่น Air Pro iMac Intel | WINNER IT",
+      "description": "รับซื้อ MacBook Intel มือสองขอนแก่น MacBook Air Pro iMac Intel ประเมินตามปี สภาพแบต จอ คีย์บอร์ด และอะไหล่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-macbook-intel-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-macbook-m1-m5-ขอนแก่น/index.html",
+      "title": "รับซื้อ MacBook M1 M2 M3 M4 M5 ขอนแก่น | WINNER IT",
+      "description": "รับซื้อ MacBook ชิป M-Series ขอนแก่น M1 M2 M3 M4 และรองรับ M5 เมื่อมีตลาดจริง ประเมินตามชิป RAM SSD และแบต",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-macbook-m1-m5-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-macbook-pro-ขอนแก่น/index.html",
+      "title": "รับซื้อ MacBook Pro ขอนแก่น M1 M2 M3 M4 Intel | WINNER IT",
+      "description": "รับซื้อ MacBook Pro มือสองขอนแก่น รุ่น Intel และ Apple Silicon ประเมินตามชิป RAM SSD จอ รอบชาร์จ และงานโปร",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-macbook-pro-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-macbook-ขอนแก่น/index.html",
+      "title": "รับซื้อ MacBook ขอนแก่น ประเมินตามรุ่นและสภาพ | WINNER IT",
+      "description": "รับซื้อ MacBook มือสองขอนแก่น Air M1 M2 M3 Pro M3 Max M4 ทุกรุ่น ประเมินฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ทั่วขอนแก่น จ่ายสดหรือโอนหน้างาน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-macbook-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-msi-ขอนแก่น/index.html",
+      "title": "รับซื้อ MSI ขอนแก่น Gaming Notebook การ์ดจอ จอเกมมิ่ง | WINNER IT",
+      "description": "รับซื้อ MSI มือสองในขอนแก่น โน้ตบุ๊คเกมมิ่ง การ์ดจอ เมนบอร์ด และจอเกมมิ่ง ประเมินตามรุ่น ประกัน และสภาพจริง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-msi-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-ram-ssd-ขอนแก่น/index.html",
+      "title": "รับซื้อ RAM SSD ขอนแก่น DDR4 DDR5 NVMe SATA | WINNER IT",
+      "description": "รับซื้อ RAM SSD มือสองขอนแก่น DDR4 DDR5 NVMe SATA ทั้งถอดชิ้นและขายพ่วงคอม ประเมินตามความจุ ความเร็ว สุขภาพ และประกัน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-ram-ssd-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-rtx-30-series-ขอนแก่น/index.html",
+      "title": "รับซื้อ RTX 30 Series ขอนแก่น 3060 3070 3080 3090 | WINNER IT",
+      "description": "รับซื้อการ์ดจอ RTX 30 Series ขอนแก่น RTX 3060 3070 3080 3090 ประเมินตามประกัน รุ่นพัดลม สภาพ และประวัติขุด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-rtx-30-series-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-rtx-40-series-ขอนแก่น/index.html",
+      "title": "รับซื้อ RTX 40 Series ขอนแก่น 4060 4070 4080 4090 | WINNER IT",
+      "description": "รับซื้อ RTX 40 Series ขอนแก่น RTX 4060 4070 4080 4090 ประเมินตามรุ่น ประกัน สภาพหัวไฟ 12VHPWR และกล่อง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-rtx-40-series-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-rtx-50-series-ขอนแก่น/index.html",
+      "title": "รับซื้อ RTX 50 Series ขอนแก่น รุ่นใหม่ประกันครบ | WINNER IT",
+      "description": "รับซื้อ RTX 50 Series ขอนแก่น เมื่อมีข้อมูลซื้อขายจริง ประเมินตามรุ่น ประกัน สภาพ กล่อง และราคาตลาดล่าสุด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-rtx-50-series-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อ-workstation-ขอนแก่น/index.html",
+      "title": "รับซื้อ Workstation ขอนแก่น Dell Precision HP Z Lenovo P | WINNER IT",
+      "description": "รับซื้อ Workstation ขอนแก่น Dell Precision HP Z Lenovo ThinkStation เครื่องตัดต่อ เรนเดอร์ CAD ประเมินตาม CPU GPU RAM ECC และ Storage",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD-workstation-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อกล้อง-ขอนแก่น/index.html",
+      "title": "รับซื้อกล้อง ขอนแก่น เลนส์ Mirrorless DSLR | WINNER IT",
+      "description": "รับซื้อกล้องมือสองขอนแก่น Sony Canon Fujifilm Nikon เลนส์ทุกช่วง โดรน DJI GoPro กล้องฟิล์ม อุปกรณ์สตูดิโอ ส่งรูปประเมินทาง LINE @buyhub จ่ายสดถึงที่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อการ์ดจอ-ขอนแก่น/index.html",
+      "title": "รับซื้อการ์ดจอ ขอนแก่น RTX RX ทุกรุ่น ประเมินตามตลาดจริง | WINNER IT",
+      "description": "รับซื้อการ์ดจอมือสองขอนแก่น RTX 3060 4060 4070 4090 RX 6600 7900 ทุกรุ่น ผ่านขุดก็รับ ประเมินฟรี LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE จ่ายสดถึงที่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%88%E0%B8%AD-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อคอมพิวเตอร์-ขอนแก่น/index.html",
+      "title": "รับซื้อคอมพิวเตอร์ ขอนแก่น คอมประกอบ PC iMac ยกชุดก็รับ | WINNER IT",
+      "description": "รับซื้อคอมพิวเตอร์มือสองขอนแก่น คอมประกอบ เกมมิ่ง PC iMac All-in-One จอมอนิเตอร์ รับเหมายกออฟฟิศ ประเมินฟรีทาง LINE @buyhub จ่ายสดถึงที่ทุกอำเภอ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อคอมยกล็อต-ขอนแก่น/index.html",
+      "title": "รับซื้อคอมยกล็อต ขอนแก่น สำนักงานและร้านเกม | WINNER IT",
+      "description": "รับซื้อคอมยกล็อตขอนแก่น คอมออฟฟิศ ร้านเกม ห้องคอมโรงเรียน เคลียร์สต๊อก ประเมินรายเครื่อง ออกเอกสารบริษัทได้",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%A2%E0%B8%81%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%95-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อคอมสำนักงาน-ขอนแก่น/index.html",
+      "title": "รับซื้อคอมสำนักงาน ขอนแก่น Dell HP Lenovo ยกชุด | WINNER IT",
+      "description": "รับซื้อคอมสำนักงานขอนแก่น Dell HP Lenovo All-in-One Mini PC คอมบริษัท ประเมินรายเครื่อง ออกเอกสารได้",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อคอมเกมมิ่ง-ขอนแก่น/index.html",
+      "title": "รับซื้อคอมเกมมิ่ง ขอนแก่น PC RTX Ryzen Intel | WINNER IT",
+      "description": "รับซื้อคอมเกมมิ่งขอนแก่น คอมประกอบ RTX Ryzen Intel จอเกมมิ่ง ประเมินตามสเปกจริง แยกราคา CPU GPU RAM SSD PSU",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%A1%E0%B8%B4%E0%B9%88%E0%B8%87-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อจอคอม-ขอนแก่น/index.html",
+      "title": "รับซื้อจอคอม ขอนแก่น จอเกมมิ่ง 4K UltraWide | WINNER IT",
+      "description": "รับซื้อจอมอนิเตอร์มือสองขอนแก่น จอเกมมิ่ง 144Hz 240Hz จอ 4K 2K UltraWide OLED จากทุกยี่ห้อ ASUS LG Samsung Dell ประเมินฟรี LINE @buyhub จ่ายสดหรือโอนเงินหน้างานหลังตรวจรับ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%88%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A1-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อมือถือ-ขอนแก่น/index.html",
+      "title": "รับซื้อมือถือ ขอนแก่น iPhone iPad Samsung จ่ายสดหน้างาน | WINNER IT",
+      "description": "รับซื้อมือถือมือสองขอนแก่น iPhone ทุกรุ่น iPad Samsung Xiaomi OPPO Vivo เครื่องติดสแกนก็รับ ส่งรูปประเมินผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE นัดรับได้วันนี้",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%96%E0%B8%B7%E0%B8%AD-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อสมาร์ทวอทช์-ขอนแก่น/index.html",
+      "title": "รับซื้อสมาร์ทวอทช์ ขอนแก่น Apple Galaxy | WINNER IT",
+      "description": "รับซื้อสมาร์ทวอทช์มือสองขอนแก่น Apple Watch Series 10 Ultra 2 SE Galaxy Watch 7 Ultra AirPods รับซื้อทุกรุ่น ประเมินฟรี LINE @buyhub จ่ายสดหรือโอนเงินหน้างานหลังตรวจรับ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%A7%E0%B8%AD%E0%B8%97%E0%B8%8A%E0%B9%8C-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้ออุปกรณ์ไอทีสำนักงาน-ขอนแก่น/index.html",
+      "title": "รับซื้อไอทีสำนักงาน ขอนแก่น ปริ้นเตอร์ Server | WINNER IT",
+      "description": "รับซื้ออุปกรณ์ไอทีทุกชนิดขอนแก่น ปริ้นเตอร์ UPS เราเตอร์ สวิตช์ เซิร์ฟเวอร์ ลำโพง Smart Home รับเหมาปิดออฟฟิศ เคลียร์สต๊อก ติดต่อ LINE @buyhub มีทีมประเมินถึงที่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อเครื่องเกม-ขอนแก่น/index.html",
+      "title": "รับซื้อเครื่องเกม ขอนแก่น PS5 Nintendo Switch Xbox จ่ายสด | WINNER IT",
+      "description": "รับซื้อเครื่องเกมมือสองขอนแก่น PS5 PS4 Nintendo Switch Xbox Steam Deck ส่งรูปประเมินผ่าน LINE @buyhub นัดรับถึงที่ จ่ายสดหรือโอนหน้างาน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%A1-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อแกดเจ็ต-ขอนแก่น/index.html",
+      "title": "รับซื้อแกดเจ็ต ขอนแก่น หูฟัง ลำโพง อุปกรณ์เสริมไอที | WINNER IT",
+      "description": "รับซื้อแกดเจ็ตและอุปกรณ์เสริมไอทีขอนแก่น หูฟัง ลำโพง สมาร์ทดีไวซ์ อุปกรณ์เสริม ขายแยกจากเครื่องเกม ส่งรูปประเมินผ่าน LINE @buyhub",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%95-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโดรน-gopro-ขอนแก่น/index.html",
+      "title": "รับซื้อโดรน GoPro ขอนแก่น DJI Insta360 | WINNER IT",
+      "description": "รับซื้อโดรนมือสองขอนแก่น DJI Mini Air Mavic GoPro Hero Insta360 X4 ทุกรุ่น อุปกรณ์เสริม แบตสำรอง ประเมินฟรี LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE จ่ายสดหรือโอนเงินหน้างานหลังตรวจรับ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%94%E0%B8%A3%E0%B8%99-gopro-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโน้ตบุ๊ก-ipad-มข-กังสดาล/index.html",
+      "title": "รับซื้อโน้ตบุ๊ค iPad แถว มข. กังสดาล สำหรับนักศึกษา | WINNER IT",
+      "description": "รับซื้อโน้ตบุ๊ค iPad MacBook iPhone แถวมหาวิทยาลัยขอนแก่น กังสดาล หลัง มข. และหอพักนักศึกษา ส่งรูปประเมินก่อนนัดรับ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81-ipad-%E0%B8%A1%E0%B8%82-%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%94%E0%B8%B2%E0%B8%A5/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโน้ตบุ๊ก-ขอนแก่น/index.html",
+      "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ส่งรูปประเมิน | WINNER IT",
+      "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโน้ตบุ๊กจอแตก-ขอนแก่น/index.html",
+      "title": "รับซื้อโน๊ตบุ๊คจอแตก ขอนแก่น จอมีเส้น จอดำ | WINNER IT",
+      "description": "รับซื้อโน๊ตบุ๊คจอแตกขอนแก่น จอมีเส้น จอดำ จอกระพริบ ประเมินจากรุ่นจอ ค่าอะไหล่ และสภาพเครื่องส่วนอื่น",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B8%88%E0%B8%AD%E0%B9%81%E0%B8%95%E0%B8%81-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโน้ตบุ๊กเกมมิ่ง-ขอนแก่น/index.html",
+      "title": "รับซื้อโน๊ตบุ๊คเกมมิ่ง ขอนแก่น ROG Legion Nitro MSI | WINNER IT",
+      "description": "รับซื้อโน๊ตบุ๊คเกมมิ่งขอนแก่น ROG Legion Nitro Predator MSI TUF Victus ประเมินตาม GPU ความร้อน จอ และอะแดปเตอร์แท้",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%A1%E0%B8%B4%E0%B9%88%E0%B8%87-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโน้ตบุ๊กเปิดไม่ติด-ขอนแก่น/index.html",
+      "title": "รับซื้อโน้ตบุ๊คเปิดไม่ติด ขอนแก่น | WINNER IT",
+      "description": "รับซื้อโน๊ตบุ๊คเปิดไม่ติดขอนแก่น เครื่องไม่ชาร์จ บูตไม่ขึ้น จอดำ ประเมินจากรุ่น อะไหล่ และอุปกรณ์ที่ยังใช้ได้",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%95%E0%B8%B4%E0%B8%94-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อโน้ตบุ๊กเสีย-ขอนแก่น/index.html",
+      "title": "รับซื้อโน๊ตบุ๊คเสีย ขอนแก่น เครื่องพังมีตำหนิก็ประเมินได้ | WINNER IT",
+      "description": "รับซื้อโน๊ตบุ๊คเสียขอนแก่น จอแตก บานพับหัก แบตบวม คีย์เสีย เครื่องช้า ประเมินตามอะไหล่และสภาพจริง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-ชุมแพ/index.html",
+      "title": "รับซื้อสินค้าไอที ชุมแพ ขอนแก่น คอม โน้ตบุ๊ค iPhone | WINNER IT",
+      "description": "รับซื้อสินค้าไอทีในอำเภอชุมแพ ขอนแก่น โน้ตบุ๊ค คอมประกอบ iPhone เครื่องเกม และงานเหมา จัดรอบรับตามตารางงาน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%9E/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-น้ำพอง/index.html",
+      "title": "รับซื้อไอที น้ำพอง ขอนแก่น คอม โน้ตบุ๊ค มือถือ | WINNER IT",
+      "description": "รับซื้อสินค้าไอทีน้ำพอง ขอนแก่น โน้ตบุ๊ค คอมสำนักงาน มือถือ และงานเหมาอุปกรณ์ไอที จัดรอบรับตามตารางงานจริง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-บ้านเป็ด/index.html",
+      "title": "รับซื้อสินค้าไอที บ้านเป็ด ขอนแก่น คอม โน้ตบุ๊ค iPhone | WINNER IT",
+      "description": "รับซื้อสินค้าไอทีบ้านเป็ด ขอนแก่น โซนหมู่บ้าน คอนโด และสำนักงานใกล้บึงหนองโคตร รับซื้อคอม โน้ตบุ๊ค iPhone และจอ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%94/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-บ้านไผ่/index.html",
+      "title": "รับซื้อสินค้าไอที บ้านไผ่ ขอนแก่น นัดรับต่างอำเภอ | WINNER IT",
+      "description": "รับซื้อโน้ตบุ๊ค iPhone คอมพิวเตอร์ และอุปกรณ์ไอทีที่บ้านไผ่ ขอนแก่น จัดรอบรับต่างอำเภอตามคิว ประเมินผ่าน LINE",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%84%E0%B8%9C%E0%B9%88/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-พล/index.html",
+      "title": "รับซื้อสินค้าไอที พล ขอนแก่น โน้ตบุ๊ค คอม มือถือ | WINNER IT",
+      "description": "รับซื้อสินค้าไอทีอำเภอพล ขอนแก่น โน้ตบุ๊ค คอมพิวเตอร์ iPhone iPad และงานเหมา จัดรอบรับตามเส้นทางและคิวงานจริง",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%9E%E0%B8%A5/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-ศิลา/index.html",
+      "title": "รับซื้อสินค้าไอที ศิลา ขอนแก่น ใกล้ มข. และโซนหอพัก | WINNER IT",
+      "description": "รับซื้อโน้ตบุ๊ค iPad คอม และมือถือในตำบลศิลา ขอนแก่น โซนหอพัก หมู่บ้าน และสำนักงานใกล้ มข. ประเมินผ่าน LINE ก่อนนัด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%B2/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับซื้อไอที-เมืองขอนแก่น/index.html",
+      "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+      "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "รับเหมาอุปกรณ์ไอที-ขอนแก่น/index.html",
+      "title": "รับเหมาอุปกรณ์ไอที ขอนแก่น งานยกล็อต | WINNER IT",
+      "description": "รับเหมาซื้ออุปกรณ์ไอทีขอนแก่น เหมาปิดออฟฟิศ ปิดร้านเกม เคลียร์สต๊อกสำนักงาน คอมยกล็อต โน้ตบุ๊คยกล็อต ประเมินฟรีถึงที่ LINE @buyhub ชำระเงินหน้างาน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service",
+        "FAQPage"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "สภาพสินค้าที่ขายได้/index.html",
+      "title": "สภาพสินค้าแบบไหนขายได้บ้าง จอแตก เปิดไม่ติด แบตบวม | WINNER IT",
+      "description": "รวมหน้าสภาพสินค้าไอทีที่ยังส่งประเมินได้ เช่น จอแตก เปิดไม่ติด แบตบวม ติดบัญชี และไม่มีกล่อง พร้อมแนวทางประเมินราคา",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "เกี่ยวกับเรา/index.html",
+      "title": "เกี่ยวกับเรา | WINNER IT ขอนแก่น",
+      "description": "WINNER IT โดย บริษัท อำพล เทรดดิ้ง จำกัด ให้บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น ไม่มีหน้าร้านให้เดินเข้าใช้บริการ",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%A3%E0%B8%B2/",
+      "h1": 1,
+      "types": [
+        "Organization",
+        "WebSite"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "เงื่อนไขการรับซื้อ/index.html",
+      "title": "เงื่อนไขการรับซื้อ | WINNER IT",
+      "description": "เงื่อนไขประเมินราคา เอกสาร และการรับซื้อสินค้าไอทีของ WINNER IT โดย บริษัท อำพล เทรดดิ้ง จำกัด",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD/",
+      "h1": 1,
+      "types": [],
+      "schemaError": false
+    },
+    {
+      "rel": "เปิดไม่ติดขายได้ไหม/index.html",
+      "title": "เปิดไม่ติด บูตไม่ขึ้น ขายของไอทีได้ไหม | WINNER IT ขอนแก่น",
+      "description": "โน้ตบุ๊ค คอม iPhone หรือเครื่องเกมเปิดไม่ติดยังส่งประเมินได้ ดูปัจจัยที่ทำให้มีราคาหรือถูกตีเป็นอะไหล่",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "แบตบวมขายได้ไหม/index.html",
+      "title": "แบตบวม แบตเสื่อม ขาย iPhone MacBook Notebook ได้ไหม | WINNER IT",
+      "description": "แบตบวมหรือแบตเสื่อมขายได้ไหม ต้องแจ้งอะไรบ้าง และราคาถูกหักอย่างไรสำหรับ iPhone MacBook โน้ตบุ๊คและแท็บเล็ต",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B9%81%E0%B8%9A%E0%B8%95%E0%B8%9A%E0%B8%A7%E0%B8%A1%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    },
+    {
+      "rel": "ไม่มีกล่องขายได้ไหม/index.html",
+      "title": "ไม่มีกล่อง ไม่มีใบเสร็จ ขายสินค้าไอทีได้ไหม | WINNER IT ขอนแก่น",
+      "description": "ของไอทีไม่มีกล่อง สายชาร์จไม่แท้ หรือใบเสร็จหายยังขายได้ไหม ดูสิ่งที่มีผลต่อราคาก่อนส่งประเมิน",
+      "canon": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1/",
+      "h1": 1,
+      "types": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "schemaError": false
+    }
+  ]
+}
