@@ -1,6 +1,8 @@
 # Mobile Navigation QA — Batch 12.1
 
-Verdict: **PASS (Chromium)**
+Verdict: **PASS (Chromium, local build and production)**
+
+Production revalidation on deployment `dpl_Hd5hQTnUgfk11w2vxDC4ndCTQ6Ba` passed the same seven viewports. At 360, 390 and 430 px the drawer had exact viewport width, body overflow was locked, and Escape returned focus to `เปิดเมนูหลัก`. At 1440 and 1920 px desktop navigation used `display:flex` and the mobile trigger used `display:none`. Production screenshots are in `production-screenshots/`.
 
 - Production preview: Astro build served locally on an isolated preview port.
 - Viewports passed: 7/7 — 360×800, 390×844, 430×932, 768×1024, 1024×768, 1440×900, 1920×1080.

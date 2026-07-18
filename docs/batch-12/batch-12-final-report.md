@@ -1,5 +1,11 @@
 # Batch 12 Final Report
 
+## Final Release Addendum — 2026-07-18
+
+**PASS — merged to `main`, deployed and production-validated.** Batch branch `a63d2a4` merged as `0edc62e`. The first deployment revealed `/sitemap.xml` returned 404, so validation stopped and the narrow hotfix `ad9fe9f` was merged as `c2123d3`. Final validated Vercel deployment is `dpl_Hd5hQTnUgfk11w2vxDC4ndCTQ6Ba` on `https://รับซื้อไอทีขอนแก่น.com`.
+
+Final gates: build 87 pages; sitemap 86 URLs; automated SEO/schema audit 0 errors; home/robots/sitemap endpoints 200; missing URL 404; Chromium UX passed all 7 requested viewports with no horizontal overflow or console error. Production evidence is in `docs/batch-12/production-screenshots/`. Firefox/WebKit remain untested because they are unavailable in the browser environment. See `batch-12-production-validation.md` for deployment and rollback details.
+
 ## Executive Summary and Verdict
 
 **PASS for branch QA / NOT DEPLOYED** — core regression และ Chromium interaction QA ผ่านครบ 7 viewport แล้ว พร้อมส่ง branch เพื่อ review; ยังไม่อ้างว่า production ผ่านเพราะยังไม่ได้ merge/deploy.
