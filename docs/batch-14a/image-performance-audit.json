@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-07-18T09:02:12.865Z",
+  "summary": {
+    "assetCount": 4,
+    "brokenPublicReferences": 0,
+    "missingContentAlt": 0,
+    "missingDimensions": 0,
+    "highPriorityLazy": 0,
+    "preloads": 0,
+    "duplicateGroups": 0,
+    "unusedAssets": 1,
+    "pngPhotographCandidates": 2,
+    "oversizedLegacyAssets": 2,
+    "oversizedP0Assets": 0
+  },
+  "assets": [
+    {
+      "path": "public/images/og/default-og.png",
+      "bytes": 46302,
+      "format": "png",
+      "referenced": true,
+      "sha256": "6a47a652f2f2eaac9cb2c8094ef5b1fcbaeb9191e87da36269bf9253a937cc5c"
+    },
+    {
+      "path": "public/images/og/default-og.svg",
+      "bytes": 2545,
+      "format": "svg",
+      "referenced": false,
+      "sha256": "f144f424bd3ec6a43493d5f7ee5e0bea6b48e6269b86f66939137f367372173b"
+    },
+    {
+      "path": "public/images/trust-inspection.png",
+      "bytes": 916976,
+      "format": "png",
+      "referenced": true,
+      "sha256": "bfb9ec1ab110e700d02077a247fa5cd34a3792c284acdb3b4e00999c92baa444"
+    },
+    {
+      "path": "public/images/trust-inventory.png",
+      "bytes": 806497,
+      "format": "png",
+      "referenced": true,
+      "sha256": "4fddc111a11eb685188079cf2e3bacee6c035a46f1e735e7e99e537556323d46"
+    }
+  ],
+  "documentedExceptions": [
+    {
+      "paths": [
+        "public/images/trust-inspection.png",
+        "public/images/trust-inventory.png"
+      ],
+      "status": "BLOCKED_BY_REAL_PHOTO",
+      "reason": "Legacy illustrations remain unchanged until approved real evidence exists; not P0 implementation assets."
+    }
+  ]
+}
