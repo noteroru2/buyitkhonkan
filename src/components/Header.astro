@@ -151,14 +151,17 @@ import { SITE } from '../data/site.js';
       margin-left: auto; border: 1px solid var(--color-border); border-radius: 12px; background: #fff;
     }
     .hdr__menu-button span { display: block; width: 21px; height: 2px; background: var(--color-navy); }
-    .mobile-menu__overlay { display: block; position: fixed; inset: 72px 0 0; background: rgba(7, 15, 31, .5); z-index: 55; }
+    .mobile-menu__overlay {
+      display: block; position: absolute; top: 72px; left: 0; width: 100vw; height: calc(100dvh - 72px);
+      background: rgba(7, 15, 31, .5); z-index: 55;
+    }
     .mobile-menu__overlay[hidden] { display: none; }
     .mobile-menu {
       display: block; position: fixed; top: 0; right: 0; z-index: 60; width: min(86vw, 360px); height: 100dvh;
       padding: 20px 20px 88px; background: #fff; box-shadow: -18px 0 50px rgba(15, 23, 42, .2);
       transform: translateX(0); transition: transform .2s ease; overflow-y: auto;
     }
-    .mobile-menu[aria-hidden="true"] { transform: translateX(105%); visibility: hidden; }
+    .mobile-menu[aria-hidden="true"] { display: none; }
     .mobile-menu__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
     .mobile-menu__close { width: 44px; height: 44px; border: 0; background: var(--color-bg); border-radius: 12px; font-size: 1.8rem; }
     .mobile-menu nav { display: grid; }

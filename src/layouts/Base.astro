@@ -124,7 +124,7 @@ const allJsonLd = includeOrganization
     <slot />
     <Footer />
     <StickyBar variant={stickyVariant} />
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       const pageType = document.querySelector('main')?.classList.contains('detail-page')
         ? 'detail'
