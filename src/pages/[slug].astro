@@ -115,11 +115,11 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
     <section class="cat-hero">
       <div class="container">
         <Breadcrumbs items={visibleBreadcrumbItems} />
-        {productImage && <ProductCategoryImage image={productImage} slotId={`category-intro-${cat.slug}`} class="cat-hero__product" />}
         <p class="cat-hero__icon" aria-hidden="true">{cat.icon}</p>
         <h1>{cat.h1}</h1>
         {cat.intro.map((p) => <p class="lede">{p}</p>)}
         <p class="lede lede--soft">{SITE.serviceModel}</p>
+        {productImage && <ProductCategoryImage image={productImage} slotId={`category-intro-${cat.slug}`} class="cat-hero__product" />}
         <div class="cta-row">
           <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ส่งรูปประเมินฟรี LINE {SITE.lineId}</a>
           <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
