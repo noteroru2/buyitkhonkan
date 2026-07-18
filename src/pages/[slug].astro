@@ -7,6 +7,8 @@ import { BRAND_PAGES } from '../data/brandPages.js';
 import { MODEL_PAGES } from '../data/modelPages.js';
 import { CONDITION_PAGES } from '../data/conditionPages.js';
 import { LOCAL_PAGES, LOCAL_NAP } from '../data/localPages.js';
+import ProductCategoryImage from '../components/media/ProductCategoryImage.astro';
+import { PRODUCT_IMAGES } from '../data/productImages';
 
 export function getStaticPaths() {
   return [
@@ -43,6 +45,7 @@ const relatedModels = [
   .filter(Boolean);
 
 const categoryPath = cat ? `/${cat.path || cat.slug}/` : '';
+const productImage = cat ? PRODUCT_IMAGES[cat.slug] : null;
 const primaryCategory = detailPrimary || detailCategories[0] || null;
 const visibleBreadcrumbItems = cat
   ? [{ name: 'หน้าแรก', href: '/' }, { name: 'สินค้าที่รับซื้อ', href: '/#categories' }, { name: `${cat.kw} ขอนแก่น`, href: categoryPath }]
@@ -116,6 +119,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
         <h1>{cat.h1}</h1>
         {cat.intro.map((p) => <p class="lede">{p}</p>)}
         <p class="lede lede--soft">{SITE.serviceModel}</p>
+        {productImage && <ProductCategoryImage image={productImage} slotId={`category-intro-${cat.slug}`} class="cat-hero__product" />}
         <div class="cta-row">
           <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line">ส่งรูปประเมินฟรี LINE {SITE.lineId}</a>
           <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone">โทร {SITE.phone}</a>
@@ -438,6 +442,7 @@ const jsonLd = cat ? [breadcrumb, serviceLd, faqLd] : [detailBreadcrumb, service
     }
   }
   .cat-hero__icon { font-size: 2.4rem; margin-bottom: 8px; }
+  .cat-hero__product { max-width: 560px; margin: 20px 0 22px; border-radius: 16px; overflow: hidden; }
   .lede { font-size: 1.05rem; color: var(--ink-soft); margin-bottom: 14px; max-width: 68ch; }
   .lede--soft { font-size: 0.98rem; color: var(--muted, #5b6577); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }

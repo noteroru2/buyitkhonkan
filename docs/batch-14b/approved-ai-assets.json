@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "classification": "AI illustrations only; never real business evidence",
+  "reviewDate": "2026-07-18",
+  "assets": [
+    {
+      "assetId": "AI-01", "intendedImageNumber": 1, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 18_42_32.png", "sourceSha256": "bb910de7cb5883feef4a36444d7fccbe731b79bcd057185391ecee97f9b8854a", "webFilename": "owner-notebook-inspection-ai.webp", "outputGroup": "people", "sourceType": "AI_GENERATED_WITH_REAL_IDENTITY_REFERENCE", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "OWNER_AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": true, "containsCustomer": false, "identityReference": true, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": [], "prohibitedSlotIds": ["HOM-HERO-01", "HOM-TRUST-01", "ABOUT-OWNER-01", "CONTACT-TEAM-01"], "disclosure": "ภาพประกอบสร้างด้วย AI โดยอ้างอิงใบหน้าของเจ้าของ", "altText": "เจ้าของกำลังตรวจโน้ตบุ๊กบนโต๊ะอุปกรณ์", "maxLongEdge": 1200, "quality": 80, "maximumBytes": 130000, "renderDecision": "ASSET_LIBRARY_ONLY"
+    },
+    {
+      "assetId": "AI-02", "intendedImageNumber": 2, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 18_47_21.png", "sourceSha256": "e58e3d022c9a7c55f446261f242eef31e595f1d1666e35cb46283e60e3f0eebd", "webFilename": "owner-profile-workspace-ai.webp", "outputGroup": "people", "sourceType": "AI_GENERATED_WITH_REAL_IDENTITY_REFERENCE", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "OWNER_AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": true, "containsCustomer": false, "identityReference": true, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": [], "prohibitedSlotIds": ["HOM-HERO-01", "ABOUT-OWNER-01", "CONTACT-TEAM-01"], "disclosure": "ภาพประกอบสร้างด้วย AI โดยอ้างอิงใบหน้าของเจ้าของ", "altText": "ภาพบุคคลของเจ้าของในพื้นที่ทำงานจำลอง", "maxLongEdge": 1200, "quality": 80, "maximumBytes": 130000, "renderDecision": "ASSET_LIBRARY_ONLY"
+    },
+    {
+      "assetId": "AI-03", "intendedImageNumber": 3, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 18_49_31.png", "sourceSha256": "1bff4b57649a3b29eda89ed27a10e91f458bf1c0a2090bf402b01b97b54df9cd", "webFilename": "owner-team-device-check-ai.webp", "outputGroup": "people", "sourceType": "AI_GENERATED_WITH_REAL_IDENTITY_REFERENCE", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "OWNER_AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": true, "containsCustomer": false, "identityReference": true, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": [], "prohibitedSlotIds": ["HOM-HERO-01", "HOM-TRUST-01", "ABOUT-OWNER-01", "CONTACT-TEAM-01", "TXN-CASE-01"], "disclosure": "ภาพประกอบสร้างด้วย AI โดยอ้างอิงใบหน้าของเจ้าของ", "altText": "บุคลากรสองคนกำลังดูด้านใต้ของโน้ตบุ๊ก", "maxLongEdge": 1200, "quality": 80, "maximumBytes": 130000, "renderDecision": "ASSET_LIBRARY_ONLY"
+    },
+    {
+      "assetId": "AI-04", "intendedImageNumber": 4, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 18_52_38.png", "sourceSha256": "a106092c6d02244e46f627b8d820edc6436e4e0fc2eada54591b8a9ffd551bb9", "sourceType": "AI_GENERATED_ILLUSTRATION", "approvedForWeb": false, "approvalStatus": "REJECTED_VISUAL_ARTIFACT", "privacyReviewPassed": true, "notes": "หน้าจอมีข้อความและ UI สังเคราะห์ รวมถึงตราบนขอบจอที่ระบุไม่ได้"
+    },
+    {
+      "assetId": "AI-05", "intendedImageNumber": 5, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 18_56_45.png", "sourceSha256": "801b190b854e02fccbbcd27d5bb73a0f191e9193e1067e5e1d670f7cb04936e1", "sourceType": "AI_GENERATED_ILLUSTRATION", "approvedForWeb": false, "approvalStatus": "REJECTED_VISUAL_ARTIFACT", "privacyReviewPassed": true, "notes": "มัลติมิเตอร์และอุปกรณ์มีตัวอักษร/สัญลักษณ์สังเคราะห์ที่อ่านไม่ได้"
+    },
+    {
+      "assetId": "AI-06", "intendedImageNumber": 6, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 18_57_59.png", "sourceSha256": "121fe0a41459d6f68178da824da9148edac4cdc377bfcccb1c5bd1da94c8869f", "sourceType": "AI_GENERATED_ILLUSTRATION", "approvedForWeb": false, "approvalStatus": "REJECTED_VISUAL_ARTIFACT", "privacyReviewPassed": true, "notes": "มีตราสังเคราะห์บนอุปกรณ์และรายละเอียดฮาร์ดแวร์ที่ไม่สามารถยืนยันได้"
+    },
+    {
+      "assetId": "AI-07", "intendedImageNumber": 7, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_23_39.png", "sourceSha256": "97aabcc3aa3636810e386cc36ecba05590ae992d1dc888bd4710b10feed0de1c", "webFilename": "notebook-exterior-check-ai.webp", "outputGroup": "process", "sourceType": "AI_GENERATED_ILLUSTRATION", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": false, "containsCustomer": false, "identityReference": false, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": ["HOM-PROC-01"], "prohibitedSlotIds": ["HOM-TRUST-01", "TXN-CASE-01"], "disclosure": "ภาพประกอบ", "altText": "เจ้าหน้าที่ใช้ไฟฉายตรวจสภาพภายนอกของโน้ตบุ๊ก", "maxLongEdge": 1200, "quality": 80, "maximumBytes": 110000, "renderDecision": "ASSET_LIBRARY_ONLY_EXISTING_ICONS_CLEARER"
+    },
+    {
+      "assetId": "AI-08", "intendedImageNumber": 8, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_23_45.png", "sourceSha256": "d917fdab651ac2149b16632f9dbff3f20313556c55cccfe120cdce1cb135f9f5", "sourceType": "AI_GENERATED_ILLUSTRATION", "approvedForWeb": false, "approvalStatus": "REJECTED_VISUAL_ARTIFACT", "privacyReviewPassed": true, "notes": "พอร์ต หัวต่อ และสัดส่วนสายเชื่อมต่อผิดรูปอย่างเห็นได้ชัด"
+    },
+    {
+      "assetId": "AI-09", "intendedImageNumber": 9, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_28_44.png", "sourceSha256": "2c2d4a8611a0fcc736c9f0fe054d76e6309bc7767fd180398c725c4f6a02ba81", "sourceType": "AI_GENERATED_ILLUSTRATION", "approvedForWeb": false, "approvalStatus": "REJECTED_MISLEADING", "privacyReviewPassed": true, "notes": "หน้าจอปิดและป้ายว่าง ไม่สามารถอธิบายขั้นตอนตรวจระบบตาม intended subject ได้"
+    },
+    {
+      "assetId": "AI-11", "intendedImageNumber": 11, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_30_33.png", "sourceSha256": "e6d7befe92954757f1db49d5cc03897b5d2e95199b1cd240aa773da3dd0f9961", "webFilename": "notebook-safe-packing-ai.webp", "outputGroup": "packing", "sourceType": "AI_GENERATED_ILLUSTRATION", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": false, "containsCustomer": false, "identityReference": false, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": [], "prohibitedSlotIds": ["HOM-TRUST-01", "TXN-CASE-01"], "disclosure": "ภาพประกอบ", "altText": "การเตรียมแพ็กโน้ตบุ๊กด้วยซองและวัสดุกันกระแทก", "maxLongEdge": 1200, "quality": 80, "maximumBytes": 110000, "renderDecision": "ASSET_LIBRARY_ONLY_NO_APPROVED_PRODUCTION_SLOT"
+    },
+    {
+      "assetId": "AI-12", "intendedImageNumber": 12, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_32_29.png", "sourceSha256": "f07f9b48d66de73b91357363a683c2a8dd7313a897684a4e4c7cd59d44b0ffd1", "sourceType": "AI_GENERATED_ILLUSTRATION", "approvedForWeb": false, "approvalStatus": "REJECTED_MISLEADING", "privacyReviewPassed": true, "notes": "กล่องมีกราฟิกอุปกรณ์สังเคราะห์และภาพอาจถูกตีความเป็นการขนย้ายจริง"
+    },
+    {
+      "assetId": "AI-13", "intendedImageNumber": 13, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_34_46.png", "sourceSha256": "116c0920f51599a9baaef027113c941583f8d9dd5acf7fd57000b04224d34e83", "webFilename": "inspection-workspace-concept-ai.webp", "outputGroup": "workspace", "sourceType": "AI_GENERATED_ILLUSTRATION", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": false, "containsCustomer": false, "identityReference": false, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": [], "prohibitedSlotIds": ["HOM-HERO-01", "ABOUT-BASE-01", "CONTACT-TEAM-01", "LOCAL-EVID-01"], "disclosure": "ภาพประกอบแนวทางพื้นที่ตรวจและจัดเตรียมอุปกรณ์ ไม่ใช่ภาพสถานที่จริง", "altText": "ภาพประกอบแนวทางพื้นที่สำหรับตรวจอุปกรณ์ไอที", "maxLongEdge": 1200, "quality": 78, "maximumBytes": 110000, "renderDecision": "ASSET_LIBRARY_ONLY"
+    },
+    {
+      "assetId": "AI-14", "intendedImageNumber": 14, "sourceFilename": "ChatGPT Image 18 ก.ค. 2569 19_36_24.png", "sourceSha256": "cd83ad2f3cf10564a63090a45fb58b9d8d6cb7d2685312bc7291a3b75e707057", "webFilename": "packing-storage-workspace-concept-ai.webp", "outputGroup": "workspace", "sourceType": "AI_GENERATED_ILLUSTRATION", "ownershipStatus": "USER_PROVIDED_AI_ASSET", "usagePermission": "AUTHORIZED_FOR_THIS_WEBSITE", "containsPeople": false, "containsCustomer": false, "identityReference": false, "privacyReviewPassed": true, "approvedForWeb": true, "approvalStatus": "APPROVED_AI_ILLUSTRATION", "eligibleSlotIds": [], "prohibitedSlotIds": ["HOM-HERO-01", "ABOUT-BASE-01", "CONTACT-TEAM-01", "LOCAL-EVID-01"], "disclosure": "ภาพประกอบแนวทางพื้นที่ตรวจและจัดเตรียมอุปกรณ์ ไม่ใช่ภาพสถานที่จริง", "altText": "ภาพประกอบแนวทางพื้นที่แพ็กและจัดเก็บอุปกรณ์", "maxLongEdge": 1200, "quality": 78, "maximumBytes": 140000, "renderDecision": "ASSET_LIBRARY_ONLY"
+    }
+  ],
+  "missingIntendedAssets": [10]
+}

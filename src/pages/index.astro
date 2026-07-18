@@ -2,6 +2,8 @@
 import Base from '../layouts/Base.astro';
 import Ticker from '../components/Ticker.astro';
 import { SITE, CATEGORIES } from '../data/categories.js';
+import ProductCategoryImage from '../components/media/ProductCategoryImage.astro';
+import { PRODUCT_IMAGES } from '../data/productImages';
 
 const title = 'รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT';
 const description =
@@ -132,6 +134,7 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
         <div class="cat-grid">
           {moneyCategories.map((c) => (
             <a href={`/${c.path || c.slug}/`} class="card cat">
+              {PRODUCT_IMAGES[c.slug] && <ProductCategoryImage image={PRODUCT_IMAGES[c.slug]} slotId={`home-category-${c.slug}`} class="cat__image" />}
               <span class="cat__icon">{c.icon}</span>
               <h3>{c.kw} ขอนแก่น</h3>
               <p>{c.short}</p>
@@ -392,6 +395,7 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
   .cat { color: var(--ink); display: block; transition: border-color 0.15s, transform 0.15s; }
   .cat:hover { text-decoration: none; border-color: var(--volt); transform: translateY(-3px); }
   .cat__icon { font-size: 1.7rem; }
+  .cat__image { margin: -1rem -1rem 1rem; }
   .cat h3 { margin-block: 10px 6px; font-size: 1.15rem; }
   .cat p { color: var(--ink-soft); font-size: 0.92rem; }
   .cat__more { display: inline-block; margin-top: 12px; color: var(--volt); font-weight: 600; font-size: 0.9rem; }

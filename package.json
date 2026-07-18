@@ -8,7 +8,14 @@
     "build": "astro build",
     "preview": "astro preview",
     "audit:metadata": "node docs/audits/metadata-audit.js",
-    "audit:batch12": "node scripts/audits/batch-12-audit.mjs"
+    "audit:batch12": "node scripts/audits/batch-12-audit.mjs",
+    "images:audit": "node scripts/audits/image-performance-audit.mjs",
+    "images:process": "node scripts/images/process-images.mjs",
+    "images:validate": "node scripts/images/validate-image-manifest.mjs",
+    "images:component-test": "node scripts/audits/responsive-image-component-test.mjs",
+    "images:ai-process": "node scripts/images/process-ai-images.mjs",
+    "images:ai-verify": "node scripts/images/process-ai-images.mjs --verify",
+    "images:ai-contact-sheet": "node scripts/images/create-ai-contact-sheet.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",

@@ -20,3 +20,8 @@ Thumbs.db
 .vscode/
 *.suo
 *.user
+
+# Private image intake: never commit unreviewed originals
+private-assets/**
+!private-assets/image-intake/
+!private-assets/image-intake/README.md

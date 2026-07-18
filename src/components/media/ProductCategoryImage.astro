@@ -1,0 +1,5 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+const { image, slotId, class: className = '' } = Astro.props;
+---
+<ResponsiveImage src={image.src} alt={image.alt} width={640} height={400} widths={[320,480,640]} sizes="(max-width: 720px) 100vw, 33vw" loading="lazy" fit="cover" position={image.position} aspectRatio="8 / 5" slotId={slotId} class={className} />
