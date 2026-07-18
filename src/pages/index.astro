@@ -4,6 +4,8 @@ import Ticker from '../components/Ticker.astro';
 import { SITE, CATEGORIES } from '../data/categories.js';
 import ProductCategoryImage from '../components/media/ProductCategoryImage.astro';
 import { PRODUCT_IMAGES } from '../data/productImages';
+import ResponsiveImage from '../components/media/ResponsiveImage.astro';
+import processInspectionImage from '../assets/images/illustrations/ai/process/notebook-exterior-check-ai.webp';
 
 const title = 'รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT';
 const description =
@@ -178,6 +180,19 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
             ระยะเวลาขึ้นอยู่กับความครบของข้อมูลและคิวในแต่ละวัน
           </p>
         </div>
+        <ResponsiveImage
+          src={processInspectionImage}
+          alt="บุคคลใช้ไฟฉายตรวจสภาพภายนอกของโน้ตบุ๊กบนโต๊ะอุปกรณ์"
+          caption="ภาพประกอบขั้นตอนการตรวจและจัดเตรียมอุปกรณ์"
+          width={1200}
+          height={900}
+          widths={[480, 768, 960, 1200]}
+          sizes="(max-width: 640px) calc(100vw - 40px), 720px"
+          loading="lazy"
+          fetchpriority="low"
+          slotId="HOM-PROC-01"
+          class="process-illustration"
+        />
         <ol class="steps">
           {steps.map((s) => (
             <li class="card step">
@@ -401,6 +416,9 @@ const moneyCategories = CATEGORIES.filter((c) => !['gadget', 'smartwatch', 'appl
   .cat__more { display: inline-block; margin-top: 12px; color: var(--volt); font-weight: 600; font-size: 0.9rem; }
 
   .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  :global(.process-illustration) { max-width: 720px; margin: 0 auto 24px; }
+  :global(.process-illustration picture) { border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+  :global(.process-illustration figcaption) { text-align: center; }
   .step__n {
     display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 999px;
     background: var(--volt); color: #fff; font-family: var(--font-display); font-weight: 700; margin-bottom: 14px;
