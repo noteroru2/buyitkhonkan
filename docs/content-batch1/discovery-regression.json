@@ -1,0 +1,28 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T07:49:39.243Z",
+  "liveDiscoveryMeta": {
+    "categoryCount": 15,
+    "brandCount": 6,
+    "modelCount": 21,
+    "conditionCount": 5,
+    "localCount": 8,
+    "holdArchitectureLinked": false
+  },
+  "contextsAudited": 79,
+  "uniqueInternalTargets": 77,
+  "holdArchitectureLinked": 0,
+  "brokenDiscoveryLinks": 0,
+  "thinDiscoveryContexts": 0,
+  "missingComponentTokens": [],
+  "integration": {
+    "moneyPages": true,
+    "articles": true,
+    "breadcrumbTracking": true
+  },
+  "samples": {
+    "holdLeaks": [],
+    "broken": [],
+    "thinContexts": []
+  }
+}

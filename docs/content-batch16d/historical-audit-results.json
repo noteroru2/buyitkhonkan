@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-09-01T14:08:56.221366+00:00",
+  "skippedBuildDependent": [
+    "scripts/audits/batch-12-audit.mjs",
+    "scripts/audits/index-recovery-audit.mjs",
+    "scripts/audits/responsive-image-component-test.mjs"
+  ],
+  "results": [
+    {
+      "file": "scripts/audits/architecture-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/batch-13-image-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch10-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch10-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch11-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch11-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch12-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch12-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch13-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch13-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch14-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch14-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch15-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch15-triage-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16a-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16a-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16b-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16b-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16c-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16c-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16d-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch16d-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch4-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch5-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch6-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch6-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch7-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch7-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch8-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch8-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch9-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/content-batch9-regression.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/core-money-content-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/discovery-ux-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/export-architecture-registry.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/high-intent-expansion-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/high-intent-model-content-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "file": "scripts/audits/image-performance-audit.mjs",
+      "status": "PASS",
+      "returncode": 0
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.641Z",
+  "batch": "CONTENT_BATCH_15_REMAINING_ARCHITECTURE_TRIAGE_REGRESSION",
+  "baseline": "CONTENT_BATCH_14",
+  "note": "Historical regression permits later promotion of Batch 15 RELEASE candidates while KEEP_HOLD/MERGE decisions remain noindex.",
+  "findings": {
+    "baselineArchitecture": 311,
+    "currentArchitecture": 311,
+    "baselineIndex": 255,
+    "currentIndex": 297,
+    "baselineHold": 56,
+    "currentHold": 14,
+    "triageRows": 56,
+    "protectedFilesChecked": 24,
+    "changedProtectedFiles": 7,
+    "unexpectedChangedProtectedFiles": 0,
+    "changedArchitectureOwnership": 42,
+    "unexpectedArchitectureOwnership": 0,
+    "forbiddenLifecyclePromotions": 0,
+    "addedArchitecturePages": 0,
+    "missingExpectedFiles": 0
+  },
+  "changedProtected": [
+    "src/pages/index.astro",
+    "src/data/architecture/hubs.js",
+    "src/data/highIntentModelContent.js",
+    "src/data/discoveryLinks.js",
+    "src/pages/[slug].astro",
+    "src/pages/บทความ/[slug].astro",
+    "astro.config.mjs"
+  ],
+  "unexpectedChangedProtected": [],
+  "changedArchitectureOwnership": [
+    {
+      "id": "hub-products",
+      "fields": [
+        "lifecycle",
+        "title",
+        "h1",
+        "description"
+      ]
+    },
+    {
+      "id": "hub-brands-models",
+      "fields": [
+        "lifecycle",
+        "title",
+        "h1",
+        "description"
+      ]
+    },
+    {
+      "id": "model-asus-rog-scar-16",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-asus-rog-scar-18",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-asus-tuf-gaming-f15",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-lenovo-legion-5i",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-lenovo-legion-pro-7",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-lenovo-loq-16",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-acer-predator-helios-16",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-acer-swift-go-14",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-hp-victus-15",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-msi-cyborg-15",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-msi-thin-15",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-msi-raider-ge68",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-11",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-11-pro",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-11-pro-max",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-12-mini",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-12-pro",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-13-mini",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-14-plus",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-15-plus",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-16",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-iphone-16-plus",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-ipad-air-m2-13",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-ipad-pro-m1-12-9",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-ipad-pro-m2-12-9",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-ipad-pro-m4-13",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-ipad-mini-a17-pro",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rtx-3070-ti",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rtx-3080-ti",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rtx-3090",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rtx-4080",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rtx-4090",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rx-6700-xt",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rx-7600",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rx-7700-xt",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-rx-7900-xt",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-fujifilm-x-t20",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-fujifilm-x-h1",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-olympus-em5-mark-iii",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    },
+    {
+      "id": "model-panasonic-g85",
+      "fields": [
+        "lifecycle",
+        "title",
+        "description"
+      ]
+    }
+  ],
+  "unexpectedArchitectureOwnership": [],
+  "forbiddenLifecyclePromotions": [],
+  "addedArchitecturePages": [],
+  "missingExpectedFiles": []
+}

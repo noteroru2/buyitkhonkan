@@ -1,0 +1,6 @@
+{
+  "status": "WARNING_DEPENDENCY_RUNTIME",
+  "fullAstroBuildCompleted": false,
+  "reason": "npm ci did not complete within the sandbox runtime/network window; no source build error was observed before termination.",
+  "cleanup": ["node_modules", "dist", ".astro"]
+}

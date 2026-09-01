@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import ReleasedGuidePage from '../../components/ReleasedGuidePage.astro';
+import { SITE } from '../../data/site.js';
+import { ARCHITECTURE_PAGES } from '../../data/architectureRegistry.js';
+import { getHighIntentGuideContent } from '../../data/highIntentGuideContent.js';
+
+export function getStaticPaths() {
+  return ARCHITECTURE_PAGES
+    .filter((page) => page.type === 'guide' && page.lifecycle === 'INDEX')
+    .map((architecturePage) => ({
+      params: { slug: architecturePage.path.split('/').filter(Boolean).at(-1) },
+      props: { architecturePage },
+    }));
+}
+
+const { architecturePage } = Astro.props;
+const releasedGuideContent = getHighIntentGuideContent(architecturePage);
+if (!releasedGuideContent) {
+  throw new Error(`INDEX guide is missing released content: ${architecturePage.path}`);
+}
+const siteUrl = Astro.site?.href?.replace(/\/$/, '') || '';
+const breadcrumbs = releasedGuideContent ? [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'บทความ', href: '/บทความ/' },
+  { name: architecturePage.label, href: architecturePage.path },
+] : [];
+const articleLd = releasedGuideContent ? {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: architecturePage.h1,
+  description: architecturePage.description,
+  datePublished: '2026-09-01',
+  dateModified: '2026-09-01',
+  author: { '@type': 'Organization', name: SITE.name },
+  publisher: { '@type': 'Organization', name: SITE.company },
+  mainEntityOfPage: `${siteUrl}${architecturePage.path}`,
+} : null;
+const breadcrumbLd = releasedGuideContent ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, Astro.site).href,
+  })),
+} : null;
+const faqLd = releasedGuideContent ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: releasedGuideContent.faq.map(([q, a]) => ({
+    '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+} : null;
+const robots = architecturePage.lifecycle === 'HOLD_NOINDEX' ? 'noindex,follow' : undefined;
+---
+
+<Base
+  title={architecturePage.title}
+  description={architecturePage.description}
+  robots={robots}
+  jsonLd={[articleLd, breadcrumbLd, faqLd].filter(Boolean)}
+>
+  <ReleasedGuidePage page={architecturePage} content={releasedGuideContent} />
+</Base>

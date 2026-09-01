@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-01T14:08:00+07:00",
+  "verdict": "PASS_WITH_BUILD_UNAVAILABLE",
+  "homepage": {
+    "h1Count": 1,
+    "linePrimaryHero": true,
+    "trustStrip": true,
+    "decisionCards": 4,
+    "serviceCases": true,
+    "b2bPanel": true,
+    "districtNavigation": true,
+    "holdPageLinkedFromNewDecisionUI": false
+  },
+  "css": {
+    "openBraces": 248,
+    "closeBraces": 248,
+    "balanced": true
+  },
+  "seoSafeguards": {
+    "homepageTitleUnchanged": true,
+    "homepageH1CoreUnchanged": true,
+    "architectureAudit": "PASS",
+    "forecastRoutesMinimum": 398
+  },
+  "build": {
+    "attempted": true,
+    "status": "NOT_RUN",
+    "reason": "node_modules is not present and npm ci --offline failed because dependency zwitch@2.0.4 is not cached"
+  }
+}

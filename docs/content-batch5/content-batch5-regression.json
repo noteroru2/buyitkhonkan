@@ -1,0 +1,108 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T08:49:45.439Z",
+  "baselineReleased": 63,
+  "currentReleased": 88,
+  "addedReleased": [
+    "monitor-24-ips",
+    "monitor-27-ips",
+    "monitor-27-144hz",
+    "monitor-27-165hz",
+    "monitor-32-144hz",
+    "monitor-2k",
+    "monitor-4k",
+    "monitor-ultrawide",
+    "monitor-oled",
+    "portable-monitor",
+    "dji-mini-2",
+    "dji-mini-3-pro",
+    "dji-mini-4-pro",
+    "dji-air-2s",
+    "dji-air-3",
+    "dji-mavic-air",
+    "gopro-hero-10",
+    "gopro-hero-11",
+    "gopro-hero-12",
+    "dji-osmo-action-4",
+    "apple-watch-series-7",
+    "apple-watch-series-8",
+    "apple-watch-series-9",
+    "apple-watch-ultra",
+    "apple-watch-ultra-2"
+  ],
+  "existingReleasedContentChanged": [],
+  "existingReleasedArchitectureChanged": [],
+  "protectedFiles": [
+    {
+      "file": "src/data/categories.js",
+      "baseline": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+      "current": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/brandPages.js",
+      "baseline": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+      "current": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/modelPages.js",
+      "baseline": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+      "current": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/conditionPages.js",
+      "baseline": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+      "current": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/localPages.js",
+      "baseline": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+      "current": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/site.js",
+      "baseline": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+      "current": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+      "unchanged": true
+    },
+    {
+      "file": "src/layouts/Base.astro",
+      "baseline": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+      "current": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/[slug].astro",
+      "baseline": "336d9ab95dc8bca96e8631bdb9affc06d5aecc59d584a60c5f839fac7e1e160e",
+      "current": "336d9ab95dc8bca96e8631bdb9affc06d5aecc59d584a60c5f839fac7e1e160e",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/บทความ/[slug].astro",
+      "baseline": "5fbbc29a96ed81dccd53ed3bc5189a7146fa24aaeab165f44adb29c65082ab07",
+      "current": "5fbbc29a96ed81dccd53ed3bc5189a7146fa24aaeab165f44adb29c65082ab07",
+      "unchanged": true
+    },
+    {
+      "file": "astro.config.mjs",
+      "baseline": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "current": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "unchanged": true
+    }
+  ],
+  "intentionalBatch5Changes": [
+    "src/data/highIntentModelContentBatch5.js",
+    "src/data/highIntentModelContent.js (imports/spreads Batch 5)",
+    "src/data/architecture/models.js (explicit H1 only for 10 previously-HOLD monitor pages)",
+    "src/data/discoveryLinks.js (released-model discovery cap 12; still lifecycle-gated)",
+    "src/components/ReleasedModelPage.astro (guides for new clusters + generic source wording + dynamic batch marker)",
+    "scripts/audits/content-batch5-audit.mjs",
+    "scripts/audits/export-architecture-registry.mjs",
+    "docs/architecture/page-registry.csv (regenerated lifecycle state)",
+    "package.json and docs/architecture/README.md (audit/export commands)"
+  ]
+}

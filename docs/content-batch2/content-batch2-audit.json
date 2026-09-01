@@ -1,0 +1,1248 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:31.895Z",
+  "batch": "CONTENT_BATCH_2_HIGH_INTENT_MODELS",
+  "findings": {
+    "releasedCount": 172,
+    "expectedReleasedCount": 172,
+    "holdModelCount": 8,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "invalidLifecycle": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "unlinkedReleasedPages": 0,
+    "duplicateTitles": 0,
+    "duplicateDescriptions": 0,
+    "duplicateLongEditorialStrings": 0,
+    "unsafeClaims": 0,
+    "fixedNumericPriceClaims": 0
+  },
+  "integration": {
+    "releasedRouteBranch": true,
+    "holdRobotsPreserved": true,
+    "faqSchema": true,
+    "conversionLayer": true,
+    "internalDiscovery": true,
+    "noStructureOnlyCopy": true
+  },
+  "released": [
+    {
+      "slug": "asus-rog-zephyrus-g14",
+      "path": "/รับซื้อ-asus-rog-zephyrus-g14-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Zephyrus G14 ขอนแก่น เช็ก GPU จอ OLED และประกัน | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Zephyrus G14 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-rog-zephyrus-g16",
+      "path": "/รับซื้อ-asus-rog-zephyrus-g16-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Zephyrus G16 ขอนแก่น เช็ก GA605 GU605 จอ OLED และ RTX | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Zephyrus G16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-rog-strix-g16",
+      "path": "/รับซื้อ-asus-rog-strix-g16-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Strix G16 ขอนแก่น เช็ก G614 G615 RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Strix G16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-rog-strix-g18",
+      "path": "/รับซื้อ-asus-rog-strix-g18-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Strix G18 ขอนแก่น เช็กรหัส G814/G815 GPU และจอ | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Strix G18 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-rog-scar-16",
+      "path": "/รับซื้อ-asus-rog-scar-16-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Strix SCAR 16 ขอนแก่น เช็ก G634/G635 GPU จอและประกัน | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Strix SCAR 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-rog-scar-18",
+      "path": "/รับซื้อ-asus-rog-scar-18-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Strix SCAR 18 ขอนแก่น เช็ก G834/G835 จอ 18 นิ้ว GPU | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Strix SCAR 18 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-tuf-gaming-a14",
+      "path": "/รับซื้อ-asus-tuf-gaming-a14-ขอนแก่น/",
+      "title": "รับซื้อ ASUS TUF Gaming A14 ขอนแก่น เช็ก FA401 GPU จอ 165Hz และ RAM | WINNER IT",
+      "h1": "รับซื้อ ASUS TUF Gaming A14 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-tuf-gaming-a15",
+      "path": "/รับซื้อ-asus-tuf-gaming-a15-ขอนแก่น/",
+      "title": "รับซื้อ ASUS TUF Gaming A15 ขอนแก่น เช็ก FA506/FA507 และ RTX | WINNER IT",
+      "h1": "รับซื้อ ASUS TUF Gaming A15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-tuf-gaming-a16",
+      "path": "/รับซื้อ-asus-tuf-gaming-a16-ขอนแก่น/",
+      "title": "รับซื้อ ASUS TUF Gaming A16 ขอนแก่น เช็ก FA608 GPU จอ 144/165Hz | WINNER IT",
+      "h1": "รับซื้อ ASUS TUF Gaming A16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "asus-tuf-gaming-f15",
+      "path": "/รับซื้อ-asus-tuf-gaming-f15-ขอนแก่น/",
+      "title": "รับซื้อ ASUS TUF Gaming F15 ขอนแก่น เช็ก FX506/FX507 Intel RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ ASUS TUF Gaming F15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-legion-5",
+      "path": "/รับซื้อ-lenovo-legion-5-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo Legion 5 ขอนแก่น แยกรุ่น CPU GPU และจอ | WINNER IT",
+      "h1": "รับซื้อ Lenovo Legion 5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-legion-5i",
+      "path": "/รับซื้อ-lenovo-legion-5i-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo Legion 5i ขอนแก่น เช็ก 16IRX9 Intel RTX และ MTM | WINNER IT",
+      "h1": "รับซื้อ Lenovo Legion 5i ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-legion-pro-5",
+      "path": "/รับซื้อ-lenovo-legion-pro-5-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo Legion Pro 5 ขอนแก่น เช็ก 16IRX/16ARX RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ Lenovo Legion Pro 5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-legion-pro-7",
+      "path": "/รับซื้อ-lenovo-legion-pro-7-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo Legion Pro 7 ขอนแก่น เช็ก 16IRX9H RTX 4080/4090 และจอ | WINNER IT",
+      "h1": "รับซื้อ Lenovo Legion Pro 7 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-loq-15",
+      "path": "/รับซื้อ-lenovo-loq-15-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo LOQ 15 ขอนแก่น ดูรหัสรุ่น RTX และอะแดปเตอร์ | WINNER IT",
+      "h1": "รับซื้อ Lenovo LOQ 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-loq-16",
+      "path": "/รับซื้อ-lenovo-loq-16-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo LOQ 16 ขอนแก่น เช็ก 16IRH8 CPU RTX จอ 16 นิ้วและอะแดปเตอร์ | WINNER IT",
+      "h1": "รับซื้อ Lenovo LOQ 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-thinkpad-t14",
+      "path": "/รับซื้อ-lenovo-thinkpad-t14-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo ThinkPad T14 ขอนแก่น เช็ก Gen Type vPro WWAN และสภาพ | WINNER IT",
+      "h1": "รับซื้อ Lenovo ThinkPad T14 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "lenovo-thinkpad-x1-carbon",
+      "path": "/รับซื้อ-lenovo-thinkpad-x1-carbon-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo ThinkPad X1 Carbon ขอนแก่น เช็ก Gen จอ RAM WWAN | WINNER IT",
+      "h1": "รับซื้อ Lenovo ThinkPad X1 Carbon ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "acer-nitro-v15",
+      "path": "/รับซื้อ-acer-nitro-v15-ขอนแก่น/",
+      "title": "รับซื้อ Acer Nitro V 15 ขอนแก่น เช็ก ANV15 CPU RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ Acer Nitro V 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "acer-nitro-5",
+      "path": "/รับซื้อ-acer-nitro-5-ขอนแก่น/",
+      "title": "รับซื้อ Acer Nitro 5 ขอนแก่น เช็ก AN515 CPU GPU จอและอะแดปเตอร์ | WINNER IT",
+      "h1": "รับซื้อ Acer Nitro 5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "acer-predator-helios-neo-16",
+      "path": "/รับซื้อ-acer-predator-helios-neo-16-ขอนแก่น/",
+      "title": "รับซื้อ Acer Predator Helios Neo 16 ขอนแก่น เช็ก PHN16 RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ Acer Predator Helios Neo 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "acer-predator-helios-16",
+      "path": "/รับซื้อ-acer-predator-helios-16-ขอนแก่น/",
+      "title": "รับซื้อ Acer Predator Helios 16 ขอนแก่น เช็ก PH16 รุ่นจอ GPU และประกัน | WINNER IT",
+      "h1": "รับซื้อ Acer Predator Helios 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "acer-swift-go-14",
+      "path": "/รับซื้อ-acer-swift-go-14-ขอนแก่น/",
+      "title": "รับซื้อ Acer Swift Go 14 ขอนแก่น เช็ก SFG14 OLED/Core Ultra และแบต | WINNER IT",
+      "h1": "รับซื้อ Acer Swift Go 14 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "hp-victus-15",
+      "path": "/รับซื้อ-hp-victus-15-ขอนแก่น/",
+      "title": "รับซื้อ HP Victus 15 ขอนแก่น เช็ก 15-fa CPU RTX จอ 144Hz และประกัน | WINNER IT",
+      "h1": "รับซื้อ HP Victus 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "hp-victus-16",
+      "path": "/รับซื้อ-hp-victus-16-ขอนแก่น/",
+      "title": "รับซื้อ HP Victus 16 ขอนแก่น เช็ก CPU RTX จอ RAM SSD และประกัน | WINNER IT",
+      "h1": "รับซื้อ HP Victus 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "hp-omen-16",
+      "path": "/รับซื้อ-hp-omen-16-ขอนแก่น/",
+      "title": "รับซื้อ HP OMEN 16 ขอนแก่น เช็กรหัส 16-xxxx CPU GPU จอและประกัน | WINNER IT",
+      "h1": "รับซื้อ HP Omen 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dell-latitude-7440",
+      "path": "/รับซื้อ-dell-latitude-7440-ขอนแก่น/",
+      "title": "รับซื้อ Dell Latitude 7440 ขอนแก่น i5/i7 vPro เครื่องบริษัท | WINNER IT",
+      "h1": "รับซื้อ Dell Latitude 7440 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dell-g15",
+      "path": "/รับซื้อ-dell-g15-ขอนแก่น/",
+      "title": "รับซื้อ Dell G15 ขอนแก่น เช็ก Service Tag GPU จอ 120/165/240Hz | WINNER IT",
+      "h1": "รับซื้อ Dell G15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "msi-katana-15",
+      "path": "/รับซื้อ-msi-katana-15-ขอนแก่น/",
+      "title": "รับซื้อ MSI Katana 15 ขอนแก่น เช็ก B12/B13 GPU TGP จอและอะแดปเตอร์ | WINNER IT",
+      "h1": "รับซื้อ MSI Katana 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "msi-cyborg-15",
+      "path": "/รับซื้อ-msi-cyborg-15-ขอนแก่น/",
+      "title": "รับซื้อ MSI Cyborg 15 ขอนแก่น เช็ก A13V CPU RTX 4050/4060 จอ 144Hz | WINNER IT",
+      "h1": "รับซื้อ MSI Cyborg 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "msi-thin-15",
+      "path": "/รับซื้อ-msi-thin-15-ขอนแก่น/",
+      "title": "รับซื้อ MSI Thin 15 ขอนแก่น เช็ก B13V RTX 4050 จอ 144Hz RAM SSD | WINNER IT",
+      "h1": "รับซื้อ MSI Thin 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "msi-raider-ge68",
+      "path": "/รับซื้อ-msi-raider-ge68-ขอนแก่น/",
+      "title": "รับซื้อ MSI Raider GE68 HX ขอนแก่น เช็ก 13V/14V GPU จอและอะแดปเตอร์ | WINNER IT",
+      "h1": "รับซื้อ MSI Raider GE68 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-air-m1",
+      "path": "/รับซื้อ-macbook-air-m1-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Air M1 ขอนแก่น 8GB 16GB 256/512GB | WINNER IT",
+      "h1": "รับซื้อ MacBook Air M1 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-air-m2",
+      "path": "/รับซื้อ-macbook-air-m2-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Air M2 ขอนแก่น 8/256 8/512 16GB | WINNER IT",
+      "h1": "รับซื้อ MacBook Air M2 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-air-m3",
+      "path": "/รับซื้อ-macbook-air-m3-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Air M3 ขอนแก่น เช็ก RAM SSD แบตและประกัน | WINNER IT",
+      "h1": "รับซื้อ MacBook Air M3 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-air-m4",
+      "path": "/รับซื้อ-macbook-air-m4-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Air M4 ขอนแก่น 13/15 นิ้ว RAM SSD แบต | WINNER IT",
+      "h1": "รับซื้อ MacBook Air M4 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-13-m1",
+      "path": "/รับซื้อ-macbook-pro-13-m1-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 13 M1 ขอนแก่น เช็ก RAM SSD แบต Touch Bar | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 13 M1 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-14-m1-pro",
+      "path": "/รับซื้อ-macbook-pro-14-m1-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 14 M1 Pro ขอนแก่น RAM SSD แบต | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 14 M1 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-16-m1-pro",
+      "path": "/รับซื้อ-macbook-pro-16-m1-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 16 M1 Pro ขอนแก่น เช็ก RAM SSD จอ XDR และแบต | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 16 M1 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-14-m2-pro",
+      "path": "/รับซื้อ-macbook-pro-14-m2-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 14 M2 Pro ขอนแก่น RAM SSD แบตและจอ XDR | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 14 M2 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-16-m2-pro",
+      "path": "/รับซื้อ-macbook-pro-16-m2-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 16 M2 Pro ขอนแก่น RAM SSD แบตและจอ XDR | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 16 M2 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-14-m3",
+      "path": "/รับซื้อ-macbook-pro-14-m3-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 14 M3 ขอนแก่น เช็ก RAM SSD จอ XDR แบต | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 14 M3 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-14-m4",
+      "path": "/รับซื้อ-macbook-pro-14-m4-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 14 M4 ขอนแก่น RAM SSD แบต จอ XDR | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 14 M4 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "macbook-pro-16-m4-pro",
+      "path": "/รับซื้อ-macbook-pro-16-m4-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 16 M4 Pro ขอนแก่น เช็ก RAM SSD จอ XDR และประกัน | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 16 M4 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-11",
+      "path": "/รับซื้อ-iphone-11-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 11 ขอนแก่น เช็ก 64/128/256GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 11 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-11-pro",
+      "path": "/รับซื้อ-iphone-11-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 11 Pro ขอนแก่น เช็ก 64/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 11 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-11-pro-max",
+      "path": "/รับซื้อ-iphone-11-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 11 Pro Max ขอนแก่น เช็ก 64/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 11 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-12",
+      "path": "/รับซื้อ-iphone-12-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 12 ขอนแก่น เช็ก 64/128/256GB แบต จอและอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 12 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-12-mini",
+      "path": "/รับซื้อ-iphone-12-mini-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 12 mini ขอนแก่น เช็ก 64/128/256GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 12 mini ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-12-pro",
+      "path": "/รับซื้อ-iphone-12-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 12 Pro ขอนแก่น เช็ก 128/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 12 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-12-pro-max",
+      "path": "/รับซื้อ-iphone-12-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 12 Pro Max ขอนแก่น เช็ก 128-512GB แบต จอและกล้อง | WINNER IT",
+      "h1": "รับซื้อ iPhone 12 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-13",
+      "path": "/รับซื้อ-iphone-13-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 13 ขอนแก่น 128 256 512GB เช็กแบตและจอ | WINNER IT",
+      "h1": "รับซื้อ iPhone 13 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-13-mini",
+      "path": "/รับซื้อ-iphone-13-mini-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 13 mini ขอนแก่น เช็ก 128/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 13 mini ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-13-pro",
+      "path": "/รับซื้อ-iphone-13-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 13 Pro ขอนแก่น 128GB ถึง 1TB เช็กแบต จอ Face ID | WINNER IT",
+      "h1": "รับซื้อ iPhone 13 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-13-pro-max",
+      "path": "/รับซื้อ-iphone-13-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 13 Pro Max ขอนแก่น 128GB ถึง 1TB เช็กแบตและจอ | WINNER IT",
+      "h1": "รับซื้อ iPhone 13 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-14",
+      "path": "/รับซื้อ-iphone-14-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 14 ขอนแก่น 128 256 512GB เช็กแบต Face ID | WINNER IT",
+      "h1": "รับซื้อ iPhone 14 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-14-plus",
+      "path": "/รับซื้อ-iphone-14-plus-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 14 Plus ขอนแก่น เช็ก 128/256/512GB แบต จอและอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 14 Plus ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-14-pro",
+      "path": "/รับซื้อ-iphone-14-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 14 Pro ขอนแก่น เช็ก 128GB-1TB แบต จอ ProMotion | WINNER IT",
+      "h1": "รับซื้อ iPhone 14 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "path": "/รับซื้อ-iphone-14-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 14 Pro Max ขอนแก่น 128GB ถึง 1TB เช็กแบต จอ Face ID | WINNER IT",
+      "h1": "รับซื้อ iPhone 14 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-15",
+      "path": "/รับซื้อ-iphone-15-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 15 ขอนแก่น เช็ก 128/256/512GB แบต USB-C และจอ | WINNER IT",
+      "h1": "รับซื้อ iPhone 15 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-15-plus",
+      "path": "/รับซื้อ-iphone-15-plus-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 15 Plus ขอนแก่น เช็ก USB-C แบต จอและประวัติอะไหล่ | WINNER IT",
+      "h1": "รับซื้อ iPhone 15 Plus ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-15-pro",
+      "path": "/รับซื้อ-iphone-15-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 15 Pro ขอนแก่น 128GB ถึง 1TB Titanium USB-C | WINNER IT",
+      "h1": "รับซื้อ iPhone 15 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-15-pro-max",
+      "path": "/รับซื้อ-iphone-15-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 15 Pro Max ขอนแก่น 256GB 512GB 1TB | WINNER IT",
+      "h1": "รับซื้อ iPhone 15 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-16",
+      "path": "/รับซื้อ-iphone-16-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 16 ขอนแก่น เช็ก A18 128/256/512GB แบตและกล้อง | WINNER IT",
+      "h1": "รับซื้อ iPhone 16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-16-plus",
+      "path": "/รับซื้อ-iphone-16-plus-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 16 Plus ขอนแก่น เช็ก 6.7 นิ้ว A18 แบตและกล้อง | WINNER IT",
+      "h1": "รับซื้อ iPhone 16 Plus ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-16-pro",
+      "path": "/รับซื้อ-iphone-16-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 16 Pro ขอนแก่น เช็กความจุ แบต จอ 6.3 นิ้วและกล้อง | WINNER IT",
+      "h1": "รับซื้อ iPhone 16 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "iphone-16-pro-max",
+      "path": "/รับซื้อ-iphone-16-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 16 Pro Max ขอนแก่น 256GB 512GB 1TB | WINNER IT",
+      "h1": "รับซื้อ iPhone 16 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-gen-9",
+      "path": "/รับซื้อ-ipad-gen-9-ขอนแก่น/",
+      "title": "รับซื้อ iPad Gen 9 ขอนแก่น เช็ก 64/256GB Wi-Fi Cellular แบตและจอ | WINNER IT",
+      "h1": "รับซื้อ iPad Gen 9 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-gen-10",
+      "path": "/รับซื้อ-ipad-gen-10-ขอนแก่น/",
+      "title": "รับซื้อ iPad Gen 10 ขอนแก่น Wi‑Fi Cellular 64/256GB | WINNER IT",
+      "h1": "รับซื้อ iPad Gen 10 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-a16",
+      "path": "/รับซื้อ-ipad-a16-ขอนแก่น/",
+      "title": "รับซื้อ iPad A16 ขอนแก่น 128 256 512GB Wi‑Fi Cellular | WINNER IT",
+      "h1": "รับซื้อ iPad A16 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-air-4",
+      "path": "/รับซื้อ-ipad-air-4-ขอนแก่น/",
+      "title": "รับซื้อ iPad Air 4 ขอนแก่น เช็ก 64/256GB Wi-Fi Cellular จอและ Touch ID | WINNER IT",
+      "h1": "รับซื้อ iPad Air 4 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-air-5",
+      "path": "/รับซื้อ-ipad-air-5-ขอนแก่น/",
+      "title": "รับซื้อ iPad Air 5 ขอนแก่น M1 Wi‑Fi Cellular 64/256GB | WINNER IT",
+      "h1": "รับซื้อ iPad Air 5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-air-m2-11",
+      "path": "/รับซื้อ-ipad-air-m2-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Air M2 11 นิ้ว ขอนแก่น Wi‑Fi Cellular 128GB ถึง 1TB | WINNER IT",
+      "h1": "รับซื้อ iPad Air M2 11-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-air-m2-13",
+      "path": "/รับซื้อ-ipad-air-m2-13-ขอนแก่น/",
+      "title": "รับซื้อ iPad Air M2 13 นิ้ว ขอนแก่น เช็ก Wi‑Fi/Cellular ความจุ จอและ Pencil | WINNER IT",
+      "h1": "รับซื้อ iPad Air M2 13-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-pro-m1-11",
+      "path": "/รับซื้อ-ipad-pro-m1-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M1 11 นิ้ว ขอนแก่น Wi‑Fi Cellular | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M1 11-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-pro-m1-12-9",
+      "path": "/รับซื้อ-ipad-pro-m1-12-9-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M1 12.9 นิ้ว ขอนแก่น เช็ก mini‑LED 128GB–2TB Cellular และจอ | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M1 12.9-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-pro-m2-11",
+      "path": "/รับซื้อ-ipad-pro-m2-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M2 11 นิ้ว ขอนแก่น Wi‑Fi Cellular Face ID | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M2 11-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-pro-m2-12-9",
+      "path": "/รับซื้อ-ipad-pro-m2-12-9-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M2 12.9 นิ้ว ขอนแก่น เช็ก mini‑LED M2 128GB–2TB Cellular | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M2 12.9-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-pro-m4-11",
+      "path": "/รับซื้อ-ipad-pro-m4-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M4 11 นิ้ว ขอนแก่น OLED 256GB ถึง 2TB | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M4 11-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-pro-m4-13",
+      "path": "/รับซื้อ-ipad-pro-m4-13-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M4 13 นิ้ว ขอนแก่น เช็ก OLED 256GB–2TB Cellular และจอ | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M4 13-inch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-mini-6",
+      "path": "/รับซื้อ-ipad-mini-6-ขอนแก่น/",
+      "title": "รับซื้อ iPad mini 6 ขอนแก่น เช็ก 64/256GB Wi-Fi Cellular จอและ USB-C | WINNER IT",
+      "h1": "รับซื้อ iPad mini 6 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "ipad-mini-a17-pro",
+      "path": "/รับซื้อ-ipad-mini-a17-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPad mini A17 Pro ขอนแก่น เช็ก 128/256/512GB Cellular และ Pencil | WINNER IT",
+      "h1": "รับซื้อ iPad mini A17 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3060",
+      "path": "/รับซื้อ-rtx-3060-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 3060 ขอนแก่น เช็ก 12GB/8GB ประกัน พัดลมและผลเทส | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3060 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3060-ti",
+      "path": "/รับซื้อ-rtx-3060-ti-ขอนแก่น/",
+      "title": "รับซื้อ RTX 3060 Ti ขอนแก่น 8GB เช็กประกัน พัดลมและประวัติขุด | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3060 Ti ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3070",
+      "path": "/รับซื้อ-rtx-3070-ขอนแก่น/",
+      "title": "รับซื้อ RTX 3070 ขอนแก่น เช็ก 8GB GDDR6 LHR พัดลมและประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3070 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3070-ti",
+      "path": "/รับซื้อ-rtx-3070-ti-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 3070 Ti ขอนแก่น เช็ก 8GB GDDR6X รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3070 Ti ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3080",
+      "path": "/รับซื้อ-rtx-3080-ขอนแก่น/",
+      "title": "รับซื้อ RTX 3080 ขอนแก่น แยก 10GB/12GB GDDR6X พัดลมและประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3080 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3080-ti",
+      "path": "/รับซื้อ-rtx-3080-ti-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 3080 Ti ขอนแก่น เช็ก 12GB GDDR6X รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3080 Ti ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-3090",
+      "path": "/รับซื้อ-rtx-3090-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 3090 ขอนแก่น 24GB GDDR6X เช็กหัวไฟ พัดลมและประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 3090 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4060",
+      "path": "/รับซื้อ-rtx-4060-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4060 ขอนแก่น 8GB เช็กประกัน พัดลมและประวัติใช้งาน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4060 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4060-ti",
+      "path": "/รับซื้อ-rtx-4060-ti-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4060 Ti ขอนแก่น 8GB 16GB เช็กประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4060 Ti ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4070",
+      "path": "/รับซื้อ-rtx-4070-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 4070 ขอนแก่น 12GB เช็กประกัน พัดลมและผลเทส | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4070 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4070-super",
+      "path": "/รับซื้อ-rtx-4070-super-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4070 SUPER ขอนแก่น 12GB เช็กประกันและสภาพ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4070 SUPER ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4070-ti-super",
+      "path": "/รับซื้อ-rtx-4070-ti-super-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4070 Ti SUPER ขอนแก่น เช็ก 16GB GDDR6X และหัวไฟ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4070 Ti SUPER ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4080",
+      "path": "/รับซื้อ-rtx-4080-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 4080 ขอนแก่น 16GB GDDR6X เช็ก 12VHPWR และประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4080 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4080-super",
+      "path": "/รับซื้อ-rtx-4080-super-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4080 SUPER ขอนแก่น เช็ก 16GB GDDR6X หัวไฟและซิงก์ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4080 SUPER ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-4090",
+      "path": "/รับซื้อ-rtx-4090-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 4090 ขอนแก่น 24GB GDDR6X เช็กหัวไฟ พัดลมและประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4090 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-5060",
+      "path": "/รับซื้อ-rtx-5060-ขอนแก่น/",
+      "title": "รับซื้อ RTX 5060 ขอนแก่น 8GB GDDR7 ประกันเหลือ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 5060 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-5060-ti",
+      "path": "/รับซื้อ-rtx-5060-ti-ขอนแก่น/",
+      "title": "รับซื้อ GeForce RTX 5060 Ti ขอนแก่น 8GB/16GB GDDR7 เช็กประกัน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 5060 Ti ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rtx-5070",
+      "path": "/รับซื้อ-rtx-5070-ขอนแก่น/",
+      "title": "รับซื้อ RTX 5070 ขอนแก่น 12GB GDDR7 ประกันเหลือ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 5070 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-6600",
+      "path": "/รับซื้อ-rx-6600-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 6600 ขอนแก่น เช็ก 8GB GDDR6 พัดลมและประกัน | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 6600 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-6700-xt",
+      "path": "/รับซื้อ-rx-6700-xt-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 6700 XT ขอนแก่น เช็ก 12GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 6700 XT ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-7600",
+      "path": "/รับซื้อ-rx-7600-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 7600 ขอนแก่น เช็ก 8GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 7600 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-7700-xt",
+      "path": "/รับซื้อ-rx-7700-xt-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 7700 XT ขอนแก่น เช็ก 12GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 7700 XT ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-7800-xt",
+      "path": "/รับซื้อ-rx-7800-xt-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 7800 XT ขอนแก่น 16GB เช็กประกัน พัดลมและหัวไฟ | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 7800 XT ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-7900-xt",
+      "path": "/รับซื้อ-rx-7900-xt-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 7900 XT ขอนแก่น เช็ก 20GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 7900 XT ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rx-7900-xtx",
+      "path": "/รับซื้อ-rx-7900-xtx-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 7900 XTX ขอนแก่น เช็ก 24GB GDDR6 หัวไฟและความร้อน | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 7900 XTX ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "intel-core-i5-12400f",
+      "path": "/รับซื้อ-intel-core-i5-12400f-ขอนแก่น/",
+      "title": "รับซื้อ Intel Core i5-12400F ขอนแก่น เช็กขา LGA1700 กล่องและประกัน | WINNER IT",
+      "h1": "รับซื้อ Intel Core i5-12400F ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "intel-core-i5-13400f",
+      "path": "/รับซื้อ-intel-core-i5-13400f-ขอนแก่น/",
+      "title": "รับซื้อ Intel Core i5-13400F ขอนแก่น 10C/16T เช็ก LGA1700 และผลเทส | WINNER IT",
+      "h1": "รับซื้อ Intel Core i5-13400F ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "intel-core-i5-14400f",
+      "path": "/รับซื้อ-intel-core-i5-14400f-ขอนแก่น/",
+      "title": "รับซื้อ Intel Core i5-14400F ขอนแก่น 10C/16T เช็กประกันและผลเทส | WINNER IT",
+      "h1": "รับซื้อ Intel Core i5-14400F ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "intel-core-i7-12700",
+      "path": "/รับซื้อ-intel-core-i7-12700-ขอนแก่น/",
+      "title": "รับซื้อ Intel Core i7-12700 ขอนแก่น 12C/20T มี UHD 770 เช็กผลเทส | WINNER IT",
+      "h1": "รับซื้อ Intel Core i7-12700 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "intel-core-i7-13700",
+      "path": "/รับซื้อ-intel-core-i7-13700-ขอนแก่น/",
+      "title": "รับซื้อ Intel Core i7-13700 ขอนแก่น 16C/24T UHD 770 เช็ก LGA1700 | WINNER IT",
+      "h1": "รับซื้อ Intel Core i7-13700 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "amd-ryzen-5-5500",
+      "path": "/รับซื้อ-amd-ryzen-5-5500-ขอนแก่น/",
+      "title": "รับซื้อ AMD Ryzen 5 5500 ขอนแก่น เช็ก AM4 6C/12T ขา CPU และผลเทส | WINNER IT",
+      "h1": "รับซื้อ AMD Ryzen 5 5500 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "amd-ryzen-5-5600",
+      "path": "/รับซื้อ-amd-ryzen-5-5600-ขอนแก่น/",
+      "title": "รับซื้อ AMD Ryzen 5 5600 ขอนแก่น AM4 6C/12T เช็กขา CPU และผลเทส | WINNER IT",
+      "h1": "รับซื้อ AMD Ryzen 5 5600 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "amd-ryzen-5-7500f",
+      "path": "/รับซื้อ-amd-ryzen-5-7500f-ขอนแก่น/",
+      "title": "รับซื้อ AMD Ryzen 5 7500F ขอนแก่น AM5 6C/12T เช็ก contact และผลเทส | WINNER IT",
+      "h1": "รับซื้อ AMD Ryzen 5 7500F ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "amd-ryzen-7-5700x",
+      "path": "/รับซื้อ-amd-ryzen-7-5700x-ขอนแก่น/",
+      "title": "รับซื้อ AMD Ryzen 7 5700X ขอนแก่น เช็ก AM4 8C/16T ขา CPU และผลเทส | WINNER IT",
+      "h1": "รับซื้อ AMD Ryzen 7 5700X ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "amd-ryzen-7-7800x3d",
+      "path": "/รับซื้อ-amd-ryzen-7-7800x3d-ขอนแก่น/",
+      "title": "รับซื้อ AMD Ryzen 7 7800X3D ขอนแก่น AM5 8C/16T เช็กผลเทสและ IHS | WINNER IT",
+      "h1": "รับซื้อ AMD Ryzen 7 7800X3D ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "sony-a6000",
+      "path": "/รับซื้อ-sony-a6000-ขอนแก่น/",
+      "title": "รับซื้อ Sony A6000 ขอนแก่น เช็กชัตเตอร์ เซ็นเซอร์ EVF และเลนส์ | WINNER IT",
+      "h1": "รับซื้อ Sony A6000 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "sony-a6400",
+      "path": "/รับซื้อ-sony-a6400-ขอนแก่น/",
+      "title": "รับซื้อ Sony A6400 ขอนแก่น เช็กชัตเตอร์ AF จอพับ และเซ็นเซอร์ | WINNER IT",
+      "h1": "รับซื้อ Sony A6400 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "sony-a6600",
+      "path": "/รับซื้อ-sony-a6600-ขอนแก่น/",
+      "title": "รับซื้อ Sony A6600 ขอนแก่น เช็ก IBIS แบต NP-FZ100 และชัตเตอร์ | WINNER IT",
+      "h1": "รับซื้อ Sony A6600 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "sony-a7-iii",
+      "path": "/รับซื้อ-sony-a7-iii-ขอนแก่น/",
+      "title": "รับซื้อ Sony A7 III ขอนแก่น เช็กชัตเตอร์ IBIS เซ็นเซอร์และช่องการ์ด | WINNER IT",
+      "h1": "รับซื้อ Sony A7 III ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "sony-a7-iv",
+      "path": "/รับซื้อ-sony-a7-iv-ขอนแก่น/",
+      "title": "รับซื้อ Sony A7 IV ขอนแก่น เช็ก Full Frame 33MP ชัตเตอร์และพอร์ต | WINNER IT",
+      "h1": "รับซื้อ Sony A7 IV ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "canon-eos-r",
+      "path": "/รับซื้อ-canon-eos-r-ขอนแก่น/",
+      "title": "รับซื้อ Canon EOS R ขอนแก่น เช็ก Full Frame 30.3MP เมาท์ RF และจอ | WINNER IT",
+      "h1": "รับซื้อ Canon EOS R ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "canon-eos-r6",
+      "path": "/รับซื้อ-canon-eos-r6-ขอนแก่น/",
+      "title": "รับซื้อ Canon EOS R6 ขอนแก่น เช็กเซ็นเซอร์ IBIS ชัตเตอร์และ Dual SD | WINNER IT",
+      "h1": "รับซื้อ Canon EOS R6 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "canon-eos-r7",
+      "path": "/รับซื้อ-canon-eos-r7-ขอนแก่น/",
+      "title": "รับซื้อ Canon EOS R7 ขอนแก่น เช็กเซ็นเซอร์ 32.5MP IBIS และช่อง SD | WINNER IT",
+      "h1": "รับซื้อ Canon EOS R7 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "canon-eos-r10",
+      "path": "/รับซื้อ-canon-eos-r10-ขอนแก่น/",
+      "title": "รับซื้อ Canon EOS R10 ขอนแก่น เช็ก APS-C 24.2MP ชัตเตอร์และจอ | WINNER IT",
+      "h1": "รับซื้อ Canon EOS R10 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "fujifilm-x-t20",
+      "path": "/รับซื้อ-fujifilm-x-t20-ขอนแก่น/",
+      "title": "รับซื้อ Fujifilm X-T20 ขอนแก่น เช็ก 24.3MP ชัตเตอร์ EVF จอพับและแบต | WINNER IT",
+      "h1": "รับซื้อ Fujifilm X-T20 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "fujifilm-x-t30",
+      "path": "/รับซื้อ-fujifilm-x-t30-ขอนแก่น/",
+      "title": "รับซื้อ Fujifilm X-T30 ขอนแก่น เช็ก 26.1MP จอพับและปุ่มหมุน | WINNER IT",
+      "h1": "รับซื้อ Fujifilm X-T30 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "fujifilm-x-t4",
+      "path": "/รับซื้อ-fujifilm-x-t4-ขอนแก่น/",
+      "title": "รับซื้อ Fujifilm X-T4 ขอนแก่น เช็ก IBIS 26.1MP จอหมุนและแบต | WINNER IT",
+      "h1": "รับซื้อ Fujifilm X-T4 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "fujifilm-x-t5",
+      "path": "/รับซื้อ-fujifilm-x-t5-ขอนแก่น/",
+      "title": "รับซื้อ Fujifilm X-T5 ขอนแก่น เช็กเซ็นเซอร์ 40.2MP IBIS และชัตเตอร์ | WINNER IT",
+      "h1": "รับซื้อ Fujifilm X-T5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "fujifilm-x-s10",
+      "path": "/รับซื้อ-fujifilm-x-s10-ขอนแก่น/",
+      "title": "รับซื้อ Fujifilm X-S10 ขอนแก่น เช็ก IBIS 26.1MP จอหมุนและกริป | WINNER IT",
+      "h1": "รับซื้อ Fujifilm X-S10 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "fujifilm-x-h1",
+      "path": "/รับซื้อ-fujifilm-x-h1-ขอนแก่น/",
+      "title": "รับซื้อ Fujifilm X-H1 ขอนแก่น เช็ก IBIS 24.3MP EVF ช่องการ์ดคู่และบอดี้ | WINNER IT",
+      "h1": "รับซื้อ Fujifilm X-H1 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "olympus-em10-mark-iii",
+      "path": "/รับซื้อ-olympus-em10-mark-iii-ขอนแก่น/",
+      "title": "รับซื้อ Olympus OM-D E-M10 Mark III ขอนแก่น เช็ก IBIS 5 แกนและจอ | WINNER IT",
+      "h1": "รับซื้อ Olympus OM-D E-M10 Mark III ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "olympus-em5-mark-iii",
+      "path": "/รับซื้อ-olympus-em5-mark-iii-ขอนแก่น/",
+      "title": "รับซื้อ Olympus OM-D E-M5 Mark III ขอนแก่น เช็ก 20MP IBIS Phase AF และจอหมุน | WINNER IT",
+      "h1": "รับซื้อ Olympus OM-D E-M5 Mark III ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "panasonic-g85",
+      "path": "/รับซื้อ-panasonic-g85-ขอนแก่น/",
+      "title": "รับซื้อ Panasonic Lumix G85 ขอนแก่น เช็ก 16MP 5-axis IS 4K จอหมุนและเมาท์ MFT | WINNER IT",
+      "h1": "รับซื้อ Panasonic Lumix G85 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "panasonic-gh5",
+      "path": "/รับซื้อ-panasonic-gh5-ขอนแก่น/",
+      "title": "รับซื้อ Panasonic Lumix GH5 ขอนแก่น เช็ก 4K60p IBIS และช่องการ์ดคู่ | WINNER IT",
+      "h1": "รับซื้อ Panasonic Lumix GH5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "nikon-z5",
+      "path": "/รับซื้อ-nikon-z5-ขอนแก่น/",
+      "title": "รับซื้อ Nikon Z5 ขอนแก่น เช็กฟูลเฟรม IBIS Dual SD และเมาท์ Z | WINNER IT",
+      "h1": "รับซื้อ Nikon Z5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "playstation-5",
+      "path": "/รับซื้อ-playstation-5-ขอนแก่น/",
+      "title": "รับซื้อ PlayStation 5 ขอนแก่น เช็ก CFI รุ่น Disc/Digital SSD และจอย | WINNER IT",
+      "h1": "รับซื้อ PlayStation 5 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "playstation-5-slim",
+      "path": "/รับซื้อ-playstation-5-slim-ขอนแก่น/",
+      "title": "รับซื้อ PS5 Slim ขอนแก่น เช็ก CFI-2000/2100 Disc Drive และ DualSense | WINNER IT",
+      "h1": "รับซื้อ PlayStation 5 Slim ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "playstation-4-pro",
+      "path": "/รับซื้อ-playstation-4-pro-ขอนแก่น/",
+      "title": "รับซื้อ PS4 Pro ขอนแก่น เช็ก CUH-7000 HDD HDMI ไดรฟ์และจอย | WINNER IT",
+      "h1": "รับซื้อ PlayStation 4 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "nintendo-switch",
+      "path": "/รับซื้อ-nintendo-switch-ขอนแก่น/",
+      "title": "รับซื้อ Nintendo Switch ขอนแก่น เช็ก HAC-001 Joy-Con Dock และแบต | WINNER IT",
+      "h1": "รับซื้อ Nintendo Switch ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "nintendo-switch-oled",
+      "path": "/รับซื้อ-nintendo-switch-oled-ขอนแก่น/",
+      "title": "รับซื้อ Nintendo Switch OLED ขอนแก่น เช็ก HEG-001 จอ OLED Joy-Con Dock | WINNER IT",
+      "h1": "รับซื้อ Nintendo Switch OLED ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "nintendo-switch-lite",
+      "path": "/รับซื้อ-nintendo-switch-lite-ขอนแก่น/",
+      "title": "รับซื้อ Nintendo Switch Lite ขอนแก่น เช็กจอยติดเครื่อง จอและบัญชี | WINNER IT",
+      "h1": "รับซื้อ Nintendo Switch Lite ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "xbox-series-x",
+      "path": "/รับซื้อ-xbox-series-x-ขอนแก่น/",
+      "title": "รับซื้อ Xbox Series X ขอนแก่น เช็ก 1TB/2TB Disc-Digital และจอย | WINNER IT",
+      "h1": "รับซื้อ Xbox Series X ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "xbox-series-s",
+      "path": "/รับซื้อ-xbox-series-s-ขอนแก่น/",
+      "title": "รับซื้อ Xbox Series S ขอนแก่น เช็ก 512GB/1TB Digital และจอย | WINNER IT",
+      "h1": "รับซื้อ Xbox Series S ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "steam-deck",
+      "path": "/รับซื้อ-steam-deck-ขอนแก่น/",
+      "title": "รับซื้อ Steam Deck ขอนแก่น แยก LCD/OLED ความจุ SSD จอและแบต | WINNER IT",
+      "h1": "รับซื้อ Steam Deck ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "rog-ally",
+      "path": "/รับซื้อ-rog-ally-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Ally ขอนแก่น แยก Z1/Z1 Extreme จอ 120Hz SSD และ SD Reader | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Ally ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-24-ips",
+      "path": "/รับซื้อ-monitor-24-ips-ขอนแก่น/",
+      "title": "รับซื้อจอคอม 24 นิ้ว IPS ขอนแก่น เช็กพาเนล พอร์ต จุดเสีย | WINNER IT",
+      "h1": "รับซื้อจอคอม 24 นิ้ว IPS ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-27-ips",
+      "path": "/รับซื้อ-monitor-27-ips-ขอนแก่น/",
+      "title": "รับซื้อจอคอม 27 นิ้ว IPS ขอนแก่น เช็กความละเอียด พอร์ตและพาเนล | WINNER IT",
+      "h1": "รับซื้อจอคอม 27 นิ้ว IPS ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-27-144hz",
+      "path": "/รับซื้อ-monitor-27-144hz-ขอนแก่น/",
+      "title": "รับซื้อจอเกมมิ่ง 27 นิ้ว 144Hz ขอนแก่น เช็ก Hz พอร์ตและ VRR | WINNER IT",
+      "h1": "รับซื้อจอเกมมิ่ง 27 นิ้ว 144Hz ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-27-165hz",
+      "path": "/รับซื้อ-monitor-27-165hz-ขอนแก่น/",
+      "title": "รับซื้อจอเกมมิ่ง 27 นิ้ว 165Hz ขอนแก่น เช็ก Model VRR และสภาพจอ | WINNER IT",
+      "h1": "รับซื้อจอเกมมิ่ง 27 นิ้ว 165Hz ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-32-144hz",
+      "path": "/รับซื้อ-monitor-32-144hz-ขอนแก่น/",
+      "title": "รับซื้อจอเกมมิ่ง 32 นิ้ว 144Hz ขอนแก่น เช็กความโค้ง QHD และฐาน | WINNER IT",
+      "h1": "รับซื้อจอเกมมิ่ง 32 นิ้ว 144Hz ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-2k",
+      "path": "/รับซื้อ-monitor-2k-ขอนแก่น/",
+      "title": "รับซื้อจอคอม 2K QHD ขอนแก่น เช็ก 2560×1440 Hz สีและพอร์ต | WINNER IT",
+      "h1": "รับซื้อจอคอม 2K QHD ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-4k",
+      "path": "/รับซื้อ-monitor-4k-ขอนแก่น/",
+      "title": "รับซื้อจอคอม 4K ขอนแก่น เช็ก 3840×2160 สี HDR USB-C และพอร์ต | WINNER IT",
+      "h1": "รับซื้อจอคอม 4K ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-ultrawide",
+      "path": "/รับซื้อ-monitor-ultrawide-ขอนแก่น/",
+      "title": "รับซื้อจอ Ultrawide ขอนแก่น เช็ก 21:9 ความโค้งและพาเนล | WINNER IT",
+      "h1": "รับซื้อจอ Ultrawide ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "monitor-oled",
+      "path": "/รับซื้อ-monitor-oled-ขอนแก่น/",
+      "title": "รับซื้อจอ OLED Gaming ขอนแก่น เช็ก Burn-in และพาเนล | WINNER IT",
+      "h1": "รับซื้อจอ OLED Gaming ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "portable-monitor",
+      "path": "/รับซื้อ-portable-monitor-ขอนแก่น/",
+      "title": "รับซื้อ Portable Monitor ขอนแก่น เช็ก USB-C HDMI จอและฝาพับ | WINNER IT",
+      "h1": "รับซื้อ Portable Monitor ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-mini-2",
+      "path": "/รับซื้อ-dji-mini-2-ขอนแก่น/",
+      "title": "รับซื้อ DJI Mini 2 ขอนแก่น เช็กโดรน รีโมต แบตและกิมบอล | WINNER IT",
+      "h1": "รับซื้อ DJI Mini 2 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-mini-3-pro",
+      "path": "/รับซื้อ-dji-mini-3-pro-ขอนแก่น/",
+      "title": "รับซื้อ DJI Mini 3 Pro ขอนแก่น เช็ก RC แบต กิมบอลและเซ็นเซอร์ | WINNER IT",
+      "h1": "รับซื้อ DJI Mini 3 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-mini-4-pro",
+      "path": "/รับซื้อ-dji-mini-4-pro-ขอนแก่น/",
+      "title": "รับซื้อ DJI Mini 4 Pro ขอนแก่น เช็ก O4 เซ็นเซอร์ RC และแบต | WINNER IT",
+      "h1": "รับซื้อ DJI Mini 4 Pro ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-air-2s",
+      "path": "/รับซื้อ-dji-air-2s-ขอนแก่น/",
+      "title": "รับซื้อ DJI Air 2S ขอนแก่น เช็กกล้อง กิมบอล แบต เซ็นเซอร์ | WINNER IT",
+      "h1": "รับซื้อ DJI Air 2S ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-air-3",
+      "path": "/รับซื้อ-dji-air-3-ขอนแก่น/",
+      "title": "รับซื้อ DJI Air 3 ขอนแก่น เช็กกล้องคู่ O4 แบต RC 2 และเซ็นเซอร์ | WINNER IT",
+      "h1": "รับซื้อ DJI Air 3 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-mavic-air",
+      "path": "/รับซื้อ-dji-mavic-air-ขอนแก่น/",
+      "title": "รับซื้อ DJI Mavic Air ขอนแก่น รุ่นแรก เช็กแบต กิมบอล รีโมต | WINNER IT",
+      "h1": "รับซื้อ DJI Mavic Air ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "gopro-hero-10",
+      "path": "/รับซื้อ-gopro-hero-10-ขอนแก่น/",
+      "title": "รับซื้อ GoPro HERO10 Black ขอนแก่น เช็กจอ เลนส์ แบต | WINNER IT",
+      "h1": "รับซื้อ GoPro HERO10 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "gopro-hero-11",
+      "path": "/รับซื้อ-gopro-hero-11-ขอนแก่น/",
+      "title": "รับซื้อ GoPro HERO11 Black ขอนแก่น เช็ก Sensor จอ เลนส์ | WINNER IT",
+      "h1": "รับซื้อ GoPro HERO11 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "gopro-hero-12",
+      "path": "/รับซื้อ-gopro-hero-12-ขอนแก่น/",
+      "title": "รับซื้อ GoPro HERO12 Black ขอนแก่น เช็กจอ เลนส์ แบต | WINNER IT",
+      "h1": "รับซื้อ GoPro HERO12 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "dji-osmo-action-4",
+      "path": "/รับซื้อ-dji-osmo-action-4-ขอนแก่น/",
+      "title": "รับซื้อ DJI Osmo Action 4 ขอนแก่น เช็กจอคู่ แบต เลนส์และฝาปิด | WINNER IT",
+      "h1": "รับซื้อ DJI Osmo Action 4 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "apple-watch-series-7",
+      "path": "/รับซื้อ-apple-watch-series-7-ขอนแก่น/",
+      "title": "รับซื้อ Apple Watch Series 7 ขอนแก่น เช็กแบต จอ GPS/Cellular | WINNER IT",
+      "h1": "รับซื้อ Apple Watch Series 7 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "apple-watch-series-8",
+      "path": "/รับซื้อ-apple-watch-series-8-ขอนแก่น/",
+      "title": "รับซื้อ Apple Watch Series 8 ขอนแก่น เช็กแบต จอ Cellular | WINNER IT",
+      "h1": "รับซื้อ Apple Watch Series 8 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "apple-watch-series-9",
+      "path": "/รับซื้อ-apple-watch-series-9-ขอนแก่น/",
+      "title": "รับซื้อ Apple Watch Series 9 ขอนแก่น เช็ก S9 แบต จอ Cellular | WINNER IT",
+      "h1": "รับซื้อ Apple Watch Series 9 ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "apple-watch-ultra",
+      "path": "/รับซื้อ-apple-watch-ultra-ขอนแก่น/",
+      "title": "รับซื้อ Apple Watch Ultra ขอนแก่น เช็กแบต จอ Titanium 49mm | WINNER IT",
+      "h1": "รับซื้อ Apple Watch Ultra ขอนแก่น",
+      "lifecycle": "INDEX"
+    },
+    {
+      "slug": "apple-watch-ultra-2",
+      "path": "/รับซื้อ-apple-watch-ultra-2-ขอนแก่น/",
+      "title": "รับซื้อ Apple Watch Ultra 2 ขอนแก่น เช็ก S9 แบต จอ 49mm | WINNER IT",
+      "h1": "รับซื้อ Apple Watch Ultra 2 ขอนแก่น",
+      "lifecycle": "INDEX"
+    }
+  ],
+  "samples": {
+    "missingContent": [],
+    "invalidFields": [],
+    "invalidLifecycle": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "unlinkedReleasedPages": [],
+    "duplicateTitles": [],
+    "duplicateDescriptions": [],
+    "duplicateParagraphs": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": []
+  }
+}

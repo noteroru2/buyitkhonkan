@@ -1,0 +1,262 @@
+[
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 55,
+    "originalText": "'มือถือคือสินค้าที่ราคาร่วงเร็วที่สุดในบรรดาของไอทีทั้งหมด ทุกครั้งที่รุ่นใหม่เปิดตัว เครื่องในมือคุณจะถูกหั่นราคาลงทันทีหลายพันบาท การขายให้เร็วจึงเท่ากับได้เงินมากกว่า WINNER IT ช่วยให้การขายมือถือในขอนแก่นจบภายในวันเดียว ตั้งแต่ส่งรูปประเมินจนถึงรับเงินสดใส่กระเป๋า',",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 176,
+    "originalText": "price: 'ปัจจัยตีราคากล้องมือสองประกอบด้วยจำนวนชัตเตอร์ที่ใช้ไป สภาพเซนเซอร์และชิ้นเลนส์ รอยตามบอดี้ ความครบของกล่องกับอุปกรณ์ชาร์จ และรอบราคากลางในตลาดช่างภาพ แนะนำให้เช็กเฟิร์มแวร์และทดสอบชัตเตอร์ก่อนส่งรูปประเมิน กล้องที่พร้อมใช้งานทันทีจะปิดดีลได้เร็วและได้ราคาดีกว่าเสมอ',",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 235,
+    "originalText": "'iPhone คือสินค้าที่เราปิดดีลเร็วที่สุดในบรรดาของไอทีทั้งหมด เพราะทั้งผู้ซื้อและผู้ขายรู้ราคากลางกันดีในตลาด และ iPhone แต่ละรุ่นมีมาตรฐานสภาพที่ตรวจได้ชัดเจน WINNER IT รับซื้อ iPhone ทุกรุ่นในจังหวัดขอนแก่น ตั้งแต่ iPhone 13 ที่ยังมีตลาดแข็งไปจนถึง iPhone 16 Pro Max ที่เพิ่งเปิดตัว โดยเสนอราคาที่แข่งขันได้จริงตามลำดับคิวหลังได้รับข้อมูลครบหลังส่งรูป',",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 243,
+    "originalText": "{ h: 'รับซื้อ iPhone 15 และ iPhone 16 ซีรีส์', p: 'iPhone 16 Pro Max 16 Pro 16 Plus และ iPhone 16 มาตรฐาน รวมถึง iPhone 15 ทั้ง 4 รุ่น คือกลุ่มที่เรารับซื้อในราคาสูงที่สุดเพราะตลาดยังต้องการสูง ยิ่งเก็บรักษาดีมีฟิล์มกระจกและเคสตลอดยิ่งได้ตัวเลขบน' },",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "High",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 279,
+    "originalText": "{ h: 'รับซื้อ iPad Pro ชิป M ทุกขนาด', p: 'iPad Pro 11 นิ้วและ 13 นิ้วชิป M4 ลงมาถึง M2 คือกลุ่มที่มูลค่ายังสูงสุดในตลาด iPad มือสอง เครื่องที่มี Apple Pencil Pro และ Magic Keyboard ครบชุดจะปิดดีลได้เร็วกว่าในราคาที่น่าพอใจกว่ามาก' },",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 315,
+    "originalText": "{ h: 'รับซื้อการ์ดจอ RTX 40 ซีรีส์ ให้ราคาตามตลาด', p: 'RTX 4090 4080 Super 4070 Ti Super 4070 Super 4060 Ti และ 4060 คือการ์ดจอที่เรารับซื้อในราคาสูงที่สุดปัจจุบัน เพราะความต้องการจากทั้งสายเกมและสาย AI ยังแข็งแกร่ง ยิ่งการ์ดจอมาพร้อมกล่องและซีลสายรัดแถมจากโรงงานยิ่งน่าเชื่อถือและได้ราคาดีขึ้น' },",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "High",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 352,
+    "originalText": "{ h: 'รับซื้อจอ 4K และ 2K สำหรับทำงานและครีเอทีฟ', p: 'จอ 27 นิ้วและ 32 นิ้ว 4K จาก LG Dell BenQ และ Philips นิยมมากในกลุ่มนักออกแบบและช่างภาพ สภาพแผงดีไม่มีจุดตายได้ราคาอิงตลาด ยิ่งมีขาตั้งดั้งเดิมและกล่องยิ่งปิดดีลได้เร็ว' },",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 354,
+    "originalText": "{ h: 'จอ Full HD มาตรฐานและจอสำนักงาน', p: 'จอ 24 นิ้ว FHD แม้จะเป็นสเปกพื้นฐานแต่ยังขายได้ดีในกลุ่มธุรกิจขนาดเล็กและนักเรียนที่ต้องการจอเพิ่มราคาประหยัด สภาพดีไม่มีตำหนิมักปิดดีลได้เร็วในราคาที่ผู้ขายพอใจ' },",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 415,
+    "originalText": "'สมาร์ทวอทช์คือสินค้าที่คนมักซื้อรุ่นใหม่ทุกปีตามวงจรการเปิดตัวของ Apple และ Samsung ทำให้ตลาดมือสองมีของใหม่เข้ามาหมุนเวียนสม่ำเสมอ WINNER IT รับซื้อ Apple Watch และสมาร์ทวอทช์ทุกยี่ห้อในจังหวัดขอนแก่น พร้อมประเมินราคาผ่านไลน์ @buyhub ตามลำดับคิวหลังได้รับข้อมูลครบ ขายได้ทั้งนาฬิกาเดี่ยวหรือพ่วงกับ iPhone iPad เพื่อปิดดีลในครั้งเดียว',",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 423,
+    "originalText": "{ h: 'รับซื้อ Apple Watch Ultra และ Ultra 2', p: 'Apple Watch Ultra 2 และรุ่นแรก คือนาฬิกาที่มูลค่าตลาดมือสองยังสูงที่สุดในกลุ่ม สาย Ocean Band Alpine Loop และ Trail Loop แท้จะถูกนำมาคำนวณเพิ่มในราคาด้วย เครื่องสภาพดีมีกล่องครบปิดดีลได้เร็วมาก' },",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/categories.js",
+    "line": 628,
+    "originalText": "notebook: ['มิถุนายน 2569', 'กังสดาล', 'รับซื้อโน้ตบุ๊คเกมมิ่งจากนักศึกษาหลังอัปเกรดเครื่อง', 'ผู้ขายส่งรูป ROG พร้อมตำหนิฝาหลังและสุขภาพแบตเข้ามาทางไลน์ ทีมงานประเมินก่อนนัดรับที่หอพัก', 'ตรวจสภาพตรงตามรูป จ่ายโอนหน้างานและปิดดีลภายในวันเดียว'],",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 14,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 41,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 68,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 95,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 122,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 149,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 176,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/localPages.js",
+    "line": 203,
+    "originalText": "caseStudy: {",
+    "claimType": "case-study data",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/data/modelPages.js",
+    "line": 269,
+    "originalText": "intent: 'งานคอมยกล็อตต้องการความโปร่งใสและเอกสาร ไม่ใช่แค่ราคาสูงที่สุด ทีมงานทำรายการต่อเครื่อง แยกจอ อุปกรณ์ และของเสียให้ตรวจสอบได้',",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "High",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/pages/บทความ/ขาย-iphone-ตอนไหนดี.astro",
+    "line": 56,
+    "originalText": "ทีมงานแจ้งราคาเบื้องต้นตามลำดับคิว นัดรับได้ภายในวันเดียวกันหรือวันถัดไปตามสะดวก",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/pages/บทความ/ขายของไอทีที่ไหนดี-ขอนแก่น.astro",
+    "line": 26,
+    "originalText": "มีรีวิวจากลูกค้าจริง และมีเอกสารยืนยันการซื้อขายทุกครั้ง",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/pages/บทความ/ราคารับซื้อ-iphone-มือสอง.astro",
+    "line": 75,
+    "originalText": "จากสถิติการรับซื้อ iPhone ในจังหวัดขอนแก่นช่วงที่ผ่านมา รุ่นที่ตีราคาได้ดีและปิดดีลเร็วที่สุดคือ",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/pages/บทความ/ราคารับซื้อ-ps5-nintendo-switch.astro",
+    "line": 83,
+    "originalText": "เครื่องสภาพดีชาร์จน้อยมีหน้าจอไม่มีรอยปิดดีลได้เร็วมากในขอนแก่น",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/pages/บทความ/ราคารับซื้อ-การ์ดจอ.astro",
+    "line": 60,
+    "originalText": "ยิ่งเป็นการ์ดจอสภาพมิ้นต์ที่มาพร้อมกล่องและสายรัดครบยิ่งปิดดีลได้เร็วมาก",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  },
+  {
+    "url": "generated page; resolve from source data",
+    "sourceFile": "src/pages/บทความ/อัปเกรดคอมใหม่-ขายของเก่า.astro",
+    "line": 34,
+    "originalText": "การ์ดจอมือสองเป็นสินค้าที่ขายได้ไวมากถ้าราคาสมเหตุสมผล ปิดดีลได้ภายในวันสำหรับรุ่นที่ต้องการ",
+    "claimType": "unsupported marketing or experience claim",
+    "risk": "Medium",
+    "repositoryEvidence": "No supporting customer artifact found in repository",
+    "recommendation": "Remove, qualify, or present only as an explicitly labelled example scenario"
+  }
+]

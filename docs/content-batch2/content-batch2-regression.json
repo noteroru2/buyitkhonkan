@@ -1,0 +1,107 @@
+{
+  "verdict": "PASS_WITH_BUILD_WARNING",
+  "generatedAt": "2026-09-01T08:08:38.677Z",
+  "batch": "CONTENT_BATCH_2_HIGH_INTENT_MODELS",
+  "release": {
+    "releasedArchitectureModels": 20,
+    "holdArchitectureModels": 160,
+    "architectureIndexTotal": 20,
+    "architectureHoldTotal": 291,
+    "forecastBuiltRoutesMinimum": 398
+  },
+  "audits": {
+    "architecture": {
+      "verdict": "PASS",
+      "findings": {
+        "duplicateIds": 0,
+        "duplicatePaths": 0,
+        "duplicateTitles": 0,
+        "duplicateH1": 0,
+        "routeCollisions": 0,
+        "missingParents": 0,
+        "invalidLifecycle": 0,
+        "missingContentContracts": 0,
+        "productDistrictDoorwayMatrix": 0
+      }
+    },
+    "discovery": {
+      "verdict": "PASS",
+      "contextsAudited": 79,
+      "uniqueInternalTargets": 97,
+      "holdArchitectureLinked": 0,
+      "brokenDiscoveryLinks": 0,
+      "thinDiscoveryContexts": 0
+    },
+    "coreContent": {
+      "verdict": "PASS",
+      "corePages": 15,
+      "liveCategoryRoutes": 15,
+      "routeSeoOwnership": "PRESERVED_IN_CATEGORIES",
+      "overlayOwnsH1TitlePath": false,
+      "uniqueDescriptions": 15,
+      "exactDuplicateEditorialParagraphs": 0,
+      "highRiskClaimFindings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "modelContent": {
+      "verdict": "PASS",
+      "findings": {
+        "releasedCount": 20,
+        "expectedReleasedCount": 20,
+        "holdModelCount": 160,
+        "missingContent": 0,
+        "invalidFields": 0,
+        "invalidLifecycle": 0,
+        "parentMismatch": 0,
+        "badRelated": 0,
+        "unlinkedReleasedPages": 0,
+        "duplicateTitles": 0,
+        "duplicateDescriptions": 0,
+        "duplicateLongEditorialStrings": 0,
+        "unsafeClaims": 0,
+        "fixedNumericPriceClaims": 0
+      },
+      "integration": {
+        "releasedRouteBranch": true,
+        "holdRobotsPreserved": true,
+        "faqSchema": true,
+        "conversionLayer": true,
+        "internalDiscovery": true,
+        "noStructureOnlyCopy": true
+      }
+    }
+  },
+  "ownershipRegression": {
+    "src/data/categories.js": {
+      "unchangedFromBatch1": true,
+      "sha256": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd"
+    },
+    "src/data/brandPages.js": {
+      "unchangedFromBatch1": true,
+      "sha256": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c"
+    },
+    "src/data/modelPages.js": {
+      "unchangedFromBatch1": true,
+      "sha256": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796"
+    },
+    "src/data/conditionPages.js": {
+      "unchangedFromBatch1": true,
+      "sha256": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db"
+    },
+    "src/data/localPages.js": {
+      "unchangedFromBatch1": true,
+      "sha256": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2"
+    },
+    "src/data/site.js": {
+      "unchangedFromBatch1": true,
+      "sha256": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4"
+    }
+  },
+  "staticSyntax": "PASS",
+  "fullAstroBuild": {
+    "status": "NOT_RUN",
+    "reason": "npm ci network/package installation timeout; Astro unavailable",
+    "partialNodeModulesRemoved": true
+  }
+}

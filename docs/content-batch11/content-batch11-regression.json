@@ -1,0 +1,26 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.057Z",
+  "batch": "CONTENT_BATCH_11_REGRESSION",
+  "baseline": "CONTENT_BATCH_10",
+  "findings": {
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "guideIndex": 54,
+    "guideHold": 6,
+    "batch10GuidesPreserved": 20,
+    "changedBatch10Guides": 0,
+    "protectedFilesChecked": 16,
+    "changedProtectedFiles": 3,
+    "unexpectedChangedProtectedFiles": 0
+  },
+  "changedOldGuides": [],
+  "batch11Missing": [],
+  "batch11NotIndex": [],
+  "changedProtected": [
+    "src/pages/index.astro",
+    "src/data/highIntentModelContent.js",
+    "astro.config.mjs"
+  ],
+  "unexpectedChangedProtected": []
+}

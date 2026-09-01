@@ -1,0 +1,296 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import { SITE } from '../data/site.js';
+import { CATEGORIES } from '../data/categories.js';
+import { BRAND_PAGES } from '../data/brandPages.js';
+import { MODEL_ARCHITECTURE } from '../data/architecture/models.js';
+import { getAuthorityHubContent } from '../data/authorityHubContent.js';
+
+const { page } = Astro.props;
+const content = getAuthorityHubContent(page);
+if (!content) throw new Error(`Missing authority hub content for ${page?.id || 'unknown'}`);
+
+const liveModels = MODEL_ARCHITECTURE.filter((item) => item.lifecycle === 'INDEX');
+const categoriesBySlug = new Map(CATEGORIES.map((item) => [item.slug, item]));
+const liveModelCountByParent = liveModels.reduce((map, item) => {
+  map.set(item.parent, (map.get(item.parent) || 0) + 1);
+  return map;
+}, new Map());
+
+const categoryCards = (slugs) => slugs.map((slug) => categoriesBySlug.get(slug)).filter(Boolean).map((cat) => {
+  const href = `/${cat.path || cat.slug}/`;
+  return {
+    slug: cat.slug,
+    href,
+    icon: cat.icon,
+    title: cat.name,
+    short: cat.short,
+    count: liveModelCountByParent.get(href) || 0,
+  };
+});
+
+const clusterLabels = {
+  'notebook-asus': 'ASUS',
+  'notebook-lenovo': 'Lenovo',
+  'notebook-acer': 'Acer',
+  'notebook-hp-dell-msi': 'HP · Dell · MSI',
+  macbook: 'MacBook',
+  iphone: 'iPhone',
+  ipad: 'iPad',
+  gpu: 'การ์ดจอ',
+  'cpu-parts': 'CPU / PC Components',
+  camera: 'กล้อง',
+  console: 'เครื่องเกม',
+  monitor: 'จอคอม',
+  'drone-action': 'โดรน / Action Camera',
+  smartwatch: 'Smartwatch',
+};
+
+const directorySections = (content.directoryGroups || []).map((group) => ({
+  ...group,
+  clusters: group.clusters.map((cluster) => ({
+    cluster,
+    label: clusterLabels[cluster] || cluster,
+    items: liveModels.filter((item) => item.cluster === cluster),
+  })).filter((item) => item.items.length),
+}));
+
+const brandCards = BRAND_PAGES.map((brand) => {
+  const models = liveModels.filter((item) => item.label.toLowerCase().startsWith(`${brand.brand.toLowerCase()} `));
+  return { ...brand, models };
+}).filter((brand) => brand.models.length);
+
+const breadcrumbs = page.id === 'hub-products'
+  ? [{ name: 'หน้าแรก', href: '/' }, { name: page.h1, href: page.path }]
+  : [{ name: 'หน้าแรก', href: '/' }, { name: 'สินค้าที่รับซื้อ', href: '/สินค้าที่รับซื้อ/' }, { name: page.h1, href: page.path }];
+
+const totalLiveModels = liveModels.length;
+---
+
+<main id="main-content" class="authority-hub article" data-content-batch="16A" data-authority-hub={page.id} data-lifecycle={page.lifecycle}>
+  <section class="authority-hero">
+    <div class="container authority-hero__shell">
+      <Breadcrumbs items={breadcrumbs} />
+      <p class="eyebrow">{content.eyebrow}</p>
+      <h1>{page.h1}</h1>
+      {content.heroIntro.map((paragraph) => <p class="authority-hero__lede">{paragraph}</p>)}
+      <div class="authority-hero__stats" aria-label="สรุปโครงสร้างที่เปิดใช้งาน">
+        {page.id === 'hub-products' ? (
+          <><span><strong>{CATEGORIES.length}</strong> หมวดสินค้าหลัก</span><span><strong>{totalLiveModels}</strong> หน้ารุ่น/ซีรีส์ที่เปิดข้อมูลแล้ว</span><span><strong>INDEX only</strong> ไม่แสดงหน้าโครงที่ยัง HOLD</span></>
+        ) : (
+          <><span><strong>{brandCards.length}</strong> Brand pages</span><span><strong>{totalLiveModels}</strong> รุ่น/ซีรีส์ที่เปิดข้อมูลแล้ว</span><span><strong>Live directory</strong> อัปเดตตาม lifecycle</span></>
+        )}
+      </div>
+      <div class="cta-row">
+        <a href={SITE.lineHref} target="_blank" rel="noopener" class="btn btn--line" data-track-event="line_click" data-cta-location={`${page.id}_hero`}>ส่งรูป + รุ่น ประเมินผ่าน LINE {SITE.lineId}</a>
+        <a href="#authority-directory" class="btn btn--ghost">เลือกข้อมูลที่ต้องการ</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container authority-body">
+    <section class="authority-principles" aria-labelledby="authority-how-title">
+      <div class="authority-section-head">
+        <p class="eyebrow">ใช้ Hub ให้ตรง Intent</p>
+        <h2 id="authority-how-title">เลือกเส้นทางให้ตรงก่อนลงรายละเอียด</h2>
+      </div>
+      <div class="authority-principle-grid">
+        {content.principles.map(([title, desc], index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <h3>{title}</h3>
+            <p>{desc}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {page.id === 'hub-products' ? (
+      <section id="authority-directory" class="authority-directory" aria-labelledby="product-directory-title">
+        <div class="authority-section-head">
+          <p class="eyebrow">เลือกตามประเภทสินค้า</p>
+          <h2 id="product-directory-title">15 หมวดหลักที่ใช้เป็นจุดเริ่มต้นของการประเมิน</h2>
+          <p>แต่ละการ์ดพาไป Money Page ของหมวดนั้นโดยตรง จำนวน “รุ่นที่เปิดแล้ว” นับเฉพาะ Model/Series ที่ lifecycle เป็น INDEX.</p>
+        </div>
+        <div class="authority-category-groups">
+          {content.categoryGroups.map((group) => (
+            <section class="authority-category-group" aria-labelledby={`group-${group.key}`}>
+              <div class="authority-category-group__head">
+                <p>{group.eyebrow}</p>
+                <h3 id={`group-${group.key}`}>{group.title}</h3>
+                <span>{group.description}</span>
+              </div>
+              <div class="authority-category-grid">
+                {categoryCards(group.slugs).map((item) => (
+                  <a href={item.href} class="authority-category-card" data-track-event="authority_hub_click" data-cta-location="product_hub_category">
+                    <span class="authority-category-card__icon" aria-hidden="true">{item.icon}</span>
+                    <span class="authority-category-card__copy">
+                      <strong>{item.title}</strong>
+                      <small>{item.short}</small>
+                    </span>
+                    <span class="authority-category-card__meta">{item.count > 0 ? `${item.count} รุ่นที่เปิดแล้ว` : 'ดูหน้าหมวด'} <b aria-hidden="true">→</b></span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+    ) : (
+      <section id="authority-directory" class="authority-directory" aria-labelledby="brand-directory-title">
+        <div class="authority-section-head">
+          <p class="eyebrow">ค้นหาจากชื่อเครื่องจริง</p>
+          <h2 id="brand-directory-title">ยี่ห้อและรุ่นที่มีหน้าเฉพาะและเปิดใช้งานแล้ว</h2>
+          <p>Directory นี้สร้างจาก Model Architecture ที่เป็น INDEX เท่านั้น รุ่นที่ยัง HOLD จะไม่ถูกลิงก์ออกจากหน้านี้.</p>
+        </div>
+
+        <section class="authority-brand-index" aria-labelledby="notebook-brand-title">
+          <div class="authority-subhead">
+            <h3 id="notebook-brand-title">Notebook Brand Pages</h3>
+            <p>เริ่มจาก Brand Page ถ้ารู้ยี่ห้อแต่ยังไม่แน่ใจชื่อรุ่นหรือรหัสเครื่อง.</p>
+          </div>
+          <div class="authority-brand-grid">
+            {brandCards.map((brand) => (
+              <a href={`/${brand.path}/`} class="authority-brand-card" data-track-event="authority_hub_click" data-cta-location="brand_model_hub_brand">
+                <strong>{brand.brand}</strong>
+                <span>{brand.models.length} รุ่น/ซีรีส์ที่เปิดข้อมูลแล้ว</span>
+                <small>{brand.models.slice(0, 3).map((item) => item.label.replace(new RegExp(`^${brand.brand}\\s+`, 'i'), '')).join(' · ')}</small>
+                <b>ดู Brand Page →</b>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <div class="authority-model-sections">
+          {directorySections.map((section) => (
+            <section class="authority-model-section" aria-labelledby={`directory-${section.key}`}>
+              <div class="authority-subhead">
+                <p>{section.eyebrow}</p>
+                <h3 id={`directory-${section.key}`}>{section.title}</h3>
+              </div>
+              <div class="authority-cluster-grid">
+                {section.clusters.map((cluster) => (
+                  <details class="authority-cluster" open={cluster.items.length <= 10}>
+                    <summary>
+                      <span><strong>{cluster.label}</strong><small>{cluster.items.length} หน้า INDEX</small></span>
+                      <span aria-hidden="true">＋</span>
+                    </summary>
+                    <div class="authority-model-links">
+                      {cluster.items.map((item) => (
+                        <a href={item.path} data-track-event="authority_hub_click" data-cta-location="brand_model_hub_model">{item.label}<span aria-hidden="true">→</span></a>
+                      ))}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {page.id === 'hub-products' && (
+      <section class="authority-next" aria-labelledby="authority-next-title">
+        <div class="authority-section-head">
+          <p class="eyebrow">ไปต่อจากหมวดสินค้า</p>
+          <h2 id="authority-next-title">เลือกข้อมูลชั้นถัดไปตามสิ่งที่คุณรู้ตอนนี้</h2>
+        </div>
+        <div class="authority-next-grid">
+          {content.nextHubs.map(([href, title, desc]) => (
+            <a href={href} data-track-event="authority_hub_click" data-cta-location="product_hub_next">
+              <strong>{title}</strong><span>{desc}</span><b>เปิดศูนย์ข้อมูล →</b>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {page.id === 'hub-brands-models' && (
+      <aside class="authority-fallback">
+        <div>
+          <strong>ไม่พบรุ่นตรงใน Directory?</strong>
+          <p>ไม่ได้แปลว่าร้านไม่รับซื้อ ให้กลับไปเลือกประเภทสินค้าที่ตรงที่สุดแล้วส่ง Model Code / Serial prefix / สเปก / รูปเครื่องผ่าน LINE เพื่อเช็กเป็นรายเครื่อง.</p>
+        </div>
+        <a href="/สินค้าที่รับซื้อ/" class="btn btn--ghost">กลับไปเลือกประเภทสินค้า</a>
+      </aside>
+    )}
+
+    <TrustProofSystem variant="money" itemLabel={page.id === 'hub-products' ? 'สินค้าไอที' : 'รุ่นและซีรีส์สินค้าไอที'} location={`${page.id}_trust`} />
+  </div>
+</main>
+
+<style>
+  .authority-hero { padding: 44px 0 42px; border-bottom: 1px solid var(--color-border); background: radial-gradient(circle at 88% 12%, rgba(49,87,246,.12), transparent 23rem), linear-gradient(180deg, #f8fbff 0%, #fff 100%); }
+  .authority-hero__shell { max-width: 980px; }
+  .authority-hero h1 { margin: 9px 0 16px; text-wrap: balance; }
+  .authority-hero__lede { max-width: 78ch; margin: 8px 0; color: var(--color-muted); line-height: 1.78; font-size: 1.03rem; }
+  .authority-hero__stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 19px 0; }
+  .authority-hero__stats span { display: inline-flex; align-items: center; gap: 5px; padding: 8px 11px; border: 1px solid var(--color-border); border-radius: 999px; background: #fff; color: var(--color-muted); font-size: .82rem; }
+  .authority-hero__stats strong { color: var(--color-navy); }
+  .authority-body { max-width: 1120px; padding-block: 42px 72px; }
+  .authority-section-head { max-width: 780px; }
+  .authority-section-head h2 { margin: 4px 0 8px; text-wrap: balance; }
+  .authority-section-head > p:not(.eyebrow) { margin: 0; color: var(--color-muted); line-height: 1.7; }
+  .authority-principle-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin-top: 20px; }
+  .authority-principle-grid article { position: relative; padding: 18px; border: 1px solid var(--color-border); border-radius: 16px; background: #fff; box-shadow: var(--shadow-sm); }
+  .authority-principle-grid article > span { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--color-soft-blue); color: var(--color-primary-dark); font-size: .76rem; font-weight: 900; }
+  .authority-principle-grid h3 { margin: 13px 0 7px; font-size: 1rem; }
+  .authority-principle-grid p { margin: 0; color: var(--color-muted); line-height: 1.62; font-size: .86rem; }
+  .authority-directory, .authority-next { margin-top: 50px; scroll-margin-top: 130px; }
+  .authority-category-groups, .authority-model-sections { display: grid; gap: 34px; margin-top: 24px; }
+  .authority-category-group { padding: 22px; border: 1px solid var(--color-border); border-radius: 22px; background: #fff; }
+  .authority-category-group__head { max-width: 780px; margin-bottom: 16px; }
+  .authority-category-group__head > p, .authority-subhead > p { margin: 0 0 4px; color: var(--color-primary); font-size: .74rem; font-weight: 850; text-transform: uppercase; letter-spacing: .03em; }
+  .authority-category-group__head h3, .authority-subhead h3 { margin: 0; }
+  .authority-category-group__head > span, .authority-subhead > p:last-child:not(:first-child) { display: block; margin-top: 6px; color: var(--color-muted); line-height: 1.6; font-size: .88rem; }
+  .authority-category-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+  .authority-category-card { min-width: 0; display: grid; grid-template-columns: 42px 1fr; gap: 11px; padding: 15px; border: 1px solid var(--color-border); border-radius: 15px; color: var(--color-navy); background: #fff; transition: 150ms ease; }
+  .authority-category-card:hover { text-decoration: none; transform: translateY(-2px); border-color: color-mix(in srgb,var(--color-primary) 45%,var(--color-border)); box-shadow: 0 12px 28px rgba(15,23,42,.08); }
+  .authority-category-card__icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px; background: var(--color-soft-blue); font-size: 1.1rem; }
+  .authority-category-card__copy { min-width: 0; display: grid; gap: 4px; }
+  .authority-category-card__copy strong { font-size: .96rem; }
+  .authority-category-card__copy small { color: var(--color-muted); line-height: 1.45; }
+  .authority-category-card__meta { grid-column: 2; display: flex; justify-content: space-between; gap: 8px; padding-top: 9px; border-top: 1px solid #eef2f7; color: var(--color-primary); font-size: .76rem; font-weight: 800; }
+  .authority-next-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 11px; margin-top: 18px; }
+  .authority-next-grid a { display: flex; flex-direction: column; min-height: 168px; padding: 17px; border: 1px solid var(--color-border); border-radius: 16px; color: var(--color-navy); background: #fff; }
+  .authority-next-grid a:hover { text-decoration: none; border-color: var(--color-primary); }
+  .authority-next-grid span { margin-top: 7px; color: var(--color-muted); font-size: .84rem; line-height: 1.55; }
+  .authority-next-grid b { margin-top: auto; padding-top: 13px; color: var(--color-primary); font-size: .78rem; }
+  .authority-brand-index { margin-top: 24px; padding: 22px; border: 1px solid var(--color-border); border-radius: 22px; background: #fff; }
+  .authority-brand-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; margin-top: 16px; }
+  .authority-brand-card { display: flex; flex-direction: column; min-height: 152px; padding: 16px; border: 1px solid var(--color-border); border-radius: 15px; color: var(--color-navy); }
+  .authority-brand-card:hover { text-decoration: none; border-color: var(--color-primary); box-shadow: var(--shadow-sm); }
+  .authority-brand-card strong { font-size: 1.05rem; }
+  .authority-brand-card > span { margin-top: 5px; color: var(--color-primary); font-size: .78rem; font-weight: 800; }
+  .authority-brand-card small { margin-top: 8px; color: var(--color-muted); line-height: 1.5; }
+  .authority-brand-card b { margin-top: auto; padding-top: 12px; color: var(--color-primary); font-size: .77rem; }
+  .authority-model-section { padding: 22px; border: 1px solid var(--color-border); border-radius: 22px; background: #fff; }
+  .authority-subhead { max-width: 760px; margin-bottom: 15px; }
+  .authority-cluster-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+  .authority-cluster { border: 1px solid var(--color-border); border-radius: 14px; background: #fbfdff; overflow: hidden; }
+  .authority-cluster summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 58px; padding: 12px 14px; cursor: pointer; }
+  .authority-cluster summary::-webkit-details-marker { display: none; }
+  .authority-cluster summary > span:first-child { display: grid; gap: 2px; }
+  .authority-cluster summary strong { font-size: .94rem; }
+  .authority-cluster summary small { color: var(--color-muted); font-size: .74rem; }
+  .authority-cluster[open] summary { border-bottom: 1px solid var(--color-border); background: #fff; }
+  .authority-model-links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); padding: 8px; }
+  .authority-model-links a { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 42px; padding: 8px 9px; border-radius: 9px; color: var(--color-navy); font-size: .82rem; line-height: 1.35; }
+  .authority-model-links a:hover { background: var(--color-soft-blue); color: var(--color-primary-dark); text-decoration: none; }
+  .authority-model-links a span { color: var(--color-primary); }
+  .authority-fallback { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 34px 0 0; padding: 20px; border: 1px solid #cfe0ff; border-radius: 18px; background: var(--color-soft-blue); }
+  .authority-fallback p { margin: 5px 0 0; color: var(--color-muted); line-height: 1.6; }
+  @media (max-width: 980px) {
+    .authority-principle-grid, .authority-next-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .authority-category-grid, .authority-brand-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  }
+  @media (max-width: 720px) {
+    .authority-hero { padding-top: 32px; }
+    .authority-body { padding-block: 30px 56px; }
+    .authority-principle-grid, .authority-next-grid, .authority-category-grid, .authority-brand-grid, .authority-cluster-grid { grid-template-columns: 1fr; }
+    .authority-category-group, .authority-brand-index, .authority-model-section { padding: 17px; border-radius: 18px; }
+    .authority-model-links { grid-template-columns: 1fr; }
+    .authority-fallback { align-items: flex-start; flex-direction: column; }
+  }
+</style>

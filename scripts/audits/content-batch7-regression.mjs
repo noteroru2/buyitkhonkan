@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { ARCHITECTURE_PAGES } from '../../src/data/architecture/index.js';
+import { MODEL_ARCHITECTURE } from '../../src/data/architecture/models.js';
+import { CONDITION_ARCHITECTURE } from '../../src/data/architecture/conditions.js';
+import { B2B_ARCHITECTURE } from '../../src/data/architecture/b2b.js';
+
+const root=process.cwd(); const baseline='/mnt/data/kk_content6_work/buyitkhonkan-main';
+const sha=(p)=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const protectedFiles=['src/pages/index.astro','src/data/categories.js','src/data/brandPages.js','src/data/modelPages.js','src/data/conditionPages.js','src/data/localPages.js','src/data/architecture/models.js','src/data/architecture/conditions.js','src/data/architecture/districts.js','src/data/architecture/guides.js','src/data/highIntentModelContent.js','src/data/highIntentConditionContent.js','src/layouts/Base.astro','astro.config.mjs'];
+const protectedComparison=protectedFiles.map((rel)=>{const a=path.join(baseline,rel),b=path.join(root,rel);return{file:rel,baselineExists:fs.existsSync(a),currentExists:fs.existsSync(b),identical:fs.existsSync(a)&&fs.existsSync(b)&&sha(a)===sha(b)}});
+const changedProtected=protectedComparison.filter((x)=>!x.identical);
+const allowedLaterProtectedChanges=new Set(['src/pages/index.astro','src/data/architecture/districts.js','src/data/architecture/guides.js','src/data/highIntentModelContent.js','astro.config.mjs']);
+const unexpectedChangedProtected=changedProtected.filter((x)=>!allowedLaterProtectedChanges.has(x.file));
+const counts={architectureIndex:ARCHITECTURE_PAGES.filter((p)=>p.lifecycle==='INDEX').length,architectureHold:ARCHITECTURE_PAGES.filter((p)=>p.lifecycle==='HOLD_NOINDEX').length,modelIndex:MODEL_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length,conditionIndex:CONDITION_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length,b2bIndex:B2B_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length};
+const route=fs.readFileSync(path.join(root,'src/pages/[slug].astro'),'utf8');
+const pass=unexpectedChangedProtected.length===0&&counts.architectureIndex>=135&&counts.architectureHold===ARCHITECTURE_PAGES.length-counts.architectureIndex&&counts.modelIndex>=88&&counts.conditionIndex===24&&counts.b2bIndex===22&&route.includes('<ReleasedB2BPage');
+const report={verdict:pass?'PASS':'FAIL',generatedAt:new Date().toISOString(),batch:'CONTENT_BATCH_7_REGRESSION',baseline:'CONTENT_BATCH_6',findings:{...counts,protectedFilesChecked:protectedFiles.length,changedProtectedFiles:changedProtected.length,unexpectedChangedProtectedFiles:unexpectedChangedProtected.length,releasedB2BRouteIntegrated:route.includes('<ReleasedB2BPage')},protectedComparison,unexpectedChangedProtected};
+const out=path.join(root,'docs/content-batch7');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'content-batch7-regression.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(!pass)process.exitCode=1;

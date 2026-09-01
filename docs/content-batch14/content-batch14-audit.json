@@ -1,0 +1,216 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.407Z",
+  "batch": "CONTENT_BATCH_14_MODEL_TOPICAL_BREADTH",
+  "findings": {
+    "batch14Release": 20,
+    "releasedModelsTotal": 172,
+    "modelHold": 8,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "clusterCounts": {
+      "camera": 9,
+      "game-console": 3,
+      "computer": 2,
+      "gpu": 6
+    },
+    "missingPage": 0,
+    "lifecycle": 0,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "unlinked": 0,
+    "holdLeak": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "metadataLength": 0,
+    "categoryOverflow": 0
+  },
+  "released": [
+    {
+      "slug": "sony-a6600",
+      "path": "/รับซื้อ-sony-a6600-ขอนแก่น/",
+      "h1": "รับซื้อ Sony A6600 ขอนแก่น",
+      "title": "รับซื้อ Sony A6600 ขอนแก่น เช็ก IBIS แบต NP-FZ100 และชัตเตอร์ | WINNER IT",
+      "category": "camera",
+      "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6600m/specifications"
+    },
+    {
+      "slug": "sony-a7-iv",
+      "path": "/รับซื้อ-sony-a7-iv-ขอนแก่น/",
+      "h1": "รับซื้อ Sony A7 IV ขอนแก่น",
+      "title": "รับซื้อ Sony A7 IV ขอนแก่น เช็ก Full Frame 33MP ชัตเตอร์และพอร์ต | WINNER IT",
+      "category": "camera",
+      "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications"
+    },
+    {
+      "slug": "canon-eos-r",
+      "path": "/รับซื้อ-canon-eos-r-ขอนแก่น/",
+      "h1": "รับซื้อ Canon EOS R ขอนแก่น",
+      "title": "รับซื้อ Canon EOS R ขอนแก่น เช็ก Full Frame 30.3MP เมาท์ RF และจอ | WINNER IT",
+      "category": "camera",
+      "source": "https://global.canon/en/c-museum/product/dslr877.html"
+    },
+    {
+      "slug": "canon-eos-r10",
+      "path": "/รับซื้อ-canon-eos-r10-ขอนแก่น/",
+      "h1": "รับซื้อ Canon EOS R10 ขอนแก่น",
+      "title": "รับซื้อ Canon EOS R10 ขอนแก่น เช็ก APS-C 24.2MP ชัตเตอร์และจอ | WINNER IT",
+      "category": "camera",
+      "source": "https://global.canon/en/c-museum/product/dslr902.html"
+    },
+    {
+      "slug": "fujifilm-x-t30",
+      "path": "/รับซื้อ-fujifilm-x-t30-ขอนแก่น/",
+      "h1": "รับซื้อ Fujifilm X-T30 ขอนแก่น",
+      "title": "รับซื้อ Fujifilm X-T30 ขอนแก่น เช็ก 26.1MP จอพับและปุ่มหมุน | WINNER IT",
+      "category": "camera",
+      "source": "https://www.fujifilm-x.com/global/products/cameras/x-t30/"
+    },
+    {
+      "slug": "fujifilm-x-t4",
+      "path": "/รับซื้อ-fujifilm-x-t4-ขอนแก่น/",
+      "h1": "รับซื้อ Fujifilm X-T4 ขอนแก่น",
+      "title": "รับซื้อ Fujifilm X-T4 ขอนแก่น เช็ก IBIS 26.1MP จอหมุนและแบต | WINNER IT",
+      "category": "camera",
+      "source": "https://www.fujifilm-x.com/th-th/products/cameras/x-t4/"
+    },
+    {
+      "slug": "fujifilm-x-s10",
+      "path": "/รับซื้อ-fujifilm-x-s10-ขอนแก่น/",
+      "h1": "รับซื้อ Fujifilm X-S10 ขอนแก่น",
+      "title": "รับซื้อ Fujifilm X-S10 ขอนแก่น เช็ก IBIS 26.1MP จอหมุนและกริป | WINNER IT",
+      "category": "camera",
+      "source": "https://www.fujifilm-x.com/global/products/cameras/x-s10/"
+    },
+    {
+      "slug": "olympus-em10-mark-iii",
+      "path": "/รับซื้อ-olympus-em10-mark-iii-ขอนแก่น/",
+      "h1": "รับซื้อ Olympus OM-D E-M10 Mark III ขอนแก่น",
+      "title": "รับซื้อ Olympus OM-D E-M10 Mark III ขอนแก่น เช็ก IBIS 5 แกนและจอ | WINNER IT",
+      "category": "camera",
+      "source": "https://learnandsupport.getolympus.com/support/e-m10-mark-iii"
+    },
+    {
+      "slug": "panasonic-gh5",
+      "path": "/รับซื้อ-panasonic-gh5-ขอนแก่น/",
+      "h1": "รับซื้อ Panasonic Lumix GH5 ขอนแก่น",
+      "title": "รับซื้อ Panasonic Lumix GH5 ขอนแก่น เช็ก 4K60p IBIS และช่องการ์ดคู่ | WINNER IT",
+      "category": "camera",
+      "source": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dc-gh5/"
+    },
+    {
+      "slug": "nintendo-switch-lite",
+      "path": "/รับซื้อ-nintendo-switch-lite-ขอนแก่น/",
+      "h1": "รับซื้อ Nintendo Switch Lite ขอนแก่น",
+      "title": "รับซื้อ Nintendo Switch Lite ขอนแก่น เช็กจอยติดเครื่อง จอและบัญชี | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.nintendo.com/us/gaming-systems/switch/tech-specs/"
+    },
+    {
+      "slug": "xbox-series-x",
+      "path": "/รับซื้อ-xbox-series-x-ขอนแก่น/",
+      "h1": "รับซื้อ Xbox Series X ขอนแก่น",
+      "title": "รับซื้อ Xbox Series X ขอนแก่น เช็ก 1TB/2TB Disc-Digital และจอย | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.xbox.com/en-US/consoles/xbox-series-x"
+    },
+    {
+      "slug": "xbox-series-s",
+      "path": "/รับซื้อ-xbox-series-s-ขอนแก่น/",
+      "h1": "รับซื้อ Xbox Series S ขอนแก่น",
+      "title": "รับซื้อ Xbox Series S ขอนแก่น เช็ก 512GB/1TB Digital และจอย | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.xbox.com/en-US/consoles/xbox-series-s"
+    },
+    {
+      "slug": "amd-ryzen-5-5500",
+      "path": "/รับซื้อ-amd-ryzen-5-5500-ขอนแก่น/",
+      "h1": "รับซื้อ AMD Ryzen 5 5500 ขอนแก่น",
+      "title": "รับซื้อ AMD Ryzen 5 5500 ขอนแก่น เช็ก AM4 6C/12T ขา CPU และผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.amd.com/content/dam/amd/en/documents/products/processors/ryzen/5000/amd-ryzen-5000-datasheet.pdf"
+    },
+    {
+      "slug": "amd-ryzen-7-5700x",
+      "path": "/รับซื้อ-amd-ryzen-7-5700x-ขอนแก่น/",
+      "h1": "รับซื้อ AMD Ryzen 7 5700X ขอนแก่น",
+      "title": "รับซื้อ AMD Ryzen 7 5700X ขอนแก่น เช็ก AM4 8C/16T ขา CPU และผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.amd.com/content/dam/amd/en/documents/products/processors/ryzen/5000/amd-ryzen-5000-datasheet.pdf"
+    },
+    {
+      "slug": "rtx-3070",
+      "path": "/รับซื้อ-rtx-3070-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 3070 ขอนแก่น",
+      "title": "รับซื้อ RTX 3070 ขอนแก่น เช็ก 8GB GDDR6 LHR พัดลมและประกัน | WINNER IT",
+      "category": "gpu",
+      "source": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070-3070ti/"
+    },
+    {
+      "slug": "rtx-3080",
+      "path": "/รับซื้อ-rtx-3080-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 3080 ขอนแก่น",
+      "title": "รับซื้อ RTX 3080 ขอนแก่น แยก 10GB/12GB GDDR6X พัดลมและประกัน | WINNER IT",
+      "category": "gpu",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/30-series/rtx-3080-3080ti/"
+    },
+    {
+      "slug": "rtx-4070-ti-super",
+      "path": "/รับซื้อ-rtx-4070-ti-super-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 4070 Ti SUPER ขอนแก่น",
+      "title": "รับซื้อ RTX 4070 Ti SUPER ขอนแก่น เช็ก 16GB GDDR6X และหัวไฟ | WINNER IT",
+      "category": "gpu",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/40-series/rtx-4070-family/"
+    },
+    {
+      "slug": "rtx-4080-super",
+      "path": "/รับซื้อ-rtx-4080-super-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 4080 SUPER ขอนแก่น",
+      "title": "รับซื้อ RTX 4080 SUPER ขอนแก่น เช็ก 16GB GDDR6X หัวไฟและซิงก์ | WINNER IT",
+      "category": "gpu",
+      "source": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4080-family/"
+    },
+    {
+      "slug": "rx-6600",
+      "path": "/รับซื้อ-rx-6600-ขอนแก่น/",
+      "h1": "รับซื้อ Radeon RX 6600 ขอนแก่น",
+      "title": "รับซื้อ Radeon RX 6600 ขอนแก่น เช็ก 8GB GDDR6 พัดลมและประกัน | WINNER IT",
+      "category": "gpu",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6600.html"
+    },
+    {
+      "slug": "rx-7900-xtx",
+      "path": "/รับซื้อ-rx-7900-xtx-ขอนแก่น/",
+      "h1": "รับซื้อ Radeon RX 7900 XTX ขอนแก่น",
+      "title": "รับซื้อ Radeon RX 7900 XTX ขอนแก่น เช็ก 24GB GDDR6 หัวไฟและความร้อน | WINNER IT",
+      "category": "gpu",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xtx.html"
+    }
+  ],
+  "samples": {
+    "missingPage": [],
+    "lifecycle": [],
+    "missingContent": [],
+    "invalidFields": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "unlinked": [],
+    "holdLeak": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "metadataLength": [],
+    "categoryOverflow": []
+  }
+}

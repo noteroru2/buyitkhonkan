@@ -1,0 +1,180 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import MoneyPageNav from './MoneyPageNav.astro';
+import DiscoveryHub from './DiscoveryHub.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import { SITE, CATEGORIES } from '../data/categories.js';
+import { getReleasedGuideDiscovery } from '../data/discoveryLinks.js';
+
+const { page, content } = Astro.props;
+const groups = getReleasedGuideDiscovery(page, content);
+const categories = (content.categorySlugs || [])
+  .map((slug) => CATEGORIES.find((item) => item.slug === slug))
+  .filter(Boolean);
+const breadcrumbs = [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'บทความ', href: '/บทความ/' },
+  { name: page.label, href: page.path },
+];
+---
+
+<main id="main-content" class="released-guide article" data-content-batch="11" data-lifecycle={page.lifecycle}>
+  <section class="guide-hero">
+    <div class="container guide-hero__shell">
+      <Breadcrumbs items={breadcrumbs} />
+      <p class="eyebrow">GUIDE / INFORMATIONAL AUTHORITY · CONTENT VERIFIED</p>
+      <h1>{page.h1}</h1>
+      <p class="guide-hero__lede">{content.intro}</p>
+      <div class="guide-hero__meta" aria-label="ขอบเขตของคู่มือ">
+        <span>✓ ใช้ข้อมูลจากเครื่องจริงก่อนประเมิน</span>
+        <span>✓ ไม่ใช้ราคาหักตายตัวแทนการตรวจ</span>
+        <span>✓ มีแหล่งอ้างอิงด้านเทคนิค</span>
+      </div>
+      <div class="cta-row">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_guide_hero">ส่งข้อมูลประเมิน LINE {SITE.lineId}</a>
+        <a href="#guide-answer" class="btn btn--ghost">อ่านคำตอบสั้น</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="money-nav-wrap">
+    <MoneyPageNav items={[
+      { href: '#guide-answer', label: 'คำตอบสั้น' },
+      { href: '#guide-steps', label: 'วิธีเช็ก' },
+      { href: '#guide-factors', label: 'ปัจจัยมูลค่า' },
+      { href: '#guide-checklist', label: 'เช็กลิสต์' },
+      { href: '#guide-source', label: 'แหล่งอ้างอิง' },
+      { href: '#discover', label: 'อ่านต่อ' },
+      { href: '#guide-faq', label: 'FAQ' },
+    ]} />
+  </div>
+
+  <div class="container guide-body">
+    <section id="guide-answer" class="guide-answer">
+      <p class="eyebrow">คำตอบสั้นก่อนลงรายละเอียด</p>
+      <h2>ควรทำอย่างไรก่อนส่งประเมิน?</h2>
+      <p>{content.shortAnswer}</p>
+      {content.priceIntent && (
+        <p class="guide-price-note"><strong>เรื่องราคา:</strong> หน้านี้อธิบายปัจจัยที่ทำให้มูลค่าต่างกัน ไม่กำหนดตัวเลขหัก/บวกตายตัว เพราะรุ่น สภาพ และตลาดในวันที่ตรวจเปลี่ยนได้.</p>
+      )}
+    </section>
+
+    <section id="guide-steps">
+      <p class="eyebrow">ทำทีละขั้น</p>
+      <h2>ขั้นตอนที่แนะนำ</h2>
+      <div class="guide-step-list">
+        {content.steps.map(([title, text], index) => (
+          <article>
+            <span class="guide-step-list__number">{index + 1}</span>
+            <div><h3>{title}</h3><p>{text}</p></div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="guide-factors">
+      <p class="eyebrow">ทำไมเครื่องเดียวกันยังราคาไม่เท่ากัน</p>
+      <h2>ปัจจัยที่ควรดูร่วมกับคู่มือนี้</h2>
+      <div class="guide-factor-grid">
+        {content.priceFactors.map((item) => <span>{item}</span>)}
+      </div>
+      <p>การประเมินรอบแรกใช้ข้อมูลเหล่านี้เพื่อลดช่วงความไม่แน่นอน ส่วนราคาสุดท้ายยังต้องยืนยันหลังตรวจรุ่นและสภาพจริง.</p>
+    </section>
+
+    <section id="guide-checklist">
+      <p class="eyebrow">ส่งครั้งเดียวให้ครบ</p>
+      <h2>เช็กลิสต์ข้อมูลที่ควรส่งทาง LINE</h2>
+      <div class="guide-check-grid">
+        {content.checklist.map((item, index) => <div><span>{index + 1}</span><p>{item}</p></div>)}
+      </div>
+      <aside class="guide-warning"><strong>ข้อควรระวัง</strong><p>{content.caution}</p></aside>
+    </section>
+
+    <TrustProofSystem variant="money" itemLabel={page.label} location="guide_trust" />
+
+    {content.source && (
+      <section id="guide-source" class="guide-source">
+        <p class="eyebrow">แหล่งอ้างอิงด้านเทคนิค</p>
+        <h2>ข้อมูลที่ใช้ตรวจขั้นตอน</h2>
+        <a href={content.source.url} target="_blank" rel="noopener noreferrer">{content.source.label}</a>
+        <p>แหล่งอ้างอิงนี้ใช้ตรวจขั้นตอนหรือข้อมูลอุปกรณ์ ไม่ใช่ผู้กำหนดราคารับซื้อของ WINNER IT และไม่ได้หมายความว่าผู้ผลิตรับรองเนื้อหาหรือบริการของร้าน.</p>
+      </section>
+    )}
+
+    {categories.length > 0 && (
+      <div class="guide-category-links" aria-label="หมวดสินค้าที่เกี่ยวข้อง">
+        <strong>หมวดที่เกี่ยวข้อง</strong>
+        <div>{categories.map((cat) => <a href={`/${cat.path || cat.slug}/`}>{cat.name}</a>)}</div>
+      </div>
+    )}
+
+    <div class="money-inline-cta guide-inline-cta">
+      <strong>เช็กตามคู่มือแล้ว พร้อมส่งประเมิน?</strong>
+      <span>ส่งรูป + รุ่น/สเปก + จุดตำหนิ + อุปกรณ์ + พื้นที่โดยประมาณ โดยไม่ต้องส่งรหัสผ่านบัญชีส่วนตัว</span>
+      <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_guide_mid">LINE {SITE.lineId}</a>
+    </div>
+
+    <DiscoveryHub id="discover" groups={groups} title="จากคู่มือนี้ ควรดูหน้าไหนต่อ" intro="ลิงก์ด้านล่างเลือกจากสินค้าที่เกี่ยวข้อง รุ่น/สภาพที่เปิด Index แล้ว คู่มือในคลัสเตอร์เดียวกัน และพื้นที่นัดรับ โดยไม่ลิงก์ไปหน้า HOLD_NOINDEX" />
+
+    <section id="guide-faq">
+      <p class="eyebrow">คำถามที่พบบ่อย</p>
+      <h2>คำถามก่อนนำข้อมูลนี้ไปใช้กับเครื่องจริง</h2>
+      <div class="faq">
+        {content.faq.map(([q, a]) => <details class="faq__item"><summary>{q}</summary><p>{a}</p></details>)}
+      </div>
+    </section>
+  </div>
+
+  <section class="section cta guide-final">
+    <div class="container cta__in">
+      <p class="eyebrow">ข้อมูลครบก่อน · ค่อยนัดตรวจ · ไม่ผูกมัด</p>
+      <h2 class="cta__head">มีเครื่องอยู่จริง? ส่งข้อมูลตามเช็กลิสต์เพื่อประเมินเบื้องต้น</h2>
+      <p>ไม่จำเป็นต้องแกะเครื่อง ซ่อมก่อน หรือเดาราคาเอง ทีมงานจะถามข้อมูลเพิ่มเฉพาะที่จำเป็นต่อรุ่นและสภาพนั้น.</p>
+      <div class="cta__btns">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_guide_final">LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone" data-cta-location="released_guide_final">โทร {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .guide-hero { padding: 44px 0 40px; background: linear-gradient(180deg, rgba(37,99,235,.055), rgba(255,255,255,0)); border-bottom: 1px solid var(--line); }
+  .guide-hero__shell { max-width: 920px; }
+  .guide-hero h1 { margin: 10px 0 16px; text-wrap: balance; overflow-wrap: anywhere; }
+  .guide-hero__lede { max-width: 78ch; color: var(--ink-soft); font-size: 1.06rem; line-height: 1.78; }
+  .guide-hero__meta { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 18px 0; color: var(--ink-soft); font-size: .92rem; }
+  .guide-body { max-width: 850px; padding-block: 34px 70px; }
+  .guide-body section, .guide-body aside { scroll-margin-top: 130px; }
+  .guide-body p, .guide-body li { color: var(--ink-soft); line-height: 1.78; }
+  .guide-answer { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+  .guide-answer h2 { margin-top: 6px; }
+  .guide-price-note { margin: 16px 0 0; padding: 12px 14px; border-left: 4px solid #f59e0b; background: #fffbeb; border-radius: 0 10px 10px 0; }
+  .guide-step-list { display: grid; gap: 12px; margin: 18px 0 34px; }
+  .guide-step-list article { display: grid; grid-template-columns: 42px minmax(0,1fr); gap: 14px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+  .guide-step-list__number { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--mist); color: var(--volt); font-weight: 800; }
+  .guide-step-list h3 { margin: 0 0 5px; font-size: 1.05rem; }
+  .guide-step-list p { margin: 0; }
+  .guide-factor-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+  .guide-factor-grid span { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); font-weight: 650; }
+  .guide-check-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin: 16px 0; }
+  .guide-check-grid > div { display: grid; grid-template-columns: 32px minmax(0,1fr); gap: 10px; padding: 13px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .guide-check-grid span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #eff6ff; color: #1d4ed8; font-weight: 800; }
+  .guide-check-grid p { margin: 1px 0 0; }
+  .guide-warning { margin: 18px 0 30px; padding: 16px 18px; border: 1px solid #fed7aa; border-left: 4px solid #f59e0b; border-radius: 12px; background: #fffbeb; }
+  .guide-warning p { margin: 5px 0 0; }
+  .guide-source { margin: 30px 0; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+  .guide-source h2 { margin-top: 6px; }
+  .guide-source p { font-size: .92rem; margin: 8px 0 0; }
+  .guide-category-links { margin: 24px 0; padding: 16px 18px; background: var(--mist); border-radius: 12px; }
+  .guide-category-links > div { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .guide-category-links a { padding: 7px 10px; border-radius: 999px; background: #fff; border: 1px solid var(--line); }
+  .guide-inline-cta { margin-block: 30px; }
+  .guide-final { margin-top: 0; }
+  @media (max-width: 640px) {
+    .guide-hero { padding-top: 32px; }
+    .guide-check-grid { grid-template-columns: 1fr; }
+    .guide-step-list article { grid-template-columns: 36px minmax(0,1fr); padding: 14px; }
+    .guide-step-list__number { width: 34px; height: 34px; }
+  }
+</style>

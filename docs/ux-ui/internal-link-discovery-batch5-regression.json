@@ -1,0 +1,97 @@
+{
+  "verdict": "PASS_WITH_BUILD_WARNING",
+  "generatedAt": "2026-09-01T07:36:05.302552+00:00",
+  "baseline": "UX/UI Batch 4 — Trust & Proof System",
+  "scope": "UX/UI Batch 5 — Internal Link & Discovery UX",
+  "regression": {
+    "homepageSourceUnchanged": true,
+    "baseCanonicalLayoutUnchanged": true,
+    "existingDataFilesChecked": 17,
+    "changedExistingDataFiles": [],
+    "h1UrlCanonicalIntentDataPreserved": true
+  },
+  "discovery": {
+    "verdict": "PASS",
+    "generatedAt": "2026-09-01T07:35:39.335Z",
+    "liveDiscoveryMeta": {
+      "categoryCount": 15,
+      "brandCount": 6,
+      "modelCount": 21,
+      "conditionCount": 5,
+      "localCount": 8,
+      "holdArchitectureLinked": false
+    },
+    "contextsAudited": 79,
+    "uniqueInternalTargets": 77,
+    "holdArchitectureLinked": 0,
+    "brokenDiscoveryLinks": 0,
+    "thinDiscoveryContexts": 0,
+    "missingComponentTokens": [],
+    "integration": {
+      "moneyPages": true,
+      "articles": true,
+      "breadcrumbTracking": true
+    },
+    "samples": {
+      "holdLeaks": [],
+      "broken": [],
+      "thinContexts": []
+    }
+  },
+  "architecture": {
+    "generatedAt": "2026-09-01T07:35:39.476Z",
+    "verdict": "PASS",
+    "architecture": {
+      "total": 311,
+      "hub": 4,
+      "model": 180,
+      "condition": 24,
+      "b2b": 22,
+      "local": 21,
+      "guide": 60
+    },
+    "existingReleasedPathsDetected": 87,
+    "forecastBuiltRoutesMinimum": 398,
+    "releaseGates": [
+      "UNIQUE_INTENT",
+      "UNIQUE_CONTENT",
+      "INTERNAL_LINKS",
+      "CANONICAL",
+      "METADATA",
+      "QUALITY_QA"
+    ],
+    "findings": {
+      "duplicateIds": 0,
+      "duplicatePaths": 0,
+      "duplicateTitles": 0,
+      "duplicateH1": 0,
+      "routeCollisions": 0,
+      "missingParents": 0,
+      "invalidLifecycle": 0,
+      "missingContentContracts": 0,
+      "productDistrictDoorwayMatrix": 0
+    },
+    "samples": {
+      "collisions": [],
+      "missingParents": []
+    }
+  },
+  "build": {
+    "npmCi": "FAILED_TIMEOUT_PARTIAL_INSTALL",
+    "npmBuild": "NOT_RUNNABLE_ASTRO_NOT_INSTALLED",
+    "reason": "Runtime network/dependency installation timed out; partial node_modules removed before packaging."
+  },
+  "changedFiles": [
+    "docs/architecture/architecture-audit.json",
+    "docs/ux-ui/internal-link-discovery-batch5-audit.json",
+    "package.json",
+    "scripts/audits/discovery-ux-audit.mjs",
+    "src/components/Breadcrumbs.astro",
+    "src/components/DiscoveryHub.astro",
+    "src/data/discoveryLinks.js",
+    "src/layouts/Article.astro",
+    "src/pages/[slug].astro",
+    "src/pages/พื้นที่ให้บริการ.astro",
+    "src/pages/สภาพสินค้าที่ขายได้.astro"
+  ]
+}

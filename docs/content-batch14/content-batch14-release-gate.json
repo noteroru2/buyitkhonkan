@@ -1,0 +1,21 @@
+{
+  "verdict": "PASS_WITH_BUILD_WARNING",
+  "batch": "CONTENT_BATCH_14_MODEL_TOPICAL_BREADTH",
+  "contentAudit": "PASS",
+  "regression": "PASS",
+  "architecture": "PASS",
+  "discovery": "PASS",
+  "build": "WARNING_DEPENDENCY_INSTALL_TIMEOUT",
+  "findings": {
+    "releasedThisBatch": 20,
+    "modelIndex": 132,
+    "modelHold": 48,
+    "architectureIndex": 255,
+    "architectureHold": 56,
+    "forecastBuiltRoutesMinimum": 398,
+    "brokenDiscoveryLinks": 0,
+    "holdLeaks": 0,
+    "routeCollisions": 0,
+    "doorwayMatrix": 0
+  }
+}

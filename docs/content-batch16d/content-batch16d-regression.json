@@ -1,0 +1,39 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:34.151Z",
+  "batch": "CONTENT_BATCH_16D_FINAL_MODEL_RELEASE_REGRESSION",
+  "baseline": "CONTENT_BATCH_16C",
+  "findings": {
+    "batch16cModelsPreserved": 168,
+    "newModelContent": 4,
+    "batch16dModelContent": 4,
+    "changedOldContent": 0,
+    "changedOldOwnership": 0,
+    "unexpectedOldLifecycle": 0,
+    "protectedFilesChecked": 20,
+    "changedProtectedFiles": 2,
+    "unexpectedChangedProtectedFiles": 0,
+    "forbiddenPromotions": 0,
+    "remainingReleaseModels": 0,
+    "modelIndex": 172,
+    "modelHold": 8,
+    "architectureIndex": 297,
+    "architectureHold": 14
+  },
+  "changedOldContent": [],
+  "changedOldOwnership": [],
+  "unexpectedOldLifecycle": [],
+  "changedProtected": [
+    "src/pages/[slug].astro",
+    "astro.config.mjs"
+  ],
+  "unexpectedChangedProtected": [],
+  "forbiddenPromotions": [],
+  "remainingReleaseModels": [],
+  "newKeys": [
+    "fujifilm-x-t20",
+    "fujifilm-x-h1",
+    "olympus-em5-mark-iii",
+    "panasonic-g85"
+  ]
+}

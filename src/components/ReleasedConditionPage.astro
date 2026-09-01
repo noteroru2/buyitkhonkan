@@ -1,0 +1,178 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import MoneyConversionCard from './MoneyConversionCard.astro';
+import MoneyPageNav from './MoneyPageNav.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import DiscoveryHub from './DiscoveryHub.astro';
+import { SITE, CATEGORIES } from '../data/categories.js';
+import { getReleasedConditionDiscovery } from '../data/discoveryLinks.js';
+
+const { page, content } = Astro.props;
+const category = CATEGORIES.find((item) => item.slug === content.categorySlug);
+const groups = getReleasedConditionDiscovery(page, content);
+const breadcrumbs = [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'สภาพสินค้าที่ขายได้', href: '/สภาพสินค้าที่ขายได้/' },
+  ...(category ? [{ name: category.name, href: `/${category.path || category.slug}/` }] : []),
+  { name: page.label, href: page.path },
+];
+---
+
+<main id="main-content" class="released-condition-page article" data-content-batch={content.releaseBatch || 6} data-lifecycle={page.lifecycle}>
+  <section class="condition-hero">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="condition-hero__grid">
+        <div>
+          <p class="eyebrow">Condition / Problem Intent · CONTENT VERIFIED</p>
+          <h1>{page.h1}</h1>
+          <p class="condition-hero__lede">{content.intro}</p>
+          <div class="condition-hero__trust" aria-label="หลักการประเมินของมีตำหนิ">
+            <span>✓ ประเมินตามระดับอาการจริง</span>
+            <span>✓ ไม่ต้องซ่อมก่อนส่งรูป</span>
+            <span>✓ แจ้งตำหนิตรง ๆ ช่วยตีราคาได้แม่นขึ้น</span>
+          </div>
+          <div class="cta-row">
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_condition_hero">ส่งรูปอาการ LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone" data-cta-location="released_condition_hero">โทร {SITE.phone}</a>
+          </div>
+        </div>
+        <MoneyConversionCard itemLabel={page.label} location="released_condition_hero_card" />
+      </div>
+    </div>
+  </section>
+
+  <div class="money-nav-wrap">
+    <MoneyPageNav items={[
+      { href: '#condition-trust', label: 'ตรวจสอบก่อนขาย' },
+      { href: '#symptoms', label: 'ดูระดับอาการ' },
+      { href: '#condition-inspection', label: 'จุดที่ควรเช็ก' },
+      { href: '#condition-price', label: 'ปัจจัยราคา' },
+      { href: '#condition-prepare', label: 'ข้อมูลที่ต้องส่ง' },
+      { href: '#condition-avoid', label: 'สิ่งที่ไม่ควรทำ' },
+      { href: '#discover', label: 'หน้าที่เกี่ยวข้อง' },
+      { href: '#condition-faq', label: 'FAQ' },
+    ]} />
+  </div>
+
+  <TrustProofSystem variant="money" itemLabel={page.label} location="condition_trust" />
+
+  <div class="container condition-body">
+    <section id="symptoms">
+      <p class="eyebrow">แยกอาการก่อนตีราคา</p>
+      <h2>อาการแบบไหนเข้าข่าย {page.label}</h2>
+      <p>ไม่จำเป็นต้องวินิจฉัยว่าเสียชิ้นส่วนใดแน่นอนก่อนส่งประเมิน ให้แจ้งสิ่งที่เห็นและสิ่งที่เครื่องทำได้จริงก่อน เพราะอาการเดียวกันอาจเกิดจากคนละสาเหตุ.</p>
+      <div class="condition-signal-grid">
+        {content.symptoms.map((item) => <article><span aria-hidden="true">◇</span><p>{item}</p></article>)}
+      </div>
+    </section>
+
+    <section id="condition-inspection">
+      <p class="eyebrow">เช็กเท่าที่ปลอดภัย</p>
+      <h2>ควรตรวจอะไรและถ่ายอะไร ก่อนประเมินราคา</h2>
+      <ol class="condition-check-list">
+        {content.inspection.map((item) => <li>{item}</li>)}
+      </ol>
+      <p class="condition-note">ถ้าการทดสอบทำให้เครื่องร้อน ดับ บวม มีกลิ่น หรือความเสียหายแย่ลง ให้หยุดทดสอบและส่งข้อมูลเท่าที่มี ไม่จำเป็นต้องพิสูจน์อาการด้วยการเปิดซ้ำ.</p>
+    </section>
+
+    <section id="condition-price">
+      <p class="eyebrow">สภาพเดียวกัน ราคายังต่างกันได้</p>
+      <h2>ปัจจัยที่ใช้ประเมินมูลค่าเมื่อมีอาการนี้</h2>
+      <div class="condition-factor-grid">{content.priceFactors.map((item) => <span>{item}</span>)}</div>
+      <div class="condition-price-policy">
+        <strong>หน้านี้จึงไม่ใส่ “ราคาหักตายตัว”</strong>
+        <p>อาการเดียวกันอาจซ่อมคนละชิ้นส่วนและมีต้นทุนต่างกันตามรุ่น การแจ้งตัวเลขหักเหมารวมบนหน้าเว็บอาจทำให้ผู้ขายเข้าใจผิด จึงประเมินจากรุ่น อาการจริง และตลาดในวันที่ตรวจ.</p>
+      </div>
+    </section>
+
+    <section id="condition-prepare">
+      <p class="eyebrow">ส่งข้อมูลรอบแรกให้ครบ</p>
+      <h2>ส่งอะไรทาง LINE เพื่อเช็ก {page.label}</h2>
+      <div class="condition-prepare-grid">
+        {content.sellerChecklist.map((item, index) => <div><span>{index + 1}</span><p>{item}</p></div>)}
+      </div>
+      <p>ไม่ต้องส่งรหัสผ่าน Apple ID, Google, Microsoft, BIOS หรือบัญชีอื่น ๆ ทีมงานต้องการเฉพาะข้อมูลรุ่น สภาพ และหลักฐานที่จำเป็นต่อการประเมิน.</p>
+    </section>
+
+    <aside id="condition-avoid" class="condition-warning" aria-label={`สิ่งที่ไม่ควรทำก่อนประเมิน ${page.label}`}>
+      <h2>สิ่งที่ไม่ควรทำก่อนนำมาตรวจ</h2>
+      <ul>{content.avoid.map((item) => <li>{item}</li>)}</ul>
+      <p>เป้าหมายคือรักษาสภาพปัจจุบันและไม่ทำให้ตำหนิเพิ่ม การซ่อมก่อนขายควรทำเมื่อคำนวณแล้วว่าคุ้มจริง ไม่ใช่ทำเพราะคิดว่าจะเพิ่มราคาเสมอ.</p>
+    </aside>
+
+    {content.source && (
+      <section class="condition-source" aria-label="แหล่งอ้างอิงอาการและความปลอดภัย">
+        <strong>แหล่งอ้างอิงด้านอาการ/การตรวจ:</strong>
+        <a href={content.source.url} target="_blank" rel="noopener noreferrer">{content.source.label}</a>
+        <p>ใช้เป็นแหล่งอ้างอิงด้านอาการ การตรวจ หรือความปลอดภัยเท่านั้น ไม่ใช่แหล่งกำหนดราคารับซื้อของ WINNER IT.</p>
+      </section>
+    )}
+
+    <div class="money-inline-cta condition-inline-cta">
+      <strong>ไม่แน่ใจว่าอาการเรียกว่าอะไร?</strong>
+      <span>ส่งรูปหรือวิดีโอสั้น + รุ่น + จุดที่ผิดปกติ + พื้นที่โดยประมาณ ทีมงานจะช่วยถามข้อมูลเพิ่มเฉพาะที่จำเป็น</span>
+      <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_condition_mid">ส่งรูปอาการ {SITE.lineId}</a>
+    </div>
+
+    <DiscoveryHub id="discover" groups={groups} title={`สำรวจต่อจาก ${page.label}`} intro="ดูหน้าสินค้าหลัก รุ่นที่เปิด Index แล้ว สภาพใกล้เคียง และคู่มือที่ช่วยตัดสินใจก่อนขาย โดยไม่ลิงก์ไปหน้า HOLD_NOINDEX" />
+
+    <section id="condition-faq">
+      <p class="eyebrow">คำถามก่อนขายตามสภาพ</p>
+      <h2>คำถามที่พบบ่อยเกี่ยวกับ {page.label}</h2>
+      <div class="faq">
+        {content.faq.map(([q, a]) => <details class="faq__item"><summary>{q}</summary><p>{a}</p></details>)}
+      </div>
+    </section>
+  </div>
+
+  <section class="section cta condition-final">
+    <div class="container cta__in">
+      <p class="eyebrow">แจ้งอาการตรง · ดูรุ่นจริง · ค่อยตัดสินใจ</p>
+      <h2 class="cta__head">มี {page.label} อยู่? ส่งสภาพจริงให้เช็กราคาก่อน</h2>
+      <p>ไม่ต้องซ่อม ไม่ต้องเดาอาการ และไม่ผูกมัด ราคา final ยืนยันหลังตรวจสภาพจริงและตกลงกับผู้ขาย.</p>
+      <div class="cta__btns">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_condition_final">LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone" data-cta-location="released_condition_final">โทร {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .condition-hero { padding: 42px 0 36px; background: linear-gradient(180deg, rgba(245, 158, 11, .06), rgba(255,255,255,0)); border-bottom: 1px solid var(--line); }
+  .condition-hero__grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(300px,390px); gap: 36px; align-items: start; }
+  .condition-hero h1 { margin: 8px 0 16px; overflow-wrap: anywhere; }
+  .condition-hero__lede { max-width: 72ch; color: var(--ink-soft); font-size: 1.06rem; line-height: 1.75; }
+  .condition-hero__trust { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 18px 0; color: var(--ink-soft); font-size: .92rem; }
+  .condition-body { max-width: 850px; padding-block: 28px 64px; }
+  .condition-body section, .condition-body aside { scroll-margin-top: 130px; }
+  .condition-body p, .condition-body li { color: var(--ink-soft); line-height: 1.75; }
+  .condition-signal-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin: 18px 0; }
+  .condition-signal-grid article { display: grid; grid-template-columns: 28px 1fr; gap: 8px; border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 15px; }
+  .condition-signal-grid article > span { color: #d97706; font-weight: 800; }
+  .condition-signal-grid p { margin: 0; }
+  .condition-check-list { display: grid; gap: 9px; padding-left: 24px; }
+  .condition-note { border-left: 4px solid #f59e0b; padding: 12px 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+  .condition-factor-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+  .condition-factor-grid span { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; background: #fff; color: var(--ink); font-weight: 650; }
+  .condition-price-policy { margin: 18px 0; padding: 18px 20px; border-radius: 12px; background: var(--mist); }
+  .condition-price-policy p { margin: 8px 0 0; }
+  .condition-prepare-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin: 18px 0; }
+  .condition-prepare-grid > div { display: grid; grid-template-columns: 34px 1fr; gap: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: #fff; }
+  .condition-prepare-grid span { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #fff7ed; font-weight: 800; color: #b45309; }
+  .condition-prepare-grid p { margin: 2px 0 0; }
+  .condition-warning { margin: 28px 0; padding: 20px; border: 1px solid #fed7aa; border-left: 4px solid #f59e0b; border-radius: 12px; background: #fffbeb; }
+  .condition-warning h2 { margin-top: 0; }
+  .condition-source { margin: 24px 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .condition-source p { margin: 6px 0 0; font-size: .9rem; }
+  .condition-inline-cta { margin-block: 30px; }
+  .condition-final { border-top: 1px solid var(--line); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+  @media (max-width: 900px) { .condition-hero__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .condition-hero { padding-top: 28px; }
+    .condition-hero__trust { display: grid; }
+    .condition-signal-grid, .condition-prepare-grid { grid-template-columns: 1fr; }
+  }
+</style>

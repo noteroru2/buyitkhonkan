@@ -1,0 +1,27 @@
+{
+  "baseline": "CONTENT_BATCH_15",
+  "protectedFiles": {
+    "src/data/categories.js": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+    "src/data/brandPages.js": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+    "src/data/modelPages.js": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+    "src/data/conditionPages.js": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+    "src/data/localPages.js": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+    "src/data/site.js": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+    "src/data/architecture/_shared.js": "d60a35e15d1493236bc026fa8f85f2e0b7f99008f2b513060ef8459398856741",
+    "src/data/architecture/models.js": "17703622f93a3fc5a705320ed99c0eaccf2689cd75b34a40ca1ef69426192349",
+    "src/data/architecture/conditions.js": "8b9d1b286a7b3cf777f2bb9b6b1e807ac9e020b2dddf1a5f6f2e279aa97ad2a3",
+    "src/data/architecture/b2b.js": "d8058ce9cc936b93480dbce2fed0e1f6380bf0e3e966c9584424a8e94b14194c",
+    "src/data/architecture/districts.js": "9a8b84d31696c180538c5620cd62a7695ed826335deb5ec4003394143cb37b19",
+    "src/data/architecture/guides.js": "ab0a56fe83578043698c45cd20cd7bb38f09f945a9f5815d7b125e53e9eeb88a",
+    "src/data/highIntentModelContent.js": "a62083eab108a5ae45fc2502dcfbf965a576a1bb1cb4661f71da5908136c8690",
+    "src/data/highIntentModelContentBatch13.js": "79f601111bf570b8ee970534955a5b0bf3f74b38485510e67af2d11777f9fc84",
+    "src/data/highIntentModelContentBatch14.js": "d38e8bb626e3d07d5917ca334936c2d649cb393a72361b7d4c0c8cb09fad6bb1",
+    "src/data/highIntentConditionContent.js": "626e7933fd70828c07bc96544e4bcbda885fb9ce58c7ff97dc0f0e91cfe6a441",
+    "src/data/highIntentB2BContent.js": "bf476ce60ab6e685363d8cde186502188fb283110a81ff043a926b98e87c3489",
+    "src/data/highIntentDistrictContent.js": "73a00ab49a0a40715db046f6afde7472694631cfc6efd415ef263f359cb0641e",
+    "src/data/highIntentGuideContent.js": "10da786e3bf095f5ef2ebb1d9fc8e3ae9b8021e00fddcdda30039429d736b581",
+    "src/layouts/Base.astro": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+    "src/pages/บทความ/[slug].astro": "621198273397188671af131deff495bb747cadd3a57c14a421268aacdda9db05",
+    "astro.config.mjs": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db"
+  }
+}

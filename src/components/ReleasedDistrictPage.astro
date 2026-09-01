@@ -1,0 +1,203 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import MoneyPageNav from './MoneyPageNav.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import DiscoveryHub from './DiscoveryHub.astro';
+import { SITE } from '../data/categories.js';
+import { getReleasedDistrictDiscovery } from '../data/discoveryLinks.js';
+
+const { page, content } = Astro.props;
+const groups = getReleasedDistrictDiscovery(page, content);
+const breadcrumbs = [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'พื้นที่ให้บริการ', href: '/พื้นที่ให้บริการ/' },
+  { name: content.area, href: page.path },
+];
+---
+
+<main id="main-content" class="released-district-page article" data-content-batch={content.releaseBatch || 8} data-lifecycle={page.lifecycle}>
+  <section class="district-hero">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="district-hero__grid">
+        <div>
+          <p class="eyebrow">District / Local Area Authority · CONTENT VERIFIED</p>
+          <h1>{page.h1}</h1>
+          <p class="district-hero__lede">{content.intro}</p>
+          <div class="district-hero__facts" aria-label={`ข้อมูลบริการพื้นที่${content.area}`}>
+            {Number.isFinite(content.distanceKm) ? (
+              <span><strong>≈ {content.distanceKm} กม.</strong> ระยะทางอ้างอิงจากอำเภอเมือง</span>
+            ) : (
+              <span><strong>ใช้พิกัดจริง</strong> แหล่งจังหวัดไม่ระบุตัวเลขระยะทาง</span>
+            )}
+            <span><strong>จัดตามรอบ</strong> ไม่รับประกันรับทันทีทุกวัน</span>
+            <span><strong>Service-area</strong> ไม่มีหน้าร้าน walk-in ในขอนแก่น</span>
+          </div>
+          <div class="cta-row">
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_district_hero">ส่งรูป + พื้นที่ LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone" data-cta-location="released_district_hero">โทร {SITE.phone}</a>
+          </div>
+        </div>
+        <aside class="district-brief-card" aria-label="ข้อมูลที่ควรส่งก่อนจัดรอบ">
+          <p class="eyebrow">ก่อนถามคิวรับถึงที่</p>
+          <h2>ส่งข้อมูล 4 อย่างให้พอวางรอบ</h2>
+          <ol>
+            <li><strong>สินค้า</strong><span>รุ่น / สเปก / จำนวน</span></li>
+            <li><strong>สภาพ</strong><span>รูปตำหนิและอุปกรณ์ที่มี</span></li>
+            <li><strong>พื้นที่</strong><span>พิกัดคร่าว ๆ ไม่ต้องส่งบ้านเลขที่ก่อน</span></li>
+            <li><strong>ลักษณะงาน</strong><span>เครื่องเดียว / หลายชิ้น / บริษัท</span></li>
+          </ol>
+          <a href={SITE.lineHref} class="btn btn--line btn--full" data-track-event="click_line" data-cta-location="released_district_brief">ส่งข้อมูลประเมินก่อนนัด</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="money-nav-wrap">
+    <MoneyPageNav items={[
+      { href: '#district-trust', label: 'ตรวจสอบก่อนขาย' },
+      { href: '#service-pattern', label: 'รูปแบบนัดรับ' },
+      { href: '#suitable-items', label: 'สินค้าที่เหมาะกับรอบ' },
+      { href: '#prepare', label: 'เตรียมข้อมูล' },
+      { href: '#local-safety', label: 'ข้อควรรู้ก่อนนัด' },
+      { href: '#discover', label: 'พื้นที่/สินค้าที่เกี่ยวข้อง' },
+      { href: '#district-faq', label: 'FAQ' },
+    ]} />
+  </div>
+
+  <TrustProofSystem variant="money" itemLabel={`สินค้าไอทีใน${content.area}`} location="district_trust" />
+
+  <div class="container district-body">
+    <section id="service-pattern">
+      <p class="eyebrow">Route-first service</p>
+      <h2>นัดรับใน{content.area}อย่างไรให้ไม่เสียเที่ยว</h2>
+      <div class="district-two-col">
+        <div>
+          <h3>รูปแบบนัดที่ใช้กับพื้นที่นี้</h3>
+          <p>{content.meeting}</p>
+          <p>{content.travelNote}</p>
+        </div>
+        <aside class="district-route-card">
+          <span>แนวจัดรอบ</span>
+          <strong>{content.corridor}</strong>
+          <p>จุดนัดและเวลาจริงยืนยันหลังทีมงานเห็นสินค้า จำนวน และพิกัดคร่าว ๆ แล้วเท่านั้น</p>
+        </aside>
+      </div>
+
+      <h3>จุดอ้างอิงสำหรับคุยเรื่องนัด</h3>
+      <div class="district-chip-grid">{content.referencePoints.map((item) => <span>{item}</span>)}</div>
+      <p class="district-note">รายการด้านบนเป็นลักษณะจุดนัด ไม่ใช่การอ้างว่ามีสาขาหรือจุดรับสินค้าถาวรในพื้นที่</p>
+    </section>
+
+    <section id="suitable-items">
+      <p class="eyebrow">สินค้าที่จัดรอบได้เหมาะกว่าเมื่อข้อมูลครบ</p>
+      <h2>ของแบบไหนควรส่งประเมินจาก{content.area}</h2>
+      <div class="district-suitable-grid">
+        {content.suitable.map((item) => <article><span aria-hidden="true">▣</span><p>{item}</p></article>)}
+      </div>
+      <p>ของนอกเหนือจากรายการนี้ยังส่งถามได้ การเลือกสินค้าด้านบนเป็นการจัดลำดับ UX สำหรับพื้นที่ ไม่ใช่เงื่อนไขว่ารับซื้อเฉพาะหมวดดังกล่าว</p>
+    </section>
+
+    <section id="prepare">
+      <p class="eyebrow">ข้อมูลครบก่อนเดินทาง</p>
+      <h2>เช็กลิสต์ก่อนส่ง LINE</h2>
+      <ol class="district-checklist">
+        {content.checklist.map((item, index) => <li><span>{index + 1}</span><p>{item}</p></li>)}
+      </ol>
+      <div class="money-inline-cta district-inline-cta">
+        <strong>ยังไม่รู้รุ่นละเอียดก็เริ่มได้</strong>
+        <span>ถ่ายรูปสติ๊กเกอร์รุ่น / หน้า About / สเปก / ตำหนิ แล้วส่งพร้อมคำว่า “อยู่{content.area}” ทีมงานจะถามข้อมูลที่ขาดเป็นข้อ ๆ</span>
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_district_mid">LINE {SITE.lineId}</a>
+      </div>
+    </section>
+
+    <section id="local-safety">
+      <p class="eyebrow">ลดความคลาดเคลื่อนก่อนนัด</p>
+      <h2>ข้อควรรู้เฉพาะงานต่างพื้นที่</h2>
+      <ul class="district-caution-list">{content.cautions.map((item) => <li>{item}</li>)}</ul>
+      <div class="district-price-policy">
+        <strong>ราคาในแชทเป็นราคาเบื้องต้น ไม่ใช่คำรับรองราคาสุดท้าย</strong>
+        <p>ราคาสุดท้ายยืนยันหลังตรวจรุ่น สเปก สภาพ อุปกรณ์ และจำนวนจริง หากข้อมูลหน้างานต่างจากที่ส่งมา ทีมงานต้องอธิบายส่วนต่างก่อนผู้ขายตัดสินใจส่งมอบ</p>
+      </div>
+    </section>
+
+    <section class="district-source" aria-label="แหล่งอ้างอิงข้อมูลพื้นที่">
+      <p class="eyebrow">Source transparency</p>
+      <h2>ข้อมูลเส้นทางและโครงสร้างพื้นที่อ้างอิงจากไหน</h2>
+      <p>ตัวเลขระยะทางที่มีในหน้านี้ใช้เป็นข้อมูลประกอบการอธิบายการจัดรอบ ไม่ใช่ค่าระยะทาง GPS จากบ้านลูกค้าแต่ละราย; หากแหล่งจังหวัดไม่ระบุตัวเลข เราจะใช้พิกัดจริงก่อนจัดรอบแทน</p>
+      <ul>{content.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul>
+    </section>
+
+    <DiscoveryHub
+      id="discover"
+      groups={groups}
+      title={`สำรวจต่อจากพื้นที่${content.area}`}
+      intro="ไปยังหน้าสินค้าที่เหมาะกับพื้นที่ ดูอำเภอใกล้เคียง/เส้นทางต่อเนื่อง งานบริษัท และคู่มือก่อนนัด โดยระบบแสดงเฉพาะหน้าที่เปิด INDEX แล้ว"
+    />
+
+    <section id="district-faq">
+      <p class="eyebrow">คำถามก่อนนัดรับ</p>
+      <h2>FAQ สำหรับผู้ขายใน{content.area}</h2>
+      <div class="faq">
+        {content.faq.map(([q, a]) => <details class="faq__item"><summary>{q}</summary><p>{a}</p></details>)}
+      </div>
+    </section>
+  </div>
+
+  <section class="section cta district-final">
+    <div class="container cta__in">
+      <p class="eyebrow">ส่งข้อมูลก่อน · เช็กคิวก่อน · ค่อยนัด</p>
+      <h2 class="cta__head">มีสินค้าไอทีอยู่{content.area}? ส่งรูปให้ประเมินก่อนออกคิว</h2>
+      <p>ไม่ต้องขนของเข้าตัวเมืองก่อน และไม่ต้องส่งข้อมูลส่วนตัวเกินจำเป็นในข้อความแรก</p>
+      <div class="cta__btns">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_district_final">LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone" data-cta-location="released_district_final">โทร {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .district-hero{padding:42px 0 36px;background:linear-gradient(180deg,rgba(37,99,235,.055),rgba(255,255,255,0));border-bottom:1px solid var(--line)}
+  .district-hero__grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,.75fr);gap:30px;align-items:start}
+  .district-hero h1{max-width:900px;margin:10px 0 16px}
+  .district-hero__lede{font-size:1.08rem;line-height:1.8;color:var(--ink-soft);max-width:840px}
+  .district-hero__facts{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}
+  .district-hero__facts span{display:inline-flex;gap:6px;align-items:center;padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:.9rem;color:#334155}
+  .district-brief-card{border:1px solid rgba(37,99,235,.18);background:#fff;border-radius:22px;padding:22px;box-shadow:0 18px 40px rgba(15,23,42,.07)}
+  .district-brief-card h2{font-size:1.18rem;margin:6px 0 14px}
+  .district-brief-card ol{list-style:none;padding:0;margin:0 0 16px;display:grid;gap:10px}
+  .district-brief-card li{display:grid;gap:2px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .district-brief-card li:last-child{border-bottom:0}
+  .district-brief-card span{color:var(--ink-soft);font-size:.9rem}
+  .btn--full{width:100%;justify-content:center}
+  .district-body{max-width:1120px;padding-block:36px 72px}
+  .district-body section{scroll-margin-top:110px;margin-bottom:52px}
+  .district-body h2{margin:6px 0 16px}
+  .district-body h3{margin:0 0 10px}
+  .district-body p,.district-body li{color:#334155;line-height:1.75}
+  .district-two-col{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.7fr);gap:22px;align-items:start}
+  .district-route-card{border:1px solid var(--line);border-radius:18px;padding:20px;background:#f8fafc}
+  .district-route-card span{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:7px}
+  .district-route-card strong{font-size:1.05rem;color:#0f172a}
+  .district-chip-grid{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
+  .district-chip-grid span{padding:8px 11px;border-radius:999px;background:#f1f5f9;color:#334155;font-size:.9rem}
+  .district-note{font-size:.9rem;color:#64748b!important}
+  .district-suitable-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .district-suitable-grid article{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}
+  .district-suitable-grid article span{font-weight:800;color:#2563eb}
+  .district-suitable-grid article p{margin:0}
+  .district-checklist{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .district-checklist li{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:15px;background:#fff}
+  .district-checklist li>span{width:30px;height:30px;display:grid;place-items:center;flex:0 0 auto;border-radius:50%;background:#eff6ff;color:#1d4ed8;font-weight:800}
+  .district-checklist p{margin:2px 0 0}
+  .district-inline-cta{margin-top:18px}
+  .district-caution-list{display:grid;gap:10px;padding-left:20px}
+  .district-price-policy{margin-top:18px;padding:18px;border-left:4px solid #f59e0b;background:#fffbeb;border-radius:12px}
+  .district-price-policy p{margin:6px 0 0}
+  .district-source{padding:20px;border:1px solid var(--line);border-radius:18px;background:#f8fafc}
+  .district-source ul{margin-bottom:0}
+  .district-final{margin-top:10px}
+  @media(max-width:860px){.district-hero__grid,.district-two-col{grid-template-columns:1fr}.district-suitable-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:560px){.district-hero{padding-top:28px}.district-body{padding-top:26px}.district-suitable-grid,.district-checklist{grid-template-columns:1fr}.district-hero__facts{display:grid}.district-hero__facts span{border-radius:14px}}
+</style>

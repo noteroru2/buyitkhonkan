@@ -1,0 +1,42 @@
+---
+const { items = [] } = Astro.props;
+---
+{items.length > 0 && (
+  <nav class="money-nav" aria-label="ข้ามไปยังหัวข้อสำคัญ">
+    <span class="money-nav__label">ดูข้อมูลเร็ว</span>
+    <div class="money-nav__links">
+      {items.map((item) => <a href={item.href}>{item.label}</a>)}
+    </div>
+  </nav>
+)}
+<style>
+  .money-nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto;
+    padding: 14px 18px;
+    max-width: 1160px;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    background: rgba(255,255,255,.96);
+    box-shadow: var(--shadow-sm);
+  }
+  .money-nav__label { flex: 0 0 auto; font-size: .82rem; font-weight: 800; color: var(--color-navy); }
+  .money-nav__links { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+  .money-nav__links::-webkit-scrollbar { display: none; }
+  .money-nav a {
+    flex: 0 0 auto;
+    padding: 7px 11px;
+    border-radius: 999px;
+    background: var(--color-soft-blue);
+    color: var(--color-primary-dark);
+    font-size: .8rem;
+    font-weight: 750;
+  }
+  .money-nav a:hover { text-decoration: none; background: #dfe7ff; }
+  @media (max-width: 700px) {
+    .money-nav { margin-inline: 17px; padding: 12px; align-items: flex-start; flex-direction: column; gap: 8px; }
+    .money-nav__links { width: 100%; }
+  }
+</style>

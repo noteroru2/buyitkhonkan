@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DiscoveryHub from '../components/DiscoveryHub.astro';
+import { getConditionHubDiscovery } from '../data/discoveryLinks.js';
+
+const title = 'สภาพสินค้าแบบไหนขายได้บ้าง จอแตก เปิดไม่ติด แบตบวม | WINNER IT';
+const description = 'รวมหน้าสภาพสินค้าไอทีที่ยังส่งประเมินได้ เช่น จอแตก เปิดไม่ติด แบตบวม ติดบัญชี และไม่มีกล่อง พร้อมแนวทางประเมินราคา';
+const discoveryGroups = getConditionHubDiscovery();
+const breadcrumbItems = [{ name: 'หน้าแรก', href: '/' }, { name: 'สภาพสินค้าที่ขายได้', href: '/สภาพสินค้าที่ขายได้/' }];
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, Astro.site).href,
+  })),
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <main id="main-content">
+    <section class="section">
+      <div class="container page-wrap">
+        <Breadcrumbs items={breadcrumbItems} />
+        <p class="eyebrow">Condition Hub</p>
+        <h1>สภาพสินค้าแบบไหนยังขายได้บ้าง</h1>
+        <p class="lede">
+          ของไอทีมีตำหนิไม่ได้แปลว่าไม่มีราคา แต่ต้องแจ้งสภาพจริงตั้งแต่ก่อนนัดรับ
+          เพื่อให้ทีมประเมินตีราคาใกล้เคียงหน้างานที่สุด
+        </p>
+        <DiscoveryHub
+          id="condition-discovery"
+          groups={discoveryGroups}
+          title="เลือกตามอาการ แล้วไปต่อยังหน้าสินค้าที่ตรงรุ่น"
+          intro="เริ่มจากสภาพเครื่องที่ตรงที่สุด หรือย้อนกลับไปดูหมวดสินค้าเพื่อเช็กรุ่นและปัจจัยราคาแบบละเอียด"
+        />
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .page-wrap { max-width: 1120px; }
+  .lede { max-width: 760px; color: var(--ink-soft); margin: 12px 0 28px; }
+</style>

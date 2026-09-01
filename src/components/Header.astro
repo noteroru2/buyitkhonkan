@@ -1,0 +1,341 @@
+---
+import { SITE } from '../data/site.js';
+---
+
+<header class="hdr">
+  <div class="container hdr__in">
+    <a href="/" class="hdr__logo" aria-label="WINNER IT ขอนแก่น">
+      <span class="hdr__mark">IT</span>
+      <span class="hdr__brand">
+        <span class="hdr__name">WINNER <strong>IT</strong></span>
+        <span class="hdr__area">รับซื้อไอที · ขอนแก่น</span>
+      </span>
+    </a>
+
+    <nav class="hdr__nav" aria-label="เมนูหลัก">
+      <a href="/สินค้าที่รับซื้อ/">สินค้าที่รับซื้อ</a>
+      <a href="/พื้นที่ให้บริการ/">พื้นที่บริการ</a>
+      <a href="/#steps">ขั้นตอน</a>
+      <a href="/บทความ/">บทความ</a>
+      <a href="/เกี่ยวกับเรา/">เกี่ยวกับเรา</a>
+    </nav>
+
+    <div class="hdr__actions">
+      <a
+        href={SITE.phoneHref}
+        class="hdr__phone"
+        data-track-event="phone_click"
+        data-cta-location="header"
+        aria-label={`โทร ${SITE.phone}`}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+        <span>{SITE.phone}</span>
+      </a>
+      <a
+        href={SITE.lineHref}
+        target="_blank"
+        rel="noopener"
+        class="hdr__line"
+        data-track-event="line_click"
+        data-cta-location="header"
+        aria-label={`ประเมินราคาฟรีผ่าน LINE ${SITE.lineId}`}
+      >
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 7C12.82 7 7 11.99 7 18.15c0 4.53 3.01 8.48 7.51 10.69-.33 1.21-1.19 4.41-1.36 5.09-.22.84.31 1.17.92.76.48-.31 6.32-4.18 8.05-5.38.37.05.74.08 1.14.08 7.18 0 13-4.99 13-11.14C36.26 11.99 27.18 7 20 7z" fill="currentColor"/>
+          <path d="M15.6 21.6v-6h1.42v4.9h2.72v1.1H15.6zm4.58 0v-6h1.42v6h-1.42zm2.18 0v-6h1.42l2.72 3.82V15.6h1.42v6H26.5l-2.72-3.82v3.82h-1.42z" fill="#06C755"/>
+        </svg>
+        <span class="hdr__line-copy">
+          <strong>ประเมินฟรีผ่าน LINE</strong>
+          <small>{SITE.lineId}</small>
+        </span>
+      </a>
+    </div>
+
+    <a
+      href={SITE.lineHref}
+      target="_blank"
+      rel="noopener"
+      class="hdr__mobile-line"
+      data-track-event="line_click"
+      data-cta-location="mobile_header"
+      aria-label={`ทัก LINE ${SITE.lineId}`}
+    >
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 7C12.82 7 7 11.99 7 18.15c0 4.53 3.01 8.48 7.51 10.69-.33 1.21-1.19 4.41-1.36 5.09-.22.84.31 1.17.92.76.48-.31 6.32-4.18 8.05-5.38.37.05.74.08 1.14.08 7.18 0 13-4.99 13-11.14C36.26 11.99 27.18 7 20 7z" fill="currentColor"/></svg>
+      <span>LINE</span>
+    </a>
+
+    <button class="hdr__menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="เปิดเมนูหลัก">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu__overlay" data-mobile-menu-close hidden></div>
+  <aside id="mobile-menu" class="mobile-menu" aria-label="เมนูมือถือ" aria-hidden="true" tabindex="-1">
+    <div class="mobile-menu__head">
+      <div>
+        <strong>WINNER IT</strong>
+        <small>รับซื้อสินค้าไอที ขอนแก่น</small>
+      </div>
+      <button type="button" class="mobile-menu__close" data-mobile-menu-close aria-label="ปิดเมนู">×</button>
+    </div>
+
+    <a
+      href={SITE.lineHref}
+      target="_blank"
+      rel="noopener"
+      class="mobile-menu__line"
+      data-track-event="line_click"
+      data-cta-location="mobile_menu"
+    >
+      <span class="mobile-menu__line-icon">LINE</span>
+      <span><strong>ส่งรูปประเมินราคาฟรี</strong><small>{SITE.lineId} · ช่องทางแนะนำ</small></span>
+      <span aria-hidden="true">→</span>
+    </a>
+
+    <nav>
+      <a href="/สินค้าที่รับซื้อ/" data-track-event="mobile_menu_item_click">สินค้าที่รับซื้อ</a>
+      <a href="/พื้นที่ให้บริการ/" data-track-event="mobile_menu_item_click">พื้นที่ให้บริการ</a>
+      <a href="/#steps" data-track-event="mobile_menu_item_click">ขั้นตอนการขาย</a>
+      <a href="/บทความ/" data-track-event="mobile_menu_item_click">บทความ</a>
+      <a href="/เกี่ยวกับเรา/" data-track-event="mobile_menu_item_click">เกี่ยวกับเรา</a>
+      <a href="/ติดต่อเรา/" data-track-event="mobile_menu_item_click">ติดต่อ</a>
+    </nav>
+    <a class="mobile-menu__phone" href={SITE.phoneHref} data-track-event="phone_click" data-cta-location="mobile_menu">โทร {SITE.phone}</a>
+  </aside>
+</header>
+
+<script>
+  const button = document.querySelector('.hdr__menu-button');
+  const drawer = document.querySelector('#mobile-menu');
+  const overlay = document.querySelector('.mobile-menu__overlay');
+  if (button instanceof HTMLButtonElement && drawer instanceof HTMLElement && overlay instanceof HTMLElement) {
+    const focusables = () => [...drawer.querySelectorAll('a, button')].filter((item) => item instanceof HTMLElement);
+    const close = () => {
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-label', 'เปิดเมนูหลัก');
+      drawer.setAttribute('aria-hidden', 'true');
+      overlay.hidden = true;
+      document.body.classList.remove('menu-open');
+      button.focus();
+    };
+    const open = () => {
+      button.setAttribute('aria-expanded', 'true');
+      button.setAttribute('aria-label', 'ปิดเมนูหลัก');
+      drawer.setAttribute('aria-hidden', 'false');
+      overlay.hidden = false;
+      document.body.classList.add('menu-open');
+      window.trackConversion?.('mobile_menu_open', { cta_location: 'header' });
+      focusables()[0]?.focus();
+    };
+    button.addEventListener('click', () => button.getAttribute('aria-expanded') === 'true' ? close() : open());
+    document.querySelectorAll('[data-mobile-menu-close]').forEach((item) => item.addEventListener('click', close));
+    drawer.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      drawer.setAttribute('aria-hidden', 'true');
+      overlay.hidden = true;
+      document.body.classList.remove('menu-open');
+      button.setAttribute('aria-expanded', 'false');
+    }));
+    document.addEventListener('keydown', (event) => {
+      if (drawer.getAttribute('aria-hidden') === 'true') return;
+      if (event.key === 'Escape') return close();
+      if (event.key !== 'Tab') return;
+      const items = focusables();
+      const first = items[0]; const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    });
+  }
+</script>
+
+<style>
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(18px) saturate(130%);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.86);
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.055);
+  }
+  .hdr__in {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 76px;
+  }
+  .hdr__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-navy);
+    min-height: 48px;
+    flex: 0 0 auto;
+  }
+  .hdr__logo:hover { text-decoration: none; }
+  .hdr__mark {
+    font-family: var(--font-display);
+    font-weight: 900;
+    background: linear-gradient(145deg, #0b1220 0%, #172554 100%);
+    color: var(--color-accent);
+    width: 42px;
+    height: 42px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 13px;
+    font-size: 0.94rem;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+  }
+  .hdr__brand { display: grid; line-height: 1.05; gap: 3px; }
+  .hdr__name { font-family: var(--font-display); font-size: 1.06rem; font-weight: 850; white-space: nowrap; }
+  .hdr__name strong { color: var(--color-primary); }
+  .hdr__area { color: var(--color-muted); font-size: 0.72rem; font-weight: 650; white-space: nowrap; }
+
+  .hdr__nav { display: flex; gap: 2px; margin-left: auto; align-items: center; }
+  .hdr__nav a {
+    color: #475467;
+    font-weight: 700;
+    font-size: 0.89rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding-inline: 9px;
+    border-radius: 10px;
+  }
+  .hdr__nav a:hover { color: var(--color-primary); background: var(--color-soft-blue); text-decoration: none; }
+
+  .hdr__actions { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+  .hdr__phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 8px 10px;
+    border-radius: 11px;
+    color: var(--color-navy);
+    font-size: 0.82rem;
+    font-weight: 750;
+  }
+  .hdr__phone:hover { background: var(--color-bg); text-decoration: none; }
+  .hdr__phone svg { width: 17px; height: 17px; color: var(--color-primary); }
+
+  .hdr__line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 7px 12px 7px 8px;
+    border-radius: 13px;
+    background: var(--color-line);
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(6, 199, 85, 0.22);
+    transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
+  }
+  .hdr__line:hover { color: #fff; text-decoration: none; transform: translateY(-1px); filter: brightness(1.02); box-shadow: 0 14px 28px rgba(6, 199, 85, 0.28); }
+  .hdr__line svg { width: 34px; height: 34px; flex: 0 0 34px; color: #fff; }
+  .hdr__line-copy { display: grid; gap: 1px; line-height: 1.1; }
+  .hdr__line-copy strong { font-size: 0.78rem; font-weight: 850; white-space: nowrap; }
+  .hdr__line-copy small { font-size: 0.7rem; color: rgba(255,255,255,.9); }
+
+  .hdr__mobile-line, .hdr__menu-button { display: none; }
+  .mobile-menu, .mobile-menu__overlay { display: none; }
+
+  @media (max-width: 1120px) {
+    .hdr__phone { display: none; }
+    .hdr__nav a { padding-inline: 7px; font-size: 0.86rem; }
+  }
+
+  @media (max-width: 920px) {
+    .hdr__in { min-height: 70px; gap: 10px; }
+    .hdr__nav, .hdr__actions { display: none; }
+    .hdr__mobile-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: auto;
+      min-height: 42px;
+      padding: 6px 10px 6px 7px;
+      border-radius: 12px;
+      background: #eafff1;
+      color: #079447;
+      border: 1px solid #b7efcb;
+      font-weight: 850;
+      font-size: 0.8rem;
+    }
+    .hdr__mobile-line:hover { text-decoration: none; background: #ddfbe8; }
+    .hdr__mobile-line svg { width: 27px; height: 27px; color: #06c755; }
+    .hdr__menu-button {
+      display: grid;
+      place-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .hdr__menu-button span { display: block; width: 21px; height: 2px; border-radius: 99px; background: var(--color-navy); }
+
+    .mobile-menu__overlay {
+      display: block;
+      position: fixed;
+      inset: 70px 0 0;
+      background: rgba(7, 15, 31, .52);
+      z-index: 55;
+      backdrop-filter: blur(2px);
+    }
+    .mobile-menu__overlay[hidden] { display: none; }
+    .mobile-menu {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 60;
+      width: min(88vw, 380px);
+      height: 100dvh;
+      padding: 20px 20px 90px;
+      background: #fff;
+      box-shadow: -18px 0 50px rgba(15, 23, 42, .2);
+      overflow-y: auto;
+    }
+    .mobile-menu[aria-hidden="true"] { display: none; }
+    .mobile-menu__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+    .mobile-menu__head > div { display: grid; gap: 3px; }
+    .mobile-menu__head strong { font-family: var(--font-display); color: var(--color-navy); font-size: 1.05rem; }
+    .mobile-menu__head small { color: var(--color-muted); font-size: .76rem; }
+    .mobile-menu__close { width: 44px; height: 44px; border: 0; background: var(--color-bg); color: var(--color-navy); border-radius: 12px; font-size: 1.8rem; }
+    .mobile-menu__line {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 11px;
+      align-items: center;
+      padding: 14px;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #06c755 0%, #03ad49 100%);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(6, 199, 85, .2);
+    }
+    .mobile-menu__line:hover { color: #fff; text-decoration: none; }
+    .mobile-menu__line-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: #fff; color: #06c755; font-size: .69rem; font-weight: 900; }
+    .mobile-menu__line > span:nth-child(2) { display: grid; gap: 2px; }
+    .mobile-menu__line strong { font-size: .9rem; }
+    .mobile-menu__line small { color: rgba(255,255,255,.88); font-size: .72rem; }
+    .mobile-menu nav { display: grid; }
+    .mobile-menu nav a { display: flex; align-items: center; min-height: 52px; padding: 10px 8px; border-bottom: 1px solid var(--color-border); color: var(--color-navy); font-weight: 750; }
+    .mobile-menu__phone { display: flex; align-items: center; justify-content: center; margin-top: 16px; min-height: 46px; border: 1px solid var(--color-border); border-radius: 12px; color: var(--color-navy); font-weight: 800; background: var(--color-bg); }
+    :global(body.menu-open) { overflow: hidden; }
+  }
+
+  @media (max-width: 430px) {
+    .hdr__mark { width: 38px; height: 38px; border-radius: 11px; }
+    .hdr__name { font-size: 0.94rem; }
+    .hdr__area { display: none; }
+    .hdr__logo { gap: 8px; }
+    .hdr__mobile-line { padding-right: 8px; }
+  }
+  @media (max-width: 360px) {
+    .hdr__mobile-line span { display: none; }
+    .hdr__mobile-line { padding: 6px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hdr__line { transition: none; } }
+</style>

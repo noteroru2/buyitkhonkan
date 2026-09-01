@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "baseline": "CONTENT_BATCH_16D",
+  "intentionalSourceChanges": [
+    "astro.config.mjs",
+    "src/pages/[slug].astro",
+    "src/pages/บทความ/[slug].astro",
+    "src/components/Footer.astro",
+    "package.json",
+    "scripts/audits/*historical-regression*.mjs",
+    "scripts/audits/final-architecture-review-audit.mjs"
+  ],
+  "protectedFilesChecked": 38,
+  "changedProtectedFiles": [],
+  "missingProtectedFiles": [],
+  "seoOwnershipDataUnchanged": true
+}

@@ -1,0 +1,210 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import {
+  getArchitectureChildren,
+  getArchitectureClusterPeers,
+  getArchitectureDirectoryEntries,
+  getArchitectureSiblings,
+} from '../data/architectureRegistry.js';
+
+const { page } = Astro.props;
+const children = getArchitectureChildren(page).slice(0, 24);
+const siblings = getArchitectureSiblings(page, 6);
+const clusterPeers = getArchitectureClusterPeers(page, 6);
+const directoryEntries = getArchitectureDirectoryEntries(page, 24);
+const related = clusterPeers.length > 0 ? clusterPeers : siblings;
+const seedLinks = page.seedLinks || [];
+const breadcrumbItems = [
+  { name: 'หน้าแรก', href: '/' },
+  ...(page.parent && page.parent !== '/' ? [{ name: 'หน้าหลักของคลัสเตอร์', href: page.parent }] : []),
+  { name: page.label, href: page.path },
+];
+
+const typeLabels = {
+  hub: 'Authority Hub',
+  model: 'Model / Series',
+  condition: 'Condition Intent',
+  b2b: 'B2B / Bulk Intent',
+  local: 'District Hub',
+  guide: 'Supporting Guide',
+};
+---
+
+<main id="main-content" class="architecture-page" data-lifecycle={page.lifecycle}>
+  <section class="architecture-hero">
+    <div class="container architecture-wrap">
+      <Breadcrumbs items={breadcrumbItems} />
+      <p class="eyebrow">{typeLabels[page.type] || page.type} · STRUCTURE ONLY</p>
+      <h1>{page.h1}</h1>
+      <p class="lede">
+        หน้านี้ถูกสร้างไว้ในโครงสร้างเว็บไซต์แล้ว แต่ยังไม่เปิดให้ Google จัดทำดัชนี
+        จนกว่าจะเติมข้อมูลเฉพาะหน้าและผ่าน Quality Gate ครบทุกข้อ
+      </p>
+      <div class="architecture-status" role="note" aria-label="สถานะหน้า">
+        <strong>Lifecycle:</strong> {page.lifecycle}
+        <span>·</span>
+        <strong>Cluster:</strong> {page.cluster}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container architecture-wrap">
+      <div class="architecture-grid">
+        <article class="card">
+          <p class="eyebrow">Content contract</p>
+          <h2>ส่วนเนื้อหาที่ต้องมี ก่อนเปิด Index</h2>
+          <ol class="architecture-list">
+            {page.requiredSections.map((section) => <li>{section}</li>)}
+          </ol>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">Release gate</p>
+          <h2>เงื่อนไขก่อนเปลี่ยนเป็น INDEX</h2>
+          <ul class="architecture-list">
+            {page.releaseGate.map((gate) => <li>{gate}</li>)}
+          </ul>
+        </article>
+      </div>
+
+      {(page.parent || page.directory) && (
+        <section class="architecture-links">
+          <h2>Parent / Directory links</h2>
+          <div class="architecture-link-grid">
+            {page.parent && (
+              <a href={page.parent}>
+                <strong>Primary parent</strong>
+                <span>{page.parent}</span>
+              </a>
+            )}
+            {page.directory && page.directory !== page.parent && (
+              <a href={page.directory}>
+                <strong>Directory hub</strong>
+                <span>{page.directory}</span>
+              </a>
+            )}
+          </div>
+        </section>
+      )}
+
+      {seedLinks.length > 0 && (
+        <section class="architecture-links">
+          <h2>Seed links ไปหน้าที่เปิดใช้งานแล้ว</h2>
+          <div class="architecture-link-grid">
+            {seedLinks.map((item) => (
+              <a href={item.href}>
+                <strong>{item.label}</strong>
+                <span>{item.href}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {directoryEntries.length > 0 && (
+        <section class="architecture-links">
+          <h2>Cluster entry points</h2>
+          <div class="architecture-link-grid">
+            {directoryEntries.map((item) => (
+              <a href={item.path}>
+                <strong>{item.label}</strong>
+                <span>{item.cluster}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {children.length > 0 && (
+        <section class="architecture-links">
+          <h2>Child pages ในโครงสร้าง</h2>
+          <div class="architecture-link-grid">
+            {children.map((item) => (
+              <a href={item.path}>
+                <strong>{item.label}</strong>
+                <span>{item.type} · {item.lifecycle}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {related.length > 0 && (
+        <section class="architecture-links">
+          <h2>Sibling / Cluster links</h2>
+          <div class="architecture-link-grid">
+            {related.map((item) => (
+              <a href={item.path}>
+                <strong>{item.label}</strong>
+                <span>{item.cluster}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  </section>
+</main>
+
+<style>
+  .architecture-hero {
+    padding-block: 48px 36px;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.035), transparent);
+  }
+  .architecture-wrap { max-width: 960px; }
+  .architecture-page .lede {
+    max-width: 70ch;
+    margin-top: 14px;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+  .architecture-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 12px 14px;
+    border: 1px dashed var(--line);
+    border-radius: 8px;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+  .architecture-grid {
+    display: grid;
+    gap: 16px;
+  }
+  .architecture-grid .card { padding: 22px; }
+  .architecture-grid h2,
+  .architecture-links h2 { margin: 4px 0 14px; font-size: 1.2rem; }
+  .architecture-list { margin: 0; padding-left: 22px; }
+  .architecture-list li { margin: 7px 0; color: var(--ink-soft); }
+  .architecture-links { margin-top: 28px; }
+  .architecture-parent {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-weight: 700;
+  }
+  .architecture-link-grid {
+    display: grid;
+    gap: 10px;
+  }
+  .architecture-link-grid a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 13px 14px;
+    color: var(--ink);
+  }
+  .architecture-link-grid a:hover { text-decoration: none; border-color: var(--volt); }
+  .architecture-link-grid span { color: var(--ink-soft); font-size: 0.85rem; }
+  @media (min-width: 760px) {
+    .architecture-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .architecture-link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>

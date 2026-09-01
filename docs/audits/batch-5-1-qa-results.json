@@ -1,0 +1,2150 @@
+{
+  "timestamp": "2026-07-14T11:20:03.508Z",
+  "pages": [
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 113,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-360-after.png"
+    },
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 133,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-390-after.png"
+    },
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 133,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-430-after.png"
+    },
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 87,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-768-after.png"
+    },
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 174,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-1024-after.png"
+    },
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 204,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-1440-after.png"
+    },
+    {
+      "page": "homepage",
+      "path": "/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที ขอนแก่น\nนัดรับถึงที่ จ่ายสดหน้างาน",
+        "h1Visible": true,
+        "h1Height": 204,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที ขอนแก่น จ่ายสด นัดรับถึงที่ | WINNER IT",
+        "description": "WINNER IT โดยบริษัท อำพล เทรดดิ้ง จำกัด บริการประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น โน้ตบุ๊ค MacBook iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม กล้อง ประเมินผ่าน LINE @buyhub จ่ายเงินสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "homepage-1920-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 127,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-360-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 133,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-390-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 133,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-430-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 87,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-768-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 116,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-1024-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-1440-after.png"
+    },
+    {
+      "page": "notebook",
+      "path": "/notebook/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อโน้ตบุ๊ค ขอนแก่น ประเมินตามรุ่นและสภาพ",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อโน้ตบุ๊ค ขอนแก่น ทุกรุ่น ประเมินราคาอิงตลาดจริง | WINNER IT",
+        "description": "รับซื้อโน้ตบุ๊คมือสองขอนแก่น ทุกยี่ห้อ Acer Asus Lenovo HP Dell MSI และ MacBook ประเมินราคาฟรีผ่าน LINE @buyhub ประเมินราคาเบื้องต้นผ่าน LINE รับถึงที่ จ่ายสดหรือโอนหน้างาน",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/notebook/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "notebook-1920-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 127,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-360-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 133,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-390-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 133,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-430-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 87,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-768-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 116,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-1024-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-1440-after.png"
+    },
+    {
+      "page": "local-page",
+      "path": "/รับซื้อไอที-เมืองขอนแก่น/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับไวตามคิวงานจริง",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "รับซื้อสินค้าไอที เมืองขอนแก่น นัดรับถึงที่ ประเมินราคาฟรี | WINNER IT",
+        "description": "รับซื้อสินค้าไอทีในอำเภอเมืองขอนแก่น โน้ตบุ๊ค iPhone คอมพิวเตอร์ การ์ดจอ เครื่องเกม นัดรับตามจุดกลางจริง ประเมินผ่าน LINE @buyhub",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "local-page-1920-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 85,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-360-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 89,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-390-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 89,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-430-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 46,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-768-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 115,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-1024-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-1440-after.png"
+    },
+    {
+      "page": "blog-index",
+      "path": "/blog/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ความรู้ก่อนขายของไอที ให้ได้ราคาเต็ม",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "บทความความรู้ ขายของไอทีให้ได้ราคา | WINNER IT ขอนแก่น",
+        "description": "รวมบทความเช็คราคารับซื้อสินค้าไอทีมือสอง เทคนิคเตรียมเครื่องก่อนขาย และวิธีขายของไอทีในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย โดยทีมงาน WINNER IT",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-index-1920-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 108,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 324,
+        "articleHeaderWidth": 324,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-360-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 120,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 354,
+        "articleHeaderWidth": 354,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-390-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 132,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 394,
+        "articleHeaderWidth": 394,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-430-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 103,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 728,
+        "articleHeaderWidth": 728,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-768-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 125,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 820,
+        "articleHeaderWidth": 940,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-1024-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 125,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 820,
+        "articleHeaderWidth": 940,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-1440-after.png"
+    },
+    {
+      "page": "blog-article",
+      "path": "/blog/macbook-resale-price/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 125,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 820,
+        "articleHeaderWidth": 940,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ MacBook มือสอง ทุกรุ่น อัปเดต 2569 ขายที่ไหนได้ราคาดี | WINNER IT",
+        "description": "เช็คราคารับซื้อ MacBook มือสองล่าสุด ทั้ง MacBook Air M1 M2 M3 และ MacBook Pro พร้อมปัจจัยที่ทำให้ราคาขึ้นลง และเทคนิคขาย MacBook ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/macbook-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-1920-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 144,
+        "h1LinesApprox": 4,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 324,
+        "articleHeaderWidth": 324,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-360-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 160,
+        "h1LinesApprox": 4,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 354,
+        "articleHeaderWidth": 354,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-390-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 176,
+        "h1LinesApprox": 4,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 394,
+        "articleHeaderWidth": 394,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-430-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 155,
+        "h1LinesApprox": 3,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 728,
+        "articleHeaderWidth": 728,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-768-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 125,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 820,
+        "articleHeaderWidth": 940,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-1024-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 125,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 820,
+        "articleHeaderWidth": 940,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-1440-after.png"
+    },
+    {
+      "page": "blog-article-other",
+      "path": "/blog/iphone-resale-price/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท อัปเดตกรกฎาคม 2569",
+        "h1Visible": true,
+        "h1Height": 125,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 820,
+        "articleHeaderWidth": 940,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ราคารับซื้อ iPhone มือสอง แต่ละรุ่นขายได้กี่บาท ตารางราคาล่าสุด 2569 | WINNER IT",
+        "description": "เช็คราคารับซื้อ iPhone มือสองล่าสุดทุกรุ่น iPhone 16 15 14 13 12 พร้อมปัจจัยที่ทำให้ราคาต่างกัน และเทคนิคขาย iPhone ในขอนแก่นให้ได้เงินเต็มเม็ดเต็มหน่วย",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/blog/iphone-resale-price/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "blog-article-other-1920-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "360",
+      "status": 200,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 85,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-360-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "390",
+      "status": 200,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 89,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-390-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "430",
+      "status": 200,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 89,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-430-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "768",
+      "status": 200,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 43,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-768-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "1024",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 58,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-1024-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "1440",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-1440-after.png"
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "viewport": "1920",
+      "status": 200,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ติดต่อ WINNER IT ขอนแก่น",
+        "h1Visible": true,
+        "h1Height": 136,
+        "h1LinesApprox": 2,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ติดต่อเรา | WINNER IT ขอนแก่น",
+        "description": "ติดต่อ WINNER IT ผ่าน LINE @buyhub หรือโทร 095-547-9408 สำหรับประเมินและนัดรับซื้อสินค้าไอทีในจังหวัดขอนแก่น",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/contact/",
+        "robots": "",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "contact-1920-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "360",
+      "status": 404,
+      "overflow": {
+        "docWidth": 360,
+        "bodyWidth": 360,
+        "width": 360,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 42,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "324px",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-360-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "390",
+      "status": 404,
+      "overflow": {
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "width": 390,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 44,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 134,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "354px",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-390-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "430",
+      "status": 404,
+      "overflow": {
+        "docWidth": 430,
+        "bodyWidth": 430,
+        "width": 430,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 44,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "394px",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-430-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "768",
+      "status": 404,
+      "overflow": {
+        "docWidth": 768,
+        "bodyWidth": 768,
+        "width": 768,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 43,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 142,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "706.562px",
+        "errorVisualVisible": false
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-768-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "1024",
+      "status": 404,
+      "overflow": {
+        "docWidth": 1024,
+        "bodyWidth": 1024,
+        "width": 1024,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 58,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "515.188px 380.812px",
+        "errorVisualVisible": true
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-1024-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "1440",
+      "status": 404,
+      "overflow": {
+        "docWidth": 1440,
+        "bodyWidth": 1440,
+        "width": 1440,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 68,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "616.391px 455.594px",
+        "errorVisualVisible": true
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-1440-after.png"
+    },
+    {
+      "page": "404",
+      "path": "/not-found-batch-5-1-check/",
+      "viewport": "1920",
+      "status": 404,
+      "overflow": {
+        "docWidth": 1920,
+        "bodyWidth": 1920,
+        "width": 1920,
+        "overflowing": []
+      },
+      "checks": {
+        "h1Count": 1,
+        "h1Text": "ไม่พบหน้าที่ต้องการ",
+        "h1Visible": true,
+        "h1Height": 68,
+        "h1LinesApprox": 1,
+        "headerHeight": 72,
+        "headerBrandWidth": 206,
+        "stickyOverFooter": false,
+        "articleContentWidth": 0,
+        "articleHeaderWidth": 0,
+        "errorColumns": "616.391px 455.594px",
+        "errorVisualVisible": true
+      },
+      "metadata": {
+        "title": "ไม่พบหน้าที่ต้องการ | WINNER IT",
+        "description": "ไม่พบหน้าที่ต้องการบนเว็บไซต์ WINNER IT ขอนแก่น กลับไปยังหน้าหลัก หมวดรับซื้อสินค้าไอที หรือช่องทางติดต่อ",
+        "canonical": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/404/",
+        "robots": "noindex, follow",
+        "schemaErrors": []
+      },
+      "consoleErrors": [],
+      "failedRequests": [],
+      "pass": true,
+      "failures": [],
+      "screenshot": "404-1920-after.png"
+    }
+  ],
+  "staticSeo": {
+    "htmlCount": 87,
+    "sitemapUrls": 86,
+    "fourOhFourInSitemap": false,
+    "issues": [],
+    "duplicateTitles": []
+  },
+  "brokenLinks": [],
+  "summary": {
+    "checked": 56,
+    "failures": 0,
+    "screenshots": 56,
+    "staticSeoIssues": 0,
+    "duplicateTitles": 0,
+    "brokenLinks": 0,
+    "requiredScreenshotsPresent": 11
+  }
+}

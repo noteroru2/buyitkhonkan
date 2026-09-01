@@ -1,0 +1,214 @@
+{
+  "generatedAt": "2026-09-01T15:21:30.870Z",
+  "verdict": "PASS",
+  "strategyDecision": "STOP_PAGE_EXPANSION_AND_HARDEN",
+  "routeInventory": {
+    "existingDynamicRoutes": 55,
+    "physicalPagesIncluding404": 32,
+    "existingIndexableRoutes": 86,
+    "architectureRecords": 311,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "productionGeneratedRoutesExpected": 384,
+    "productionIndexableRoutesExpected": 383,
+    "sitemapUrlsExpected": 383,
+    "exceeds300By": 83,
+    "exceeds350By": 33
+  },
+  "architectureByType": {
+    "models": {
+      "index": 172,
+      "hold": 8
+    },
+    "conditions": {
+      "index": 24,
+      "hold": 0
+    },
+    "b2b": {
+      "index": 22,
+      "hold": 0
+    },
+    "districts": {
+      "index": 21,
+      "hold": 0
+    },
+    "guides": {
+      "index": 54,
+      "hold": 6
+    }
+  },
+  "holdPolicy": {
+    "counts": {
+      "KEEP_HOLD": 10,
+      "MERGE": 4
+    },
+    "releaseCandidatesStillHold": [],
+    "pages": [
+      {
+        "id": "model-lenovo-legion-7",
+        "type": "model",
+        "path": "/รับซื้อ-lenovo-legion-7-ขอนแก่น/",
+        "label": "Lenovo Legion 7",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-lenovo-ideapad-slim-5",
+        "type": "model",
+        "path": "/รับซื้อ-lenovo-ideapad-slim-5-ขอนแก่น/",
+        "label": "Lenovo IdeaPad Slim 5",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-acer-aspire-3",
+        "type": "model",
+        "path": "/รับซื้อ-acer-aspire-3-ขอนแก่น/",
+        "label": "Acer Aspire 3",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-acer-aspire-5",
+        "type": "model",
+        "path": "/รับซื้อ-acer-aspire-5-ขอนแก่น/",
+        "label": "Acer Aspire 5",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-hp-elitebook-840",
+        "type": "model",
+        "path": "/รับซื้อ-hp-elitebook-840-ขอนแก่น/",
+        "label": "HP EliteBook 840",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-hp-probook-440",
+        "type": "model",
+        "path": "/รับซื้อ-hp-probook-440-ขอนแก่น/",
+        "label": "HP ProBook 440",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-dell-xps-13",
+        "type": "model",
+        "path": "/รับซื้อ-dell-xps-13-ขอนแก่น/",
+        "label": "Dell XPS 13",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "model-msi-modern-14",
+        "type": "model",
+        "path": "/รับซื้อ-msi-modern-14-ขอนแก่น/",
+        "label": "MSI Modern 14",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "guide-โน้ตบุ๊กบานพับแตกประเมินยังไง",
+        "type": "guide",
+        "path": "/บทความ/โน้ตบุ๊กบานพับแตกประเมินยังไง/",
+        "label": "โน้ตบุ๊กบานพับแตกประเมินอย่างไร",
+        "decision": "MERGE"
+      },
+      {
+        "id": "guide-iphone-ฝาหลังแตกขายได้ไหม",
+        "type": "guide",
+        "path": "/บทความ/iphone-ฝาหลังแตกขายได้ไหม/",
+        "label": "iPhone ฝาหลังแตกขายได้ไหม",
+        "decision": "MERGE"
+      },
+      {
+        "id": "guide-iphone-ติดผ่อนตรวจยังไง",
+        "type": "guide",
+        "path": "/บทความ/iphone-ติดผ่อนตรวจยังไง/",
+        "label": "วิธีตรวจสถานะเครื่องก่อนขาย iPhone",
+        "decision": "KEEP_HOLD"
+      },
+      {
+        "id": "guide-วิธีเช็ก-ipad-งอ",
+        "type": "guide",
+        "path": "/บทความ/วิธีเช็ก-ipad-งอ/",
+        "label": "วิธีเช็ก iPad ว่าเครื่องงอหรือไม่",
+        "decision": "MERGE"
+      },
+      {
+        "id": "guide-การ์ดจอพัดลมดังประเมินยังไง",
+        "type": "guide",
+        "path": "/บทความ/การ์ดจอพัดลมดังประเมินยังไง/",
+        "label": "การ์ดจอพัดลมดังประเมินอย่างไร",
+        "decision": "MERGE"
+      },
+      {
+        "id": "guide-ขายไอทีมือสองต้องมีใบเสร็จไหม",
+        "type": "guide",
+        "path": "/บทความ/ขายไอทีมือสองต้องมีใบเสร็จไหม/",
+        "label": "ขายสินค้าไอทีมือสองต้องมีใบเสร็จไหม",
+        "decision": "KEEP_HOLD"
+      }
+    ]
+  },
+  "productionSurface": {
+    "architectureRoutesBuilt": "INDEX_ONLY",
+    "holdArchitecturePubliclyBuilt": false,
+    "indexContentBuildGuards": {
+      "root": true,
+      "guide": true
+    },
+    "sitemap": {
+      "excludes404": true,
+      "excludesHoldArchitecture": true
+    }
+  },
+  "crawlDesign": {
+    "targetMaxDepthFromHomepage": 2,
+    "globalHubLinks": {
+      "products": true,
+      "models": true,
+      "areas": true,
+      "conditions": true,
+      "articles": true,
+      "b2b": true
+    },
+    "lifecycleDirectories": {
+      "modelDirectory": true,
+      "guideHub": true,
+      "areaHub": true
+    },
+    "hubChildCoverage": {
+      "models": {
+        "expected": 172,
+        "directoryGeneratedFromAllLiveModels": true
+      },
+      "guides": {
+        "expected": 54,
+        "articleHubGeneratedFromAllLiveGuides": true
+      },
+      "districts": {
+        "expected": 21,
+        "missing": 0
+      },
+      "conditions": {
+        "expected": 24,
+        "missing": 0
+      },
+      "b2b": {
+        "expected": 22,
+        "missing": 0
+      }
+    }
+  },
+  "findings": {
+    "below350IndexableRoutes": 0,
+    "holdRoutesStillBuilt": 0,
+    "sitemap404Risk": 0,
+    "sitemapHoldRisk": 0,
+    "missingRootContentGuard": 0,
+    "missingGuideContentGuard": 0,
+    "missingGlobalHubLinks": 0,
+    "missingB2BHubChildren": 0,
+    "missingConditionHubChildren": 0,
+    "missingAreaHubChildren": 0,
+    "missingModelDirectoryLifecycleCoverage": 0,
+    "missingGuideHubLifecycleCoverage": 0,
+    "missingAreaHubLifecycleCoverage": 0,
+    "releaseCandidatesStillHold": 0,
+    "unclassifiedHolds": 0
+  }
+}

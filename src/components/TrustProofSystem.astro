@@ -1,0 +1,261 @@
+---
+import { SITE } from '../data/site.js';
+
+const {
+  variant = 'home',
+  itemLabel = 'สินค้าไอที',
+  location = 'trust_proof',
+} = Astro.props;
+
+const isCompact = variant === 'money';
+
+const transactionProof = [
+  {
+    n: '01',
+    title: 'ประเมินก่อนนัด',
+    desc: 'ส่งรูป รุ่น สเปก สภาพ และตำหนิผ่าน LINE เพื่อรับราคาเบื้องต้นก่อนตัดสินใจนัดตรวจ',
+  },
+  {
+    n: '02',
+    title: 'ตรวจสินค้าต่อหน้า',
+    desc: 'เมื่อถึงวันนัด ทีมงานตรวจสภาพจริงต่อหน้าผู้ขาย หากมีจุดที่ทำให้ราคาต่างจากข้อมูลเดิมจะอธิบายก่อนตกลง',
+  },
+  {
+    n: '03',
+    title: 'ยืนยันราคาก่อนส่งมอบ',
+    desc: 'ราคาสุดท้ายยืนยันหลังตรวจสภาพ ผู้ขายเป็นคนตัดสินใจว่าจะขายหรือไม่ ไม่มีการรับของไปก่อนแล้วค่อยแจ้งราคา',
+  },
+  {
+    n: '04',
+    title: 'ชำระหลังตกลงขาย',
+    desc: 'เลือกรับเงินสดหรือเงินโอนหลังยืนยันราคา พร้อมหลักฐานการซื้อขายสำหรับเก็บไว้',
+  },
+];
+
+const afterLine = [
+  ['ส่งข้อมูล', `รูป${itemLabel} รุ่น/สเปก ตำหนิ และพื้นที่`],
+  ['ทีมงานตรวจข้อมูล', 'เช็กรุ่น สภาพ อุปกรณ์ และปัจจัยตลาดจากข้อมูลที่ได้รับ'],
+  ['แจ้งราคาเบื้องต้น', 'ใช้เป็นกรอบก่อนนัด ไม่ใช่ราคาสุดท้ายจนกว่าจะตรวจเครื่องจริง'],
+  ['นัดตรวจตามคิว', 'ตกลงวัน เวลา และพื้นที่นัดรับที่เหมาะสม'],
+  ['ตรวจ · ยืนยัน · จ่าย', 'ตรวจต่อหน้า ยืนยันราคาสุดท้าย แล้วชำระเมื่อผู้ขายตกลง'],
+];
+---
+
+<section id={location} class:list={['trust-proof-system', { 'trust-proof-system--compact': isCompact }]} aria-labelledby={`${location}-trust-title`}>
+  <div class="container trust-proof-system__inner">
+    <div class="trust-proof-system__head">
+      <div>
+        <p class="eyebrow">ตรวจสอบก่อนขาย</p>
+        <h2 id={`${location}-trust-title`}>{isCompact ? 'ก่อนขายกับเรา คุณตรวจสอบขั้นตอนได้ทุกช่วง' : 'รู้ก่อนขาย: ใครเป็นผู้รับซื้อ ตรวจอย่างไร และจ่ายเงินเมื่อไร'}</h2>
+      </div>
+      <p>
+        {SITE.name} ให้บริการในนาม {SITE.company} รูปแบบ service-area ในจังหวัด{SITE.region}
+        ไม่มีหน้าร้าน walk-in ในขอนแก่น และใช้ข้อมูลติดต่อชุดเดียวทั้งเว็บไซต์
+      </p>
+    </div>
+
+    <div class="trust-proof-system__identity">
+      <div class="trust-proof-system__identity-main">
+        <span class="trust-proof-system__seal" aria-hidden="true">W</span>
+        <div>
+          <span class="trust-proof-system__overline">ผู้รับซื้อ</span>
+          <strong>{SITE.brandLine}</strong>
+          <small>{SITE.serviceModel}</small>
+        </div>
+      </div>
+      <dl class="trust-proof-system__facts">
+        <div><dt>LINE</dt><dd>{SITE.lineId}</dd></div>
+        <div><dt>โทร</dt><dd>{SITE.phone}</dd></div>
+        <div><dt>เวลา</dt><dd>{SITE.hours.replace('เปิดทุกวัน ', '')}</dd></div>
+        <div><dt>รูปแบบ</dt><dd>นัดรับตามคิว · ไม่มี walk-in</dd></div>
+      </dl>
+      <nav class="trust-proof-system__verify" aria-label="ข้อมูลตรวจสอบบริการ">
+        <a href="/เกี่ยวกับเรา/">เกี่ยวกับผู้รับซื้อ</a>
+        <a href="/ติดต่อเรา/">ช่องทางติดต่อ</a>
+        <a href="/เงื่อนไขการรับซื้อ/">เงื่อนไขการรับซื้อ</a>
+      </nav>
+    </div>
+
+    <div class="trust-proof-system__proof-grid">
+      {transactionProof.map((item) => (
+        <article class="trust-proof-system__proof-card">
+          <span>{item.n}</span>
+          <h3>{item.title}</h3>
+          <p>{item.desc}</p>
+        </article>
+      ))}
+    </div>
+
+    <div class="trust-proof-system__afterline">
+      <div class="trust-proof-system__afterline-head">
+        <div>
+          <span class="trust-proof-system__overline">หลังจากกด LINE</span>
+          <h3>จะเกิดอะไรขึ้นต่อ?</h3>
+        </div>
+        <a href={SITE.lineHref} target="_blank" rel="noopener" class="btn btn--line" data-track-event="click_line" data-cta-location={location}>ส่งรูปประเมิน {SITE.lineId}</a>
+      </div>
+      <ol>
+        {afterLine.map(([title, desc], index) => (
+          <li>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <div><strong>{title}</strong><small>{desc}</small></div>
+          </li>
+        ))}
+      </ol>
+    </div>
+
+    <div class="trust-proof-system__safety">
+      <div>
+        <strong>ข้อมูลส่วนตัวส่งเท่าที่จำเป็น</strong>
+        <span>ก่อนทีมงานร้องขอ ไม่ควรส่งภาพบัตรประชาชนหรือเอกสารส่วนบุคคลเกินความจำเป็นในแชท</span>
+      </div>
+      <div>
+        <strong>ขายในนามบริษัท / หลายเครื่อง</strong>
+        <span>แจ้งรูปแบบเอกสารและรายการสินค้าล่วงหน้า เพื่อเช็กความพร้อมก่อนวันนัด</span>
+      </div>
+      <a href="/บทความ/เอกสารขายของไอที/">ดูคู่มือเอกสารก่อนขาย →</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .trust-proof-system {
+    padding-block: clamp(54px, 7vw, 88px);
+    background:
+      radial-gradient(circle at 8% 0%, rgba(40, 76, 255, .08), transparent 30%),
+      linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+    border-block: 1px solid var(--color-border);
+  }
+  .trust-proof-system__inner { max-width: 1200px; }
+  .trust-proof-system__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, .65fr);
+    gap: clamp(24px, 5vw, 72px);
+    align-items: end;
+    margin-bottom: 26px;
+  }
+  .trust-proof-system__head h2 { margin: 0; max-width: 760px; text-wrap: balance; }
+  .trust-proof-system__head > p { margin: 0; color: var(--color-muted); line-height: 1.72; }
+  .trust-proof-system__identity {
+    display: grid;
+    grid-template-columns: minmax(280px, .9fr) minmax(360px, 1.1fr) auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+  }
+  .trust-proof-system__identity-main { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .trust-proof-system__seal {
+    display: grid;
+    place-items: center;
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-navy));
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 1.22rem;
+    font-weight: 900;
+    box-shadow: 0 10px 24px rgba(40, 76, 255, .2);
+  }
+  .trust-proof-system__identity-main > div { display: grid; min-width: 0; gap: 2px; }
+  .trust-proof-system__overline { color: var(--color-primary); font-size: .72rem; letter-spacing: .07em; text-transform: uppercase; font-weight: 850; }
+  .trust-proof-system__identity-main strong { color: var(--color-navy); font-size: .98rem; line-height: 1.35; }
+  .trust-proof-system__identity-main small { color: var(--color-muted); font-size: .76rem; line-height: 1.45; margin-top: 2px; }
+  .trust-proof-system__facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; margin: 0; }
+  .trust-proof-system__facts div { display: grid; grid-template-columns: 56px 1fr; gap: 8px; min-width: 0; }
+  .trust-proof-system__facts dt { color: var(--color-muted); font-size: .75rem; }
+  .trust-proof-system__facts dd { margin: 0; color: var(--color-navy); font-size: .78rem; font-weight: 750; overflow-wrap: anywhere; }
+  .trust-proof-system__verify { display: grid; gap: 5px; min-width: 150px; }
+  .trust-proof-system__verify a { padding: 6px 9px; border-radius: 9px; color: var(--color-primary-dark); font-size: .76rem; font-weight: 750; background: var(--color-soft-blue); }
+  .trust-proof-system__verify a:hover { text-decoration: none; background: #dfe7ff; }
+  .trust-proof-system__proof-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+  .trust-proof-system__proof-card {
+    position: relative;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+  }
+  .trust-proof-system__proof-card > span { display: inline-block; margin-bottom: 24px; color: var(--color-primary); font-size: .72rem; font-weight: 900; letter-spacing: .08em; }
+  .trust-proof-system__proof-card h3 { margin: 0 0 7px; color: var(--color-navy); font-size: 1rem; }
+  .trust-proof-system__proof-card p { margin: 0; color: var(--color-muted); font-size: .82rem; line-height: 1.62; }
+  .trust-proof-system__afterline {
+    margin-top: 18px;
+    padding: clamp(20px, 3vw, 28px);
+    border-radius: 22px;
+    background: var(--color-navy);
+    color: #fff;
+    box-shadow: 0 22px 52px rgba(15, 23, 42, .14);
+  }
+  .trust-proof-system__afterline-head { display: flex; justify-content: space-between; gap: 18px; align-items: center; margin-bottom: 20px; }
+  .trust-proof-system__afterline-head h3 { color: #fff; margin: 3px 0 0; font-size: clamp(1.2rem, 2vw, 1.55rem); }
+  .trust-proof-system__afterline .trust-proof-system__overline { color: #aebfff; }
+  .trust-proof-system__afterline ol { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin: 0; padding: 0; list-style: none; }
+  .trust-proof-system__afterline li { position: relative; display: grid; grid-template-columns: 34px 1fr; gap: 9px; padding-right: 14px; min-width: 0; }
+  .trust-proof-system__afterline li:not(:last-child)::after { content: '→'; position: absolute; top: 5px; right: 4px; color: rgba(255,255,255,.35); }
+  .trust-proof-system__afterline li > span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: rgba(255,255,255,.1); color: #fff; font-size: .68rem; font-weight: 850; }
+  .trust-proof-system__afterline li div { display: grid; gap: 3px; min-width: 0; }
+  .trust-proof-system__afterline li strong { color: #fff; font-size: .8rem; line-height: 1.35; }
+  .trust-proof-system__afterline li small { color: #b8c3d8; font-size: .7rem; line-height: 1.48; }
+  .trust-proof-system__safety {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-top: 18px;
+    padding: 16px 18px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 16px;
+    background: #fff;
+  }
+  .trust-proof-system__safety > div { display: grid; gap: 2px; }
+  .trust-proof-system__safety strong { color: var(--color-navy); font-size: .82rem; }
+  .trust-proof-system__safety span { color: var(--color-muted); font-size: .74rem; line-height: 1.5; }
+  .trust-proof-system__safety > a { white-space: nowrap; color: var(--color-primary-dark); font-size: .78rem; font-weight: 800; }
+
+  .trust-proof-system--compact { padding-block: 34px; background: #fff; border-top: 0; }
+  .trust-proof-system--compact .trust-proof-system__head { margin-bottom: 18px; }
+  .trust-proof-system--compact .trust-proof-system__head h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+  .trust-proof-system--compact .trust-proof-system__identity { padding: 16px; border-radius: 18px; }
+  .trust-proof-system--compact .trust-proof-system__proof-card { padding: 16px; }
+  .trust-proof-system--compact .trust-proof-system__proof-card > span { margin-bottom: 14px; }
+  .trust-proof-system--compact .trust-proof-system__afterline { padding: 20px; border-radius: 18px; }
+  .trust-proof-system--compact .trust-proof-system__safety { margin-bottom: 0; }
+
+  @media (max-width: 1020px) {
+    .trust-proof-system__identity { grid-template-columns: 1fr 1fr; }
+    .trust-proof-system__verify { grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .trust-proof-system__verify a { text-align: center; }
+    .trust-proof-system__proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .trust-proof-system__afterline ol { grid-template-columns: 1fr; gap: 10px; }
+    .trust-proof-system__afterline li { grid-template-columns: 34px 1fr; padding: 0; }
+    .trust-proof-system__afterline li:not(:last-child)::after { display: none; }
+    .trust-proof-system__safety { grid-template-columns: 1fr 1fr; }
+    .trust-proof-system__safety > a { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    .trust-proof-system { padding-block: 42px; }
+    .trust-proof-system__head { grid-template-columns: 1fr; gap: 12px; }
+    .trust-proof-system__identity { grid-template-columns: 1fr; }
+    .trust-proof-system__facts { grid-template-columns: 1fr 1fr; }
+    .trust-proof-system__verify { grid-column: auto; grid-template-columns: 1fr; }
+    .trust-proof-system__verify a { text-align: left; }
+    .trust-proof-system__proof-grid { grid-template-columns: 1fr; }
+    .trust-proof-system__proof-card > span { margin-bottom: 10px; }
+    .trust-proof-system__afterline-head { align-items: stretch; flex-direction: column; }
+    .trust-proof-system__afterline-head .btn { width: 100%; }
+    .trust-proof-system__safety { grid-template-columns: 1fr; }
+    .trust-proof-system__safety > a { grid-column: auto; white-space: normal; }
+  }
+  @media (max-width: 420px) {
+    .trust-proof-system__facts { grid-template-columns: 1fr; }
+    .trust-proof-system__identity-main { align-items: flex-start; }
+  }
+</style>

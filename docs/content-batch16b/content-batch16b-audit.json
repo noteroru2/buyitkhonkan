@@ -1,0 +1,222 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.822Z",
+  "batch": "CONTENT_BATCH_16B_MODEL_RELEASE_ROUND_1",
+  "findings": {
+    "batch16bRelease": 18,
+    "releasedModelsTotal": 172,
+    "modelHold": 8,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "clusterCounts": {
+      "notebook": 8,
+      "iphone": 4,
+      "ipad-tablet": 3,
+      "gpu": 3
+    },
+    "issueCount": 0,
+    "countContract": true,
+    "missingPage": 0,
+    "missingContent": 0,
+    "lifecycle": 0,
+    "triageMismatch": 0,
+    "invalidFields": 0,
+    "metadataLength": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "authorityInbound": 0,
+    "holdLeak": 0,
+    "integration": 0
+  },
+  "released": [
+    {
+      "slug": "asus-rog-scar-16",
+      "path": "/รับซื้อ-asus-rog-scar-16-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS ROG Strix SCAR 16 ขอนแก่น",
+      "title": "รับซื้อ ASUS ROG Strix SCAR 16 ขอนแก่น เช็ก G634/G635 GPU จอและประกัน | WINNER IT",
+      "category": "notebook",
+      "brand": "asus",
+      "source": "https://rog.asus.com/us/laptops/rog-strix/rog-strix-scar-16-2025/spec/"
+    },
+    {
+      "slug": "asus-rog-scar-18",
+      "path": "/รับซื้อ-asus-rog-scar-18-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS ROG Strix SCAR 18 ขอนแก่น",
+      "title": "รับซื้อ ASUS ROG Strix SCAR 18 ขอนแก่น เช็ก G834/G835 จอ 18 นิ้ว GPU | WINNER IT",
+      "category": "notebook",
+      "brand": "asus",
+      "source": "https://rog.asus.com/laptops/rog-strix/rog-strix-scar-18-2025/spec/"
+    },
+    {
+      "slug": "asus-tuf-gaming-f15",
+      "path": "/รับซื้อ-asus-tuf-gaming-f15-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS TUF Gaming F15 ขอนแก่น",
+      "title": "รับซื้อ ASUS TUF Gaming F15 ขอนแก่น เช็ก FX506/FX507 Intel RTX และจอ | WINNER IT",
+      "category": "notebook",
+      "brand": "asus",
+      "source": "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f15-2023/techspec/"
+    },
+    {
+      "slug": "lenovo-legion-5i",
+      "path": "/รับซื้อ-lenovo-legion-5i-ขอนแก่น/",
+      "h1": "รับซื้อ Lenovo Legion 5i ขอนแก่น",
+      "title": "รับซื้อ Lenovo Legion 5i ขอนแก่น เช็ก 16IRX9 Intel RTX และ MTM | WINNER IT",
+      "category": "notebook",
+      "brand": "lenovo",
+      "source": "https://psref.lenovo.com/Product/Legion/Legion_5_16IRX9?MT=83EW"
+    },
+    {
+      "slug": "lenovo-legion-pro-7",
+      "path": "/รับซื้อ-lenovo-legion-pro-7-ขอนแก่น/",
+      "h1": "รับซื้อ Lenovo Legion Pro 7 ขอนแก่น",
+      "title": "รับซื้อ Lenovo Legion Pro 7 ขอนแก่น เช็ก 16IRX9H RTX 4080/4090 และจอ | WINNER IT",
+      "category": "notebook",
+      "brand": "lenovo",
+      "source": "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_Pro_7_16IRX9H/Legion_Pro_7_16IRX9H_Spec.pdf"
+    },
+    {
+      "slug": "acer-predator-helios-16",
+      "path": "/รับซื้อ-acer-predator-helios-16-ขอนแก่น/",
+      "h1": "รับซื้อ Acer Predator Helios 16 ขอนแก่น",
+      "title": "รับซื้อ Acer Predator Helios 16 ขอนแก่น เช็ก PH16 รุ่นจอ GPU และประกัน | WINNER IT",
+      "category": "notebook",
+      "brand": "acer",
+      "source": "https://www.acer.com/ph-en/predator/laptops/helios/helios-16/pdp/NH.QNXSP.004"
+    },
+    {
+      "slug": "acer-swift-go-14",
+      "path": "/รับซื้อ-acer-swift-go-14-ขอนแก่น/",
+      "h1": "รับซื้อ Acer Swift Go 14 ขอนแก่น",
+      "title": "รับซื้อ Acer Swift Go 14 ขอนแก่น เช็ก SFG14 OLED/Core Ultra และแบต | WINNER IT",
+      "category": "notebook",
+      "brand": "acer",
+      "source": "https://www.acer.com/ph-en/laptops/swift/swift-go/pdp/NX.KSGSP.001"
+    },
+    {
+      "slug": "msi-raider-ge68",
+      "path": "/รับซื้อ-msi-raider-ge68-ขอนแก่น/",
+      "h1": "รับซื้อ MSI Raider GE68 ขอนแก่น",
+      "title": "รับซื้อ MSI Raider GE68 HX ขอนแก่น เช็ก 13V/14V GPU จอและอะแดปเตอร์ | WINNER IT",
+      "category": "notebook",
+      "brand": "msi",
+      "source": "https://www.msi.com/Laptop/Raider-GE68-HX-14VX/Specification"
+    },
+    {
+      "slug": "iphone-14-plus",
+      "path": "/รับซื้อ-iphone-14-plus-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 14 Plus ขอนแก่น",
+      "title": "รับซื้อ iPhone 14 Plus ขอนแก่น เช็ก 128/256/512GB แบต จอและอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-ph/111854"
+    },
+    {
+      "slug": "iphone-15-plus",
+      "path": "/รับซื้อ-iphone-15-plus-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 15 Plus ขอนแก่น",
+      "title": "รับซื้อ iPhone 15 Plus ขอนแก่น เช็ก USB-C แบต จอและประวัติอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-asia/111830"
+    },
+    {
+      "slug": "iphone-16",
+      "path": "/รับซื้อ-iphone-16-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 16 ขอนแก่น",
+      "title": "รับซื้อ iPhone 16 ขอนแก่น เช็ก A18 128/256/512GB แบตและกล้อง | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-ph/121029"
+    },
+    {
+      "slug": "iphone-16-plus",
+      "path": "/รับซื้อ-iphone-16-plus-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 16 Plus ขอนแก่น",
+      "title": "รับซื้อ iPhone 16 Plus ขอนแก่น เช็ก 6.7 นิ้ว A18 แบตและกล้อง | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-euro/121030"
+    },
+    {
+      "slug": "ipad-air-m2-13",
+      "path": "/รับซื้อ-ipad-air-m2-13-ขอนแก่น/",
+      "h1": "รับซื้อ iPad Air M2 13-inch ขอนแก่น",
+      "title": "รับซื้อ iPad Air M2 13 นิ้ว ขอนแก่น เช็ก Wi‑Fi/Cellular ความจุ จอและ Pencil | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/119893"
+    },
+    {
+      "slug": "ipad-pro-m4-13",
+      "path": "/รับซื้อ-ipad-pro-m4-13-ขอนแก่น/",
+      "h1": "รับซื้อ iPad Pro M4 13-inch ขอนแก่น",
+      "title": "รับซื้อ iPad Pro M4 13 นิ้ว ขอนแก่น เช็ก OLED 256GB–2TB Cellular และจอ | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/119891"
+    },
+    {
+      "slug": "ipad-mini-a17-pro",
+      "path": "/รับซื้อ-ipad-mini-a17-pro-ขอนแก่น/",
+      "h1": "รับซื้อ iPad mini A17 Pro ขอนแก่น",
+      "title": "รับซื้อ iPad mini A17 Pro ขอนแก่น เช็ก 128/256/512GB Cellular และ Pencil | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/en-mide/121456"
+    },
+    {
+      "slug": "rtx-3090",
+      "path": "/รับซื้อ-rtx-3090-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 3090 ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 3090 ขอนแก่น 24GB GDDR6X เช็กหัวไฟ พัดลมและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/30-series/rtx-3090-3090ti/"
+    },
+    {
+      "slug": "rtx-4080",
+      "path": "/รับซื้อ-rtx-4080-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 4080 ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 4080 ขอนแก่น 16GB GDDR6X เช็ก 12VHPWR และประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/40-series/rtx-4080-family/"
+    },
+    {
+      "slug": "rtx-4090",
+      "path": "/รับซื้อ-rtx-4090-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 4090 ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 4090 ขอนแก่น 24GB GDDR6X เช็กหัวไฟ พัดลมและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/40-series/rtx-4090/"
+    }
+  ],
+  "problems": {
+    "missingPage": [],
+    "missingContent": [],
+    "lifecycle": [],
+    "triageMismatch": [],
+    "invalidFields": [],
+    "metadataLength": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "authorityInbound": [],
+    "holdLeak": [],
+    "integration": []
+  }
+}

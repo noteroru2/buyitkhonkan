@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-07-18T00:00:00+07:00",
+  "sourceIntake": {"count": 13, "format": "PNG", "bytes": 27140585},
+  "processedLibrary": {"count": 7, "format": "WebP", "bytes": 462044, "metadataStripped": true, "maximumLongEdge": 1200},
+  "sourceToLibrarySavings": {"bytes": 26678541, "percent": 98.3},
+  "productionImplementation": {"count": 0, "initialHomepagePayloadChangeBytes": 0, "imageRequestChange": 0, "aiLcpImages": 0, "aiPreloads": 0},
+  "trustPngBefore": [
+    {"filename": "public/images/trust-inspection.png", "bytes": 916976},
+    {"filename": "public/images/trust-inventory.png", "bytes": 806497}
+  ],
+  "trustPngAfter": [
+    {"filename": "public/images/trust-inspection.png", "bytes": 916976, "status": "UNCHANGED_REAL_PHOTO_REQUIRED"},
+    {"filename": "public/images/trust-inventory.png", "bytes": 806497, "status": "UNCHANGED_REAL_PHOTO_REQUIRED"}
+  ],
+  "trustPayloadSavingsBytes": 0,
+  "largestWebReadyAssetBytes": 131946,
+  "webReadyAssetsOver250KB": 0,
+  "duplicateOutputs": 0,
+  "brokenReferences": 0,
+  "decision": "No production payload added because no approved AI-only slot materially benefits from these photorealistic assets."
+}

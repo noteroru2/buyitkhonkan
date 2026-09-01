@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xn--12cb0a0clbb5eueac5b7cya1nrb2eh.com/schemas/asset-manifest.schema.json",
+  "title": "WINNER IT approved real-image asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "assets"],
+  "properties": {
+    "version": {"const": 1},
+    "assets": {"type": "array", "items": {"$ref": "#/$defs/asset"}}
+  },
+  "$defs": {
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assetId","sourceFilename","webFilename","sourceType","captureDate","captureLocationGeneral","photographer","ownershipStatus","usagePermission","consentRequired","consentStatus","containsPeople","containsCustomer","containsMinor","containsSerialNumber","containsScreenData","containsPhoneNumber","containsAddress","containsLicensePlate","containsReceipt","containsPaymentEvidence","privacyEditsRequired","privacyEditsCompleted","approvedForWeb","approvedPages","slotIds","caption","altText","disclosure","masterDimensions","cropVariants","reviewer","reviewDate","notes"],
+      "properties": {
+        "assetId":{"type":"string","pattern":"^[A-Z0-9][A-Z0-9-]{2,63}$"},
+        "sourceFilename":{"type":"string","pattern":"^[^/\\\\]+$"},
+        "webFilename":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*\\.(?:webp|jpg|jpeg|png)$"},
+        "sourceType":{"enum":["real-business-evidence","verified-transaction-evidence","original-product-photography","licensed-manufacturer-asset"]},
+        "captureDate":{"type":["string","null"],"format":"date"},
+        "captureLocationGeneral":{"type":"string","maxLength":120},
+        "photographer":{"type":"string","maxLength":120},
+        "ownershipStatus":{"enum":["owned","licensed","unknown"]},
+        "usagePermission":{"enum":["approved-web","restricted","pending","denied"]},
+        "consentRequired":{"type":"boolean"},
+        "consentStatus":{"enum":["not-required","granted","pending","denied"]},
+        "containsPeople":{"type":"boolean"},"containsCustomer":{"type":"boolean"},"containsMinor":{"type":"boolean"},
+        "containsSerialNumber":{"type":"boolean"},"containsScreenData":{"type":"boolean"},"containsPhoneNumber":{"type":"boolean"},
+        "containsAddress":{"type":"boolean"},"containsLicensePlate":{"type":"boolean"},"containsReceipt":{"type":"boolean"},"containsPaymentEvidence":{"type":"boolean"},
+        "privacyEditsRequired":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+        "privacyEditsCompleted":{"type":"boolean"},"approvedForWeb":{"type":"boolean"},
+        "approvedPages":{"type":"array","items":{"type":"string","pattern":"^/"},"uniqueItems":true},
+        "slotIds":{"type":"array","items":{"type":"string","pattern":"^[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
+        "caption":{"type":"string","maxLength":300},"altText":{"type":"string","minLength":1,"maxLength":220},"disclosure":{"type":"string","maxLength":220},
+        "masterDimensions":{"type":"object","additionalProperties":false,"required":["width","height"],"properties":{"width":{"type":"integer","minimum":1},"height":{"type":"integer","minimum":1}}},
+        "cropVariants":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["name","aspectRatio","focalPoint"],"properties":{"name":{"type":"string"},"aspectRatio":{"type":"string"},"focalPoint":{"type":"string"}}}},
+        "reviewer":{"type":"string","minLength":1},"reviewDate":{"type":["string","null"],"format":"date"},"notes":{"type":"string","maxLength":500}
+      },
+      "allOf": [
+        {"if":{"properties":{"approvedForWeb":{"const":true}}},"then":{"properties":{"ownershipStatus":{"not":{"const":"unknown"}},"usagePermission":{"const":"approved-web"},"privacyEditsCompleted":{"const":true},"consentStatus":{"enum":["not-required","granted"]},"reviewDate":{"type":"string"}}}},
+        {"if":{"properties":{"containsMinor":{"const":true}}},"then":{"properties":{"consentRequired":{"const":true},"consentStatus":{"const":"granted"}}}}
+      ]
+    }
+  }
+}

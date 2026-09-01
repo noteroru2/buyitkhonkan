@@ -1,0 +1,27 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { ARCHITECTURE_PAGES } from '../../src/data/architecture/index.js';
+import { MODEL_ARCHITECTURE } from '../../src/data/architecture/models.js';
+import { CONDITION_ARCHITECTURE } from '../../src/data/architecture/conditions.js';
+import { B2B_ARCHITECTURE } from '../../src/data/architecture/b2b.js';
+import { DISTRICT_ARCHITECTURE } from '../../src/data/architecture/districts.js';
+import { HIGH_INTENT_DISTRICT_BATCH8_SLUGS, HIGH_INTENT_DISTRICT_BATCH9_SLUGS } from '../../src/data/highIntentDistrictContent.js';
+
+const root=process.cwd(); const baseline='/mnt/data/kk_content8_work/buyitkhonkan-main';
+const sha=(p)=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const protectedFiles=['src/pages/index.astro','src/data/categories.js','src/data/brandPages.js','src/data/modelPages.js','src/data/conditionPages.js','src/data/localPages.js','src/data/architecture/models.js','src/data/architecture/conditions.js','src/data/architecture/b2b.js','src/data/architecture/guides.js','src/data/highIntentModelContent.js','src/data/highIntentConditionContent.js','src/data/highIntentB2BContent.js','src/layouts/Base.astro','astro.config.mjs'];
+const protectedComparison=protectedFiles.map((rel)=>{const a=path.join(baseline,rel),b=path.join(root,rel);return{file:rel,baselineExists:fs.existsSync(a),currentExists:fs.existsSync(b),identical:fs.existsSync(a)&&fs.existsSync(b)&&sha(a)===sha(b)}});
+const changedProtected=protectedComparison.filter((x)=>!x.identical);
+const allowedLaterProtectedChanges=new Set(['src/pages/index.astro','src/data/architecture/guides.js','src/data/highIntentModelContent.js','astro.config.mjs']);
+const unexpectedChangedProtected=changedProtected.filter((x)=>!allowedLaterProtectedChanges.has(x.file));
+const counts={architectureIndex:ARCHITECTURE_PAGES.filter((p)=>p.lifecycle==='INDEX').length,architectureHold:ARCHITECTURE_PAGES.filter((p)=>p.lifecycle==='HOLD_NOINDEX').length,modelIndex:MODEL_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length,conditionIndex:CONDITION_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length,b2bIndex:B2B_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length,districtIndex:DISTRICT_ARCHITECTURE.filter((p)=>p.lifecycle==='INDEX').length,districtHold:DISTRICT_ARCHITECTURE.filter((p)=>p.lifecycle==='HOLD_NOINDEX').length};
+const lifecycle=new Map(DISTRICT_ARCHITECTURE.map((p)=>[p.slug,p.lifecycle]));
+const batch8Preserved=HIGH_INTENT_DISTRICT_BATCH8_SLUGS.every((slug)=>lifecycle.get(slug)==='INDEX');
+const batch9Released=HIGH_INTENT_DISTRICT_BATCH9_SLUGS.every((slug)=>lifecycle.get(slug)==='INDEX');
+const route=fs.readFileSync(path.join(root,'src/pages/[slug].astro'),'utf8');
+const discovery=fs.readFileSync(path.join(root,'src/data/discoveryLinks.js'),'utf8');
+const component=fs.readFileSync(path.join(root,'src/components/ReleasedDistrictPage.astro'),'utf8');
+const pass=unexpectedChangedProtected.length===0&&counts.architectureIndex>=156&&counts.architectureHold===ARCHITECTURE_PAGES.length-counts.architectureIndex&&counts.modelIndex>=88&&counts.conditionIndex===24&&counts.b2bIndex===22&&counts.districtIndex===21&&counts.districtHold===0&&batch8Preserved&&batch9Released&&route.includes('<ReleasedDistrictPage')&&discovery.includes('getReleasedDistrictDiscovery')&&component.includes('Number.isFinite(content.distanceKm)');
+const report={verdict:pass?'PASS':'FAIL',generatedAt:new Date().toISOString(),batch:'CONTENT_BATCH_9_REGRESSION',baseline:'CONTENT_BATCH_8',findings:{...counts,protectedFilesChecked:protectedFiles.length,changedProtectedFiles:changedProtected.length,unexpectedChangedProtectedFiles:unexpectedChangedProtected.length,batch8Preserved,batch9Released,releasedDistrictRouteIntegrated:route.includes('<ReleasedDistrictPage'),districtDiscoveryIntegrated:discovery.includes('getReleasedDistrictDiscovery'),distanceNullHandled:component.includes('Number.isFinite(content.distanceKm)')},protectedComparison,unexpectedChangedProtected};
+const out=path.join(root,'docs/content-batch9');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'content-batch9-regression.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(!pass)process.exitCode=1;

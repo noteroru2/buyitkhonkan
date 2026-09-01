@@ -1,0 +1,90 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:34.085Z",
+  "batch": "CONTENT_BATCH_16D_FINAL_MODEL_RELEASE",
+  "findings": {
+    "batch16dRelease": 4,
+    "releasedModelsTotal": 172,
+    "modelHold": 8,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "issueCount": 0,
+    "countContract": true,
+    "missingPage": 0,
+    "missingContent": 0,
+    "lifecycle": 0,
+    "triageMismatch": 0,
+    "invalidFields": 0,
+    "metadataLength": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "duplicateLongCopy": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "authorityInbound": 0,
+    "holdLeak": 0,
+    "remainingReleaseModels": 0,
+    "integration": 0
+  },
+  "released": [
+    {
+      "slug": "fujifilm-x-t20",
+      "path": "/รับซื้อ-fujifilm-x-t20-ขอนแก่น/",
+      "h1": "รับซื้อ Fujifilm X-T20 ขอนแก่น",
+      "title": "รับซื้อ Fujifilm X-T20 ขอนแก่น เช็ก 24.3MP ชัตเตอร์ EVF จอพับและแบต | WINNER IT",
+      "category": "camera",
+      "source": "https://www.fujifilm-x.com/global/products/cameras/x-T20/"
+    },
+    {
+      "slug": "fujifilm-x-h1",
+      "path": "/รับซื้อ-fujifilm-x-h1-ขอนแก่น/",
+      "h1": "รับซื้อ Fujifilm X-H1 ขอนแก่น",
+      "title": "รับซื้อ Fujifilm X-H1 ขอนแก่น เช็ก IBIS 24.3MP EVF ช่องการ์ดคู่และบอดี้ | WINNER IT",
+      "category": "camera",
+      "source": "https://www.fujifilm-x.com/en-us/products/cameras/X-H1/"
+    },
+    {
+      "slug": "olympus-em5-mark-iii",
+      "path": "/รับซื้อ-olympus-em5-mark-iii-ขอนแก่น/",
+      "h1": "รับซื้อ Olympus OM-D E-M5 Mark III ขอนแก่น",
+      "title": "รับซื้อ Olympus OM-D E-M5 Mark III ขอนแก่น เช็ก 20MP IBIS Phase AF และจอหมุน | WINNER IT",
+      "category": "camera",
+      "source": "https://learnandsupport.getolympus.com/support/e-m5-mark-iii"
+    },
+    {
+      "slug": "panasonic-g85",
+      "path": "/รับซื้อ-panasonic-g85-ขอนแก่น/",
+      "h1": "รับซื้อ Panasonic Lumix G85 ขอนแก่น",
+      "title": "รับซื้อ Panasonic Lumix G85 ขอนแก่น เช็ก 16MP 5-axis IS 4K จอหมุนและเมาท์ MFT | WINNER IT",
+      "category": "camera",
+      "source": "https://help.na.panasonic.com/answers/features-and-specifications-lumix-g-series-dmc-g85/"
+    }
+  ],
+  "problems": {
+    "missingPage": [],
+    "missingContent": [],
+    "lifecycle": [],
+    "triageMismatch": [],
+    "invalidFields": [],
+    "metadataLength": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "duplicateLongCopy": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "authorityInbound": [],
+    "holdLeak": [],
+    "remainingReleaseModels": [],
+    "integration": []
+  }
+}

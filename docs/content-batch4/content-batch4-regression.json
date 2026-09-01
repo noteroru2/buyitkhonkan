@@ -1,0 +1,97 @@
+{
+  "verdict": "PASS",
+  "baseline": "CONTENT_BATCH_3_HIGH_INTENT_EXPANSION",
+  "preservedOwnershipFiles": [
+    {
+      "file": "src/data/categories.js",
+      "baselineSha256": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+      "currentSha256": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/brandPages.js",
+      "baselineSha256": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+      "currentSha256": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/modelPages.js",
+      "baselineSha256": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+      "currentSha256": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/conditionPages.js",
+      "baselineSha256": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+      "currentSha256": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/localPages.js",
+      "baselineSha256": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+      "currentSha256": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/site.js",
+      "baselineSha256": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+      "currentSha256": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/architecture/models.js",
+      "baselineSha256": "ae801e79a76b2c076f224bbc23e67da0b6577ae10f12f43e16e9b3bd2a70a984",
+      "currentSha256": "ae801e79a76b2c076f224bbc23e67da0b6577ae10f12f43e16e9b3bd2a70a984",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/[slug].astro",
+      "baselineSha256": "336d9ab95dc8bca96e8631bdb9affc06d5aecc59d584a60c5f839fac7e1e160e",
+      "currentSha256": "336d9ab95dc8bca96e8631bdb9affc06d5aecc59d584a60c5f839fac7e1e160e",
+      "unchanged": true
+    },
+    {
+      "file": "src/layouts/Base.astro",
+      "baselineSha256": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+      "currentSha256": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+      "unchanged": true
+    },
+    {
+      "file": "astro.config.mjs",
+      "baselineSha256": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "currentSha256": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/discoveryLinks.js",
+      "baselineSha256": "1d19f5f0b11619d7b9f4a5c65aaa5e688f9d3002606d112c7ae9772e2b2f9732",
+      "currentSha256": "1d19f5f0b11619d7b9f4a5c65aaa5e688f9d3002606d112c7ae9772e2b2f9732",
+      "unchanged": true
+    }
+  ],
+  "intentionalChanges": [
+    {
+      "file": "src/data/highIntentModelContent.js",
+      "baselineSha256": "a81af9f125f1ffb130801a8826fe0d1ef8531a410de298af0924940da617d4c9",
+      "currentSha256": "46d89432b28a15cb171d2ab0145315e801649cecf379a7a3d6674dc75e99ee55",
+      "changed": true
+    },
+    {
+      "file": "src/components/ReleasedModelPage.astro",
+      "baselineSha256": "d04406782a27b2d553d0e5fa7002628a081ef9e34e07c627fc6ec82854882113",
+      "currentSha256": "c5b219d63e4a909cccb7f45a87b2460b545db83724790a6864eef9d6012c34f0",
+      "changed": true
+    },
+    {
+      "file": "package.json",
+      "baselineSha256": "896210d1b275df8d25d50f45b650269247a76a09c095084925d0aa7df8558a36",
+      "currentSha256": "f7b8c695b4bdcc1735df4cc3fb28db29460b4419574d5de49ae3808a84edc164",
+      "changed": true
+    }
+  ],
+  "notes": [
+    "URL/H1 ownership data preserved byte-for-byte",
+    "Canonical/robots route logic preserved byte-for-byte",
+    "Discovery graph source preserved; it automatically exposes newly INDEX lifecycle pages only"
+  ]
+}

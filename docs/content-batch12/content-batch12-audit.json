@@ -1,0 +1,231 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.131Z",
+  "batch": "CONTENT_BATCH_12_FINAL_GUIDE_QUALITY_GATE",
+  "findings": {
+    "finalGateCandidates": 20,
+    "release": 14,
+    "mergeCandidates": 4,
+    "keepHold": 2,
+    "releasedGuidesTotal": 54,
+    "guideHold": 6,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "missingDecisionPages": 0,
+    "lifecycle": 0,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "unlinked": 0,
+    "holdLeak": 0,
+    "thinDiscovery": 0,
+    "mergeTargetMissing": 0,
+    "mergeHasContent": 0,
+    "keepHoldHasContent": 0,
+    "decisionOverlap": 0
+  },
+  "decisions": {
+    "release": [
+      "วิธีเช็กประกันโน้ตบุ๊ก",
+      "โน้ตบุ๊กมีรอยบุบขายได้ไหม",
+      "โน้ตบุ๊กจอมีเส้นราคาตกแค่ไหน",
+      "วิธีเช็ก-battery-health-macbook",
+      "macbook-คีย์บอร์ดอังกฤษขายได้ไหม",
+      "macbook-จอเป็นรอยประเมินยังไง",
+      "iphone-ไม่มีกล่องราคาตกไหม",
+      "apple-pencil-เพิ่มราคาขาย-ipadไหม",
+      "ขายคอมประกอบต้องส่งข้อมูลอะไร",
+      "ขายคอมทั้งชุดพร้อมจอคุ้มไหม",
+      "ชุดน้ำมีผลต่อราคาคอมมือสองไหม",
+      "วิธีดูรุ่นการ์ดจอใน-windows",
+      "การ์ดจอขุดเหมืองขายได้ไหม",
+      "วิธีเทสการ์ดจอก่อนขาย"
+    ],
+    "merge": [
+      {
+        "slug": "โน้ตบุ๊กบานพับแตกประเมินยังไง",
+        "target": "/รับซื้อโน้ตบุ๊กบานพับแตก-ขอนแก่น/",
+        "reason": "Commercial condition page already owns the exact hinge-broken intent."
+      },
+      {
+        "slug": "iphone-ฝาหลังแตกขายได้ไหม",
+        "target": "/รับซื้อiphone-ฝาหลังแตก-ขอนแก่น/",
+        "reason": "Exact iPhone back-glass condition page already owns the commercial query."
+      },
+      {
+        "slug": "วิธีเช็ก-ipad-งอ",
+        "target": "/รับซื้อipad-เครื่องงอ-ขอนแก่น/",
+        "reason": "Exact bent-iPad condition page already explains inspection and valuation flow."
+      },
+      {
+        "slug": "การ์ดจอพัดลมดังประเมินยังไง",
+        "target": "/รับซื้อการ์ดจอพัดลมดัง-ขอนแก่น/",
+        "reason": "Exact noisy-GPU-fan condition page already owns this problem intent."
+      }
+    ],
+    "keepHold": [
+      {
+        "slug": "iphone-ติดผ่อนตรวจยังไง",
+        "reason": "Ownership/finance status cannot be reliably inferred from device settings alone; requires provider/finance-specific evidence and editorial/legal review."
+      },
+      {
+        "slug": "ขายไอทีมือสองต้องมีใบเสร็จไหม",
+        "reason": "Receipt/ownership requirements vary by transaction and legal/business context; keep noindex until Thai legal/editorial review is complete."
+      }
+    ]
+  },
+  "releasedGuides": [
+    {
+      "slug": "วิธีเช็กประกันโน้ตบุ๊ก",
+      "path": "/บทความ/วิธีเช็กประกันโน้ตบุ๊ก/",
+      "h1": "วิธีเช็กประกันโน้ตบุ๊กก่อนขายให้ข้อมูลตรง",
+      "title": "วิธีเช็กประกันโน้ตบุ๊กก่อนขาย ดูวันหมดประกันจาก Serial อย่างไร | WINNER IT",
+      "priceIntent": true,
+      "categories": "notebook",
+      "source": "https://www.asus.com/support/faq/1041323/"
+    },
+    {
+      "slug": "โน้ตบุ๊กมีรอยบุบขายได้ไหม",
+      "path": "/บทความ/โน้ตบุ๊กมีรอยบุบขายได้ไหม/",
+      "h1": "โน้ตบุ๊กมีรอยบุบขายได้ไหม ต้องเช็กอะไรบ้าง",
+      "title": "โน้ตบุ๊กมีรอยบุบยังขายได้ไหม? เช็กว่าบุบแค่ฝาหรือกระทบโครง | WINNER IT",
+      "priceIntent": true,
+      "categories": "notebook",
+      "source": "https://www.dell.com/support/kbdoc/en-th/000332239/types-of-damages-not-covered-by-dell-basic-support?lang=en"
+    },
+    {
+      "slug": "โน้ตบุ๊กจอมีเส้นราคาตกแค่ไหน",
+      "path": "/บทความ/โน้ตบุ๊กจอมีเส้นราคาตกแค่ไหน/",
+      "h1": "โน้ตบุ๊กจอมีเส้นมีผลต่อราคาอย่างไร",
+      "title": "โน้ตบุ๊กจอมีเส้น มีผลต่อราคาอย่างไร? แยก Panel กับ GPU ก่อนประเมิน | WINNER IT",
+      "priceIntent": true,
+      "categories": "notebook",
+      "source": "https://www.dell.com/support/kbdoc/en-us/000123759/dell-notebook-phone-or-tablet-cracked-or-broken-lcd-screen-options-and-procedures"
+    },
+    {
+      "slug": "วิธีเช็ก-battery-health-macbook",
+      "path": "/บทความ/วิธีเช็ก-battery-health-macbook/",
+      "h1": "วิธีเช็ก Battery Health ของ MacBook ก่อนขาย",
+      "title": "วิธีเช็ก Battery Health MacBook ก่อนขาย ดู Normal หรือ Service Recommended | WINNER IT",
+      "priceIntent": true,
+      "categories": "macbook",
+      "source": "https://support.apple.com/en-ie/108376"
+    },
+    {
+      "slug": "macbook-คีย์บอร์ดอังกฤษขายได้ไหม",
+      "path": "/บทความ/macbook-คีย์บอร์ดอังกฤษขายได้ไหม/",
+      "h1": "MacBook คีย์บอร์ดอังกฤษขายได้ไหม",
+      "title": "MacBook คีย์บอร์ดอังกฤษขายได้ไหม? เช็ก Layout ก่อนประเมิน | WINNER IT",
+      "priceIntent": true,
+      "categories": "macbook",
+      "source": "https://support.apple.com/guide/mac-help/change-input-sources-settings-mchl84525d76/mac"
+    },
+    {
+      "slug": "macbook-จอเป็นรอยประเมินยังไง",
+      "path": "/บทความ/macbook-จอเป็นรอยประเมินยังไง/",
+      "h1": "MacBook จอเป็นรอยประเมินอย่างไร",
+      "title": "MacBook จอเป็นรอยประเมินอย่างไร แยกรอยเคลือบ รอยขีด และพิกเซล | WINNER IT",
+      "priceIntent": true,
+      "categories": "macbook",
+      "source": "https://support.apple.com/en-gb/guide/mac-help/mchlp2657/mac"
+    },
+    {
+      "slug": "iphone-ไม่มีกล่องราคาตกไหม",
+      "path": "/บทความ/iphone-ไม่มีกล่องราคาตกไหม/",
+      "h1": "iPhone ไม่มีกล่องราคาตกไหม",
+      "title": "iPhone ไม่มีกล่องราคาตกไหม? ใช้อะไรยืนยันรุ่นและความจุแทน | WINNER IT",
+      "priceIntent": true,
+      "categories": "iphone",
+      "source": "https://support.apple.com/th-th/106343"
+    },
+    {
+      "slug": "apple-pencil-เพิ่มราคาขาย-ipadไหม",
+      "path": "/บทความ/apple-pencil-เพิ่มราคาขาย-ipadไหม/",
+      "h1": "Apple Pencil ช่วยเพิ่มมูลค่า iPad มือสองไหม",
+      "title": "Apple Pencil ช่วยเพิ่มมูลค่า iPad มือสองไหม? เช็กรุ่นให้ตรงก่อนขาย | WINNER IT",
+      "priceIntent": true,
+      "categories": "ipad-tablet",
+      "source": "https://support.apple.com/th-th/guide/ipad/ipad47ee2e98/ipados"
+    },
+    {
+      "slug": "ขายคอมประกอบต้องส่งข้อมูลอะไร",
+      "path": "/บทความ/ขายคอมประกอบต้องส่งข้อมูลอะไร/",
+      "h1": "ขายคอมประกอบต้องส่งข้อมูลอะไรบ้าง",
+      "title": "ขายคอมประกอบต้องส่งข้อมูลอะไร? เช็กลิสต์ CPU GPU RAM SSD PSU | WINNER IT",
+      "priceIntent": false,
+      "categories": "computer",
+      "source": "https://support.microsoft.com/en-us/windows/experience/find-information-about-your-windows-device"
+    },
+    {
+      "slug": "ขายคอมทั้งชุดพร้อมจอคุ้มไหม",
+      "path": "/บทความ/ขายคอมทั้งชุดพร้อมจอคุ้มไหม/",
+      "h1": "ขายคอมทั้งชุดพร้อมจอคุ้มไหม",
+      "title": "ขายคอมทั้งชุดพร้อมจอคุ้มไหม? เทียบราคาชุดกับแยกประเมิน | WINNER IT",
+      "priceIntent": true,
+      "categories": "computer|monitor",
+      "source": "https://support.microsoft.com/en-us/windows/experience/find-information-about-your-windows-device"
+    },
+    {
+      "slug": "ชุดน้ำมีผลต่อราคาคอมมือสองไหม",
+      "path": "/บทความ/ชุดน้ำมีผลต่อราคาคอมมือสองไหม/",
+      "h1": "ชุดน้ำมีผลต่อราคาคอมมือสองไหม",
+      "title": "ชุดน้ำ AIO มีผลต่อราคาคอมมือสองไหม? เช็กปั๊ม เสียง และอายุก่อนขาย | WINNER IT",
+      "priceIntent": true,
+      "categories": "computer",
+      "source": "https://www.corsair.com/us/en/explorer/diy-builder/cpu-coolers/do-i-need-to-maintain-an-aio/"
+    },
+    {
+      "slug": "วิธีดูรุ่นการ์ดจอใน-windows",
+      "path": "/บทความ/วิธีดูรุ่นการ์ดจอใน-windows/",
+      "h1": "วิธีดูรุ่นการ์ดจอใน Windows ก่อนขาย",
+      "title": "วิธีดูรุ่นการ์ดจอใน Windows ก่อนขาย ดู GPU ให้ตรงไม่สับสน iGPU | WINNER IT",
+      "priceIntent": false,
+      "categories": "gpu|computer",
+      "source": "https://www.nvidia.com/en-us/drivers/"
+    },
+    {
+      "slug": "การ์ดจอขุดเหมืองขายได้ไหม",
+      "path": "/บทความ/การ์ดจอขุดเหมืองขายได้ไหม/",
+      "h1": "การ์ดจอเคยขุดเหมืองขายได้ไหม",
+      "title": "การ์ดจอเคยขุดเหมืองขายได้ไหม? ประเมินจากสภาพปัจจุบันไม่ใช่ประวัติอย่างเดียว | WINNER IT",
+      "priceIntent": true,
+      "categories": "gpu",
+      "source": "https://www.nvidia.com/en-us/geforce/drivers/"
+    },
+    {
+      "slug": "วิธีเทสการ์ดจอก่อนขาย",
+      "path": "/บทความ/วิธีเทสการ์ดจอก่อนขาย/",
+      "h1": "วิธีทดสอบการ์ดจอก่อนขายอย่างปลอดภัย",
+      "title": "วิธีทดสอบการ์ดจอก่อนขาย เช็กภาพ พอร์ต พัดลม อุณหภูมิ และเสถียรภาพ | WINNER IT",
+      "priceIntent": false,
+      "categories": "gpu|computer",
+      "source": "https://www.nvidia.com/en-us/drivers/"
+    }
+  ],
+  "samples": {
+    "missingDecisionPages": [],
+    "lifecycle": [],
+    "missingContent": [],
+    "invalidFields": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "unlinked": [],
+    "holdLeak": [],
+    "thinDiscovery": [],
+    "mergeTargetMissing": [],
+    "mergeHasContent": [],
+    "keepHoldHasContent": [],
+    "decisionOverlap": []
+  }
+}

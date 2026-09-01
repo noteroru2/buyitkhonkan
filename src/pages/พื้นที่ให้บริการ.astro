@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site.js';
+import { LOCAL_PAGES } from '../data/localPages.js';
+import { DISTRICT_ARCHITECTURE } from '../data/architecture/districts.js';
+import { HIGH_INTENT_DISTRICT_CONTENT } from '../data/highIntentDistrictContent.js';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DiscoveryHub from '../components/DiscoveryHub.astro';
+import { getAreaHubDiscovery } from '../data/discoveryLinks.js';
+
+const title = `พื้นที่ให้บริการ | ${SITE.name} ขอนแก่น`;
+const description = `พื้นที่นัดรับซื้อสินค้าไอทีของ ${SITE.name} ในจังหวัดขอนแก่น — บริการนัดรับถึงที่ ไม่มีหน้าร้านให้เดินเข้าใช้บริการ`;
+const discoveryGroups = getAreaHubDiscovery();
+const releasedDistricts = DISTRICT_ARCHITECTURE.filter((page) => page.lifecycle === 'INDEX').map((page) => ({ page, content: HIGH_INTENT_DISTRICT_CONTENT[page.slug] })).filter((item) => item.content);
+const breadcrumbItems = [{ name: 'หน้าแรก', href: '/' }, { name: 'พื้นที่ให้บริการ', href: '/พื้นที่ให้บริการ/' }];
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, Astro.site).href,
+  })),
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <main id="main-content" class="legal">
+    <div class="container legal__in">
+      <Breadcrumbs items={breadcrumbItems} />
+      <h1>พื้นที่ให้บริการในจังหวัดขอนแก่น</h1>
+      <p class="lede">{SITE.serviceModel}</p>
+
+      <h2>รูปแบบการให้บริการ</h2>
+      <p>
+        ไม่มีหน้าร้านให้เดินเข้าใช้บริการในขอนแก่น
+        ลูกค้านัดรับถึงที่หรือนัดจุดกลางตามตารางงานของทีมงาน
+        เวลาและพื้นที่นัดรับขึ้นอยู่กับคิวงานในแต่ละวัน
+      </p>
+
+      <h2>พื้นที่ที่เปิด Local Page แล้ว</h2>
+      <p>
+        ตอนนี้โครง Local ครอบคลุมครบทั้ง 26 อำเภอของจังหวัดผ่านหน้าอำเภอเดิม 5 หน้าและ District Authority 21 หน้า
+        โดยแต่ละหน้าอธิบายรูปแบบนัดและการจัดรอบตามบริบทของพื้นที่ ไม่ได้สร้างด้วยการสลับชื่อใน template เดียว และยังมี Local Zone แยกสำหรับ มข./กังสดาล บ้านเป็ด และศิลา
+      </p>
+      <div class="area-directory">
+        <section>
+          <h3>โซน/พื้นที่เดิมที่เปิดใช้งาน</h3>
+          <ul>
+            {LOCAL_PAGES.map((page) => <li><a href={`/${page.path}/`}>{page.area}</a></li>)}
+          </ul>
+        </section>
+        <section>
+          <h3>District Authority — Content Batches 8–9</h3>
+          <ul>
+            {releasedDistricts.map(({ page, content }) => <li><a href={page.path}>{content.area}</a> <small>{Number.isFinite(content.distanceKm) ? `≈ ${content.distanceKm} กม.` : 'ใช้พิกัดจริงก่อนจัดรอบ'}</small></li>)}
+          </ul>
+        </section>
+      </div>
+      <p>
+        พื้นที่หรือโซนย่อยที่ยังไม่มีหน้าแยกยังสอบถามคิวนัดรับได้ทาง LINE {SITE.lineId}
+        หรือโทร {SITE.phone} โดยหน้าโครงสร้างที่ยังไม่ผ่าน Content Gate จะไม่ถูกแสดงเป็นหน้าพื้นที่ใช้งานจริง
+      </p>
+
+      <h2>ค่าบริการรับถึงที่</h2>
+      <p>
+        โดยปกติไม่มีค่าบริการรับถึงที่แยกต่างหากในพื้นที่ให้บริการปกติ
+        กรณีพื้นที่ห่างไกลหรือต้องจัดรอบพิเศษ ทีมงานจะแจ้งก่อนนัดหมาย
+      </p>
+
+      <DiscoveryHub
+        id="area-discovery"
+        groups={discoveryGroups}
+        title="เลือกพื้นที่ สินค้า หรือคู่มือก่อนนัดรับ"
+        intro="เริ่มจากพื้นที่ที่ใกล้ที่สุด หรือไปยังหน้าสินค้าเพื่อเช็กรุ่นและสภาพก่อนส่งพิกัดจริง ทุกลิงก์ด้านล่างเป็นหน้าที่เปิดใช้งานแล้ว"
+      />
+    </div>
+  </main>
+</Base>
+
+<style>
+  .legal__in { max-width: 1120px; padding-block: 48px 72px; }
+  .lede { max-width: 760px; font-size: 1.05rem; color: var(--ink-soft); margin: 14px 0 28px; }
+  .legal h2 { margin: 28px 0 10px; }
+  .legal p, .legal li { color: #2b3547; margin-bottom: 10px; }
+  .legal ul { margin: 0 0 14px 22px; }
+  .area-directory { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin:18px 0 8px; }
+  .area-directory section { border:1px solid var(--line); border-radius:18px; padding:18px; background:#fff; }
+  .area-directory h3 { margin:0 0 12px; font-size:1.02rem; }
+  .area-directory ul { columns:1; margin-left:18px; }
+  .area-directory small { color:#64748b; }
+  @media (max-width: 700px) { .area-directory { grid-template-columns:1fr; } }
+</style>

@@ -1,0 +1,72 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import DiscoveryHub from './DiscoveryHub.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import { SITE } from '../data/site.js';
+import { getPriceHubDiscovery } from '../data/discoveryLinks.js';
+
+const { page } = Astro.props;
+const groups = getPriceHubDiscovery();
+const breadcrumbs = [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'บทความ', href: '/บทความ/' },
+  { name: 'ศูนย์ข้อมูลราคา', href: page.path },
+];
+---
+
+<main id="main-content" class="price-hub article" data-content-batch="10" data-lifecycle={page.lifecycle}>
+  <section class="price-hero">
+    <div class="container price-hero__shell">
+      <Breadcrumbs items={breadcrumbs} />
+      <p class="eyebrow">PRICE / INFORMATION HUB</p>
+      <h1>{page.h1}</h1>
+      <p class="price-hero__lede">ราคามือสองไม่ได้ขึ้นกับชื่อรุ่นอย่างเดียว ศูนย์นี้รวมบทความราคาเดิมกับคู่มือเรื่องสภาพ อุปกรณ์ แบต ประกัน และประวัติซ่อม เพื่อให้รู้ว่า “ต้องเช็กอะไร” ก่อนเอาตัวเลขมาเทียบกัน.</p>
+      <div class="price-principles">
+        <span>1 · ยืนยันรุ่น/สเปก</span><span>2 · แยกสภาพและอุปกรณ์</span><span>3 · ดูวันที่ของข้อมูลราคา</span><span>4 · Final หลังตรวจเครื่องจริง</span>
+      </div>
+      <div class="cta-row">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="price_hub_hero">ส่งเครื่องจริงเช็กราคา LINE {SITE.lineId}</a>
+        <a href="#price-discovery" class="btn btn--ghost">เลือกหัวข้อราคา</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container price-body">
+    <section class="price-explain">
+      <p class="eyebrow">วิธีใช้ศูนย์ข้อมูลนี้</p>
+      <h2>แยก “ราคาตลาด” ออกจาก “ราคาของเครื่องคุณ”</h2>
+      <div class="price-grid">
+        <article><strong>ราคาตลาด</strong><p>ใช้ดูกรอบของรุ่นหรือหมวดในช่วงเวลาหนึ่ง และต้องดูวันที่อ้างอิงของบทความนั้น.</p></article>
+        <article><strong>ปัจจัยสภาพ</strong><p>แบต จอ อุปกรณ์ ประกัน งานซ่อม และตำหนิทำให้เครื่องรุ่นเดียวกันไม่จำเป็นต้องได้ราคาเท่ากัน.</p></article>
+        <article><strong>การตรวจจริง</strong><p>ข้อมูลทาง LINE ช่วยให้ประเมินเบื้องต้น ส่วนราคาสุดท้ายยืนยันหลังตรวจรุ่นและสภาพจริง.</p></article>
+      </div>
+    </section>
+
+    <TrustProofSystem variant="money" itemLabel="ข้อมูลราคารับซื้อสินค้าไอที" location="price_hub_trust" />
+
+    <DiscoveryHub id="price-discovery" groups={groups} title="เลือกดูราคาและปัจจัยตามสินค้าที่ถืออยู่" intro="เริ่มจากบทความราคาในหมวดที่มีข้อมูลอยู่แล้ว หรืออ่านคู่มือปัจจัยราคาเพื่อดูว่ากล่อง ที่ชาร์จ ประกัน แบต และตำหนิมีผลอย่างไร โดยไม่ใช้สูตรหักตายตัว" />
+
+    <aside class="price-warning">
+      <strong>นโยบายความสดของราคา</strong>
+      <p>หน้าที่มีตารางราคาควรอ่านวันที่อ้างอิงบนหน้านั้นเสมอ เพราะตลาดมือสองเปลี่ยนได้ตามรุ่นใหม่ สต็อกและความต้องการ. หากต้องการราคาปัจจุบันของเครื่องจริง ให้ส่งรุ่น/สเปก/สภาพเพื่อเช็กอีกครั้งก่อนตัดสินใจ.</p>
+    </aside>
+  </div>
+</main>
+
+<style>
+  .price-hero { padding: 44px 0 42px; background: linear-gradient(180deg, rgba(16,185,129,.06), rgba(255,255,255,0)); border-bottom: 1px solid var(--line); }
+  .price-hero__shell { max-width: 900px; }
+  .price-hero h1 { margin: 9px 0 15px; text-wrap: balance; }
+  .price-hero__lede { max-width: 76ch; color: var(--ink-soft); line-height: 1.78; font-size: 1.06rem; }
+  .price-principles { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+  .price-principles span { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 8px 11px; font-size: .9rem; }
+  .price-body { max-width: 980px; padding-block: 38px 70px; }
+  .price-explain { max-width: 850px; margin-inline: auto; }
+  .price-explain p { color: var(--ink-soft); line-height: 1.75; }
+  .price-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; margin: 18px 0 30px; }
+  .price-grid article { border: 1px solid var(--line); border-radius: 14px; background: #fff; padding: 17px; }
+  .price-grid p { margin: 8px 0 0; }
+  .price-warning { max-width: 850px; margin: 30px auto 0; padding: 18px; border: 1px solid #fed7aa; border-left: 4px solid #f59e0b; border-radius: 12px; background: #fffbeb; }
+  .price-warning p { color: var(--ink-soft); line-height: 1.75; margin: 7px 0 0; }
+  @media (max-width: 760px) { .price-grid { grid-template-columns: 1fr; } }
+</style>

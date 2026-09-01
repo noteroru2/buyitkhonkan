@@ -1,0 +1,218 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:31.999Z",
+  "batch": "CONTENT_BATCH_3_HIGH_INTENT_EXPANSION",
+  "findings": {
+    "releasedCount": 172,
+    "expectedReleasedCount": 172,
+    "batch3ReleasedCount": 21,
+    "expectedBatch3ReleasedCount": 21,
+    "holdModelCount": 8,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "invalidLifecycle": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "unlinkedReleasedPages": 0,
+    "duplicateTitles": 0,
+    "duplicateDescriptions": 0,
+    "duplicateLongEditorialStrings": 0,
+    "unsafeClaims": 0,
+    "fixedNumericPriceClaims": 0,
+    "batch3MissingManufacturerSource": 0
+  },
+  "integration": {
+    "releasedRouteBranch": true,
+    "holdRobotsPreserved": true,
+    "faqSchema": true,
+    "conversionLayer": true,
+    "internalDiscovery": true,
+    "batchMarker": true,
+    "categoryDiscoveryExpanded": true,
+    "noStructureOnlyCopy": true
+  },
+  "batch3Released": [
+    {
+      "slug": "asus-rog-zephyrus-g16",
+      "path": "/รับซื้อ-asus-rog-zephyrus-g16-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Zephyrus G16 ขอนแก่น เช็ก GA605 GU605 จอ OLED และ RTX | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Zephyrus G16 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://rog.asus.com/th/laptops/rog-zephyrus/rog-zephyrus-g16-2025-ga605/spec/"
+    },
+    {
+      "slug": "asus-rog-strix-g16",
+      "path": "/รับซื้อ-asus-rog-strix-g16-ขอนแก่น/",
+      "title": "รับซื้อ ASUS ROG Strix G16 ขอนแก่น เช็ก G614 G615 RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ ASUS ROG Strix G16 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://rog.asus.com/th/laptops/rog-strix/rog-strix-g16-2025/spec/"
+    },
+    {
+      "slug": "lenovo-legion-pro-5",
+      "path": "/รับซื้อ-lenovo-legion-pro-5-ขอนแก่น/",
+      "title": "รับซื้อ Lenovo Legion Pro 5 ขอนแก่น เช็ก 16IRX/16ARX RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ Lenovo Legion Pro 5 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://psref.lenovo.com/Product/Legion/Legion_Pro_5_16IRX9"
+    },
+    {
+      "slug": "acer-predator-helios-neo-16",
+      "path": "/รับซื้อ-acer-predator-helios-neo-16-ขอนแก่น/",
+      "title": "รับซื้อ Acer Predator Helios Neo 16 ขอนแก่น เช็ก PHN16 RTX และจอ | WINNER IT",
+      "h1": "รับซื้อ Acer Predator Helios Neo 16 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://www.acer.com/th-th/predator/laptops/helios/helios-neo-16/pdp/NH.QNMST.001"
+    },
+    {
+      "slug": "hp-victus-16",
+      "path": "/รับซื้อ-hp-victus-16-ขอนแก่น/",
+      "title": "รับซื้อ HP Victus 16 ขอนแก่น เช็ก CPU RTX จอ RAM SSD และประกัน | WINNER IT",
+      "h1": "รับซื้อ HP Victus 16 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://www.hp.com/us-en/gaming-pc/laptops/2023-victus-16-intel.html"
+    },
+    {
+      "slug": "macbook-air-m4",
+      "path": "/รับซื้อ-macbook-air-m4-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Air M4 ขอนแก่น 13/15 นิ้ว RAM SSD แบต | WINNER IT",
+      "h1": "รับซื้อ MacBook Air M4 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/th-th/122209"
+    },
+    {
+      "slug": "macbook-pro-14-m2-pro",
+      "path": "/รับซื้อ-macbook-pro-14-m2-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 14 M2 Pro ขอนแก่น RAM SSD แบตและจอ XDR | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 14 M2 Pro ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-us/111340"
+    },
+    {
+      "slug": "macbook-pro-16-m2-pro",
+      "path": "/รับซื้อ-macbook-pro-16-m2-pro-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 16 M2 Pro ขอนแก่น RAM SSD แบตและจอ XDR | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 16 M2 Pro ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-euro/111838"
+    },
+    {
+      "slug": "macbook-pro-14-m4",
+      "path": "/รับซื้อ-macbook-pro-14-m4-ขอนแก่น/",
+      "title": "รับซื้อ MacBook Pro 14 M4 ขอนแก่น RAM SSD แบต จอ XDR | WINNER IT",
+      "h1": "รับซื้อ MacBook Pro 14 M4 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/th-th/121552"
+    },
+    {
+      "slug": "iphone-13-pro",
+      "path": "/รับซื้อ-iphone-13-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 13 Pro ขอนแก่น 128GB ถึง 1TB เช็กแบต จอ Face ID | WINNER IT",
+      "h1": "รับซื้อ iPhone 13 Pro ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-ph/111871"
+    },
+    {
+      "slug": "iphone-13-pro-max",
+      "path": "/รับซื้อ-iphone-13-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 13 Pro Max ขอนแก่น 128GB ถึง 1TB เช็กแบตและจอ | WINNER IT",
+      "h1": "รับซื้อ iPhone 13 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-us/111870"
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "path": "/รับซื้อ-iphone-14-pro-max-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 14 Pro Max ขอนแก่น 128GB ถึง 1TB เช็กแบต จอ Face ID | WINNER IT",
+      "h1": "รับซื้อ iPhone 14 Pro Max ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-us/111846"
+    },
+    {
+      "slug": "iphone-15-pro",
+      "path": "/รับซื้อ-iphone-15-pro-ขอนแก่น/",
+      "title": "รับซื้อ iPhone 15 Pro ขอนแก่น 128GB ถึง 1TB Titanium USB-C | WINNER IT",
+      "h1": "รับซื้อ iPhone 15 Pro ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-asia/111829"
+    },
+    {
+      "slug": "ipad-a16",
+      "path": "/รับซื้อ-ipad-a16-ขอนแก่น/",
+      "title": "รับซื้อ iPad A16 ขอนแก่น 128 256 512GB Wi‑Fi Cellular | WINNER IT",
+      "h1": "รับซื้อ iPad A16 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/th-th/122240"
+    },
+    {
+      "slug": "ipad-air-m2-11",
+      "path": "/รับซื้อ-ipad-air-m2-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Air M2 11 นิ้ว ขอนแก่น Wi‑Fi Cellular 128GB ถึง 1TB | WINNER IT",
+      "h1": "รับซื้อ iPad Air M2 11-inch ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-au/119894"
+    },
+    {
+      "slug": "ipad-pro-m2-11",
+      "path": "/รับซื้อ-ipad-pro-m2-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M2 11 นิ้ว ขอนแก่น Wi‑Fi Cellular Face ID | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M2 11-inch ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-ph/111842"
+    },
+    {
+      "slug": "ipad-pro-m4-11",
+      "path": "/รับซื้อ-ipad-pro-m4-11-ขอนแก่น/",
+      "title": "รับซื้อ iPad Pro M4 11 นิ้ว ขอนแก่น OLED 256GB ถึง 2TB | WINNER IT",
+      "h1": "รับซื้อ iPad Pro M4 11-inch ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://support.apple.com/en-sg/119892"
+    },
+    {
+      "slug": "rtx-4060",
+      "path": "/รับซื้อ-rtx-4060-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4060 ขอนแก่น 8GB เช็กประกัน พัดลมและประวัติใช้งาน | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4060 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/40-series/rtx-4060-4060ti/"
+    },
+    {
+      "slug": "rtx-4070-super",
+      "path": "/รับซื้อ-rtx-4070-super-ขอนแก่น/",
+      "title": "รับซื้อ RTX 4070 SUPER ขอนแก่น 12GB เช็กประกันและสภาพ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 4070 SUPER ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/40-series/rtx-4070-family/"
+    },
+    {
+      "slug": "rtx-5070",
+      "path": "/รับซื้อ-rtx-5070-ขอนแก่น/",
+      "title": "รับซื้อ RTX 5070 ขอนแก่น 12GB GDDR7 ประกันเหลือ | WINNER IT",
+      "h1": "รับซื้อ GeForce RTX 5070 ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/50-series/rtx-5070-family/"
+    },
+    {
+      "slug": "rx-7800-xt",
+      "path": "/รับซื้อ-rx-7800-xt-ขอนแก่น/",
+      "title": "รับซื้อ Radeon RX 7800 XT ขอนแก่น 16GB เช็กประกัน พัดลมและหัวไฟ | WINNER IT",
+      "h1": "รับซื้อ Radeon RX 7800 XT ขอนแก่น",
+      "lifecycle": "INDEX",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7800-xt.html"
+    }
+  ],
+  "samples": {
+    "missingContent": [],
+    "invalidFields": [],
+    "invalidLifecycle": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "unlinkedReleasedPages": [],
+    "duplicateTitles": [],
+    "duplicateDescriptions": [],
+    "duplicateParagraphs": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "missingSource": []
+  }
+}

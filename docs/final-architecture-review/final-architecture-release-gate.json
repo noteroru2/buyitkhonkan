@@ -1,0 +1,13 @@
+{
+  "verdict": "PASS_WITH_BUILD_WARNING",
+  "finalArchitectureReview": "PASS",
+  "finalRegression": "PASS",
+  "historicalAudits": "36/36 PASS",
+  "expectedProductionIndexableRoutes": 383,
+  "expectedSitemapUrls": 383,
+  "architectureIndex": 297,
+  "architectureHoldSourceOnly": 14,
+  "holdRoutesBuilt": false,
+  "remainingReleaseCandidates": 0,
+  "build": "WARNING_DEPENDENCY_RUNTIME"
+}

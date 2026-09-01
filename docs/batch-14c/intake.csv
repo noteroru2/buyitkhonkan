@@ -1,0 +1,24 @@
+id,source,status,reason
+RP-01,S__25854072_0.jpg,approved,smartphone clean
+RP-02,S__25854073_0.jpg,rejected,labels and background identifiers
+RP-03,S__25854074_0.jpg,approved,camera clean
+RP-04,S__25854075_0.jpg,rejected,serial labels and barcodes
+RP-05,S__25854076_0.jpg,approved,computer clean
+RP-06,S__25854077_0.jpg,approved,computer clean
+RP-07,S__25854078_0.jpg,approved,notebook clean
+RP-08,S__25854079_0.jpg,approved,cameras clean
+RP-09,S__25854080_0.jpg,approved,tablet clean
+RP-10,S__25854081_0.jpg,approved,tablet clean
+RP-11,S__25854083_0.jpg,approved,camera clean
+RP-12,S__25854084_0.jpg,approved,camera clean
+RP-13,S__25854085_0.jpg,approved,monitor clean
+RP-14,S__25854086_0.jpg,rejected,visible Wi-Fi identifier and device data
+RP-15,S__25854087_0.jpg,approved,MacBook clean
+RP-16,S__25854088_0.jpg,approved,MacBook clean
+RP-17,S__25854089_0.jpg,rejected,shop sticker and phone number
+RP-18,S__25854090_0.jpg,approved,tablet clean
+RP-19,S__25854091_0.jpg,approved,notebook clean
+RP-20,S__25854092_0.jpg,rejected,potentially misleading product identity
+RP-21,S__25854094_0.jpg,approved,game console clean
+RP-22,S__25854095_0.jpg,approved-redacted,QR region covered in derived asset
+RP-23,S__25854096_0.jpg,approved,camera clean

@@ -1,0 +1,225 @@
+---
+const {
+  groups = [],
+  id = 'discover',
+  title = 'สำรวจข้อมูลที่เกี่ยวข้อง',
+  intro = 'เลือกเส้นทางต่อที่ตรงกับสินค้า สภาพ หรือพื้นที่ของคุณ',
+  compact = false,
+} = Astro.props;
+
+const visibleGroups = groups.filter((group) => group?.items?.length);
+---
+
+{visibleGroups.length > 0 && (
+  <section id={id} class:list={['discovery', compact && 'discovery--compact']} aria-labelledby={`${id}-title`}>
+    <div class="discovery__head">
+      <div>
+        <p class="discovery__eyebrow">สำรวจข้อมูลต่อ</p>
+        <h2 id={`${id}-title`}>{title}</h2>
+        <p>{intro}</p>
+      </div>
+      <div class="discovery__hubs" aria-label="ทางลัดศูนย์รวมข้อมูล">
+        <a href="/สินค้าที่รับซื้อ/">สินค้า</a>
+        <a href="/สภาพสินค้าที่ขายได้/">สภาพ</a>
+        <a href="/พื้นที่ให้บริการ/">พื้นที่</a>
+        <a href="/บทความ/">คู่มือ</a>
+      </div>
+    </div>
+
+    <div class="discovery__groups">
+      {visibleGroups.map((group) => (
+        <section class="discovery-group" aria-labelledby={`${id}-${group.key}`}>
+          <div class="discovery-group__head">
+            <div>
+              <p class="discovery-group__eyebrow">{group.eyebrow}</p>
+              <h3 id={`${id}-${group.key}`}>{group.title}</h3>
+              {group.description && <p>{group.description}</p>}
+            </div>
+            {group.viewAll && <a class="discovery-group__all" href={group.viewAll.href}>{group.viewAll.label}<span aria-hidden="true">→</span></a>}
+          </div>
+
+          <div class="discovery-cards">
+            {group.items.map((item) => (
+              <a
+                href={item.href}
+                class:list={['discovery-card', `discovery-card--${item.type || 'page'}`]}
+                data-track-event="internal_discovery_click"
+                data-cta-location={`discovery_${group.key}`}
+              >
+                <span class="discovery-card__top">
+                  <span class="discovery-card__icon" aria-hidden="true">{item.icon || '→'}</span>
+                  <span class="discovery-card__badge">{item.badge || 'ดูต่อ'}</span>
+                </span>
+                <strong>{item.title}</strong>
+                {item.desc && <small>{item.desc}</small>}
+                <span class="discovery-card__more">ดูรายละเอียด <span aria-hidden="true">→</span></span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .discovery {
+    margin: 48px 0 16px;
+    padding: clamp(22px, 4vw, 34px);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at 96% 0%, rgba(49, 87, 246, .08), transparent 19rem),
+      #fff;
+    box-shadow: var(--shadow-sm);
+    scroll-margin-top: 150px;
+  }
+  .discovery__head {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    align-items: flex-end;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .discovery__head > div:first-child { max-width: 680px; }
+  .discovery__eyebrow,
+  .discovery-group__eyebrow {
+    margin: 0 0 5px;
+    color: var(--color-primary);
+    font-size: .76rem;
+    font-weight: 850;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+  .discovery__head h2 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.1rem); }
+  .discovery__head p:not(.discovery__eyebrow) { margin: 7px 0 0; color: var(--color-muted); line-height: 1.6; }
+  .discovery__hubs { display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end; }
+  .discovery__hubs a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 7px 11px;
+    border: 1px solid #dce4f5;
+    border-radius: 999px;
+    background: var(--color-soft-blue);
+    color: var(--color-primary-dark);
+    font-size: .79rem;
+    font-weight: 800;
+  }
+  .discovery__hubs a:hover { text-decoration: none; border-color: var(--color-primary); }
+  .discovery__groups { display: grid; gap: 32px; margin-top: 28px; }
+  .discovery-group { min-width: 0; }
+  .discovery-group__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 13px;
+  }
+  .discovery-group__head > div { max-width: 700px; }
+  .discovery-group h3 { margin: 0; font-size: 1.18rem; }
+  .discovery-group__head p:not(.discovery-group__eyebrow) { margin: 5px 0 0; color: var(--color-muted); font-size: .88rem; line-height: 1.55; }
+  .discovery-group__all {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-primary);
+    font-size: .82rem;
+    font-weight: 800;
+  }
+  .discovery-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 11px;
+  }
+  .discovery-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 178px;
+    padding: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    background: #fff;
+    color: var(--color-navy);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, .035);
+    transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+  }
+  .discovery-card:hover,
+  .discovery-card:focus-visible {
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-border));
+    box-shadow: 0 15px 34px rgba(15, 23, 42, .09);
+  }
+  .discovery-card__top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+  .discovery-card__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: var(--color-soft-blue);
+    color: var(--color-primary-dark);
+    font-size: .95rem;
+    font-weight: 850;
+  }
+  .discovery-card__badge {
+    min-width: 0;
+    padding: 4px 7px;
+    border-radius: 999px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: .68rem;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .discovery-card strong { display: block; font-size: .94rem; line-height: 1.38; overflow-wrap: anywhere; }
+  .discovery-card small {
+    display: -webkit-box;
+    margin-top: 7px;
+    color: var(--color-muted);
+    font-size: .78rem;
+    line-height: 1.48;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .discovery-card__more { margin-top: auto; padding-top: 12px; color: var(--color-primary); font-size: .75rem; font-weight: 800; }
+  .discovery--compact { margin-top: 36px; }
+  .discovery--compact .discovery-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .discovery--compact .discovery-card { min-height: 158px; }
+
+  @media (max-width: 980px) {
+    .discovery-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .discovery--compact .discovery-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 700px) {
+    .discovery { margin-inline: -2px; padding: 20px 16px; border-radius: 20px; }
+    .discovery__head,
+    .discovery-group__head { align-items: flex-start; flex-direction: column; gap: 12px; }
+    .discovery__hubs { justify-content: flex-start; width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 2px; scrollbar-width: none; }
+    .discovery__hubs::-webkit-scrollbar { display: none; }
+    .discovery__hubs a { flex: 0 0 auto; }
+    .discovery__groups { gap: 28px; }
+    .discovery-group__all { min-height: 36px; }
+    .discovery-cards,
+    .discovery--compact .discovery-cards {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      margin-inline: -16px;
+      padding: 2px 16px 10px;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+    }
+    .discovery-cards::-webkit-scrollbar { display: none; }
+    .discovery-card,
+    .discovery--compact .discovery-card { flex: 0 0 min(82vw, 290px); min-height: 168px; scroll-snap-align: start; }
+  }
+</style>

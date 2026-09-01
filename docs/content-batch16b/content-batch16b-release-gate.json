@@ -1,0 +1,174 @@
+{
+  "verdict": "PASS_WITH_BUILD_WARNING",
+  "batch": "CONTENT_BATCH_16B_MODEL_RELEASE_ROUND_1",
+  "contentAudit": "PASS",
+  "regressionAudit": "PASS",
+  "architectureAudit": "PASS",
+  "discoveryAudit": "PASS",
+  "historicalAudits": {
+    "checked": 24,
+    "failed": 0,
+    "allCheckedAudits": [
+      {
+        "audit": "content-batch4-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch5-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch6-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch6-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch7-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch7-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch8-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch8-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch9-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch9-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch10-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch10-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch11-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch11-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch12-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch12-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch13-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch13-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch14-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch14-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch15-triage-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch15-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch16a-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch16a-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch16b-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "content-batch16b-regression.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "architecture-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      },
+      {
+        "audit": "discovery-ux-audit.mjs",
+        "rc": 0,
+        "verdict": "PASS"
+      }
+    ]
+  },
+  "build": {
+    "verdict": "WARNING",
+    "reason": "npm ci did not complete within sandbox runtime/network window; Astro build was not claimed as PASS",
+    "nodeModulesRemoved": true,
+    "distRemoved": true
+  },
+  "state": {
+    "architectureTotal": 311,
+    "architectureIndex": 275,
+    "architectureHold": 36,
+    "modelTotal": 180,
+    "modelIndex": 150,
+    "modelHold": 30,
+    "batch16bReleased": 18,
+    "remainingApprovedModelReleaseCandidates": 22,
+    "discoveryContexts": 203,
+    "uniqueLiveInternalTargets": 339,
+    "brokenDiscoveryLinks": 0,
+    "holdLeaks": 0
+  }
+}

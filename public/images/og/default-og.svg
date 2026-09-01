@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">WINNER IT รับซื้อสินค้าไอทีในจังหวัดขอนแก่น</title>
+  <desc id="desc">กราฟิกแบรนด์ทั่วไปสำหรับ Open Graph ของเว็บไซต์รับซื้อสินค้าไอทีในจังหวัดขอนแก่น</desc>
+  <rect width="1200" height="630" fill="#0d1526"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#ffffff"/>
+  <rect x="112" y="112" width="112" height="92" rx="18" fill="#0d1526"/>
+  <text x="168" y="171" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffb020">IT</text>
+  <text x="252" y="156" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#0d1526">WINNER IT</text>
+  <text x="252" y="208" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#2242e8">รับซื้อสินค้าไอทีในจังหวัดขอนแก่น</text>
+  <line x1="112" y1="258" x2="1088" y2="258" stroke="#dce3ee" stroke-width="3"/>
+  <text x="112" y="332" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#0d1526">ประเมินผ่าน LINE และนัดรับตามคิวงานจริง</text>
+  <text x="112" y="392" font-family="Arial, sans-serif" font-size="26" fill="#46536b">โน้ตบุ๊ค • คอมพิวเตอร์ • iPhone • iPad • MacBook • การ์ดจอ • เครื่องเกม</text>
+  <g transform="translate(112 450)">
+    <rect width="252" height="58" rx="29" fill="#06c755"/>
+    <text x="126" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">LINE @buyhub</text>
+  </g>
+  <g transform="translate(388 450)">
+    <rect width="238" height="58" rx="29" fill="#2242e8"/>
+    <text x="119" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">095-547-9408</text>
+  </g>
+  <circle cx="1000" cy="420" r="88" fill="#eef2f9"/>
+  <path d="M960 398h80v70h-80z" fill="none" stroke="#2242e8" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M982 382h36l12 16h-60z" fill="none" stroke="#2242e8" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="1000" cy="433" r="16" fill="#ffb020"/>
+</svg>

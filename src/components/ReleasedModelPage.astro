@@ -1,0 +1,254 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import MoneyConversionCard from './MoneyConversionCard.astro';
+import MoneyPageNav from './MoneyPageNav.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import DiscoveryHub from './DiscoveryHub.astro';
+import { SITE, CATEGORIES } from '../data/categories.js';
+import { BRAND_PAGES } from '../data/brandPages.js';
+import { CONDITION_PAGES } from '../data/conditionPages.js';
+import { CONDITION_ARCHITECTURE } from '../data/architecture/conditions.js';
+import { ARCHITECTURE_PAGES } from '../data/architectureRegistry.js';
+import { HIGH_INTENT_MODEL_CONTENT } from '../data/highIntentModelContent.js';
+
+const { page, content } = Astro.props;
+const category = CATEGORIES.find((item) => item.slug === content.categorySlug);
+const brand = content.brandSlug ? BRAND_PAGES.find((item) => item.slug === content.brandSlug) : null;
+const currentSlug = page.slug || page.id.replace(/^model-/, '');
+const releasedBySlug = new Map(
+  ARCHITECTURE_PAGES
+    .filter((item) => item.type === 'model' && item.lifecycle === 'INDEX')
+    .map((item) => [item.slug || item.id.replace(/^model-/, ''), item]),
+);
+const relatedPages = (content.relatedSlugs || [])
+  .map((slug) => releasedBySlug.get(slug))
+  .filter(Boolean)
+  .slice(0, 6);
+const releasedConditionPages = CONDITION_ARCHITECTURE
+  .filter((item) => item.lifecycle === 'INDEX' && category && item.parent === `/${category.path || category.slug}/`)
+  .slice(0, 3);
+const conditionPages = CONDITION_PAGES
+  .filter((item) => item.applies?.includes(content.categorySlug))
+  .slice(0, 3);
+
+const guideMap = {
+  notebook: [
+    ['/บทความ/เช็คลิสต์ก่อนขายโน้ตบุ๊ก/', 'เช็กลิสต์ก่อนขายโน้ตบุ๊ก', 'เตรียมสเปก รูป และข้อมูลสภาพก่อนส่งประเมิน'],
+    ['/บทความ/ราคารับซื้อ-โน้ตบุ๊กเกมมิ่ง/', 'ราคารับซื้อโน้ตบุ๊กเกมมิ่ง', 'ดูว่าการ์ดจอ สเปกและสภาพส่งผลต่อมูลค่าอย่างไร'],
+  ],
+  macbook: [
+    ['/บทความ/ราคารับซื้อ-macbook-มือสอง/', 'ราคารับซื้อ MacBook มือสอง', 'ดูปัจจัยราคา Air / Pro และสิ่งที่ควรเช็กก่อนขาย'],
+    ['/บทความ/เทิร์นเครื่องศูนย์-vs-ขายร้านรับซื้อ/', 'เทิร์นเครื่องหรือขายร้านรับซื้อ', 'เปรียบเทียบทางเลือกก่อนตัดสินใจ'],
+  ],
+  iphone: [
+    ['/บทความ/ราคารับซื้อ-iphone-มือสอง/', 'ราคารับซื้อ iPhone มือสอง', 'ดูผลของความจุ แบต จอและประวัติอะไหล่'],
+    ['/บทความ/วิธีลบข้อมูล-iphone-ก่อนขาย/', 'วิธีลบข้อมูล iPhone ก่อนขาย', 'สำรองข้อมูล ปิด Find My และเตรียมเครื่องก่อนส่งมอบ'],
+  ],
+  'ipad-tablet': [
+    ['/บทความ/นักศึกษา-มข-ขายโน้ตบุ๊ก-ipad/', 'เตรียม iPad ก่อนขาย', 'แนวทางส่งข้อมูลและนัดรับสำหรับผู้ใช้ iPad ในขอนแก่น'],
+    ['/บทความ/เอกสารขายของไอที/', 'เอกสารก่อนขายของไอที', 'ดูข้อมูลที่ควรเตรียมโดยไม่ส่งข้อมูลส่วนตัวเกินจำเป็น'],
+  ],
+  gpu: [
+    ['/บทความ/ราคารับซื้อ-การ์ดจอ/', 'ราคารับซื้อการ์ดจอมือสอง', 'ดูปัจจัยราคา RTX และสภาพที่ควรตรวจ'],
+    ['/บทความ/ขายคอมทั้งเครื่อง-vs-แยกชิ้นส่วน/', 'ขายคอมทั้งเครื่องหรือแยกชิ้นส่วน', 'เทียบการขาย GPU แยกกับขายรวมเครื่อง'],
+  ],
+  monitor: [
+    ['/บทความ/ของพังขายได้ไหม/', 'จอมีตำหนิหรือเสียยังขายได้ไหม', 'ดูวิธีแจ้ง dead pixel เส้น จอแตก และอาการเปิดไม่ติดก่อนประเมิน'],
+    ['/บทความ/ขายคอมทั้งเครื่อง-vs-แยกชิ้นส่วน/', 'ขายจอพร้อมคอมหรือแยกขาย', 'เทียบการส่งจอพร้อมชุดคอมกับแยกอุปกรณ์ประเมิน'],
+  ],
+  'drone-gopro': [
+    ['/บทความ/กลโกงขายของไอทีออนไลน์/', 'ข้อควรระวังก่อนขายโดรนและกล้องออนไลน์', 'เช็กความเสี่ยงเรื่องบัญชี การนัด และการส่งสินค้า'],
+    ['/บทความ/ขายของไอทีที่ไหนดี-ขอนแก่น/', 'ขายโดรนหรือ Action Camera ที่ไหนดี', 'เปรียบเทียบวิธีขายและข้อมูลที่ควรเตรียมก่อนนัด'],
+  ],
+  smartwatch: [
+    ['/บทความ/เทิร์นเครื่องศูนย์-vs-ขายร้านรับซื้อ/', 'เทิร์นหรือขาย Smartwatch แบบไหนดี', 'เปรียบเทียบช่องทางก่อนตัดสินใจส่งมอบ'],
+    ['/บทความ/กลโกงขายของไอทีออนไลน์/', 'ระวังบัญชีและข้อมูลก่อนขาย Smartwatch', 'เช็กความเสี่ยงก่อนนัดและไม่ส่งรหัสผ่านให้ผู้ซื้อ'],
+  ],
+};
+const guides = guideMap[content.categorySlug] || [];
+
+const categoryCard = category ? {
+  href: `/${category.path || category.slug}/`, title: category.h1, desc: category.short, badge: 'หน้าหลัก', icon: '▦', type: 'category',
+} : null;
+const brandCard = brand ? {
+  href: `/${brand.path}/`, title: brand.h1, desc: brand.demand || brand.intro, badge: 'แบรนด์', icon: '🏷', type: 'brand',
+} : null;
+const relatedCards = relatedPages.map((item) => ({
+  href: item.path, title: item.h1, desc: HIGH_INTENT_MODEL_CONTENT[item.slug]?.metaDescription || item.description, badge: 'รุ่นใกล้เคียง', icon: '▣', type: 'model',
+}));
+const conditionCards = [
+  ...releasedConditionPages.map((item) => ({ href: item.path, title: item.h1, desc: item.description, badge: 'อาการเฉพาะรุ่นสินค้า', icon: '◇', type: 'released-condition' })),
+  ...conditionPages.map((item) => ({ href: `/${item.path}/`, title: item.h1, desc: item.priceImpact, badge: 'สภาพทั่วไป', icon: '◇', type: 'condition' })),
+].slice(0, 5);
+const guideCards = guides.map(([href, title, desc]) => ({ href, title, desc, badge: 'คู่มือ', icon: '↗', type: 'guide' }));
+const groups = [
+  { key: 'parent', eyebrow: 'ย้อนกลับไปดูภาพรวม', title: 'หน้าหลักและแบรนด์ที่เกี่ยวข้อง', description: 'ใช้หน้าหลักเพื่อเปรียบเทียบรุ่นอื่นในหมวดเดียวกันก่อนตัดสินใจ', items: [categoryCard, brandCard].filter(Boolean) },
+  relatedCards.length ? { key: 'related', eyebrow: 'เปรียบเทียบรุ่น', title: 'รุ่นที่ควรดูต่อ', description: 'ลิงก์เฉพาะรุ่นที่ผ่าน Content Gate และเปิด Index แล้ว', items: relatedCards } : null,
+  conditionCards.length ? { key: 'condition', eyebrow: 'เครื่องมีตำหนิ', title: 'ดูตามสภาพจริง', description: 'ถ้ามีจอแตก แบตบวม เปิดไม่ติด หรืออุปกรณ์ไม่ครบ ให้ดูหน้าสภาพเพื่อเตรียมข้อมูลเพิ่ม', items: conditionCards, viewAll: { href: '/สภาพสินค้าที่ขายได้/', label: 'ดูทุกสภาพสินค้า' } } : null,
+  guideCards.length ? { key: 'guides', eyebrow: 'ก่อนขาย', title: 'คู่มือที่เกี่ยวข้อง', description: 'อ่านเฉพาะเรื่องที่ช่วยเตรียมเครื่องและเข้าใจปัจจัยราคา', items: guideCards, viewAll: { href: '/บทความ/', label: 'ดูบทความทั้งหมด' } } : null,
+].filter(Boolean);
+
+const breadcrumbs = [
+  { name: 'หน้าแรก', href: '/' },
+  ...(category ? [{ name: category.name, href: `/${category.path || category.slug}/` }] : []),
+  ...(brand ? [{ name: brand.brand, href: `/${brand.path}/` }] : []),
+  { name: page.label, href: page.path },
+];
+---
+
+<main id="main-content" class="released-model-page article" data-content-batch={content.releaseBatch || 3} data-release-batch={content.releaseBatch || 3} data-lifecycle={page.lifecycle}>
+  <section class="released-model-hero">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="released-model-hero__grid">
+        <div>
+          <p class="eyebrow">Model / Series · CONTENT VERIFIED</p>
+          <h1>{page.h1}</h1>
+          <p class="released-model-hero__lede">{content.intro}</p>
+          <div class="released-model-hero__trust" aria-label="จุดสำคัญก่อนประเมิน">
+            <span>✓ ดูรุ่นย่อยจริง</span><span>✓ แยกสภาพและอุปกรณ์</span><span>✓ ไม่ล็อกราคาเก่าบนหน้าเว็บ</span>
+          </div>
+          <div class="cta-row">
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_model_hero">ส่งรูปเช็กราคา LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone" data-cta-location="released_model_hero">โทร {SITE.phone}</a>
+          </div>
+        </div>
+        <MoneyConversionCard itemLabel={page.label} location="released_model_hero_card" />
+      </div>
+    </div>
+  </section>
+
+  <div class="money-nav-wrap">
+    <MoneyPageNav items={[
+      { href: '#model-trust', label: 'ตรวจสอบก่อนขาย' },
+      { href: '#variants', label: 'รุ่นย่อย/สเปก' },
+      { href: '#inspection', label: 'จุดตรวจ' },
+      { href: '#price-factors', label: 'ปัจจัยราคา' },
+      { href: '#prepare-model', label: 'ข้อมูลที่ต้องส่ง' },
+      { href: '#discover', label: 'หน้าที่เกี่ยวข้อง' },
+      { href: '#faq-model', label: 'FAQ' },
+    ]} />
+  </div>
+
+  <TrustProofSystem variant="money" itemLabel={page.label} location="model_trust" />
+
+  <div class="container released-model-body">
+    <section id="variants">
+      <p class="eyebrow">อย่าตีราคาเหมารวมจากชื่อรุ่น</p>
+      <h2>รุ่นย่อยและข้อมูลที่ต้องแยกก่อนประเมิน {page.label}</h2>
+      <p>ชื่อรุ่นเดียวกันอาจมีสเปก ความจุ ปี หรืออุปกรณ์ต่างกัน การประเมินจึงเริ่มจากข้อมูลระบุตัวเครื่องก่อน แล้วค่อยดูสภาพจริง เพื่อไม่เอาราคาของคนละ configuration มาเทียบกัน.</p>
+      <div class="model-fact-grid">
+        {content.variantNotes.map((item) => <article><span aria-hidden="true">◆</span><p>{item}</p></article>)}
+      </div>
+      <p class="model-note">สเปกของสินค้าอาจต่างตามปี ภูมิภาคและ configuration หากไม่แน่ใจ ให้ส่ง Model Number / Serial หรือหน้าข้อมูลระบบแทนการเดาสเปกเอง.</p>
+    </section>
+
+    <section id="inspection">
+      <p class="eyebrow">ตรวจเฉพาะรุ่นก่อนดูราคา</p>
+      <h2>จุดที่ควรตรวจใน {page.label}</h2>
+      <p>รายการนี้ใช้ช่วยให้รูปและข้อมูลที่ส่งมามีประโยชน์ต่อการประเมิน ไม่จำเป็นต้องแกะเครื่องหรือซ่อมก่อน หากจุดไหนตรวจไม่เป็นให้ถ่ายภาพหรือวิดีโอสั้นแทน.</p>
+      <ol class="inspection-list">
+        {content.inspection.map((item) => <li>{item}</li>)}
+      </ol>
+    </section>
+
+    <section id="price-factors">
+      <p class="eyebrow">ราคาไม่ได้ดูจากอายุอย่างเดียว</p>
+      <h2>ปัจจัยที่ทำให้ราคา {page.label} สูงหรือต่ำ</h2>
+      <div class="signal-grid">{content.priceFactors.map((item) => <span>{item}</span>)}</div>
+      <div class="price-policy">
+        <strong>ทำไมหน้านี้ไม่มีตัวเลขรับซื้อแบบตายตัว?</strong>
+        <p>ราคามือสองเปลี่ยนตามตลาดและสภาพของเครื่องจริง โดยเฉพาะรุ่นใหม่หรืออุปกรณ์ที่มีหลาย configuration การใส่ตัวเลขเก่าบนหน้าเว็บอาจทำให้เข้าใจผิด จึงใช้ข้อมูลรุ่นและสภาพเพื่อแจ้งราคาเบื้องต้นผ่าน LINE ในวันที่ตรวจแทน.</p>
+      </div>
+    </section>
+
+    <section id="prepare-model">
+      <p class="eyebrow">ส่งครั้งแรกให้ข้อมูลครบ</p>
+      <h2>ส่งอะไรทาง LINE เพื่อประเมิน {page.label} ได้ตรงขึ้น</h2>
+      <div class="prepare-grid">
+        {content.sellerChecklist.map((item, index) => <div><span>{index + 1}</span><p>{item}</p></div>)}
+      </div>
+      <p>ไม่ต้องส่งรหัสผ่าน Apple ID, Google, Microsoft, BIOS หรือบัญชีองค์กร ทีมงานต้องการเฉพาะข้อมูลที่ใช้ระบุรุ่น สภาพ และสิทธิ์การเป็นเจ้าของตามความจำเป็น.</p>
+    </section>
+
+    <aside class="risk-box" aria-label={`ข้อควรระวังก่อนขาย ${page.label}`}>
+      <h2>ข้อควรระวังก่อนส่งมอบ</h2>
+      <ul>{content.risks.map((item) => <li>{item}</li>)}</ul>
+    </aside>
+
+    {content.source && (
+      <section class="model-source" aria-label="แหล่งข้อมูลสเปก">
+        <strong>ตรวจสอบสเปก/แหล่งอ้างอิง:</strong>
+        <a href={content.source.url} target="_blank" rel="noopener noreferrer">{content.source.label}</a>
+        <p>แหล่งอ้างอิงนี้ใช้ยืนยันคุณลักษณะหรือมาตรฐานของสินค้าเท่านั้น ไม่ใช่แหล่งกำหนดราคารับซื้อของ WINNER IT.</p>
+      </section>
+    )}
+
+    <div class="money-inline-cta released-model-inline-cta">
+      <strong>มีเครื่องอยู่แล้ว? ไม่ต้องไล่เช็กทุกข้อเอง</strong>
+      <span>ส่งรูปเครื่อง + หน้าสเปก + จุดตำหนิ + พื้นที่โดยประมาณ ทีมงานจะถามเพิ่มเฉพาะข้อมูลที่จำเป็น</span>
+      <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_model_mid">ส่งรูปประเมิน {SITE.lineId}</a>
+    </div>
+
+    <DiscoveryHub id="discover" groups={groups} title={`สำรวจต่อจาก ${page.label}`} intro="เปรียบเทียบหน้าหลัก รุ่นใกล้เคียง สภาพสินค้า และคู่มือที่เปิดใช้งานจริง โดยไม่ลิงก์ไปหน้า HOLD_NOINDEX ที่ยังไม่มีเนื้อหาพร้อม" />
+
+    <section id="faq-model">
+      <p class="eyebrow">คำถามก่อนส่งประเมิน</p>
+      <h2>คำถามที่พบบ่อยเกี่ยวกับ {page.label}</h2>
+      <div class="faq">
+        {content.faq.map(([q, a]) => <details class="faq__item"><summary>{q}</summary><p>{a}</p></details>)}
+      </div>
+    </section>
+  </div>
+
+  <section class="section cta released-model-final">
+    <div class="container cta__in">
+      <p class="eyebrow">รุ่นชัด · สภาพชัด · ค่อยนัดรับ</p>
+      <h2 class="cta__head">เช็กราคา {page.label} ผ่าน LINE ก่อนตัดสินใจขาย</h2>
+      <p>ส่งข้อมูลเบื้องต้นก่อน ไม่ผูกมัด ราคา final ยืนยันหลังตรวจสภาพและตกลงกับผู้ขาย.</p>
+      <div class="cta__btns">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_model_final">LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone" data-cta-location="released_model_final">โทร {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .released-model-hero { padding: 42px 0 36px; background: linear-gradient(180deg, rgba(37, 99, 235, .055), rgba(255,255,255,0)); border-bottom: 1px solid var(--line); }
+  .released-model-hero__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 390px); gap: 36px; align-items: start; }
+  .released-model-hero h1 { margin: 8px 0 16px; overflow-wrap: anywhere; }
+  .released-model-hero__lede { max-width: 72ch; color: var(--ink-soft); font-size: 1.06rem; line-height: 1.75; }
+  .released-model-hero__trust { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 18px 0; color: var(--ink-soft); font-size: .92rem; }
+  .released-model-body { max-width: 850px; padding-block: 28px 64px; }
+  .released-model-body section { scroll-margin-top: 130px; }
+  .released-model-body h2 { margin: 8px 0 12px; }
+  .released-model-body p, .released-model-body li { color: var(--ink-soft); line-height: 1.75; }
+  .model-fact-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin: 18px 0; }
+  .model-fact-grid article { display: grid; grid-template-columns: 26px 1fr; gap: 8px; border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 15px; }
+  .model-fact-grid article > span { color: var(--volt); }
+  .model-fact-grid p { margin: 0; }
+  .model-note { border-left: 4px solid var(--volt); padding: 12px 16px; background: #f8faff; border-radius: 0 10px 10px 0; }
+  .inspection-list { display: grid; gap: 9px; padding-left: 24px; }
+  .signal-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+  .signal-grid span { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; background: #fff; font-weight: 650; color: var(--ink); }
+  .price-policy { margin: 18px 0; padding: 18px 20px; border-radius: 12px; background: var(--mist); }
+  .price-policy p { margin: 8px 0 0; }
+  .prepare-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; margin: 18px 0; }
+  .prepare-grid > div { display: grid; grid-template-columns: 34px 1fr; gap: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: #fff; }
+  .prepare-grid span { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--mist); font-weight: 800; }
+  .prepare-grid p { margin: 2px 0 0; }
+  .risk-box { margin: 28px 0; padding: 20px; border: 1px solid var(--line); border-left: 4px solid #f59e0b; border-radius: 12px; background: #fffdf7; }
+  .risk-box h2 { margin-top: 0; }
+  .model-source { margin: 24px 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .model-source p { margin: 6px 0 0; font-size: .9rem; }
+  .released-model-inline-cta { margin-block: 30px; }
+  .released-model-final { border-top: 1px solid var(--line); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+  @media (max-width: 900px) { .released-model-hero__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .released-model-hero { padding-top: 28px; }
+    .released-model-hero__trust { display: grid; }
+    .model-fact-grid, .prepare-grid { grid-template-columns: 1fr; }
+  }
+</style>

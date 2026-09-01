@@ -1,0 +1,224 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.104Z",
+  "batch": "CONTENT_BATCH_4_CAMERA_CONSOLE_PC_COMPONENTS",
+  "findings": {
+    "baselineReleaseCount": 41,
+    "batch4ReleaseCount": 22,
+    "releasedTotal": 172,
+    "expectedReleasedTotal": 63,
+    "holdModelCount": 8,
+    "clusterCounts": {
+      "camera": 7,
+      "game-console": 7,
+      "computer": 8
+    },
+    "clusterMismatch": 0,
+    "duplicateTitles": 0,
+    "duplicateDescriptions": 0,
+    "nonManufacturerSources": 0,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "invalidLifecycle": 0,
+    "badRelated": 0,
+    "parentMismatch": 0,
+    "unlinked": 0,
+    "missingSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "duplicateEditorial": 0
+  },
+  "batch4Released": [
+    {
+      "slug": "sony-a6000",
+      "path": "/รับซื้อ-sony-a6000-ขอนแก่น/",
+      "h1": "รับซื้อ Sony A6000 ขอนแก่น",
+      "title": "รับซื้อ Sony A6000 ขอนแก่น เช็กชัตเตอร์ เซ็นเซอร์ EVF และเลนส์ | WINNER IT",
+      "category": "camera",
+      "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6000/specifications"
+    },
+    {
+      "slug": "sony-a6400",
+      "path": "/รับซื้อ-sony-a6400-ขอนแก่น/",
+      "h1": "รับซื้อ Sony A6400 ขอนแก่น",
+      "title": "รับซื้อ Sony A6400 ขอนแก่น เช็กชัตเตอร์ AF จอพับ และเซ็นเซอร์ | WINNER IT",
+      "category": "camera",
+      "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-6000-series/ilce-6400/specifications"
+    },
+    {
+      "slug": "sony-a7-iii",
+      "path": "/รับซื้อ-sony-a7-iii-ขอนแก่น/",
+      "h1": "รับซื้อ Sony A7 III ขอนแก่น",
+      "title": "รับซื้อ Sony A7 III ขอนแก่น เช็กชัตเตอร์ IBIS เซ็นเซอร์และช่องการ์ด | WINNER IT",
+      "category": "camera",
+      "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3m/specifications"
+    },
+    {
+      "slug": "canon-eos-r6",
+      "path": "/รับซื้อ-canon-eos-r6-ขอนแก่น/",
+      "h1": "รับซื้อ Canon EOS R6 ขอนแก่น",
+      "title": "รับซื้อ Canon EOS R6 ขอนแก่น เช็กเซ็นเซอร์ IBIS ชัตเตอร์และ Dual SD | WINNER IT",
+      "category": "camera",
+      "source": "https://www.usa.canon.com/support/p/eos-r6"
+    },
+    {
+      "slug": "canon-eos-r7",
+      "path": "/รับซื้อ-canon-eos-r7-ขอนแก่น/",
+      "h1": "รับซื้อ Canon EOS R7 ขอนแก่น",
+      "title": "รับซื้อ Canon EOS R7 ขอนแก่น เช็กเซ็นเซอร์ 32.5MP IBIS และช่อง SD | WINNER IT",
+      "category": "camera",
+      "source": "https://www.usa.canon.com/support/p/eos-r7"
+    },
+    {
+      "slug": "fujifilm-x-t5",
+      "path": "/รับซื้อ-fujifilm-x-t5-ขอนแก่น/",
+      "h1": "รับซื้อ Fujifilm X-T5 ขอนแก่น",
+      "title": "รับซื้อ Fujifilm X-T5 ขอนแก่น เช็กเซ็นเซอร์ 40.2MP IBIS และชัตเตอร์ | WINNER IT",
+      "category": "camera",
+      "source": "https://www.fujifilm-x.com/pt-pt/products/cameras/x-t5/specifications/"
+    },
+    {
+      "slug": "nikon-z5",
+      "path": "/รับซื้อ-nikon-z5-ขอนแก่น/",
+      "h1": "รับซื้อ Nikon Z5 ขอนแก่น",
+      "title": "รับซื้อ Nikon Z5 ขอนแก่น เช็กฟูลเฟรม IBIS Dual SD และเมาท์ Z | WINNER IT",
+      "category": "camera",
+      "source": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_5/index.html"
+    },
+    {
+      "slug": "playstation-5",
+      "path": "/รับซื้อ-playstation-5-ขอนแก่น/",
+      "h1": "รับซื้อ PlayStation 5 ขอนแก่น",
+      "title": "รับซื้อ PlayStation 5 ขอนแก่น เช็ก CFI รุ่น Disc/Digital SSD และจอย | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.playstation.com/en-us/support/hardware/ps5/"
+    },
+    {
+      "slug": "playstation-5-slim",
+      "path": "/รับซื้อ-playstation-5-slim-ขอนแก่น/",
+      "h1": "รับซื้อ PlayStation 5 Slim ขอนแก่น",
+      "title": "รับซื้อ PS5 Slim ขอนแก่น เช็ก CFI-2000/2100 Disc Drive และ DualSense | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.playstation.com/en-us/support/hardware/ps5/"
+    },
+    {
+      "slug": "playstation-4-pro",
+      "path": "/รับซื้อ-playstation-4-pro-ขอนแก่น/",
+      "h1": "รับซื้อ PlayStation 4 Pro ขอนแก่น",
+      "title": "รับซื้อ PS4 Pro ขอนแก่น เช็ก CUH-7000 HDD HDMI ไดรฟ์และจอย | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.playstation.com/th-th/ps4/tech-specs/"
+    },
+    {
+      "slug": "nintendo-switch",
+      "path": "/รับซื้อ-nintendo-switch-ขอนแก่น/",
+      "h1": "รับซื้อ Nintendo Switch ขอนแก่น",
+      "title": "รับซื้อ Nintendo Switch ขอนแก่น เช็ก HAC-001 Joy-Con Dock และแบต | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.nintendo.com/us/gaming-systems/switch/tech-specs/"
+    },
+    {
+      "slug": "nintendo-switch-oled",
+      "path": "/รับซื้อ-nintendo-switch-oled-ขอนแก่น/",
+      "h1": "รับซื้อ Nintendo Switch OLED ขอนแก่น",
+      "title": "รับซื้อ Nintendo Switch OLED ขอนแก่น เช็ก HEG-001 จอ OLED Joy-Con Dock | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.nintendo.com/th/hardware/switch/modal/specs/body_oled.html"
+    },
+    {
+      "slug": "steam-deck",
+      "path": "/รับซื้อ-steam-deck-ขอนแก่น/",
+      "h1": "รับซื้อ Steam Deck ขอนแก่น",
+      "title": "รับซื้อ Steam Deck ขอนแก่น แยก LCD/OLED ความจุ SSD จอและแบต | WINNER IT",
+      "category": "game-console",
+      "source": "https://www.steamdeck.com/th/tech/oled"
+    },
+    {
+      "slug": "rog-ally",
+      "path": "/รับซื้อ-rog-ally-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS ROG Ally ขอนแก่น",
+      "title": "รับซื้อ ASUS ROG Ally ขอนแก่น แยก Z1/Z1 Extreme จอ 120Hz SSD และ SD Reader | WINNER IT",
+      "category": "game-console",
+      "source": "https://rog.asus.com/us/gaming-handhelds/rog-ally/rog-ally-2023/spec/"
+    },
+    {
+      "slug": "intel-core-i5-12400f",
+      "path": "/รับซื้อ-intel-core-i5-12400f-ขอนแก่น/",
+      "h1": "รับซื้อ Intel Core i5-12400F ขอนแก่น",
+      "title": "รับซื้อ Intel Core i5-12400F ขอนแก่น เช็กขา LGA1700 กล่องและประกัน | WINNER IT",
+      "category": "computer",
+      "source": "https://www.thailand.intel.com/content/www/th/th/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html"
+    },
+    {
+      "slug": "intel-core-i5-13400f",
+      "path": "/รับซื้อ-intel-core-i5-13400f-ขอนแก่น/",
+      "h1": "รับซื้อ Intel Core i5-13400F ขอนแก่น",
+      "title": "รับซื้อ Intel Core i5-13400F ขอนแก่น 10C/16T เช็ก LGA1700 และผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.intel.com/content/www/us/en/products/sku/230501/intel-core-i513400f-processor-20m-cache-up-to-4-60-ghz/specifications.html"
+    },
+    {
+      "slug": "intel-core-i5-14400f",
+      "path": "/รับซื้อ-intel-core-i5-14400f-ขอนแก่น/",
+      "h1": "รับซื้อ Intel Core i5-14400F ขอนแก่น",
+      "title": "รับซื้อ Intel Core i5-14400F ขอนแก่น 10C/16T เช็กประกันและผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html"
+    },
+    {
+      "slug": "intel-core-i7-12700",
+      "path": "/รับซื้อ-intel-core-i7-12700-ขอนแก่น/",
+      "h1": "รับซื้อ Intel Core i7-12700 ขอนแก่น",
+      "title": "รับซื้อ Intel Core i7-12700 ขอนแก่น 12C/20T มี UHD 770 เช็กผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.intel.com/content/www/us/en/products/sku/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz/specifications.html"
+    },
+    {
+      "slug": "intel-core-i7-13700",
+      "path": "/รับซื้อ-intel-core-i7-13700-ขอนแก่น/",
+      "h1": "รับซื้อ Intel Core i7-13700 ขอนแก่น",
+      "title": "รับซื้อ Intel Core i7-13700 ขอนแก่น 16C/24T UHD 770 เช็ก LGA1700 | WINNER IT",
+      "category": "computer",
+      "source": "https://www.intel.com/content/www/us/en/products/sku/230490/intel-core-i713700-processor-30m-cache-up-to-5-20-ghz/specifications.html"
+    },
+    {
+      "slug": "amd-ryzen-5-5600",
+      "path": "/รับซื้อ-amd-ryzen-5-5600-ขอนแก่น/",
+      "h1": "รับซื้อ AMD Ryzen 5 5600 ขอนแก่น",
+      "title": "รับซื้อ AMD Ryzen 5 5600 ขอนแก่น AM4 6C/12T เช็กขา CPU และผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-5000-series/amd-ryzen-5-5600.html"
+    },
+    {
+      "slug": "amd-ryzen-5-7500f",
+      "path": "/รับซื้อ-amd-ryzen-5-7500f-ขอนแก่น/",
+      "h1": "รับซื้อ AMD Ryzen 5 7500F ขอนแก่น",
+      "title": "รับซื้อ AMD Ryzen 5 7500F ขอนแก่น AM5 6C/12T เช็ก contact และผลเทส | WINNER IT",
+      "category": "computer",
+      "source": "https://www.amd.com/content/dam/amd/en/documents/partner-hub/ryzen/amd-consumer-pocket-guide-ryzen-radeon-july-2024.pdf"
+    },
+    {
+      "slug": "amd-ryzen-7-7800x3d",
+      "path": "/รับซื้อ-amd-ryzen-7-7800x3d-ขอนแก่น/",
+      "h1": "รับซื้อ AMD Ryzen 7 7800X3D ขอนแก่น",
+      "title": "รับซื้อ AMD Ryzen 7 7800X3D ขอนแก่น AM5 8C/16T เช็กผลเทสและ IHS | WINNER IT",
+      "category": "computer",
+      "source": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html"
+    }
+  ],
+  "samples": {
+    "missingContent": [],
+    "invalidFields": [],
+    "invalidLifecycle": [],
+    "badRelated": [],
+    "parentMismatch": [],
+    "unlinked": [],
+    "missingSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "duplicateEditorial": [],
+    "duplicateTitles": [],
+    "duplicateDescriptions": [],
+    "nonManufacturerSources": []
+  }
+}

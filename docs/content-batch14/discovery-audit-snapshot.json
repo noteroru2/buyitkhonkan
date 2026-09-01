@@ -1,0 +1,40 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T12:44:39.406Z",
+  "liveDiscoveryMeta": {
+    "categoryCount": 15,
+    "brandCount": 6,
+    "modelCount": 21,
+    "releasedArchitectureModelCount": 132,
+    "releasedArchitectureConditionCount": 24,
+    "releasedArchitectureB2BCount": 22,
+    "releasedArchitectureDistrictCount": 21,
+    "releasedArchitectureGuideCount": 54,
+    "releasedPriceHub": true,
+    "releasedB2BHub": true,
+    "conditionCount": 5,
+    "localCount": 8,
+    "holdArchitectureLinked": false
+  },
+  "contextsAudited": 203,
+  "uniqueInternalTargets": 325,
+  "holdArchitectureLinked": 0,
+  "brokenDiscoveryLinks": 0,
+  "thinDiscoveryContexts": 0,
+  "missingComponentTokens": [],
+  "integration": {
+    "moneyPages": true,
+    "releasedConditions": true,
+    "releasedB2B": true,
+    "releasedDistricts": true,
+    "releasedPriceHub": true,
+    "releasedGuides": true,
+    "articles": true,
+    "breadcrumbTracking": true
+  },
+  "samples": {
+    "holdLeaks": [],
+    "broken": [],
+    "thinContexts": []
+  }
+}

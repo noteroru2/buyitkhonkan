@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "units": "compressed transfer KB",
+  "globalRules": {"formats":["avif","webp"],"photoPngAllowed":false,"widthHeightRequired":true,"lcpLazyLoad":false,"belowFoldLazyLoad":true,"maxPreloadedImages":1,"dprMaster":2,"noUpscale":true},
+  "pageTypes": {
+    "homepage":{"mobileInitial":180,"desktopInitial":240,"heroLcp":150,"belowFoldTotal":420,"maxInitialRequests":2,"maxTotalRequests":10},
+    "category":{"mobileInitial":150,"desktopInitial":210,"heroLcp":140,"belowFoldTotal":320,"maxInitialRequests":2,"maxTotalRequests":8},
+    "brandModel":{"mobileInitial":130,"desktopInitial":190,"heroLcp":130,"belowFoldTotal":260,"maxInitialRequests":2,"maxTotalRequests":6},
+    "condition":{"mobileInitial":120,"desktopInitial":180,"heroLcp":120,"belowFoldTotal":240,"maxInitialRequests":2,"maxTotalRequests":6},
+    "local":{"mobileInitial":90,"desktopInitial":140,"heroLcp":0,"belowFoldTotal":180,"maxInitialRequests":1,"maxTotalRequests":4},
+    "article":{"mobileInitial":140,"desktopInitial":200,"heroLcp":140,"belowFoldTotal":360,"maxInitialRequests":2,"maxTotalRequests":8},
+    "aboutContact":{"mobileInitial":150,"desktopInitial":210,"heroLcp":140,"belowFoldTotal":300,"maxInitialRequests":2,"maxTotalRequests":6},
+    "legal404":{"mobileInitial":20,"desktopInitial":30,"heroLcp":0,"belowFoldTotal":30,"maxInitialRequests":1,"maxTotalRequests":2}
+  },
+  "currentRisk":{"homepageTrustPngBytes":1723473,"renderedMaxWidthPx":329,"status":"fail future budget; optimize during implementation, not Batch 13"}
+}

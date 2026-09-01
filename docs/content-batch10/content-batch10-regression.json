@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.922Z",
+  "batch": "CONTENT_BATCH_10_REGRESSION_HISTORICAL",
+  "findings": {
+    "batch10Pages": 20,
+    "missingContent": 0,
+    "notIndex": 0,
+    "priceHubIndex": true,
+    "currentArchitectureIndex": 297,
+    "currentGuideIndex": 54
+  },
+  "missing": [],
+  "notIndex": []
+}

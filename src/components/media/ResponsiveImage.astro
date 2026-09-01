@@ -1,0 +1,95 @@
+---
+import { getImage, type ImageMetadata } from 'astro:assets';
+
+type OutputFormat = 'avif' | 'webp' | 'jpeg' | 'png';
+interface Props {
+  src: ImageMetadata;
+  mobileSrc?: ImageMetadata;
+  alt?: string;
+  caption?: string;
+  width: number;
+  height: number;
+  widths?: number[];
+  sizes: string;
+  formats?: OutputFormat[];
+  loading?: 'eager' | 'lazy';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  decoding?: 'async' | 'sync' | 'auto';
+  fit?: 'cover' | 'contain' | 'fill' | 'inside' | 'outside';
+  position?: string;
+  aspectRatio?: string;
+  decorative?: boolean;
+  class?: string;
+  slotId: string;
+  mobileBreakpoint?: number;
+}
+
+const {
+  src,
+  mobileSrc,
+  alt,
+  caption,
+  width,
+  height,
+  widths = [480, 768, 1024, 1280],
+  sizes,
+  formats = ['avif', 'webp'],
+  loading = 'lazy',
+  fetchpriority = 'auto',
+  decoding = 'async',
+  fit = 'cover',
+  position = 'center',
+  aspectRatio = `${width} / ${height}`,
+  decorative = false,
+  class: className = '',
+  slotId,
+  mobileBreakpoint = 640,
+} = Astro.props;
+
+if (!slotId) throw new Error('ResponsiveImage requires slotId for auditability.');
+if (!decorative && (!alt || !alt.trim())) throw new Error(`ResponsiveImage ${slotId}: content image requires alt text.`);
+if (decorative && alt && alt.trim()) throw new Error(`ResponsiveImage ${slotId}: decorative image must use an empty alt.`);
+if (!width || !height) throw new Error(`ResponsiveImage ${slotId}: width and height are required to prevent CLS.`);
+if (fetchpriority === 'high' && loading === 'lazy') throw new Error(`ResponsiveImage ${slotId}: LCP/high-priority image cannot be lazy loaded.`);
+if (loading === 'eager' && fetchpriority !== 'high') throw new Error(`ResponsiveImage ${slotId}: eager loading is reserved for declared high-priority images.`);
+
+const safeWidths = [...new Set(widths.filter((value) => Number.isInteger(value) && value > 0 && value <= src.width))].sort((a, b) => a - b);
+if (!safeWidths.length) safeWidths.push(Math.min(width, src.width));
+const ratio = width / height;
+
+async function buildSources(source: ImageMetadata, candidates: number[]) {
+  const bounded = candidates.filter((candidate) => candidate <= source.width);
+  const actual = bounded.length ? bounded : [Math.min(width, source.width)];
+  return Promise.all(formats.map(async (format) => {
+    const images = await Promise.all(actual.map((candidate) => getImage({
+      src: source,
+      width: candidate,
+      height: Math.max(1, Math.round(candidate / ratio)),
+      format,
+      fit,
+      position,
+    })));
+    return { format, srcset: images.map((image, index) => `${image.src} ${actual[index]}w`).join(', ') };
+  }));
+}
+
+const desktopSources = await buildSources(src, safeWidths);
+const mobileSources = mobileSrc ? await buildSources(mobileSrc, safeWidths) : [];
+const fallback = await getImage({ src, width: Math.min(width, src.width), height: Math.min(height, Math.round(src.height)), format: formats.at(-1) || 'webp', fit, position });
+---
+
+<figure class:list={['responsive-image', className]} data-image-slot={slotId} style={`--image-ratio:${aspectRatio};--image-position:${position}`}>
+  <picture>
+    {mobileSources.map((source) => <source media={`(max-width: ${mobileBreakpoint}px)`} type={`image/${source.format}`} srcset={source.srcset} sizes={sizes} />)}
+    {desktopSources.map((source) => <source type={`image/${source.format}`} srcset={source.srcset} sizes={sizes} />)}
+    <img src={fallback.src} alt={decorative ? '' : alt} width={width} height={height} loading={loading} fetchpriority={fetchpriority} decoding={decoding} style={`object-fit:${fit};object-position:${position}`} aria-hidden={decorative ? 'true' : undefined} />
+  </picture>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .responsive-image { margin: 0; }
+  .responsive-image picture { display: block; aspect-ratio: var(--image-ratio); overflow: hidden; }
+  .responsive-image img { display: block; width: 100%; height: 100%; object-position: var(--image-position); }
+  .responsive-image figcaption { margin-top: .55rem; color: var(--ink-soft); font-size: .875rem; line-height: 1.5; }
+</style>

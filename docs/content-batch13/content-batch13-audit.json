@@ -1,0 +1,271 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.270Z",
+  "batch": "CONTENT_BATCH_13_MODEL_EXPANSION_QUALITY_ROUND_HISTORICAL",
+  "findings": {
+    "batch13Release": 24,
+    "releasedModelsTotal": 172,
+    "modelHold": 8,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "clusterCounts": {
+      "notebook": 9,
+      "macbook": 4,
+      "iphone": 5,
+      "ipad-tablet": 3,
+      "gpu": 3
+    },
+    "missingPage": 0,
+    "lifecycle": 0,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "unlinked": 0,
+    "holdLeak": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "metadataLength": 0
+  },
+  "released": [
+    {
+      "slug": "asus-rog-strix-g18",
+      "path": "/รับซื้อ-asus-rog-strix-g18-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS ROG Strix G18 ขอนแก่น",
+      "title": "รับซื้อ ASUS ROG Strix G18 ขอนแก่น เช็กรหัส G814/G815 GPU และจอ | WINNER IT",
+      "category": "notebook",
+      "brand": "asus",
+      "source": "https://rog.asus.com/laptops/rog-strix/rog-strix-g18-2025/spec/"
+    },
+    {
+      "slug": "asus-tuf-gaming-a14",
+      "path": "/รับซื้อ-asus-tuf-gaming-a14-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS TUF Gaming A14 ขอนแก่น",
+      "title": "รับซื้อ ASUS TUF Gaming A14 ขอนแก่น เช็ก FA401 GPU จอ 165Hz และ RAM | WINNER IT",
+      "category": "notebook",
+      "brand": "asus",
+      "source": "https://www.asus.com/th/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a14-2025/techspec/"
+    },
+    {
+      "slug": "asus-tuf-gaming-a16",
+      "path": "/รับซื้อ-asus-tuf-gaming-a16-ขอนแก่น/",
+      "h1": "รับซื้อ ASUS TUF Gaming A16 ขอนแก่น",
+      "title": "รับซื้อ ASUS TUF Gaming A16 ขอนแก่น เช็ก FA608 GPU จอ 144/165Hz | WINNER IT",
+      "category": "notebook",
+      "brand": "asus",
+      "source": "https://www.asus.com/th/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a16-2025/techspec/"
+    },
+    {
+      "slug": "lenovo-thinkpad-t14",
+      "path": "/รับซื้อ-lenovo-thinkpad-t14-ขอนแก่น/",
+      "h1": "รับซื้อ Lenovo ThinkPad T14 ขอนแก่น",
+      "title": "รับซื้อ Lenovo ThinkPad T14 ขอนแก่น เช็ก Gen Type vPro WWAN และสภาพ | WINNER IT",
+      "category": "notebook",
+      "brand": "lenovo",
+      "source": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_5_Intel/ThinkPad_T14_Gen_5_Intel_Spec.PDF"
+    },
+    {
+      "slug": "lenovo-thinkpad-x1-carbon",
+      "path": "/รับซื้อ-lenovo-thinkpad-x1-carbon-ขอนแก่น/",
+      "h1": "รับซื้อ Lenovo ThinkPad X1 Carbon ขอนแก่น",
+      "title": "รับซื้อ Lenovo ThinkPad X1 Carbon ขอนแก่น เช็ก Gen จอ RAM WWAN | WINNER IT",
+      "category": "notebook",
+      "brand": "lenovo",
+      "source": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/len101t0083/len101t0083"
+    },
+    {
+      "slug": "acer-nitro-5",
+      "path": "/รับซื้อ-acer-nitro-5-ขอนแก่น/",
+      "h1": "รับซื้อ Acer Nitro 5 ขอนแก่น",
+      "title": "รับซื้อ Acer Nitro 5 ขอนแก่น เช็ก AN515 CPU GPU จอและอะแดปเตอร์ | WINNER IT",
+      "category": "notebook",
+      "brand": "acer",
+      "source": "https://www.acer.com/us-en/laptops/nitro/nitro-5/pdp/NH.QM0AA.002"
+    },
+    {
+      "slug": "hp-omen-16",
+      "path": "/รับซื้อ-hp-omen-16-ขอนแก่น/",
+      "h1": "รับซื้อ HP Omen 16 ขอนแก่น",
+      "title": "รับซื้อ HP OMEN 16 ขอนแก่น เช็กรหัส 16-xxxx CPU GPU จอและประกัน | WINNER IT",
+      "category": "notebook",
+      "brand": "hp",
+      "source": "https://support.hp.com/us-en/document/ish_12515572-12516081-16"
+    },
+    {
+      "slug": "dell-g15",
+      "path": "/รับซื้อ-dell-g15-ขอนแก่น/",
+      "h1": "รับซื้อ Dell G15 ขอนแก่น",
+      "title": "รับซื้อ Dell G15 ขอนแก่น เช็ก Service Tag GPU จอ 120/165/240Hz | WINNER IT",
+      "category": "notebook",
+      "brand": "dell",
+      "source": "https://www.dell.com/support/manuals/en-us/g-series-15-5530-laptop/dell-g15-5530-owners-manual/display?guid=guid-26c53099-b0c1-4576-8a59-ed18f006f455"
+    },
+    {
+      "slug": "msi-katana-15",
+      "path": "/รับซื้อ-msi-katana-15-ขอนแก่น/",
+      "h1": "รับซื้อ MSI Katana 15 ขอนแก่น",
+      "title": "รับซื้อ MSI Katana 15 ขอนแก่น เช็ก B12/B13 GPU TGP จอและอะแดปเตอร์ | WINNER IT",
+      "category": "notebook",
+      "brand": "msi",
+      "source": "https://www.msi.com/Laptop/Katana-15-B12VX/Specification"
+    },
+    {
+      "slug": "macbook-pro-13-m1",
+      "path": "/รับซื้อ-macbook-pro-13-m1-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook Pro 13 M1 ขอนแก่น",
+      "title": "รับซื้อ MacBook Pro 13 M1 ขอนแก่น เช็ก RAM SSD แบต Touch Bar | WINNER IT",
+      "category": "macbook",
+      "brand": "",
+      "source": "https://support.apple.com/en-us/111893"
+    },
+    {
+      "slug": "macbook-pro-16-m1-pro",
+      "path": "/รับซื้อ-macbook-pro-16-m1-pro-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook Pro 16 M1 Pro ขอนแก่น",
+      "title": "รับซื้อ MacBook Pro 16 M1 Pro ขอนแก่น เช็ก RAM SSD จอ XDR และแบต | WINNER IT",
+      "category": "macbook",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/111901"
+    },
+    {
+      "slug": "macbook-pro-14-m3",
+      "path": "/รับซื้อ-macbook-pro-14-m3-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook Pro 14 M3 ขอนแก่น",
+      "title": "รับซื้อ MacBook Pro 14 M3 ขอนแก่น เช็ก RAM SSD จอ XDR แบต | WINNER IT",
+      "category": "macbook",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/117735"
+    },
+    {
+      "slug": "macbook-pro-16-m4-pro",
+      "path": "/รับซื้อ-macbook-pro-16-m4-pro-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook Pro 16 M4 Pro ขอนแก่น",
+      "title": "รับซื้อ MacBook Pro 16 M4 Pro ขอนแก่น เช็ก RAM SSD จอ XDR และประกัน | WINNER IT",
+      "category": "macbook",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/121554"
+    },
+    {
+      "slug": "iphone-12",
+      "path": "/รับซื้อ-iphone-12-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 12 ขอนแก่น",
+      "title": "รับซื้อ iPhone 12 ขอนแก่น เช็ก 64/128/256GB แบต จอและอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/111876"
+    },
+    {
+      "slug": "iphone-12-pro-max",
+      "path": "/รับซื้อ-iphone-12-pro-max-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 12 Pro Max ขอนแก่น",
+      "title": "รับซื้อ iPhone 12 Pro Max ขอนแก่น เช็ก 128-512GB แบต จอและกล้อง | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/111874"
+    },
+    {
+      "slug": "iphone-14-pro",
+      "path": "/รับซื้อ-iphone-14-pro-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 14 Pro ขอนแก่น",
+      "title": "รับซื้อ iPhone 14 Pro ขอนแก่น เช็ก 128GB-1TB แบต จอ ProMotion | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/111849"
+    },
+    {
+      "slug": "iphone-15",
+      "path": "/รับซื้อ-iphone-15-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 15 ขอนแก่น",
+      "title": "รับซื้อ iPhone 15 ขอนแก่น เช็ก 128/256/512GB แบต USB-C และจอ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/111831"
+    },
+    {
+      "slug": "iphone-16-pro",
+      "path": "/รับซื้อ-iphone-16-pro-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 16 Pro ขอนแก่น",
+      "title": "รับซื้อ iPhone 16 Pro ขอนแก่น เช็กความจุ แบต จอ 6.3 นิ้วและกล้อง | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/th-th/121031"
+    },
+    {
+      "slug": "ipad-gen-9",
+      "path": "/รับซื้อ-ipad-gen-9-ขอนแก่น/",
+      "h1": "รับซื้อ iPad Gen 9 ขอนแก่น",
+      "title": "รับซื้อ iPad Gen 9 ขอนแก่น เช็ก 64/256GB Wi-Fi Cellular แบตและจอ | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/en-asia/111898"
+    },
+    {
+      "slug": "ipad-air-4",
+      "path": "/รับซื้อ-ipad-air-4-ขอนแก่น/",
+      "h1": "รับซื้อ iPad Air 4 ขอนแก่น",
+      "title": "รับซื้อ iPad Air 4 ขอนแก่น เช็ก 64/256GB Wi-Fi Cellular จอและ Touch ID | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/en-us/111905"
+    },
+    {
+      "slug": "ipad-mini-6",
+      "path": "/รับซื้อ-ipad-mini-6-ขอนแก่น/",
+      "h1": "รับซื้อ iPad mini 6 ขอนแก่น",
+      "title": "รับซื้อ iPad mini 6 ขอนแก่น เช็ก 64/256GB Wi-Fi Cellular จอและ USB-C | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/en-us/111886"
+    },
+    {
+      "slug": "rtx-3060",
+      "path": "/รับซื้อ-rtx-3060-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 3060 ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 3060 ขอนแก่น เช็ก 12GB/8GB ประกัน พัดลมและผลเทส | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/30-series/rtx-3060-3060ti/"
+    },
+    {
+      "slug": "rtx-4070",
+      "path": "/รับซื้อ-rtx-4070-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 4070 ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 4070 ขอนแก่น 12GB เช็กประกัน พัดลมและผลเทส | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/40-series/rtx-4070-family/"
+    },
+    {
+      "slug": "rtx-5060-ti",
+      "path": "/รับซื้อ-rtx-5060-ti-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 5060 Ti ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 5060 Ti ขอนแก่น 8GB/16GB GDDR7 เช็กประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/th-th/geforce/graphics-cards/50-series/rtx-5060-family/"
+    }
+  ],
+  "samples": {
+    "missingPage": [],
+    "lifecycle": [],
+    "missingContent": [],
+    "invalidFields": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "unlinked": [],
+    "holdLeak": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "metadataLength": []
+  }
+}

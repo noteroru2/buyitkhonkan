@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "assets": [{
+    "assetId":"REPLACE-ASSET-ID","sourceFilename":"replace-source.jpg","webFilename":"replace-web-name.webp","sourceType":"real-business-evidence","captureDate":null,"captureLocationGeneral":"","photographer":"","ownershipStatus":"unknown","usagePermission":"pending","consentRequired":false,"consentStatus":"pending","containsPeople":false,"containsCustomer":false,"containsMinor":false,"containsSerialNumber":false,"containsScreenData":false,"containsPhoneNumber":false,"containsAddress":false,"containsLicensePlate":false,"containsReceipt":false,"containsPaymentEvidence":false,"privacyEditsRequired":[],"privacyEditsCompleted":false,"approvedForWeb":false,"approvedPages":[],"slotIds":["REPLACE-SLOT-ID"],"caption":"","altText":"อธิบายสิ่งที่เห็นจริงโดยไม่กล่าวอ้างสถานที่หรือธุรกรรม","disclosure":"","masterDimensions":{"width":1,"height":1},"cropVariants":[],"reviewer":"","reviewDate":null,"notes":"Template only; never approve until provenance, privacy and consent are verified."
+  }]
+}

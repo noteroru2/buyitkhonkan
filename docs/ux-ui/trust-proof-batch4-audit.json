@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-09-01T14:21:38+07:00",
+  "verdict": "PASS",
+  "scope": {
+    "homepage": 1,
+    "released_dynamic_money_pages": 55,
+    "architecture_skeleton_pages_excluded": 311
+  },
+  "checks": {
+    "trust_proof_component_exists": true,
+    "homepage_full_trust_system": true,
+    "old_home_illustrative_trust_markup_removed": true,
+    "category_money_trust_system": true,
+    "detail_money_trust_system": true,
+    "money_quick_nav_has_trust_anchor": true,
+    "line_cta_has_location_tracking": true,
+    "company_identity_uses_central_site_data": true,
+    "service_area_no_walkin_disclosed": true,
+    "transaction_sequence_present": true,
+    "after_line_timeline_present": true,
+    "privacy_minimization_notice_present": true,
+    "b2b_document_path_present": true,
+    "trust_links_resolve_to_existing_routes": true,
+    "hold_noindex_logic_preserved": true,
+    "architecture_skeleton_branch_preserved": true,
+    "homepage_h1_preserved": true,
+    "seo_route_data_unchanged": true,
+    "base_canonical_layout_unchanged": true,
+    "package_manifest_unchanged": true,
+    "frontmatter_delimiters_component_ok": true,
+    "responsive_breakpoints_present": true
+  },
+  "seoDataChanged": [],
+  "build": {
+    "status": "NOT_RUN",
+    "reason": "npm ci could not complete in this environment; transport/network timeout left an incomplete node_modules tree, which was removed before packaging"
+  },
+  "architectureAudit": "PASS"
+}

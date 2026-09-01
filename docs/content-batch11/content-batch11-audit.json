@@ -1,0 +1,224 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.986Z",
+  "batch": "CONTENT_BATCH_11_GUIDE_EXPANSION_ROUND_2",
+  "findings": {
+    "batch11Pages": 20,
+    "currentReleasedGuidesTotal": 54,
+    "currentGuideHold": 6,
+    "currentArchitectureIndex": 297,
+    "currentArchitectureHold": 14,
+    "missingContent": 0,
+    "lifecycle": 0,
+    "invalidFields": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "unlinked": 0,
+    "holdLeak": 0,
+    "thinDiscovery": 0,
+    "routeIntegration": 0
+  },
+  "releasedGuides": [
+    {
+      "slug": "วิธีดู-shutter-count-กล้อง",
+      "path": "/บทความ/วิธีดู-shutter-count-กล้อง/",
+      "h1": "วิธีดู Shutter Count กล้องก่อนขาย",
+      "title": "วิธีดู Shutter Count กล้องก่อนขาย ใช้เป็นข้อมูลอย่างไร | WINNER IT",
+      "priceIntent": false,
+      "categories": "camera",
+      "source": "https://www.nikonimgsupport.com/eu/BV_article?articleNo=000044853&ctry=IL&lang=en_GB&setRedirect=true"
+    },
+    {
+      "slug": "กล้องมีราขายได้ไหม",
+      "path": "/บทความ/กล้องมีราขายได้ไหม/",
+      "h1": "กล้องมีราขายได้ไหม และควรเช็กตรงไหน",
+      "title": "กล้องมีรา ขายได้ไหม? แยกราที่เลนส์ ช่องมอง และภายในก่อนประเมิน | WINNER IT",
+      "priceIntent": true,
+      "categories": "camera",
+      "source": "https://www.sony.com/electronics/support/articles/00062800"
+    },
+    {
+      "slug": "เลนส์มีราประเมินราคาอย่างไร",
+      "path": "/บทความ/เลนส์มีราประเมินราคาอย่างไร/",
+      "h1": "เลนส์มีราประเมินราคาอย่างไร",
+      "title": "เลนส์มีรา ประเมินราคาอย่างไร ดูตำแหน่ง Coating และผลต่อภาพ | WINNER IT",
+      "priceIntent": true,
+      "categories": "camera",
+      "source": "https://www.sony.com/electronics/support/articles/00062800"
+    },
+    {
+      "slug": "กล้องไม่มีกล่องราคาตกไหม",
+      "path": "/บทความ/กล้องไม่มีกล่องราคาตกไหม/",
+      "h1": "กล้องไม่มีกล่องราคาตกไหมก่อนขาย",
+      "title": "กล้องไม่มีกล่อง ราคาตกไหม? อุปกรณ์อะไรสำคัญกว่ากล่อง | WINNER IT",
+      "priceIntent": true,
+      "categories": "camera",
+      "source": "https://www.sony.com/electronics/support/e-mount-body-ilce-3000-series/ilce-3000/articles/00160168"
+    },
+    {
+      "slug": "วิธีลบบัญชี-nintendo-switch-ก่อนขาย",
+      "path": "/บทความ/วิธีลบบัญชี-nintendo-switch-ก่อนขาย/",
+      "h1": "วิธีลบบัญชี Nintendo Switch ก่อนขายอย่างปลอดภัย",
+      "title": "วิธีลบบัญชี Nintendo Switch ก่อนขาย สำรอง Save และ Initialize Console | WINNER IT",
+      "priceIntent": false,
+      "categories": "game-console",
+      "source": "https://www.nintendo.com/th/support/switch/data_management/initialization/index.html"
+    },
+    {
+      "slug": "เครื่องเกมไม่มีจอยราคาตกไหม",
+      "path": "/บทความ/เครื่องเกมไม่มีจอยราคาตกไหม/",
+      "h1": "เครื่องเกมไม่มีจอยราคาตกไหม",
+      "title": "เครื่องเกมไม่มีจอย ราคาตกไหม? ประเมินตัวเครื่องแยกอุปกรณ์ | WINNER IT",
+      "priceIntent": true,
+      "categories": "game-console",
+      "source": "https://www.playstation.com/th-th/support/hardware/transfer-dispose-console/"
+    },
+    {
+      "slug": "วิธีเช็กจอคอมก่อนขาย",
+      "path": "/บทความ/วิธีเช็กจอคอมก่อนขาย/",
+      "h1": "วิธีเช็กจอคอมก่อนขายให้ข้อมูลครบ",
+      "title": "วิธีเช็กจอคอมก่อนขาย Resolution Hz Dead Pixel พอร์ต และอาการภาพ | WINNER IT",
+      "priceIntent": false,
+      "categories": "monitor",
+      "source": "https://support.microsoft.com/en-US/Windows/Hardware/Display-Graphics/change-the-refresh-rate-on-your-monitor-in-windows"
+    },
+    {
+      "slug": "จอเกมมิ่ง-144hz-165hz-ราคามือสอง",
+      "path": "/บทความ/จอเกมมิ่ง-144hz-165hz-ราคามือสอง/",
+      "h1": "จอเกมมิ่ง 144Hz กับ 165Hz ประเมินต่างกันอย่างไร",
+      "title": "จอเกมมิ่ง 144Hz vs 165Hz ราคามือสองต่างกันอย่างไร | WINNER IT",
+      "priceIntent": true,
+      "categories": "monitor",
+      "source": "https://support.microsoft.com/en-US/Windows/Hardware/Display-Graphics/change-the-refresh-rate-on-your-monitor-in-windows"
+    },
+    {
+      "slug": "วิธีเตรียมโดรนก่อนขาย",
+      "path": "/บทความ/วิธีเตรียมโดรนก่อนขาย/",
+      "h1": "วิธีเตรียมโดรนก่อนขายก่อนส่งมอบ",
+      "title": "วิธีเตรียมโดรน DJI ก่อนขาย เช็กบัญชี แบต รีโมต และอุปกรณ์ | WINNER IT",
+      "priceIntent": false,
+      "categories": "drone-gopro",
+      "source": "https://repair.dji.com/help/content?customId=01700006568&lang=en&paperDocType=ARTICLE&re=US&spaceId=17"
+    },
+    {
+      "slug": "โดรนแบตเสื่อมราคาตกไหม",
+      "path": "/บทความ/โดรนแบตเสื่อมราคาตกไหม/",
+      "h1": "โดรนแบตเสื่อมมีผลต่อราคาอย่างไร",
+      "title": "โดรนแบตเสื่อม ราคาตกไหม? ดู Cycle Count บวม และเวลาบิน | WINNER IT",
+      "priceIntent": true,
+      "categories": "drone-gopro",
+      "source": "https://repair.dji.com/help/content?customId=en-us03400006549&documentType=artical&lang=en&paperDocType=paper&re=US&spaceId=34"
+    },
+    {
+      "slug": "วิธีเช็กจำนวนรอบแบตโดรน",
+      "path": "/บทความ/วิธีเช็กจำนวนรอบแบตโดรน/",
+      "h1": "วิธีเช็กจำนวนรอบแบตโดรนก่อนขาย",
+      "title": "วิธีเช็ก Cycle Count แบตโดรน DJI ใน DJI Fly ก่อนขาย | WINNER IT",
+      "priceIntent": false,
+      "categories": "drone-gopro",
+      "source": "https://repair.dji.com/help/content?customId=01700007714&lang=en&paperDocType=ARTICLE&re=US&spaceId=17"
+    },
+    {
+      "slug": "วิธีเตรียม-apple-watch-ก่อนขาย",
+      "path": "/บทความ/วิธีเตรียม-apple-watch-ก่อนขาย/",
+      "h1": "วิธีเตรียม Apple Watch ก่อนขายอย่างถูกต้อง",
+      "title": "วิธีเตรียม Apple Watch ก่อนขาย Unpair ลบ Activation Lock และ Cellular | WINNER IT",
+      "priceIntent": false,
+      "categories": "smartwatch",
+      "source": "https://support.apple.com/guide/watch/unpair-and-erase-apple-watch-apd4ad3571d9/watchos"
+    },
+    {
+      "slug": "apple-watch-cellular-vs-gps-มือสอง",
+      "path": "/บทความ/apple-watch-cellular-vs-gps-มือสอง/",
+      "h1": "Apple Watch Cellular กับ GPS มือสองต่างกันอย่างไร",
+      "title": "Apple Watch GPS + Cellular vs GPS มือสอง ต่างกันอย่างไร | WINNER IT",
+      "priceIntent": true,
+      "categories": "smartwatch",
+      "source": "https://support.apple.com/en-la/109319"
+    },
+    {
+      "slug": "ขายสินค้าไอทีหลายชิ้นเตรียมรายการยังไง",
+      "path": "/บทความ/ขายสินค้าไอทีหลายชิ้นเตรียมรายการยังไง/",
+      "h1": "ขายสินค้าไอทีหลายชิ้นควรเตรียมรายการอย่างไร",
+      "title": "ขายสินค้าไอทีหลายชิ้น เตรียมรายการอย่างไรให้ประเมินเร็ว | WINNER IT",
+      "priceIntent": false,
+      "categories": "bulk-buyout|appliance",
+      "source": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "บริษัทขายคอมเก่าต้องใช้เอกสารอะไร",
+      "path": "/บทความ/บริษัทขายคอมเก่าต้องใช้เอกสารอะไร/",
+      "h1": "บริษัทขายคอมเก่าควรเตรียมเอกสารอะไร",
+      "title": "บริษัทขายคอมเก่า ควรเตรียมเอกสารอะไร ก่อนรับซื้อยกล็อต | WINNER IT",
+      "priceIntent": false,
+      "categories": "bulk-buyout|appliance",
+      "source": "https://learn.microsoft.com/en-us/autopilot/device-preparation/device-association/remove-association"
+    },
+    {
+      "slug": "วิธีทำรายการทรัพย์สินไอทีก่อนขาย",
+      "path": "/บทความ/วิธีทำรายการทรัพย์สินไอทีก่อนขาย/",
+      "h1": "วิธีทำรายการทรัพย์สินไอทีก่อนขาย",
+      "title": "วิธีทำ Asset List ทรัพย์สินไอทีก่อนขาย บริษัทและองค์กร | WINNER IT",
+      "priceIntent": false,
+      "categories": "bulk-buyout|appliance",
+      "source": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "วิธีล้างข้อมูลคอมบริษัทก่อนขาย",
+      "path": "/บทความ/วิธีล้างข้อมูลคอมบริษัทก่อนขาย/",
+      "h1": "วิธีล้างข้อมูลคอมบริษัทก่อนขายอย่างเป็นระบบ",
+      "title": "วิธีล้างข้อมูลคอมบริษัทก่อนขาย วาง Media Sanitization ให้ตรวจสอบได้ | WINNER IT",
+      "priceIntent": false,
+      "categories": "bulk-buyout|appliance|computer|notebook",
+      "source": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "รับซื้อยกล็อตประเมินราคายังไง",
+      "path": "/บทความ/รับซื้อยกล็อตประเมินราคายังไง/",
+      "h1": "การประเมินราคาสินค้าไอทียกล็อตทำอย่างไร",
+      "title": "รับซื้อยกล็อตประเมินราคาอย่างไร แยกเกรดและตรวจตัวอย่างก่อนสรุป | WINNER IT",
+      "priceIntent": true,
+      "categories": "bulk-buyout|appliance",
+      "source": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "ควรถ่ายรูปสินค้าไอทียังไงก่อนประเมิน",
+      "path": "/บทความ/ควรถ่ายรูปสินค้าไอทียังไงก่อนประเมิน/",
+      "h1": "ควรถ่ายรูปสินค้าไอทีอย่างไรก่อนส่งประเมิน",
+      "title": "ถ่ายรูปสินค้าไอทีอย่างไรก่อนส่งประเมิน ให้เห็นรุ่นและตำหนิครบ | WINNER IT",
+      "priceIntent": false,
+      "categories": "notebook|computer|smartphone|camera|game-console|monitor|drone-gopro|smartwatch|bulk-buyout",
+      "source": "https://support.microsoft.com/en-us/windows/experience/find-information-about-your-windows-device"
+    },
+    {
+      "slug": "ข้อมูลอะไรทำให้ประเมินราคาได้เร็วขึ้น",
+      "path": "/บทความ/ข้อมูลอะไรทำให้ประเมินราคาได้เร็วขึ้น/",
+      "h1": "ข้อมูลอะไรช่วยให้ประเมินราคาได้เร็วขึ้น",
+      "title": "ข้อมูลอะไรช่วยให้ประเมินราคาสินค้าไอทีได้เร็วขึ้น | WINNER IT",
+      "priceIntent": false,
+      "categories": "notebook|computer|smartphone|camera|game-console|monitor|drone-gopro|smartwatch|bulk-buyout",
+      "source": "https://support.microsoft.com/en-us/windows/experience/find-information-about-your-windows-device"
+    }
+  ],
+  "samples": {
+    "missingContent": [],
+    "lifecycle": [],
+    "invalidFields": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "unlinked": [],
+    "holdLeak": [],
+    "thinDiscovery": [],
+    "routeIntegration": []
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "batch": "Content Batch 1 — Core Money Pages",
+  "date": "2026-09-01",
+  "verdict": "PASS_WITH_WARNING",
+  "coreContent": {
+    "verdict": "PASS",
+    "corePages": 15,
+    "liveCategoryRoutes": 15,
+    "routeSeoOwnership": "PRESERVED_IN_CATEGORIES",
+    "overlayOwnsH1TitlePath": false,
+    "uniqueDescriptions": 15,
+    "exactDuplicateEditorialParagraphs": 0,
+    "highRiskClaimFindings": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "architecture": {
+    "generatedAt": "2026-09-01T07:49:39.194Z",
+    "verdict": "PASS",
+    "architecture": {
+      "total": 311,
+      "hub": 4,
+      "model": 180,
+      "condition": 24,
+      "b2b": 22,
+      "local": 21,
+      "guide": 60
+    },
+    "existingReleasedPathsDetected": 87,
+    "forecastBuiltRoutesMinimum": 398,
+    "releaseGates": [
+      "UNIQUE_INTENT",
+      "UNIQUE_CONTENT",
+      "INTERNAL_LINKS",
+      "CANONICAL",
+      "METADATA",
+      "QUALITY_QA"
+    ],
+    "findings": {
+      "duplicateIds": 0,
+      "duplicatePaths": 0,
+      "duplicateTitles": 0,
+      "duplicateH1": 0,
+      "routeCollisions": 0,
+      "missingParents": 0,
+      "invalidLifecycle": 0,
+      "missingContentContracts": 0,
+      "productDistrictDoorwayMatrix": 0
+    },
+    "samples": {
+      "collisions": [],
+      "missingParents": []
+    }
+  },
+  "discovery": {
+    "verdict": "PASS",
+    "generatedAt": "2026-09-01T07:49:39.243Z",
+    "liveDiscoveryMeta": {
+      "categoryCount": 15,
+      "brandCount": 6,
+      "modelCount": 21,
+      "conditionCount": 5,
+      "localCount": 8,
+      "holdArchitectureLinked": false
+    },
+    "contextsAudited": 79,
+    "uniqueInternalTargets": 77,
+    "holdArchitectureLinked": 0,
+    "brokenDiscoveryLinks": 0,
+    "thinDiscoveryContexts": 0,
+    "missingComponentTokens": [],
+    "integration": {
+      "moneyPages": true,
+      "articles": true,
+      "breadcrumbTracking": true
+    },
+    "samples": {
+      "holdLeaks": [],
+      "broken": [],
+      "thinContexts": []
+    }
+  },
+  "preservedBaselineFiles": {
+    "src/data/categories.js": true,
+    "src/data/site.js": true,
+    "src/data/architectureRegistry.js": true,
+    "src/data/discoveryLinks.js": true
+  },
+  "fullAstroBuild": "NOT_RUN_NETWORK_TIMEOUT",
+  "nodeModulesIncluded": false,
+  "warnings": [
+    "Legacy numeric price ranges preserved with an explicit dated-reference label; revalidate before advancing the price-table date.",
+    "Full Astro build not completed because dependency installation timed out in the sandbox."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.200Z",
+  "batch": "CONTENT_BATCH_12_REGRESSION",
+  "baseline": "CONTENT_BATCH_11",
+  "findings": {
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "guideIndex": 54,
+    "guideHold": 6,
+    "batch11GuidesPreserved": 40,
+    "changedBatch11Guides": 0,
+    "changedOldGuideOwnership": 0,
+    "protectedFilesChecked": 20,
+    "changedProtectedFiles": 6,
+    "unexpectedChangedProtectedFiles": 0
+  },
+  "changedOldGuides": [],
+  "changedOldGuideOwnership": [],
+  "changedProtected": [
+    "src/pages/index.astro",
+    "src/data/highIntentModelContent.js",
+    "src/data/discoveryLinks.js",
+    "src/pages/[slug].astro",
+    "src/pages/บทความ/[slug].astro",
+    "astro.config.mjs"
+  ],
+  "unexpectedChangedProtected": []
+}

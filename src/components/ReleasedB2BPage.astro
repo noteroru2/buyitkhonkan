@@ -1,0 +1,174 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import MoneyPageNav from './MoneyPageNav.astro';
+import TrustProofSystem from './TrustProofSystem.astro';
+import DiscoveryHub from './DiscoveryHub.astro';
+import { SITE } from '../data/categories.js';
+import { getReleasedB2BDiscovery } from '../data/discoveryLinks.js';
+
+const { page, content } = Astro.props;
+const groups = getReleasedB2BDiscovery(page, content);
+const breadcrumbs = [
+  { name: 'หน้าแรก', href: '/' },
+  { name: 'รับซื้อยกล็อต', href: '/รับเหมาอุปกรณ์ไอที-ขอนแก่น/' },
+  ...(page.id === 'hub-b2b' ? [] : [{ name: 'งานบริษัทและองค์กร', href: '/รับซื้อยกล็อต-บริษัท/' }]),
+  { name: page.label, href: page.path },
+];
+---
+
+<main id="main-content" class="released-b2b-page article" data-content-batch="7" data-lifecycle={page.lifecycle}>
+  <section class="b2b-hero">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="b2b-hero__grid">
+        <div>
+          <p class="eyebrow">B2B / Corporate / Bulk Intent · CONTENT VERIFIED</p>
+          <h1>{page.h1}</h1>
+          <p class="b2b-hero__lede">{content.intro}</p>
+          <div class="b2b-hero__trust" aria-label="หลักการประเมินงานบริษัท">
+            <span>✓ เริ่มจาก Asset List</span>
+            <span>✓ แยก Preliminary / Final</span>
+            <span>✓ ตรวจสิทธิ์ทรัพย์สินและข้อมูลก่อนส่งมอบ</span>
+          </div>
+          <div class="cta-row">
+            <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_b2b_hero">ส่ง Asset List LINE {SITE.lineId}</a>
+            <a href={SITE.phoneHref} class="btn btn--ghost" data-track-event="click_phone" data-cta-location="released_b2b_hero">โทร {SITE.phone}</a>
+          </div>
+        </div>
+        <aside class="b2b-brief-card" aria-label="ข้อมูลเริ่มต้นสำหรับประเมินล็อต">
+          <p class="eyebrow">เริ่มจากข้อมูล 5 อย่าง</p>
+          <h2>ไม่ต้องนับละเอียดใหม่ทั้งหมดก่อนทัก</h2>
+          <ol>
+            <li>ประเภทสินค้าและจำนวนคร่าว ๆ</li>
+            <li>รุ่น/สเปก/Serial หรือ Asset Tag ที่มี</li>
+            <li>แยกปกติ / เสีย / ขาดอุปกรณ์</li>
+            <li>ข้อกำหนดเอกสารและผู้อนุมัติ</li>
+            <li>พื้นที่ วันเวลา และข้อจำกัดขนย้าย</li>
+          </ol>
+          <a href={SITE.lineHref} class="btn btn--line btn--full" data-track-event="click_line" data-cta-location="released_b2b_brief">ส่งไฟล์หรือรูปตัวอย่าง</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="money-nav-wrap">
+    <MoneyPageNav items={[
+      { href: '#b2b-trust', label: 'ตรวจสอบก่อนขาย' },
+      { href: '#scope', label: 'เหมาะกับงานแบบไหน' },
+      { href: '#asset-list', label: 'Asset List' },
+      { href: '#workflow', label: 'ขั้นตอนประเมินล็อต' },
+      { href: '#documents', label: 'เอกสาร' },
+      { href: '#handover', label: 'ข้อมูล/ส่งมอบ' },
+      { href: '#discover', label: 'บริการ B2B ที่เกี่ยวข้อง' },
+      { href: '#b2b-faq', label: 'FAQ' },
+    ]} />
+  </div>
+
+  <TrustProofSystem variant="money" itemLabel={page.label} location="b2b_trust" />
+
+  <div class="container b2b-body">
+    <section id="scope">
+      <p class="eyebrow">เลือก Workflow ให้ตรงงาน</p>
+      <h2>{content.isHub ? 'งานองค์กรแบบไหนเริ่มจาก Hub นี้ได้' : `งานแบบไหนเหมาะกับ ${page.label}`}</h2>
+      <div class="b2b-scope-grid">
+        {content.suitableFor.map((item) => <article><span aria-hidden="true">▦</span><p>{item}</p></article>)}
+      </div>
+    </section>
+
+    <section id="asset-list">
+      <p class="eyebrow">Asset List ก่อนราคาเหมา</p>
+      <h2>ข้อมูลที่ควรมีในรอบแรก</h2>
+      <div class="b2b-two-col">
+        <div>
+          <h3>ข้อมูลในรายการ</h3>
+          <ul>{content.assetList.map((item) => <li>{item}</li>)}</ul>
+        </div>
+        <div>
+          <h3>ควรแบ่งกลุ่มอย่างไร</h3>
+          <ul>{content.grouping.map((item) => <li>{item}</li>)}</ul>
+        </div>
+      </div>
+      <p class="b2b-note">ล็อตใหญ่ไม่จำเป็นต้องมีข้อมูลสมบูรณ์ 100% ตั้งแต่ข้อความแรก แต่ยิ่งรู้รุ่น/สเปก/สภาพต่อกลุ่มมากเท่าไร ราคาประเมินเบื้องต้นก็ยิ่งมีความหมายและตรวจย้อนหลังง่ายขึ้น</p>
+    </section>
+
+    <section id="workflow">
+      <p class="eyebrow">Preliminary → Inspection → Final</p>
+      <h2>ขั้นตอนประเมินล็อตแบบตรวจสอบได้</h2>
+      <ol class="b2b-workflow">
+        {content.workflow.map((item, index) => <li><span>{index + 1}</span><p>{item}</p></li>)}
+      </ol>
+      <div class="b2b-price-policy">
+        <strong>ไม่ใช้ “ราคาเหมาเดียว” จากจำนวนเครื่องเพียงอย่างเดียว</strong>
+        <p>ราคาเบื้องต้นอิงข้อมูลที่องค์กรส่งมา ส่วนราคาสุดท้ายยืนยันหลังตรวจรุ่น สเปก สภาพ จำนวน อุปกรณ์ และข้อจำกัดของล็อตจริง เพื่อไม่ให้ผู้ขายเข้าใจว่าตัวเลขก่อนตรวจเป็นคำรับรองราคาสุดท้าย</p>
+      </div>
+    </section>
+
+    <section id="documents">
+      <p class="eyebrow">ฝ่าย IT + บัญชี + ผู้อนุมัติ</p>
+      <h2>ข้อมูลและเอกสารที่ควรตกลงก่อนนัด</h2>
+      <ul class="b2b-doc-list">{content.documents.map((item) => <li>{item}</li>)}</ul>
+      <p>WINNER IT ดำเนินงานโดยบริษัท อำพล เทรดดิ้ง จำกัด เอกสารที่ออกควรอ้างอิงรายละเอียดธุรกรรมจริง หากองค์กรมีแบบฟอร์มหรือขั้นตอนเฉพาะให้ส่งตัวอย่างก่อนเพื่อเช็กขอบเขตที่รองรับ</p>
+    </section>
+
+    <section id="handover">
+      <p class="eyebrow">Data / Identity / Handover</p>
+      <h2>ก่อนของออกจากองค์กร ควรปิดงานอะไรบ้าง</h2>
+      <div class="b2b-two-col">
+        <div>
+          <h3>ก่อนส่งมอบ</h3>
+          <ul>{content.handover.map((item) => <li>{item}</li>)}</ul>
+        </div>
+        <aside class="b2b-warning">
+          <h3>กรณีที่ควรหยุดและตรวจเพิ่ม</h3>
+          <ul>{content.blockers.map((item) => <li>{item}</li>)}</ul>
+        </aside>
+      </div>
+      <p class="b2b-note">ไม่ต้องส่ง Password, Recovery Key หรือข้อมูลบัญชีส่วนตัวทางแชท ให้ผู้ดูแลระบบขององค์กรเป็นผู้ดำเนินการปลดบัญชี/MDM/ข้อมูลตามสิทธิ์และนโยบายขององค์กร</p>
+    </section>
+
+    {content.sources?.length > 0 && (
+      <section class="b2b-sources" aria-label="แหล่งอ้างอิงด้านการจัดการอุปกรณ์องค์กร">
+        <strong>แหล่งอ้างอิงด้านข้อมูลและการจัดการอุปกรณ์:</strong>
+        <ul>{content.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul>
+        <p>แหล่งเหล่านี้ใช้ประกอบแนวทางด้านการปลดระบบ/ข้อมูล ไม่ใช่แหล่งกำหนดราคารับซื้อของ WINNER IT</p>
+      </section>
+    )}
+
+    <div class="money-inline-cta b2b-inline-cta">
+      <strong>มี Excel, Google Sheet หรือรูป Asset Tag อยู่แล้ว?</strong>
+      <span>ส่งรายการตัวอย่าง + จำนวน + พื้นที่ + วันที่ต้องการเคลียร์ ทีมงานจะบอกว่าข้อมูลใดพอประเมินและรายการใดต้องตรวจเพิ่ม</span>
+      <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_b2b_mid">ส่ง Asset List {SITE.lineId}</a>
+    </div>
+
+    <DiscoveryHub id="discover" groups={groups} title={`สำรวจต่อจาก ${page.label}`} intro="เลือกบริการ B2B ที่ตรงกับชนิดทรัพย์สิน สถานการณ์องค์กร หมวดสินค้า คู่มือ และพื้นที่นัดรับ โดยระบบไม่ลิงก์ไปหน้า HOLD_NOINDEX" />
+
+    <section id="b2b-faq">
+      <p class="eyebrow">คำถามก่อนส่ง Asset List</p>
+      <h2>คำถามที่พบบ่อยเกี่ยวกับ {page.label}</h2>
+      <div class="faq">
+        {content.faq.map(([q, a]) => <details class="faq__item"><summary>{q}</summary><p>{a}</p></details>)}
+      </div>
+    </section>
+  </div>
+
+  <section class="section cta b2b-final">
+    <div class="container cta__in">
+      <p class="eyebrow">รายการชัด · สิทธิ์ชัด · ข้อมูลชัด · ค่อยยืนยันราคา</p>
+      <h2 class="cta__head">มีงาน {page.label}? ส่ง Asset List ให้คัดรายการก่อนนัด</h2>
+      <p>เริ่มจากข้อมูลเท่าที่มี ไม่ผูกมัด และไม่ต้องส่งข้อมูลบัญชีหรือรหัสผ่านในแชท</p>
+      <div class="cta__btns">
+        <a href={SITE.lineHref} class="btn btn--line" data-track-event="click_line" data-cta-location="released_b2b_final">LINE {SITE.lineId}</a>
+        <a href={SITE.phoneHref} class="btn btn--volt" data-track-event="click_phone" data-cta-location="released_b2b_final">โทร {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .b2b-hero{padding:42px 0 36px;background:linear-gradient(180deg,rgba(5,150,105,.055),rgba(255,255,255,0));border-bottom:1px solid var(--line)}
+  .b2b-hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,390px);gap:36px;align-items:start}.b2b-hero h1{margin:8px 0 16px;overflow-wrap:anywhere}.b2b-hero__lede{max-width:72ch;color:var(--ink-soft);font-size:1.06rem;line-height:1.75}.b2b-hero__trust{display:flex;flex-wrap:wrap;gap:8px 16px;margin:18px 0;color:var(--ink-soft);font-size:.92rem}
+  .b2b-brief-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff;box-shadow:0 16px 42px rgba(15,23,42,.08)}.b2b-brief-card h2{margin:6px 0 12px;font-size:1.25rem}.b2b-brief-card ol{padding-left:22px;color:var(--ink-soft);line-height:1.7}.btn--full{width:100%;justify-content:center}
+  .b2b-body{max-width:900px;padding-block:28px 64px}.b2b-body section{scroll-margin-top:130px}.b2b-body p,.b2b-body li{color:var(--ink-soft);line-height:1.75}.b2b-scope-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.b2b-scope-grid article{display:grid;grid-template-columns:28px 1fr;gap:9px;border:1px solid var(--line);border-radius:12px;padding:15px;background:#fff}.b2b-scope-grid p{margin:0}.b2b-scope-grid span{color:#059669;font-weight:800}
+  .b2b-two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.b2b-two-col>div,.b2b-warning{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff}.b2b-two-col h3{margin-top:0}.b2b-note{border-left:4px solid #10b981;padding:12px 16px;background:#ecfdf5;border-radius:0 10px 10px 0}.b2b-workflow{display:grid;gap:10px;padding:0;list-style:none}.b2b-workflow li{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start}.b2b-workflow span{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#ecfdf5;color:#047857;font-weight:800}.b2b-workflow p{margin:4px 0 0}.b2b-price-policy{padding:18px 20px;border-radius:12px;background:var(--mist);margin:18px 0}.b2b-price-policy p{margin:8px 0 0}.b2b-doc-list{display:grid;gap:8px}.b2b-warning{border-color:#fed7aa;background:#fffdf7}.b2b-sources{margin:26px 0;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:#fff}.b2b-sources p{margin:6px 0 0;font-size:.9rem}.b2b-inline-cta{margin-block:30px}.b2b-final{border-top:1px solid var(--line)}.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  @media(max-width:900px){.b2b-hero__grid,.b2b-two-col{grid-template-columns:1fr}}@media(max-width:640px){.b2b-hero{padding-top:28px}.b2b-hero__trust{display:grid}.b2b-scope-grid{grid-template-columns:1fr}}
+</style>

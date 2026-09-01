@@ -1,0 +1,226 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.438Z",
+  "batch": "CONTENT_BATCH_7_B2B_CORPORATE_BULK",
+  "findings": {
+    "batch7ReleaseCount": 22,
+    "expectedBatch7ReleaseCount": 22,
+    "b2bArchitectureReleased": 22,
+    "b2bArchitectureHold": 0,
+    "b2bHubIndex": true,
+    "architectureIndexAfterBatch7": 297,
+    "architectureHoldAfterBatch7": 14,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "invalidLifecycle": 0,
+    "badParent": 0,
+    "badRelated": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "duplicateIntent": 0,
+    "duplicateEditorial": 0,
+    "unlinked": 0,
+    "holdLeak": 0,
+    "routeIntegration": 0,
+    "schemaIntegration": 0,
+    "technicalSlug": 0
+  },
+  "releasedB2B": [
+    {
+      "slug": "company-laptop-lot",
+      "path": "/รับซื้อโน้ตบุ๊กบริษัท-ขอนแก่น/",
+      "h1": "รับซื้อโน้ตบุ๊กบริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อโน้ตบุ๊กบริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|notebook",
+      "sources": "https://learn.microsoft.com/th-th/autopilot/registration-overview|https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "company-desktop-lot",
+      "path": "/รับซื้อคอมบริษัท-ขอนแก่น/",
+      "h1": "รับซื้อคอมบริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อคอมบริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer",
+      "sources": "https://learn.microsoft.com/th-th/autopilot/registration-overview|https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "company-monitor-lot",
+      "path": "/รับซื้อจอคอมบริษัท-ขอนแก่น/",
+      "h1": "รับซื้อจอคอมบริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อจอคอมบริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|monitor",
+      "sources": "https://www.dell.com/support/kbdoc/en-us/000126004/dell-display-pixel-guidelines"
+    },
+    {
+      "slug": "office-it-clearance",
+      "path": "/เคลียร์อุปกรณ์ไอทีสำนักงาน-ขอนแก่น/",
+      "h1": "เคลียร์อุปกรณ์ไอทีสำนักงาน ขอนแก่น",
+      "title": "เคลียร์อุปกรณ์ไอทีสำนักงาน ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "office-relocation-it",
+      "path": "/รับซื้ออุปกรณ์ไอทีก่อนย้ายออฟฟิศ-ขอนแก่น/",
+      "h1": "รับซื้ออุปกรณ์ไอทีก่อนย้ายออฟฟิศ ขอนแก่น",
+      "title": "รับซื้ออุปกรณ์ไอทีก่อนย้ายออฟฟิศ ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "business-closure-it",
+      "path": "/รับซื้อทรัพย์สินไอทีปิดกิจการ-ขอนแก่น/",
+      "h1": "รับซื้อทรัพย์สินไอทีกรณีปิดกิจการ ขอนแก่น",
+      "title": "รับซื้อทรัพย์สินไอทีกรณีปิดกิจการ ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "school-computer-lot",
+      "path": "/รับซื้อคอมโรงเรียนยกล็อต-ขอนแก่น/",
+      "h1": "รับซื้อคอมโรงเรียนเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อคอมโรงเรียนเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "university-device-lot",
+      "path": "/รับซื้ออุปกรณ์ไอทีมหาวิทยาลัย-ขอนแก่น/",
+      "h1": "รับซื้ออุปกรณ์ไอทีมหาวิทยาลัย ขอนแก่น",
+      "title": "รับซื้ออุปกรณ์ไอทีมหาวิทยาลัย ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|notebook|ipad-tablet",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final|https://support.apple.com/guide/business/release-devices-axmec4d28461/web"
+    },
+    {
+      "slug": "gaming-cafe-pc-lot",
+      "path": "/รับซื้อคอมร้านเกมยกล็อต-ขอนแก่น/",
+      "h1": "รับซื้อคอมร้านเกมยกล็อต ขอนแก่น",
+      "title": "รับซื้อคอมร้านเกมยกล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|gpu|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "internet-cafe-equipment",
+      "path": "/รับซื้ออุปกรณ์ร้านอินเทอร์เน็ต-ขอนแก่น/",
+      "h1": "รับซื้ออุปกรณ์ร้านอินเทอร์เน็ต ขอนแก่น",
+      "title": "รับซื้ออุปกรณ์ร้านอินเทอร์เน็ต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "hotel-office-it",
+      "path": "/รับซื้ออุปกรณ์ไอทีโรงแรม-ขอนแก่น/",
+      "h1": "รับซื้ออุปกรณ์ไอทีโรงแรม ขอนแก่น",
+      "title": "รับซื้ออุปกรณ์ไอทีโรงแรม ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "factory-office-it",
+      "path": "/รับซื้อคอมสำนักงานโรงงาน-ขอนแก่น/",
+      "h1": "รับซื้อคอมและอุปกรณ์สำนักงานโรงงาน ขอนแก่น",
+      "title": "รับซื้อคอมและอุปกรณ์สำนักงานโรงงาน ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "retail-pos-lot",
+      "path": "/รับซื้อคอม-pos-อุปกรณ์ร้านค้า-ขอนแก่น/",
+      "h1": "รับซื้อคอม POS และอุปกรณ์ร้านค้า ขอนแก่น",
+      "title": "รับซื้อคอม POS และอุปกรณ์ร้านค้า ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "company-phone-lot",
+      "path": "/รับซื้อมือถือบริษัท-ขอนแก่น/",
+      "h1": "รับซื้อมือถือบริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อมือถือบริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|smartphone|iphone",
+      "sources": "https://support.google.com/work/android/answer/9562029?hl=en|https://support.apple.com/guide/business/release-devices-axmec4d28461/web"
+    },
+    {
+      "slug": "company-iphone-lot",
+      "path": "/รับซื้อ-iphone-บริษัท-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone บริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อ iPhone บริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|iphone",
+      "sources": "https://support.apple.com/guide/business/release-devices-axmec4d28461/web"
+    },
+    {
+      "slug": "company-ipad-lot",
+      "path": "/รับซื้อ-ipad-บริษัท-ขอนแก่น/",
+      "h1": "รับซื้อ iPad บริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อ iPad บริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|ipad-tablet",
+      "sources": "https://support.apple.com/guide/business/release-devices-axmec4d28461/web"
+    },
+    {
+      "slug": "company-macbook-lot",
+      "path": "/รับซื้อ-macbook-บริษัท-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook บริษัทเป็นล็อต ขอนแก่น",
+      "title": "รับซื้อ MacBook บริษัทเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|macbook|notebook",
+      "sources": "https://support.apple.com/guide/business/release-devices-axmec4d28461/web"
+    },
+    {
+      "slug": "it-asset-disposal",
+      "path": "/รับซื้อทรัพย์สินไอทีเก่า-ขอนแก่น/",
+      "h1": "รับซื้อทรัพย์สินไอทีเก่า ขอนแก่น",
+      "title": "รับซื้อทรัพย์สินไอทีเก่า ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "obsolete-it-lot",
+      "path": "/รับซื้ออุปกรณ์ไอทีตกรุ่นยกล็อต-ขอนแก่น/",
+      "h1": "รับซื้ออุปกรณ์ไอทีตกรุ่นเป็นล็อต ขอนแก่น",
+      "title": "รับซื้ออุปกรณ์ไอทีตกรุ่นเป็นล็อต ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|notebook",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "mixed-it-lot",
+      "path": "/รับซื้อสินค้าไอทีหลายประเภท-ขอนแก่น/",
+      "h1": "รับซื้อสินค้าไอทีหลายประเภทพร้อมกัน ขอนแก่น",
+      "title": "รับซื้อสินค้าไอทีหลายประเภทพร้อมกัน ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|computer|notebook|monitor|smartphone",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final|https://support.apple.com/guide/business/release-devices-axmec4d28461/web"
+    },
+    {
+      "slug": "inventory-clearance-it",
+      "path": "/รับซื้อสต็อกอุปกรณ์ไอทีค้าง-ขอนแก่น/",
+      "h1": "รับซื้อสต็อกอุปกรณ์ไอทีค้าง ขอนแก่น",
+      "title": "รับซื้อสต็อกอุปกรณ์ไอทีค้าง ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout|gadget|monitor",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    },
+    {
+      "slug": "corporate-quotation-buyback",
+      "path": "/ใบเสนอราคารับซื้ออุปกรณ์ไอทีบริษัท-ขอนแก่น/",
+      "h1": "ประเมินรับซื้อพร้อมใบเสนอราคาสำหรับบริษัท ขอนแก่น",
+      "title": "ประเมินรับซื้อพร้อมใบเสนอราคาสำหรับบริษัท ขอนแก่น จัด Asset List ตรวจสภาพและเอกสารก่อนส่งมอบ | WINNER IT",
+      "categories": "bulk-buyout",
+      "sources": "https://csrc.nist.gov/pubs/sp/800/88/r2/final"
+    }
+  ],
+  "samples": {
+    "missingContent": [],
+    "invalidFields": [],
+    "invalidLifecycle": [],
+    "badParent": [],
+    "badRelated": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "duplicateIntent": [],
+    "duplicateEditorial": [],
+    "unlinked": [],
+    "holdLeak": [],
+    "routeIntegration": [],
+    "schemaIntegration": [],
+    "technicalSlug": []
+  }
+}

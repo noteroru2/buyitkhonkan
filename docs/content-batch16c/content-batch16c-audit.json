@@ -1,0 +1,222 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.956Z",
+  "batch": "CONTENT_BATCH_16C_MODEL_RELEASE_ROUND_2",
+  "findings": {
+    "batch16cRelease": 18,
+    "releasedModelsTotal": 172,
+    "modelHold": 8,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "clusterCounts": {
+      "notebook": 4,
+      "iphone": 6,
+      "ipad-tablet": 2,
+      "gpu": 6
+    },
+    "issueCount": 0,
+    "countContract": true,
+    "missingPage": 0,
+    "missingContent": 0,
+    "lifecycle": 0,
+    "triageMismatch": 0,
+    "invalidFields": 0,
+    "metadataLength": 0,
+    "duplicateTitle": 0,
+    "duplicateDescription": 0,
+    "duplicateIntro": 0,
+    "parentMismatch": 0,
+    "badRelated": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "authorityInbound": 0,
+    "holdLeak": 0,
+    "integration": 0
+  },
+  "released": [
+    {
+      "slug": "lenovo-loq-16",
+      "path": "/รับซื้อ-lenovo-loq-16-ขอนแก่น/",
+      "h1": "รับซื้อ Lenovo LOQ 16 ขอนแก่น",
+      "title": "รับซื้อ Lenovo LOQ 16 ขอนแก่น เช็ก 16IRH8 CPU RTX จอ 16 นิ้วและอะแดปเตอร์ | WINNER IT",
+      "category": "notebook",
+      "brand": "lenovo",
+      "source": "https://psref.lenovo.com/Product/LOQ/LOQ_16IRH8?tab=spec"
+    },
+    {
+      "slug": "hp-victus-15",
+      "path": "/รับซื้อ-hp-victus-15-ขอนแก่น/",
+      "h1": "รับซื้อ HP Victus 15 ขอนแก่น",
+      "title": "รับซื้อ HP Victus 15 ขอนแก่น เช็ก 15-fa CPU RTX จอ 144Hz และประกัน | WINNER IT",
+      "category": "notebook",
+      "brand": "hp",
+      "source": "https://support.hp.com/th-en/document/ish_7704801-7704845-16"
+    },
+    {
+      "slug": "msi-cyborg-15",
+      "path": "/รับซื้อ-msi-cyborg-15-ขอนแก่น/",
+      "h1": "รับซื้อ MSI Cyborg 15 ขอนแก่น",
+      "title": "รับซื้อ MSI Cyborg 15 ขอนแก่น เช็ก A13V CPU RTX 4050/4060 จอ 144Hz | WINNER IT",
+      "category": "notebook",
+      "brand": "msi",
+      "source": "https://th.msi.com/Laptop/Cyborg-15-A13VX/Specification"
+    },
+    {
+      "slug": "msi-thin-15",
+      "path": "/รับซื้อ-msi-thin-15-ขอนแก่น/",
+      "h1": "รับซื้อ MSI Thin 15 ขอนแก่น",
+      "title": "รับซื้อ MSI Thin 15 ขอนแก่น เช็ก B13V RTX 4050 จอ 144Hz RAM SSD | WINNER IT",
+      "category": "notebook",
+      "brand": "msi",
+      "source": "https://th.msi.com/Laptop/Thin-15-B13VX/Specification"
+    },
+    {
+      "slug": "iphone-11",
+      "path": "/รับซื้อ-iphone-11-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 11 ขอนแก่น",
+      "title": "รับซื้อ iPhone 11 ขอนแก่น เช็ก 64/128/256GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-my/111865"
+    },
+    {
+      "slug": "iphone-11-pro",
+      "path": "/รับซื้อ-iphone-11-pro-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 11 Pro ขอนแก่น",
+      "title": "รับซื้อ iPhone 11 Pro ขอนแก่น เช็ก 64/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-ie/111879"
+    },
+    {
+      "slug": "iphone-11-pro-max",
+      "path": "/รับซื้อ-iphone-11-pro-max-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 11 Pro Max ขอนแก่น",
+      "title": "รับซื้อ iPhone 11 Pro Max ขอนแก่น เช็ก 64/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-us/111878"
+    },
+    {
+      "slug": "iphone-12-mini",
+      "path": "/รับซื้อ-iphone-12-mini-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 12 mini ขอนแก่น",
+      "title": "รับซื้อ iPhone 12 mini ขอนแก่น เช็ก 64/128/256GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-euro/111877"
+    },
+    {
+      "slug": "iphone-12-pro",
+      "path": "/รับซื้อ-iphone-12-pro-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 12 Pro ขอนแก่น",
+      "title": "รับซื้อ iPhone 12 Pro ขอนแก่น เช็ก 128/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-la/111875"
+    },
+    {
+      "slug": "iphone-13-mini",
+      "path": "/รับซื้อ-iphone-13-mini-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone 13 mini ขอนแก่น",
+      "title": "รับซื้อ iPhone 13 mini ขอนแก่น เช็ก 128/256/512GB แบต จอ Face ID และอะไหล่ | WINNER IT",
+      "category": "iphone",
+      "brand": "",
+      "source": "https://support.apple.com/en-us/111873"
+    },
+    {
+      "slug": "ipad-pro-m1-12-9",
+      "path": "/รับซื้อ-ipad-pro-m1-12-9-ขอนแก่น/",
+      "h1": "รับซื้อ iPad Pro M1 12.9-inch ขอนแก่น",
+      "title": "รับซื้อ iPad Pro M1 12.9 นิ้ว ขอนแก่น เช็ก mini‑LED 128GB–2TB Cellular และจอ | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/en-mide/111896"
+    },
+    {
+      "slug": "ipad-pro-m2-12-9",
+      "path": "/รับซื้อ-ipad-pro-m2-12-9-ขอนแก่น/",
+      "h1": "รับซื้อ iPad Pro M2 12.9-inch ขอนแก่น",
+      "title": "รับซื้อ iPad Pro M2 12.9 นิ้ว ขอนแก่น เช็ก mini‑LED M2 128GB–2TB Cellular | WINNER IT",
+      "category": "ipad-tablet",
+      "brand": "",
+      "source": "https://support.apple.com/en-ie/111841"
+    },
+    {
+      "slug": "rtx-3070-ti",
+      "path": "/รับซื้อ-rtx-3070-ti-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 3070 Ti ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 3070 Ti ขอนแก่น เช็ก 8GB GDDR6X รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070-3070ti/"
+    },
+    {
+      "slug": "rtx-3080-ti",
+      "path": "/รับซื้อ-rtx-3080-ti-ขอนแก่น/",
+      "h1": "รับซื้อ GeForce RTX 3080 Ti ขอนแก่น",
+      "title": "รับซื้อ GeForce RTX 3080 Ti ขอนแก่น เช็ก 12GB GDDR6X รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080-3080ti/"
+    },
+    {
+      "slug": "rx-6700-xt",
+      "path": "/รับซื้อ-rx-6700-xt-ขอนแก่น/",
+      "h1": "รับซื้อ Radeon RX 6700 XT ขอนแก่น",
+      "title": "รับซื้อ Radeon RX 6700 XT ขอนแก่น เช็ก 12GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6700-xt.html"
+    },
+    {
+      "slug": "rx-7600",
+      "path": "/รับซื้อ-rx-7600-ขอนแก่น/",
+      "h1": "รับซื้อ Radeon RX 7600 ขอนแก่น",
+      "title": "รับซื้อ Radeon RX 7600 ขอนแก่น เช็ก 8GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7600.html"
+    },
+    {
+      "slug": "rx-7700-xt",
+      "path": "/รับซื้อ-rx-7700-xt-ขอนแก่น/",
+      "h1": "รับซื้อ Radeon RX 7700 XT ขอนแก่น",
+      "title": "รับซื้อ Radeon RX 7700 XT ขอนแก่น เช็ก 12GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7700-xt.html"
+    },
+    {
+      "slug": "rx-7900-xt",
+      "path": "/รับซื้อ-rx-7900-xt-ขอนแก่น/",
+      "h1": "รับซื้อ Radeon RX 7900 XT ขอนแก่น",
+      "title": "รับซื้อ Radeon RX 7900 XT ขอนแก่น เช็ก 20GB GDDR6 รุ่นการ์ด พัดลม หัวไฟและประกัน | WINNER IT",
+      "category": "gpu",
+      "brand": "",
+      "source": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xt.html"
+    }
+  ],
+  "problems": {
+    "missingPage": [],
+    "missingContent": [],
+    "lifecycle": [],
+    "triageMismatch": [],
+    "invalidFields": [],
+    "metadataLength": [],
+    "duplicateTitle": [],
+    "duplicateDescription": [],
+    "duplicateIntro": [],
+    "parentMismatch": [],
+    "badRelated": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "authorityInbound": [],
+    "holdLeak": [],
+    "integration": []
+  }
+}

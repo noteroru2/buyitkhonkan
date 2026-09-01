@@ -1,0 +1,79 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.353Z",
+  "batch": "CONTENT_BATCH_6_REGRESSION",
+  "baseline": "CONTENT_BATCH_5",
+  "findings": {
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "releasedConditions": 24,
+    "expectedReleasedConditions": 24,
+    "protectedFilesChecked": 10,
+    "changedProtectedFiles": 3,
+    "unexpectedChangedProtectedFiles": 0,
+    "releasedConditionRouteIntegrated": true
+  },
+  "protectedComparison": [
+    {
+      "file": "src/data/categories.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/brandPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/modelPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/conditionPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/localPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/architecture/models.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/highIntentModelContent.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    },
+    {
+      "file": "src/layouts/Base.astro",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "astro.config.mjs",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    },
+    {
+      "file": "src/pages/index.astro",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    }
+  ],
+  "unexpectedChangedProtected": []
+}

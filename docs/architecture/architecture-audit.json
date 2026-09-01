@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-09-01T15:29:59.941Z",
+  "verdict": "PASS",
+  "architecture": {
+    "total": 311,
+    "hub": 4,
+    "model": 180,
+    "condition": 24,
+    "b2b": 22,
+    "local": 21,
+    "guide": 60
+  },
+  "existingReleasedPathsDetected": 87,
+  "forecastBuiltRoutesMinimum": 398,
+  "releaseGates": [
+    "UNIQUE_INTENT",
+    "UNIQUE_CONTENT",
+    "INTERNAL_LINKS",
+    "CANONICAL",
+    "METADATA",
+    "QUALITY_QA"
+  ],
+  "findings": {
+    "duplicateIds": 0,
+    "duplicatePaths": 0,
+    "duplicateTitles": 0,
+    "duplicateH1": 0,
+    "routeCollisions": 0,
+    "missingParents": 0,
+    "invalidLifecycle": 0,
+    "missingContentContracts": 0,
+    "productDistrictDoorwayMatrix": 0
+  },
+  "samples": {
+    "collisions": [],
+    "missingParents": []
+  }
+}

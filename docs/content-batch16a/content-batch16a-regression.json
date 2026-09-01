@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.758Z",
+  "batch": "CONTENT_BATCH_16A_AUTHORITY_HUB_REGRESSION",
+  "baseline": "CONTENT_BATCH_15",
+  "note": "Historical regression preserves the Batch 16A hub release while allowing later approved model-content aggregation.",
+  "findings": {
+    "protectedFilesChecked": 22,
+    "changedProtectedFiles": 3,
+    "unexpectedChangedProtectedFiles": 0,
+    "missingExpectedFiles": 0,
+    "architectureTotal": 311,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "authorityHubsIndex": 2
+  },
+  "changedProtected": [
+    {
+      "file": "src/data/highIntentModelContent.js",
+      "expected": "a62083eab108a5ae45fc2502dcfbf965a576a1bb1cb4661f71da5908136c8690",
+      "actual": "a20d96bf898aab97bc752928537ac64981358c883c5929932637212c1b590e29"
+    },
+    {
+      "file": "src/pages/บทความ/[slug].astro",
+      "expected": "621198273397188671af131deff495bb747cadd3a57c14a421268aacdda9db05",
+      "actual": "585ea5b8a832c91103a3153255947deb0f49c11db64f7452ba7e195e5b5853c9"
+    },
+    {
+      "file": "astro.config.mjs",
+      "expected": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "actual": "87a0175e733cfc74345161e7ac29badcd9788241b572e91bcd684cf027c99190"
+    }
+  ],
+  "unexpectedChangedProtected": [],
+  "missingExpected": []
+}

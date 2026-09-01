@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-09-01T13:55:30Z",
+  "checked": 30,
+  "failed": 0,
+  "results": [
+    {
+      "audit": "content-batch4-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch5-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch6-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch6-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch7-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch7-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch8-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch8-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch9-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch9-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch10-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch10-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch11-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch11-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch12-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch12-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch13-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch13-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch14-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch14-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch15-triage-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch15-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch16a-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch16a-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch16b-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch16b-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "architecture-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "discovery-ux-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch16c-audit.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    },
+    {
+      "audit": "content-batch16c-regression.mjs",
+      "rc": 0,
+      "verdict": "PASS"
+    }
+  ]
+}

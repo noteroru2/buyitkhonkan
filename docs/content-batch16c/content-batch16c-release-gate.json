@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS_WITH_BUILD_WARNING",
+  "batch": "CONTENT_BATCH_16C_MODEL_RELEASE_ROUND_2",
+  "contentAudit": "PASS",
+  "regressionAudit": "PASS",
+  "architectureAudit": "PASS",
+  "discoveryAudit": "PASS",
+  "syntax": "PASS",
+  "historicalAudits": {
+    "checked": 30,
+    "failed": 0
+  },
+  "build": {
+    "verdict": "WARNING",
+    "reason": "npm ci did not complete within sandbox runtime/network window; Astro build was not claimed as PASS",
+    "nodeModulesRemoved": true,
+    "distRemoved": true,
+    "astroCacheRemoved": true
+  },
+  "state": {
+    "architectureTotal": 311,
+    "architectureIndex": 293,
+    "architectureHold": 18,
+    "modelTotal": 180,
+    "modelIndex": 168,
+    "modelHold": 12,
+    "batch16cReleased": 18,
+    "remainingApprovedModelReleaseCandidates": 4,
+    "keepHoldModels": 8,
+    "holdGuides": 6,
+    "discoveryContexts": 203,
+    "uniqueLiveInternalTargets": 345,
+    "brokenDiscoveryLinks": 0,
+    "holdLeaks": 0
+  }
+}

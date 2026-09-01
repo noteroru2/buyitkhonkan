@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-09-01T14:15:00+07:00",
+  "verdict": "PASS",
+  "checks": {
+    "money_conversion_component_exists": true,
+    "money_nav_component_exists": true,
+    "category_hero_conversion_card": true,
+    "detail_hero_conversion_card": true,
+    "category_quick_nav": true,
+    "detail_quick_nav": true,
+    "mid_content_line_cta": true,
+    "detail_final_line_cta": true,
+    "mobile_breakpoint_present": true,
+    "hold_noindex_logic_preserved": true,
+    "architecture_skeleton_branch_preserved": true,
+    "seo_route_data_unchanged": true,
+    "frontmatter_delimiters_ok": true,
+    "style_block_present": true
+  },
+  "seoDataChanged": [],
+  "build": {
+    "status": "NOT_RUN",
+    "reason": "npm dependency cache incomplete; astro binary unavailable after offline install attempt"
+  },
+  "architectureAudit": "PASS"
+}

@@ -1,0 +1,83 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T08:20:38.028926+00:00",
+  "baseline": "Content Batch 2 — High-Intent Model & Series Pages",
+  "batch": "Content Batch 3 — High-Intent Expansion",
+  "seoOwnershipFiles": [
+    {
+      "file": "src/data/categories.js",
+      "batch2_sha256": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+      "batch3_sha256": "dd040069f95e73f21984ea5edbcf6c5ab52a3bb75449c002543b919d964953cd",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/brandPages.js",
+      "batch2_sha256": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+      "batch3_sha256": "b2fb775200484c93da17a37989a5088971a50516d7b40b7a176f52cf4ebfde5c",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/modelPages.js",
+      "batch2_sha256": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+      "batch3_sha256": "08715cd82f227beefd058a7d2722c56900df326befc451a5277587caeaeac796",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/conditionPages.js",
+      "batch2_sha256": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+      "batch3_sha256": "b3ea0268f5b050a52589edb1579675a9841fd37d2f9f6da00f763fc0e21201db",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/localPages.js",
+      "batch2_sha256": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+      "batch3_sha256": "bd97cf3da035f6c84bde66439a4e26f8a42921d3e2f4be889043a696d02583c2",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/site.js",
+      "batch2_sha256": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+      "batch3_sha256": "5404a75edd722af8ae342fd311fe3a2c816adffb90a53f2f7655309521ed28f4",
+      "unchanged": true
+    },
+    {
+      "file": "src/pages/[slug].astro",
+      "batch2_sha256": "336d9ab95dc8bca96e8631bdb9affc06d5aecc59d584a60c5f839fac7e1e160e",
+      "batch3_sha256": "336d9ab95dc8bca96e8631bdb9affc06d5aecc59d584a60c5f839fac7e1e160e",
+      "unchanged": true
+    },
+    {
+      "file": "src/layouts/Base.astro",
+      "batch2_sha256": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+      "batch3_sha256": "2516d23b3114643b7d0961b67e2538f408e23ddd6926d29a05bd36ba05de62ce",
+      "unchanged": true
+    },
+    {
+      "file": "astro.config.mjs",
+      "batch2_sha256": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "batch3_sha256": "d5ae9c0bf7bca57e34db49d074193b92777c59d0eb244427b45f67ca714725db",
+      "unchanged": true
+    },
+    {
+      "file": "src/data/architecture/models.js",
+      "batch2_sha256": "ae801e79a76b2c076f224bbc23e67da0b6577ae10f12f43e16e9b3bd2a70a984",
+      "batch3_sha256": "ae801e79a76b2c076f224bbc23e67da0b6577ae10f12f43e16e9b3bd2a70a984",
+      "unchanged": true
+    }
+  ],
+  "expectedModifiedFiles": [
+    "src/data/highIntentModelContent.js",
+    "src/data/discoveryLinks.js",
+    "src/components/ReleasedModelPage.astro",
+    "package.json"
+  ],
+  "contentAudit": "PASS",
+  "architectureAudit": "PASS",
+  "discoveryAudit": "PASS",
+  "releasedBefore": 20,
+  "releasedAdded": 21,
+  "releasedAfter": 41,
+  "modelHoldAfter": 139,
+  "architectureHoldAfter": 270,
+  "fullAstroBuild": "NOT_RUN — npm ci timed out in sandbox; partial node_modules removed before packaging"
+}

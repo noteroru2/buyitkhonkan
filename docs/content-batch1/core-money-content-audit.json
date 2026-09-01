@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "corePages": 15,
+  "liveCategoryRoutes": 15,
+  "routeSeoOwnership": "PRESERVED_IN_CATEGORIES",
+  "overlayOwnsH1TitlePath": false,
+  "uniqueDescriptions": 15,
+  "exactDuplicateEditorialParagraphs": 0,
+  "highRiskClaimFindings": 0,
+  "errors": [],
+  "warnings": []
+}

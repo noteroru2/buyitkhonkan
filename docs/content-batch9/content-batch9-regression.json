@@ -1,0 +1,116 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.795Z",
+  "batch": "CONTENT_BATCH_9_REGRESSION",
+  "baseline": "CONTENT_BATCH_8",
+  "findings": {
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "modelIndex": 172,
+    "conditionIndex": 24,
+    "b2bIndex": 22,
+    "districtIndex": 21,
+    "districtHold": 0,
+    "protectedFilesChecked": 15,
+    "changedProtectedFiles": 4,
+    "unexpectedChangedProtectedFiles": 0,
+    "batch8Preserved": true,
+    "batch9Released": true,
+    "releasedDistrictRouteIntegrated": true,
+    "districtDiscoveryIntegrated": true,
+    "distanceNullHandled": true
+  },
+  "protectedComparison": [
+    {
+      "file": "src/pages/index.astro",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    },
+    {
+      "file": "src/data/categories.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/brandPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/modelPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/conditionPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/localPages.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/architecture/models.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/architecture/conditions.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/architecture/b2b.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/architecture/guides.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    },
+    {
+      "file": "src/data/highIntentModelContent.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    },
+    {
+      "file": "src/data/highIntentConditionContent.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/data/highIntentB2BContent.js",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "src/layouts/Base.astro",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": true
+    },
+    {
+      "file": "astro.config.mjs",
+      "baselineExists": true,
+      "currentExists": true,
+      "identical": false
+    }
+  ],
+  "unexpectedChangedProtected": []
+}

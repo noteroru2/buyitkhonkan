@@ -1,0 +1,3 @@
+id,path,lifecycle,title,h1,role
+hub-products,/สินค้าที่รับซื้อ/,INDEX,"สินค้าที่รับซื้อ ขอนแก่น | โน้ตบุ๊ก คอม iPhone MacBook และไอที | WINNER IT","สินค้าที่รับซื้อในขอนแก่น แยกตามประเภทสินค้า",MASTER_PRODUCT_DIRECTORY
+hub-brands-models,/ยี่ห้อและรุ่นที่รับซื้อ/,INDEX,"ยี่ห้อและรุ่นที่รับซื้อ ขอนแก่น | Brand & Model Directory | WINNER IT","ยี่ห้อและรุ่นสินค้าไอทีที่รับซื้อในขอนแก่น",BRAND_MODEL_DIRECTORY

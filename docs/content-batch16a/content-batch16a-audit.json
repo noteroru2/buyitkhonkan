@@ -1,0 +1,48 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:33.700Z",
+  "batch": "CONTENT_BATCH_16A_AUTHORITY_HUB_RELEASE",
+  "findings": {
+    "architectureTotal": 311,
+    "architectureIndex": 297,
+    "architectureHold": 14,
+    "releasedAuthorityHubs": 2,
+    "categoriesRepresented": 15,
+    "brandPages": 6,
+    "liveModelDirectoryEntries": 172,
+    "liveModelClusters": 14,
+    "remainingReleaseCandidates": 0,
+    "issueCount": 0,
+    "countContract": true
+  },
+  "issues": {
+    "missingHub": [],
+    "hubNotIndex": [],
+    "placeholderMetadata": [],
+    "missingHubContent": [],
+    "incompleteProductCategories": [],
+    "incompleteModelClusters": [],
+    "duplicateProductCategorySlug": [],
+    "modelDirectoryMismatch": [],
+    "holdLeakRisk": [],
+    "missingIntegrationToken": [],
+    "oldCategoryAnchorRemaining": [],
+    "triageReleaseMismatch": []
+  },
+  "authorityHubs": [
+    {
+      "id": "hub-products",
+      "path": "/สินค้าที่รับซื้อ/",
+      "lifecycle": "INDEX",
+      "title": "สินค้าที่รับซื้อ ขอนแก่น | โน้ตบุ๊ก คอม iPhone MacBook และไอที | WINNER IT",
+      "h1": "สินค้าที่รับซื้อในขอนแก่น แยกตามประเภทสินค้า"
+    },
+    {
+      "id": "hub-brands-models",
+      "path": "/ยี่ห้อและรุ่นที่รับซื้อ/",
+      "lifecycle": "INDEX",
+      "title": "ยี่ห้อและรุ่นที่รับซื้อ ขอนแก่น | Brand & Model Directory | WINNER IT",
+      "h1": "ยี่ห้อและรุ่นสินค้าไอทีที่รับซื้อในขอนแก่น"
+    }
+  ]
+}

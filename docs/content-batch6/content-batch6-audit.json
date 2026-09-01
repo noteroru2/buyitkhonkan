@@ -1,0 +1,239 @@
+{
+  "verdict": "PASS",
+  "generatedAt": "2026-09-01T14:31:32.290Z",
+  "batch": "CONTENT_BATCH_6_CONDITION_PROBLEM_INTENT",
+  "findings": {
+    "batch6ReleaseCount": 24,
+    "expectedBatch6ReleaseCount": 24,
+    "conditionArchitectureReleased": 24,
+    "conditionArchitectureHold": 0,
+    "architectureIndexAfterBatch6": 112,
+    "architectureHoldAfterBatch6": 199,
+    "missingContent": 0,
+    "invalidFields": 0,
+    "invalidLifecycle": 0,
+    "parentMismatch": 0,
+    "invalidGeneralCondition": 0,
+    "badRelated": 0,
+    "unlinked": 0,
+    "missingSource": 0,
+    "invalidSource": 0,
+    "unsafeClaims": 0,
+    "fixedPriceClaims": 0,
+    "duplicateEditorial": 0,
+    "duplicateIntent": 0,
+    "routeIntegration": 0,
+    "schemaIntegration": 0
+  },
+  "releasedConditions": [
+    {
+      "slug": "notebook-hinge-broken",
+      "path": "/รับซื้อโน้ตบุ๊กบานพับแตก-ขอนแก่น/",
+      "h1": "รับซื้อโน้ตบุ๊กบานพับแตก ขอนแก่น",
+      "category": "notebook",
+      "title": "รับซื้อโน้ตบุ๊กบานพับแตก ขอนแก่น ประเมินฝา บอดี้ จอ และสายแพ | WINNER IT",
+      "source": "https://support.lenovo.com/th/th/solutions/ht104148-customer-induced-damage-cid-guide-laptops-and-desktops"
+    },
+    {
+      "slug": "notebook-keyboard-broken",
+      "path": "/รับซื้อโน้ตบุ๊กคีย์บอร์ดเสีย-ขอนแก่น/",
+      "h1": "รับซื้อโน้ตบุ๊กคีย์บอร์ดเสีย ขอนแก่น",
+      "category": "notebook",
+      "title": "รับซื้อโน้ตบุ๊กคีย์บอร์ดเสีย ขอนแก่น เช็กปุ่ม แบ็กไลต์ และร่องรอยน้ำ | WINNER IT",
+      "source": "https://support.microsoft.com/th-TH/Windows/Hardware/input-devices/mouse-and-keyboard-problems-in-windows"
+    },
+    {
+      "slug": "notebook-battery-degraded",
+      "path": "/รับซื้อโน้ตบุ๊กแบตเสื่อม-ขอนแก่น/",
+      "h1": "รับซื้อโน้ตบุ๊กแบตเสื่อม ขอนแก่น",
+      "category": "notebook",
+      "title": "รับซื้อโน้ตบุ๊กแบตเสื่อม ขอนแก่น เช็กสุขภาพแบต บวม และอะแดปเตอร์ | WINNER IT",
+      "source": "https://www.dell.com/support/kbdoc/en-th/000128491/swollen-battery-information-and-guidance"
+    },
+    {
+      "slug": "notebook-water-damage",
+      "path": "/รับซื้อโน้ตบุ๊กโดนน้ำ-ขอนแก่น/",
+      "h1": "รับซื้อโน้ตบุ๊กโดนน้ำ ขอนแก่น",
+      "category": "notebook",
+      "title": "รับซื้อโน้ตบุ๊กโดนน้ำ ขอนแก่น ประเมินอาการเปิดติด คราบ และประวัติซ่อม | WINNER IT",
+      "source": "https://www.dell.com/support/kbdoc/en-th/000332239/types-of-damages-not-covered-by-dell-basic-support"
+    },
+    {
+      "slug": "notebook-gpu-fault",
+      "path": "/รับซื้อโน้ตบุ๊กการ์ดจอเสีย-ขอนแก่น/",
+      "h1": "รับซื้อโน้ตบุ๊กการ์ดจอเสีย ขอนแก่น",
+      "category": "notebook",
+      "title": "รับซื้อโน้ตบุ๊กการ์ดจอเสีย ขอนแก่น จอดับ ภาพแตก GPU หายยังประเมินได้ | WINNER IT",
+      "source": "https://www.asus.com/us/support/faq/1015072/"
+    },
+    {
+      "slug": "macbook-screen-lines",
+      "path": "/รับซื้อmacbook-จอเป็นเส้น-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook จอเป็นเส้น ขอนแก่น",
+      "category": "macbook",
+      "title": "รับซื้อ MacBook จอเป็นเส้น ขอนแก่น เช็กจอใน จอนอก และรอยกด | WINNER IT",
+      "source": "https://support.apple.com/th-th/mac-laptops/repair?services=service"
+    },
+    {
+      "slug": "macbook-keyboard-fault",
+      "path": "/รับซื้อmacbook-คีย์บอร์ดเสีย-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook คีย์บอร์ดเสีย ขอนแก่น",
+      "category": "macbook",
+      "title": "รับซื้อ MacBook คีย์บอร์ดเสีย ขอนแก่น ปุ่มไม่ติด แบ็กไลต์มีปัญหา | WINNER IT",
+      "source": "https://support.apple.com/th-th/mac-laptops/repair?services=service"
+    },
+    {
+      "slug": "macbook-battery-service",
+      "path": "/รับซื้อmacbook-แบตเสื่อม-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook แบตเสื่อม ขอนแก่น",
+      "category": "macbook",
+      "title": "รับซื้อ MacBook แบตเสื่อม ขอนแก่น เช็ก Battery Health และ Cycle Count | WINNER IT",
+      "source": "https://support.apple.com/th-th/108376"
+    },
+    {
+      "slug": "macbook-dented",
+      "path": "/รับซื้อmacbook-มีรอยบุบ-ขอนแก่น/",
+      "h1": "รับซื้อ MacBook มีรอยบุบ ขอนแก่น",
+      "category": "macbook",
+      "title": "รับซื้อ MacBook มีรอยบุบ ขอนแก่น เช็กฝา มุม พอร์ต และจอ | WINNER IT",
+      "source": "https://support.apple.com/th-th/mac-laptops/repair?services=service"
+    },
+    {
+      "slug": "iphone-screen-cracked",
+      "path": "/รับซื้อiphone-จอแตก-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone จอแตก ขอนแก่น",
+      "category": "iphone",
+      "title": "รับซื้อ iPhone จอแตก ขอนแก่น เช็กทัช Face ID และจอแท้/เปลี่ยน | WINNER IT",
+      "source": "https://support.apple.com/th-th/iphone/repair/screen-replacement"
+    },
+    {
+      "slug": "iphone-back-glass-cracked",
+      "path": "/รับซื้อiphone-ฝาหลังแตก-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone ฝาหลังแตก ขอนแก่น",
+      "category": "iphone",
+      "title": "รับซื้อ iPhone ฝาหลังแตก ขอนแก่น เช็กกล้อง ชาร์จไร้สาย และบอดี้ | WINNER IT",
+      "source": "https://support.apple.com/iphone/repair"
+    },
+    {
+      "slug": "iphone-battery-low",
+      "path": "/รับซื้อiphone-แบตต่ำ-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone แบตต่ำ ขอนแก่น",
+      "category": "iphone",
+      "title": "รับซื้อ iPhone แบตต่ำ ขอนแก่น เช็ก Battery Health และประวัติเปลี่ยนแบต | WINNER IT",
+      "source": "https://support.apple.com/th-th/101575"
+    },
+    {
+      "slug": "iphone-camera-fault",
+      "path": "/รับซื้อiphone-กล้องเสีย-ขอนแก่น/",
+      "h1": "รับซื้อ iPhone กล้องเสีย ขอนแก่น",
+      "category": "iphone",
+      "title": "รับซื้อ iPhone กล้องเสีย ขอนแก่น โฟกัสไม่ได้ สั่น หรือเลนส์มีปัญหา | WINNER IT",
+      "source": "https://support.apple.com/en-asia/103259"
+    },
+    {
+      "slug": "ipad-bent",
+      "path": "/รับซื้อipad-เครื่องงอ-ขอนแก่น/",
+      "h1": "รับซื้อ iPad เครื่องงอ ขอนแก่น",
+      "category": "ipad-tablet",
+      "title": "รับซื้อ iPad เครื่องงอ ขอนแก่น เช็กจอ บอดี้ พอร์ต และ Apple Pencil | WINNER IT",
+      "source": "https://support.apple.com/ipad/repair"
+    },
+    {
+      "slug": "ipad-screen-cracked",
+      "path": "/รับซื้อipad-จอแตก-ขอนแก่น/",
+      "h1": "รับซื้อ iPad จอแตก ขอนแก่น",
+      "category": "ipad-tablet",
+      "title": "รับซื้อ iPad จอแตก ขอนแก่น เช็กทัช LCD Face ID และ Apple Pencil | WINNER IT",
+      "source": "https://support.apple.com/ipad/repair"
+    },
+    {
+      "slug": "ipad-battery-degraded",
+      "path": "/รับซื้อipad-แบตเสื่อม-ขอนแก่น/",
+      "h1": "รับซื้อ iPad แบตเสื่อม ขอนแก่น",
+      "category": "ipad-tablet",
+      "title": "รับซื้อ iPad แบตเสื่อม ขอนแก่น เช็ก Battery Health การชาร์จ และอาการบวม | WINNER IT",
+      "source": "https://support.apple.com/ipad/repair"
+    },
+    {
+      "slug": "gpu-no-display",
+      "path": "/รับซื้อการ์ดจอไม่แสดงภาพ-ขอนแก่น/",
+      "h1": "รับซื้อการ์ดจอไม่แสดงภาพ ขอนแก่น",
+      "category": "gpu",
+      "title": "รับซื้อการ์ดจอไม่แสดงภาพ ขอนแก่น เช็กไฟ พอร์ต GPU และผลทดสอบ | WINNER IT",
+      "source": "https://www.asus.com/us/support/faq/1016113/"
+    },
+    {
+      "slug": "gpu-artifact",
+      "path": "/รับซื้อการ์ดจอภาพแตก-artifact-ขอนแก่น/",
+      "h1": "รับซื้อการ์ดจอภาพแตก Artifact ขอนแก่น",
+      "category": "gpu",
+      "title": "รับซื้อการ์ดจอภาพแตก Artifact ขอนแก่น เช็ก Driver VRAM อุณหภูมิและ BIOS | WINNER IT",
+      "source": "https://www.asus.com/us/support/faq/1016113/"
+    },
+    {
+      "slug": "gpu-fan-noisy",
+      "path": "/รับซื้อการ์ดจอพัดลมดัง-ขอนแก่น/",
+      "h1": "รับซื้อการ์ดจอพัดลมดัง ขอนแก่น",
+      "category": "gpu",
+      "title": "รับซื้อการ์ดจอพัดลมดัง ขอนแก่น เช็ก Bearing 0dB อุณหภูมิและประกัน | WINNER IT",
+      "source": "https://www.asus.com/th/support/faq/1056058/"
+    },
+    {
+      "slug": "camera-fungus",
+      "path": "/รับซื้อกล้องหรือเลนส์มีรา-ขอนแก่น/",
+      "h1": "รับซื้อกล้องหรือเลนส์มีรา ขอนแก่น",
+      "category": "camera",
+      "title": "รับซื้อกล้องหรือเลนส์มีรา ขอนแก่น เช็กตำแหน่งรา ฝ้า และผลต่อภาพ | WINNER IT",
+      "source": "https://www.nikonimgsupport.com/eu/BV_article?articleNo=000046678&configured=1&lang=en_GB&setRedirect=true"
+    },
+    {
+      "slug": "camera-shutter-high",
+      "path": "/รับซื้อกล้องชัตเตอร์สูง-ขอนแก่น/",
+      "h1": "รับซื้อกล้องชัตเตอร์สูง ขอนแก่น",
+      "category": "camera",
+      "title": "รับซื้อกล้องชัตเตอร์สูง ขอนแก่น เช็ก Shutter Count และสภาพกลไก | WINNER IT",
+      "source": "https://www.nikonimgsupport.com/eu/BV_article?articleNo=000044853&ctry=IL&lang=en_GB"
+    },
+    {
+      "slug": "monitor-dead-pixel",
+      "path": "/รับซื้อจอคอมมี-dead-pixel-ขอนแก่น/",
+      "h1": "รับซื้อจอคอมมี Dead Pixel ขอนแก่น",
+      "category": "monitor",
+      "title": "รับซื้อจอคอมมี Dead Pixel ขอนแก่น เช็ก Bright/Dark Pixel และประกัน | WINNER IT",
+      "source": "https://www.dell.com/support/kbdoc/en-us/000126004/dell-display-pixel-guidelines"
+    },
+    {
+      "slug": "monitor-lines",
+      "path": "/รับซื้อจอคอมมีเส้น-ขอนแก่น/",
+      "h1": "รับซื้อจอคอมมีเส้น ขอนแก่น",
+      "category": "monitor",
+      "title": "รับซื้อจอคอมมีเส้น ขอนแก่น เช็ก Panel สายภาพ Self-Test และพอร์ต | WINNER IT",
+      "source": "https://dl.dell.com/manuals/all-products/esuprt_electronics_accessories/esuprt_electronics_accessories_monitor/esuprt_monitor_p_series/dell-p2719h-monitor_user%27s-guide4_en-us.pdf"
+    },
+    {
+      "slug": "console-no-power",
+      "path": "/รับซื้อเครื่องเกมเปิดไม่ติด-ขอนแก่น/",
+      "h1": "รับซื้อเครื่องเกมเปิดไม่ติด ขอนแก่น",
+      "category": "game-console",
+      "title": "รับซื้อเครื่องเกมเปิดไม่ติด ขอนแก่น PS5 Switch และ Console มีอาการยังประเมินได้ | WINNER IT",
+      "source": "https://www.playstation.com/en-us/support/hardware/ps5-power-issues/"
+    }
+  ],
+  "samples": {
+    "missingContent": [],
+    "invalidFields": [],
+    "invalidLifecycle": [],
+    "parentMismatch": [],
+    "invalidGeneralCondition": [],
+    "badRelated": [],
+    "unlinked": [],
+    "missingSource": [],
+    "invalidSource": [],
+    "unsafeClaims": [],
+    "fixedPriceClaims": [],
+    "duplicateEditorial": [],
+    "duplicateIntent": [],
+    "routeIntegration": [],
+    "schemaIntegration": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-07-18",
+  "productionAiIllustrations": { "before": 0, "after": 2 },
+  "sourceLibraryBytes": { "AI-07": 54214, "AI-11": 49990, "total": 104204 },
+  "likelyAvifTransferBytes": {
+    "mobile": { "AI-07_480w": 7093, "AI-11_480w": 8432, "total": 15525 },
+    "desktop": { "AI-07_768w": 11396, "AI-11_720w": 12928, "total": 24324 }
+  },
+  "formats": ["avif", "webp"],
+  "loading": "lazy",
+  "fetchpriority": "low",
+  "preloadAdded": false,
+  "lcpCandidateAdded": false,
+  "fixedDimensions": true,
+  "clsRisk": "LOW",
+  "notes": "Transfer totals are the most likely AVIF variants for the declared sizes, not a claim about every browser cache/network condition."
+}
