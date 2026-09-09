@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import StickyBar from '../components/StickyBar.astro';
 import FloatingLine from '../components/FloatingLine.astro';
 import { SITE } from '../data/site.js';
+import { getK1SeoOverride } from '../data/k1SeoOverrides.js';
 
 const {
   title,
@@ -18,6 +19,9 @@ const {
   includeOrganization = false,
 } = Astro.props;
 
+const k1Seo = getK1SeoOverride(Astro.url.pathname);
+const effectiveTitle = k1Seo?.title ?? title;
+const effectiveDescription = k1Seo?.description ?? description;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const siteUrl = Astro.site?.href?.replace(/\/$/, '') || '';
 const ogImageUrl = new URL(ogImage, Astro.site).href;
@@ -71,9 +75,24 @@ const website = {
   inLanguage: 'th-TH',
 };
 
-const allJsonLd = includeOrganization
+const applyK1SeoToSchema = (schema) => {
+  if (!k1Seo || !schema || typeof schema !== 'object' || Array.isArray(schema)) return schema;
+  const schemaType = schema['@type'];
+  if (schemaType === 'Article') {
+    return { ...schema, headline: effectiveTitle, description: effectiveDescription };
+  }
+  if (schemaType === 'Service') {
+    return { ...schema, description: effectiveDescription };
+  }
+  if (schemaType === 'WebPage' || schemaType === 'CollectionPage') {
+    return { ...schema, name: effectiveTitle, description: effectiveDescription };
+  }
+  return schema;
+};
+
+const allJsonLd = (includeOrganization
   ? [organization, website, ...jsonLd]
-  : jsonLd;
+  : jsonLd).map(applyK1SeoToSchema);
 ---
 
 <!doctype html>
@@ -81,8 +100,8 @@ const allJsonLd = includeOrganization
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <title>{effectiveTitle}</title>
+    <meta name="description" content={effectiveDescription} />
     {robots && <meta name="robots" content={robots} />}
     {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <link rel="canonical" href={canonical} />
@@ -92,8 +111,8 @@ const allJsonLd = includeOrganization
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="th_TH" />
     <meta property="og:site_name" content={SITE.name} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={effectiveTitle} />
+    <meta property="og:description" content={effectiveDescription} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:alt" content={ogImageAlt} />

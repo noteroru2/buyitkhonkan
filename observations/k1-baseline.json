@@ -1,0 +1,35 @@
+{
+  "batch": "KHON_KAEN_K1",
+  "baselinePeriod": {
+    "dateFrom": "2026-08-10",
+    "dateTo": "2026-09-06",
+    "source": "Google Search Console via Windsor.ai",
+    "finalizedOnly": true
+  },
+  "site": {
+    "clicks": 9,
+    "impressions": 113,
+    "ctr": 0.0796,
+    "position": 9.4071
+  },
+  "targets": [
+    { "path": "/รับซื้อเครื่องเกม-ขอนแก่น/", "priority": 1, "clicks": 2, "impressions": 55, "ctr": 0.0364, "position": 8.6727 },
+    { "path": "/", "priority": 2, "clicks": 0, "impressions": 9, "ctr": 0, "position": 6.7778 },
+    { "path": "/พื้นที่ให้บริการ/", "priority": 3, "clicks": 0, "impressions": 7, "ctr": 0, "position": 9 },
+    { "path": "/บทความ/วิธีเช็กรุ่นโน้ตบุ๊กก่อนขาย/", "priority": 4, "clicks": 0, "impressions": 6, "ctr": 0, "position": 7.6667 },
+    { "path": "/บทความ/เอกสารขายของไอที/", "priority": 5, "clicks": 0, "impressions": 4, "ctr": 0, "position": 6 },
+    { "path": "/รับซื้อแกดเจ็ต-ขอนแก่น/", "priority": 6, "clicks": 0, "impressions": 3, "ctr": 0, "position": 4 }
+  ],
+  "protected": [
+    { "path": "/รับซื้อมือถือ-ขอนแก่น/", "reason": "healthy CTR; do not disturb", "clicks": 2, "impressions": 9, "ctr": 0.2222, "position": 11.2222 },
+    { "path": "/รับซื้อโน้ตบุ๊ก-ขอนแก่น/", "reason": "only one impression despite page-one position; insufficient evidence", "clicks": 0, "impressions": 1, "ctr": 0, "position": 4 }
+  ],
+  "guardrails": [
+    "exact-path metadata overrides only",
+    "no URL or canonical changes",
+    "no H1 or body rewrites",
+    "no indexability changes",
+    "no broad architecture changes",
+    "freeze protected pages"
+  ]
+}
