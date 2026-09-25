@@ -62,14 +62,15 @@ Decision: freeze K1 metadata. No second title/description rewrite in K2.
 
 ## URL hygiene
 
-GSC still exposed malformed legacy URLs that now return 404. Where intent and canonical ownership are unambiguous, K2 adds Vercel permanent redirects for both Unicode and percent-encoded forms:
+GSC still exposed malformed legacy URLs that now return 404. Where intent and canonical ownership are unambiguous, K2 adds Vercel permanent redirects. For malformed paths with unstable Thai codepoints, the production rule uses the byte-exact percent-encoded source returned by GSC:
 
 - /ข้อกำหนดการใช้บิการ/ → /ข้อกำหนดการใช้บริการ/
-- /ข้อำำหนดการใช้บริรักการ/ → /ข้อกำหนดการใช้บริการ/
+- /ข้อำำหนดการใช้บริรัการ/ → /ข้อกำหนดการใช้บริการ/
 - /บทความ/เอกสารขาลองไอที/ → /บทความ/เอกสารขายของไอที/
-- /รับซื้อเน็อตบุ๊ก-ขอนกูน → /รับซื้อโน้ตบุ๊ก-ขอนแก่น/
-- /รับเหมาอุปกรณ์ไอที-ขอนกง้/ → /รับเหมาอุปกรณ์ไอที-ขอนแก่น/
-- /รับรูนซื้อเครื่เอกเกม-ขอนก่ม-การสด-winner-it/ → /รับซื้อเครื่องเกม-ขอนแก่น/
+- /รัปซื้อเน็อตบุ๊ก-ขอนกูน → /รับซื้อโน้ตบุ๊ก-ขอนแก่น/
+- /รัปเหมาอุปกรณ์ไอที-ขอนกง้/ → /รับเหมาอุปกรณ์ไอที-ขอนแก่น/
+- /รัูนซือเครืเอกเกม-ขอนก่ม-การสด-winner-it/ → /รับซื้อเครื่องเกม-ขอนแก่น/
+- /รััปซื้อเครื่องเกม-ขอนแกีณ/ → /รับซื้อเครื่องเกม-ขอนแก่น/
 
 Malformed URLs whose intent cannot be mapped confidently remain 404.
 
