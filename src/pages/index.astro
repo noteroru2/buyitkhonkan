@@ -192,6 +192,17 @@ const districtLinks = LOCAL_PAGES.map((page) => ({
       </div>
     </section>
 
+    <nav class="sitelink-nav" aria-label="บริการรับซื้อหลัก">
+      <div class="container sitelink-nav__inner">
+        <a href="/รับซื้อโน้ตบุ๊ก-ขอนแก่น/">รับซื้อโน๊ตบุ๊ค</a>
+        <a href="/รับซื้อมือถือ-ขอนแก่น/">รับซื้อมือถือ</a>
+        <a href="/รับซื้อคอมพิวเตอร์-ขอนแก่น/">รับซื้อคอมพิวเตอร์</a>
+        <a href="/รับซื้อกล้อง-ขอนแก่น/">รับซื้อกล้อง</a>
+        <a href="/รับซื้อแกดเจ็ต-ขอนแก่น/">รับซื้อเครื่องเกม</a>
+        <a href="/รับเหมาอุปกรณ์ไอที-ขอนแก่น/">รับซื้อยกล็อต</a>
+      </div>
+    </nav>
+
     <section class="home-trust" aria-label="จุดเด่นของบริการ">
       <div class="container home-trust__grid">
         {trustSignals.map((item) => (
@@ -1419,5 +1430,10 @@ const districtLinks = LOCAL_PAGES.map((page) => ({
     .b2b-panel h2 { max-width: none; }
     .b2b-panel__actions { display: grid; }
   }
+
+  .sitelink-nav { border-bottom:1px solid var(--line); background:#fff; }
+  .sitelink-nav__inner { display:flex; flex-wrap:wrap; gap:.55rem; padding-top:.8rem; padding-bottom:.8rem; }
+  .sitelink-nav a { display:inline-flex; align-items:center; min-height:38px; padding:.45rem .8rem; border:1px solid var(--line); border-radius:999px; color:var(--ink); background:#fff; font-size:.85rem; font-weight:800; text-decoration:none; }
+  .sitelink-nav a:hover { border-color:var(--volt); color:var(--volt-dark); }
 
 </style>
