@@ -52,8 +52,16 @@ const organization = {
   },
   parentOrganization: {
     '@type': 'Organization',
-    name: SITE.company,
+    '@id': 'https://amphon.co.th/#organization',
+    name: 'อำพล เทรดดิ้ง',
+    legalName: SITE.company,
+    url: 'https://amphon.co.th/',
   },
+  sameAs: [
+    'https://amphon.co.th/',
+    'https://webuy.in.th/',
+    SITE.lineHref,
+  ],
   contactPoint: [
     {
       '@type': 'ContactPoint',
